@@ -1,0 +1,7 @@
+Problem 13. C# and .NET Differences
+Describe the difference between C# and .NET Framework in 2-3 sentences.
+Write your description in a text file called “csharp-and-dot-net-framework.txt”. Use English.
+
+“C# is a modern programming language for development of software applications.” (Fundamentals of Computer Programming with C#, Svetlin Nakov & Co.)
+
+Microsoft.NET Framework is a platform that includes several programming languages and provides language interoperability, Common Language Runtime (CLR) and special environment for executing it, development tools to turn C# into intermediate code (MSIL) that CLR can understand, standard libraries which allow access to databases and WCF.
