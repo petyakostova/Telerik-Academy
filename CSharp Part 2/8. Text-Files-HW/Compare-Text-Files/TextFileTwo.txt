@@ -1,0 +1,11 @@
+Stream is the natural way to transfer data in the computer world
+To read or write a file, we open a stream connected to the file and access the data through the stream
+Streams are used for reading and writing data into and from devices
+Streams are ordered sequences of bytes
+Provide consecutive access to its elements
+Write a program that compares two text files line by line and prints the number of lines that are the same and the number of lines that are different. Assume the files have equal number of lines.
+Write a program that reads a text file and inserts line numbers in front of each of its lines. The result should be written to another text file.
+Write a program that compares two text files line by line and prints the number of lines that are the same and the number of lines that are different. Assume the files have equal number of lines.
+Write a program that reads a text file and inserts line numbers in front of each of its lines. The result should be written to another text file.
+Write a program that reads a text file and inserts line numbers in front of each of its lines. The result should be written to another text file.
+Write a program that reads a text file and inserts line numbers in front of each of its lines. The result should be written to another text file.
