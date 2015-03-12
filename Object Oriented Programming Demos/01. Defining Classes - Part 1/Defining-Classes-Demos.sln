@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio Express 2013 for Windows Desktop
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Dog Meeting", "DogMeeting\2. Dog Meeting.csproj", "{6E89FEE9-51BC-4C5F-BEC2-240286A94DAC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Constructors", "Constructors\3. Constructors.csproj", "{801A1273-DE87-42BB-AE6B-F9B31B769C53}"
@@ -16,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Constants", "Constants\1. Constants.csproj", "{1192D5A3-652C-4F58-8DF8-CA2FDAC1530B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7. CofeeSize", "CofeeSize\7. CofeeSize.csproj", "{33E3415E-10B6-4C38-A0A3-F3E5F71BD9B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BunnyWars", "BunnyWars\BunnyWars.csproj", "{0EE36E7A-F648-4CD5-A17D-D69CA1028F29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -107,6 +111,16 @@ Global
 		{33E3415E-10B6-4C38-A0A3-F3E5F71BD9B9}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{33E3415E-10B6-4C38-A0A3-F3E5F71BD9B9}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{33E3415E-10B6-4C38-A0A3-F3E5F71BD9B9}.Release|x86.ActiveCfg = Release|Any CPU
+		{0EE36E7A-F648-4CD5-A17D-D69CA1028F29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EE36E7A-F648-4CD5-A17D-D69CA1028F29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EE36E7A-F648-4CD5-A17D-D69CA1028F29}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{0EE36E7A-F648-4CD5-A17D-D69CA1028F29}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{0EE36E7A-F648-4CD5-A17D-D69CA1028F29}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0EE36E7A-F648-4CD5-A17D-D69CA1028F29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EE36E7A-F648-4CD5-A17D-D69CA1028F29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EE36E7A-F648-4CD5-A17D-D69CA1028F29}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{0EE36E7A-F648-4CD5-A17D-D69CA1028F29}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{0EE36E7A-F648-4CD5-A17D-D69CA1028F29}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
