@@ -3,6 +3,7 @@
     using Animals;
     using Bunnies;
     using System;
+    using System.Collections.Generic;
 
     class BunnyWarsMain
     {
@@ -62,6 +63,23 @@
 
             Console.WriteLine(chipi.Health);    // 0
 
-        }
+            // create a Bunny collection
+            List<Bunny> bunnies = new List<Bunny>();
+
+            Random random = new Random();
+
+            for (int i = 0; i < 100; i++)
+            {
+                Bunny currentBunny = new Bunny(new string((char)i, 10));
+                currentBunny.Health = random.Next(0, 100);
+                bunnies.Add(currentBunny);
+            } 
+
+            foreach (var bunny in bunnies)
+            {
+                Console.WriteLine(bunny.Name + " " + bunny.Health);
+            }
+
+        } 
     }
 }
