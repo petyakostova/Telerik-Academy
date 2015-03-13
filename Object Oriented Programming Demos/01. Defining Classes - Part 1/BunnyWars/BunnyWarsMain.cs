@@ -6,8 +6,13 @@
 
     class BunnyWarsMain
     {
-        static void Main()
+        static void ChangeBunny(Bunny bunny)            // static method
         {
+            bunny.Health = 0;
+        }
+
+        static void Main()
+        { 
             //Bunnies.Bunny ivanBunny = new Bunnies.Bunny();  // constructor, if there is not namespace using Bunnies;
 
             //Bunny peshoBunny = new Bunny();         // constructor => create new object bunny
@@ -36,13 +41,26 @@
             Console.WriteLine(zayoBunny.Health);
 
             Console.WriteLine(zayoBunny.isRetired);
-
+             
             //zayoBunny.Retire();
             zayoBunny.Health -= 250;
             zayoBunny.Retire();
             Console.WriteLine(zayoBunny.isRetired);
 
             //Animal animal = new Animal(); // won't work because the class Animal is abstract
+
+            //Console.WriteLine(Bunny.NumberOfLegs); 
+            //doesn't work because it's private 
+            //works, if it's:   public static int NumberOfLegs = 4;   but it's not ok to be public
+
+            var chipi = new Bunny("Chipi");
+            //Bunny chipi = new Bunny("Chipi");
+
+            Console.WriteLine(chipi.Health);    // 100
+
+            ChangeBunny(chipi);
+
+            Console.WriteLine(chipi.Health);    // 0
 
         }
     }

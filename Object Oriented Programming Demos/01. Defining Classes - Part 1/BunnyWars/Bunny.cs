@@ -7,7 +7,9 @@
     public class Bunny : Animal  // we must set "public" Access Modifier (by default it's internal)
     // Bunny inherits Animal
     {
-        // constants
+        private static int NumberOfLegs = 4; 
+        
+        // constants               
 
         private const int InitialHealth = 100;  // constant (magic number) (can be string, Bunny...)
         private const int InitialCarrots = 0;
@@ -21,7 +23,7 @@
         //private int health;   => better automatic property  => public int Health { get; set; }     
 
 
-        // if we create list => it must be initialized in the constructor => line 39
+        // if we create list => it must be initialized in the constructor => line 42
         //List<int> something;
 
 
