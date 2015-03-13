@@ -54,14 +54,14 @@
             //doesn't work because it's private 
             //works, if it's:   public static int NumberOfLegs = 4;   but it's not ok to be public
 
-            var chipi = new Bunny("Chipi");
-            //Bunny chipi = new Bunny("Chipi");
+            var chipiBunny = new Bunny("Chipi");
+            //Bunny chipiBunny = new Bunny("Chipi");
 
-            Console.WriteLine(chipi.Health);    // 100
+            Console.WriteLine(chipiBunny.Health);    // 100
 
-            ChangeBunny(chipi);
+            ChangeBunny(chipiBunny);
 
-            Console.WriteLine(chipi.Health);    // 0
+            Console.WriteLine(chipiBunny.Health);    // 0
 
             // create a Bunny collection
             List<Bunny> bunnies = new List<Bunny>();
@@ -75,11 +75,35 @@
                 bunnies.Add(currentBunny);
             } 
 
-            foreach (var bunny in bunnies)
+            //foreach (var bunny in bunnies)
+            //{
+            //    Console.WriteLine(bunny.Name + " " + bunny.Health);
+            //}
+
+
+            // initialize a list zayoAndChipi
+            var zayoAndChipi = new List<Bunny>
             {
-                Console.WriteLine(bunny.Name + " " + bunny.Health);
+                zayoBunny,
+                chipiBunny
+            };
+
+            foreach (var bunny in zayoAndChipi)
+            {
+                Console.WriteLine(bunny.Name);
             }
 
+            
+            AirCraft firstAirCraft = new AirCraft(chipiBunny, 60);
+            AirCraft secondAirCraft = new AirCraft(bugsBunny, 80);
+
+            Console.WriteLine(secondAirCraft.Pilot.Health); // 100
+
+            firstAirCraft.Attack(secondAirCraft);   // 40
+
+            Console.WriteLine(secondAirCraft.Pilot.Health);
+
+            //AirCraft.Speed();   // this method exist, but firstAirCraft.Speed() don't, because the method Speed() is static
         } 
     }
 }
