@@ -104,6 +104,12 @@
             Console.WriteLine(secondAirCraft.Pilot.Health);
 
             //AirCraft.Speed();   // this method exist, but firstAirCraft.Speed() don't, because the method Speed() is static
+
+            firstAirCraft.Move(new Coordinates(15, 20));
+            secondAirCraft.Move(new Coordinates(25, 40));
+
+            double distance = AirCraft.CalculateDistance(firstAirCraft, secondAirCraft);
+            Console.WriteLine(distance);
         } 
     }
 }
