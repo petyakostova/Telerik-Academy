@@ -19,7 +19,7 @@
             //Bunny peshoBunny = new Bunny();         // constructor => create new object bunny
             //Console.WriteLine(peshoBunny);   // Bunnies.Bunny
 
-            Bunny blueBunny = new Bunny("Ivan", "Blue");
+            Bunny blueBunny = new Bunny("Ivan", ColorType.Blue);
 
             Bunny zayoBunny = new Bunny("Zayo");
             //Console.WriteLine(zayoBunny);      // Bunnies.Bunny
@@ -27,7 +27,7 @@
             ulong currentZayoCarrots = zayoBunny.AddCarrots(100);
             Console.WriteLine("Zayo carrots = " + currentZayoCarrots);
 
-            Bunny bugsBunny = new Bunny("Bugs", "White");
+            Bunny bugsBunny = new Bunny("Bugs", ColorType.Red);
             ulong currentBugsCarrots = bugsBunny.AddCarrots(2000);
             Console.WriteLine("Bugs carrots = " + currentBugsCarrots);
 
@@ -35,8 +35,8 @@
             Console.WriteLine(zayoName);
             //zayoBunny.Name = "Koko";            // won't work because the property is read only (only get)
 
-            string color = zayoBunny.Color; // get
-            zayoBunny.Color = "Blue";       // set
+            ColorType color = zayoBunny.Color;      // get
+            zayoBunny.Color = ColorType.Blue;       // set
 
             zayoBunny.Health = 150;
             Console.WriteLine(zayoBunny.Health);

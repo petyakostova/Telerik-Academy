@@ -17,7 +17,7 @@
         // fields
         
         //private readonly string name;   // field for rabbit's name, which is readonly => removed because of Animal
-        private string color;           // field
+        private ColorType color;           // field
         private ulong carrotsCount;     // field            
         //private ulong carrotsCount = 0; // this is wrong => must be in the constructor
         //private int health;   => better automatic property  => public int Health { get; set; }     
@@ -54,7 +54,8 @@
 
         // DRY => Don't repeat yourself => so:
         // reuse (use again) the constructor:
-        public Bunny(string bunnyName, string playerColor) : this(bunnyName)    
+        public Bunny(string bunnyName, ColorType playerColor)
+            : this(bunnyName)    
         {
             this.color = playerColor;
         }
@@ -80,7 +81,7 @@
         //    }
         //}
 
-        public string Color
+        public ColorType Color
         {
             get
             {
@@ -88,10 +89,11 @@
             }
             set 
             {
-                if (value != "Blue" && value != "Red")  // validating 
-                {
-                    throw new ArgumentException("Color must be \"Blue\" or \"Red\"");   // using System;
-                }
+                //// after adding enumeration there is no need from data validation
+                //if (value != "Blue" && value != "Red")  // validating 
+                //{
+                //    throw new ArgumentException("Color must be \"Blue\" or \"Red\"");   // using System;
+                //}
 
                 this.color = value;  // set data
             }
