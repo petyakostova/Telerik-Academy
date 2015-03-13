@@ -110,6 +110,8 @@
 
             double distance = AirCraft.CalculateDistance(firstAirCraft, secondAirCraft);
             Console.WriteLine(distance);
+
+            Console.WriteLine(bugsBunny.Damage);
         } 
     }
 }

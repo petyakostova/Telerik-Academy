@@ -148,5 +148,20 @@
 
         //}
 
+
+        public int Damage   // dynamic property
+        {
+            get
+            {
+                if (this.Health < 0)
+                {
+                    return InitialHealth;
+                }
+
+                int damage = InitialHealth - this.Health;
+                                
+                return damage;
+            }
+        }
     }     
 }
