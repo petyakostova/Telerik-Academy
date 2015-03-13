@@ -45,6 +45,7 @@
     <Compile Include="Animal.cs" />
     <Compile Include="Bunny.cs" />
     <Compile Include="BunnyWarsMain.cs" />
+    <Compile Include="ColorType.cs" />
     <Compile Include="Coordinates.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

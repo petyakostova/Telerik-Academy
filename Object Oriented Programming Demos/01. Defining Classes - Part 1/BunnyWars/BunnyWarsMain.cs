@@ -112,6 +112,10 @@
             Console.WriteLine(distance);
 
             Console.WriteLine(bugsBunny.Damage);
+
+            ColorType colorType = ColorType.Red;
+            Console.WriteLine(colorType);       // Red
+            Console.WriteLine((int)colorType);  // 1
         } 
     }
 }
