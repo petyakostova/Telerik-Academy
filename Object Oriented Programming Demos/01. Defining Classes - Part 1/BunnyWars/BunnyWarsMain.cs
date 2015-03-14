@@ -116,6 +116,23 @@
             ColorType colorType = ColorType.Red;
             Console.WriteLine(colorType);       // Red
             Console.WriteLine((int)colorType);  // 1
-        } 
+
+
+            Bunny darkoBunny = new Bunny("Darko");
+            //Animal darkoBunny = new Bunny("Darko"); // works too, but not the same way, because Bunny is subclass to Animal
+
+            //Console.WriteLine(darkoBunny);   // Bunnies.Bunny if there is not  public override string ToString() in Bunny.cs
+            Console.WriteLine(darkoBunny);  // Darko 100
+
+            object bunnyAsObject = new Bunny("Obi");
+            Bunny obiBunny = bunnyAsObject as Bunny;    // it's safer -  if cast is impossible, returns null
+            //Bunny obiBunny = (Bunny)bunnyAsObject;    // if cast is impossible => exception
+            Console.WriteLine(obiBunny.Name);    // Obi
+
+            if (obiBunny is Animal)
+            {
+                Console.WriteLine("Is animal");
+            }
+        }
     }
 }

@@ -3,19 +3,19 @@
     using Animals;
     using System;
     //using System.Collections.Generic;
-    
+
     public class Bunny : Animal  // we must set "public" Access Modifier (by default it's internal)
     // Bunny inherits Animal
     {
-        private static int NumberOfLegs = 4; 
-        
+        private static int NumberOfLegs = 4;
+
         // constants               
 
         private const int InitialHealth = 100;  // constant (magic number) (can be string, Bunny...)
         private const int InitialCarrots = 0;
 
         // fields
-        
+
         //private readonly string name;   // field for rabbit's name, which is readonly => removed because of Animal
         private ColorType color;           // field
         private ulong carrotsCount;     // field            
@@ -55,7 +55,7 @@
         // DRY => Don't repeat yourself => so:
         // reuse (use again) the constructor:
         public Bunny(string bunnyName, ColorType playerColor)
-            : this(bunnyName)    
+            : this(bunnyName)
         {
             this.color = playerColor;
         }
@@ -87,7 +87,7 @@
             {
                 return this.color;
             }
-            set 
+            set
             {
                 //// after adding enumeration there is no need from data validation
                 //if (value != "Blue" && value != "Red")  // validating 
@@ -111,7 +111,7 @@
         //        this.health = value;
         //    }
         //}
-        
+
         // it's better to use automatic property (line 15)
         // public int Health { get; set; }  // removed because of Animal
         //public int Health { get; private set; }   
@@ -133,7 +133,7 @@
             this.carrotsCount += carrots;
             return this.carrotsCount;
         }
-        
+
         public void Retire()
         {
             if (this.Health < 0)
@@ -161,9 +161,14 @@
                 }
 
                 int damage = InitialHealth - this.Health;
-                                
+
                 return damage;
             }
         }
-    }     
+
+        public override string ToString()
+        {
+            return this.Name + " " + this.Health;
+        }
+    }
 }
