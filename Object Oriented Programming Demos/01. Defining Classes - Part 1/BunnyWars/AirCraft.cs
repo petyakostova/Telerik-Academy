@@ -35,6 +35,11 @@
 
         public void Attack(AirCraft target)     // method
         {
+            if (this.Pilot.Color == target.Pilot.Color) // for not attacking own team
+            {
+                return;
+            }
+
             target.Pilot.Health -= this.Damage;
         }
 

@@ -36,7 +36,7 @@
             //zayoBunny.Name = "Koko";            // won't work because the property is read only (only get)
 
             ColorType color = zayoBunny.Color;      // get
-            zayoBunny.Color = ColorType.Blue;       // set
+            zayoBunny.Color = ColorType.Red;       // set
 
             zayoBunny.Health = 150;
             Console.WriteLine(zayoBunny.Health);
