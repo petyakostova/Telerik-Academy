@@ -121,7 +121,7 @@
             Bunny darkoBunny = new Bunny("Darko");
             //Animal darkoBunny = new Bunny("Darko"); // works too, but not the same way, because Bunny is subclass to Animal
 
-            //Console.WriteLine(darkoBunny);   // Bunnies.Bunny if there is not  public override string ToString() in Bunny.cs
+            //Console.WriteLine(darkoBunny);   // Bunnies.Bunny - if there is not  public override string ToString() in Bunny.cs
             Console.WriteLine(darkoBunny);  // Darko 100
 
             object bunnyAsObject = new Bunny("Obi");

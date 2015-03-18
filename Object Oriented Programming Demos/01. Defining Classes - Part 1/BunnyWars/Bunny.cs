@@ -112,7 +112,7 @@
         //    }
         //}
 
-        // it's better to use automatic property (line 15)
+        // it's better to use automatic property (line 23)
         // public int Health { get; set; }  // removed because of Animal
         //public int Health { get; private set; }   
 
