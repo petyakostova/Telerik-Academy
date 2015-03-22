@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. Custom Attributes", "Cu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatSystem", "CatSystem\CatSystem.csproj", "{63C7DA64-CF12-4CC7-A977-482D7B516EB6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic Class Example", "Generic Class Example\Generic Class Example.csproj", "{9DE960E4-3907-4893-BC0A-FD8337C92C68}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -145,6 +147,16 @@ Global
 		{63C7DA64-CF12-4CC7-A977-482D7B516EB6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{63C7DA64-CF12-4CC7-A977-482D7B516EB6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{63C7DA64-CF12-4CC7-A977-482D7B516EB6}.Release|x86.ActiveCfg = Release|Any CPU
+		{9DE960E4-3907-4893-BC0A-FD8337C92C68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DE960E4-3907-4893-BC0A-FD8337C92C68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DE960E4-3907-4893-BC0A-FD8337C92C68}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{9DE960E4-3907-4893-BC0A-FD8337C92C68}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{9DE960E4-3907-4893-BC0A-FD8337C92C68}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9DE960E4-3907-4893-BC0A-FD8337C92C68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DE960E4-3907-4893-BC0A-FD8337C92C68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DE960E4-3907-4893-BC0A-FD8337C92C68}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{9DE960E4-3907-4893-BC0A-FD8337C92C68}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{9DE960E4-3907-4893-BC0A-FD8337C92C68}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

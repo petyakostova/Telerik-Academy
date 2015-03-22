@@ -49,10 +49,23 @@
             ChangeCatName(anotherCat);
             Console.WriteLine(anotherCat.Name); //Johny
 
+            // example fot using structure
             var point = new Point();
             point.X = 4.5m; 
             point.Y = 18.9m;
             Console.WriteLine(point.GetCoordinates());  // 4.5, 18.9 
+
+            // using generics
+            var intList = new GenericList<int>();
+            intList.Add(1);
+            intList.Add(2);
+
+            var strList = new GenericList<string>();
+            strList.Add("1");
+            strList.Add("2");
+
+            var catList = new GenericList<Cat>();
+            catList.Add(new Cat(CatColor.Brown));
         }
     }
 }
