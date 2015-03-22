@@ -1,6 +1,6 @@
 ﻿namespace CatSystem
 {
-    public class Cat
+    public class Cat : Animal
     {
         // static property
         public static int NumberOfLegs
@@ -18,7 +18,7 @@
         }
 
         // properties
-        public string Name { get; set; }
+        //public string Name { get; set; }  //removed because of Animal
 
         public int Аgе { get; private set; }
 

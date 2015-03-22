@@ -56,16 +56,21 @@
             Console.WriteLine(point.GetCoordinates());  // 4.5, 18.9 
 
             // using generics
-            var intList = new GenericList<int>();
-            intList.Add(1);
-            intList.Add(2);
+            //// don't work because int is not Animal
+            //var intList = new GenericList<int>();
+            //intList.Add(1);
+            //intList.Add(2);
 
-            var strList = new GenericList<string>();
-            strList.Add("1");
-            strList.Add("2");
+            //// don't work because string is not Animal
+            //var strList = new GenericList<string>();
+            //strList.Add("1");
+            //strList.Add("2");
 
             var catList = new GenericList<Cat>() ;
             catList.Add(new Cat(CatColor.Brown));
+
+            var myList = new GenericList<Animal>();
+            var anotherMyList = new GenericList<Dog>();
         }
     }
 }

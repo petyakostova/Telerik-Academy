@@ -41,8 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Animal.cs" />
     <Compile Include="Cat.cs" />
     <Compile Include="CatColor.cs" />
+    <Compile Include="Dog.cs" />
     <Compile Include="GenericList.cs" />
     <Compile Include="Owner.cs" />
     <Compile Include="CatSystemStart.cs" />
