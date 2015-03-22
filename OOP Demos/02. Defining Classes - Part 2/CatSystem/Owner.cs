@@ -1,4 +1,4 @@
-﻿// Revision of Defining Classes Part 1
+﻿// Plus Revision of Defining Classes Part 1
 
 namespace CatSystem
 {

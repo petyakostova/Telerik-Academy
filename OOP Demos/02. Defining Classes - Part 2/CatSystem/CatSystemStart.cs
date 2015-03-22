@@ -1,5 +1,6 @@
 ﻿namespace CatSystem
 {
+    using MyCollections;
     using System;
     using System.Collections.Generic;
 
@@ -66,11 +67,11 @@
             //strList.Add("1");
             //strList.Add("2");
 
-            var catList = new GenericList<Cat>();
+            var catList = new GenericList<Cat>();   // using MyCollections;
             catList.Add(new Cat(CatColor.Brown));
 
-            var myList = new GenericList<Animal>();
-            var anotherMyList = new GenericList<Dog>();
+            var myList = new GenericList<Animal>();   // using MyCollections;
+            var anotherMyList = new GenericList<Dog>();   // using MyCollections;
 
             // example using generic method
             var value = GetString<int>(5);      // works if T can be struct

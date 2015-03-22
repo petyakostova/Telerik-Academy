@@ -1,5 +1,7 @@
-﻿namespace CatSystem
+﻿namespace MyCollections
 {
+    using CatSystem;
+
     public class GenericList<T> where T : Animal
     // public class GenericList<T>  // without restrictions for T
     //public class GenericList<T> where T : class // works if T is class => won't work when T is int
