@@ -51,7 +51,7 @@
 
             // example fot using structure
             var point = new Point();
-            point.X = 4.5m; 
+            point.X = 4.5m;
             point.Y = 18.9m;
             Console.WriteLine(point.GetCoordinates());  // 4.5, 18.9 
 
@@ -66,11 +66,50 @@
             //strList.Add("1");
             //strList.Add("2");
 
-            var catList = new GenericList<Cat>() ;
+            var catList = new GenericList<Cat>();
             catList.Add(new Cat(CatColor.Brown));
 
             var myList = new GenericList<Animal>();
             var anotherMyList = new GenericList<Dog>();
+
+            // example using generic method
+            var value = GetString<int>(5);      // works if T can be struct
+            //var value = GetString(5);         // this works too if T can be struct 
+            var anotherValie = GetString<bool>(true); // works if T can be struct
+            //var kitten = GetString<Cat>(new Cat(CatColor.Brown));   // works if T can be class
+            //var kitten = GetString(new Cat(CatColor.Brown));        // works too if T can be class
+
+            // example for generic method T Min<T>(T first, T second) where T : IComparable<T>
+            var min = Min<int>(5, 6);
+            Console.WriteLine(min); //5
         }
+
+
+        // generic method, which expects T to be a structure
+        public static string GetString<T>(T element)
+        //  public static string GetString<T>(T element) where T : struct
+        {
+            return element.ToString();
+        }
+
+        //// don't do that
+        //// but in this case ususally generic will invoke first
+        //public static string GetString(object element)
+        //{
+        //    return element.ToString();
+        //}
+
+        public static T Min<T>(T first, T second) where T : IComparable<T>
+        {
+            if (first.CompareTo(second) <= 0)
+            {
+                return first;
+            }
+            else
+            {
+                return second;
+            }
+        }
+
     }
 }
