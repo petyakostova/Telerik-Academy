@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Cat.cs" />
     <Compile Include="CatColor.cs" />
+    <Compile Include="GenericList.cs" />
     <Compile Include="Owner.cs" />
     <Compile Include="CatSystemStart.cs" />
     <Compile Include="Point.cs" />

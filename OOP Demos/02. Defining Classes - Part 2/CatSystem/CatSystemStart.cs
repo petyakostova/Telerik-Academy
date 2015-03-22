@@ -64,7 +64,7 @@
             strList.Add("1");
             strList.Add("2");
 
-            var catList = new GenericList<Cat>();
+            var catList = new GenericList<Cat>() ;
             catList.Add(new Cat(CatColor.Brown));
         }
     }
