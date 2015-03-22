@@ -49,6 +49,10 @@
             ChangeCatName(anotherCat);
             Console.WriteLine(anotherCat.Name); //Johny
 
+            var point = new Point();
+            point.X = 4.5m; 
+            point.Y = 18.9m;
+            Console.WriteLine(point.GetCoordinates());  // 4.5, 18.9 
         }
     }
 }

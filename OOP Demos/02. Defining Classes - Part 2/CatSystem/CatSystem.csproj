@@ -45,6 +45,7 @@
     <Compile Include="CatColor.cs" />
     <Compile Include="Owner.cs" />
     <Compile Include="CatSystemStart.cs" />
+    <Compile Include="Point.cs" />
     <Compile Include="Printer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
