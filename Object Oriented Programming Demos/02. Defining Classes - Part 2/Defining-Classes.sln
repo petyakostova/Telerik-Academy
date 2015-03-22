@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio Express 2013 for Windows Desktop
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Static Members", "StaticMembers\01. Static Members.csproj", "{24DAADAD-72B8-4BCE-B605-A10761CC271B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Structures", "Structures\02. Structures.csproj", "{07DBEFB2-56BC-4B9A-B974-EE3A6C94EB77}"
@@ -20,6 +22,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. Attributes", "Attributes\09. Attributes.csproj", "{95924B6C-C7DB-41D8-95AA-92BF401E65FC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. Custom Attributes", "Custom-Attributes\10. Custom Attributes.csproj", "{1919E468-67FC-4B06-A842-426189C3DC17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatSystem", "CatSystem\CatSystem.csproj", "{63C7DA64-CF12-4CC7-A977-482D7B516EB6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -131,6 +135,16 @@ Global
 		{1919E468-67FC-4B06-A842-426189C3DC17}.Release|Mixed Platforms.Build.0 = Release|x86
 		{1919E468-67FC-4B06-A842-426189C3DC17}.Release|x86.ActiveCfg = Release|x86
 		{1919E468-67FC-4B06-A842-426189C3DC17}.Release|x86.Build.0 = Release|x86
+		{63C7DA64-CF12-4CC7-A977-482D7B516EB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63C7DA64-CF12-4CC7-A977-482D7B516EB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63C7DA64-CF12-4CC7-A977-482D7B516EB6}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{63C7DA64-CF12-4CC7-A977-482D7B516EB6}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{63C7DA64-CF12-4CC7-A977-482D7B516EB6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{63C7DA64-CF12-4CC7-A977-482D7B516EB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63C7DA64-CF12-4CC7-A977-482D7B516EB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63C7DA64-CF12-4CC7-A977-482D7B516EB6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{63C7DA64-CF12-4CC7-A977-482D7B516EB6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{63C7DA64-CF12-4CC7-A977-482D7B516EB6}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
