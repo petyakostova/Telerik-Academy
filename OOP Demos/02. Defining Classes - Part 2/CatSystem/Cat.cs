@@ -25,5 +25,12 @@
         public Owner Owner { get; set; }
 
         public CatColor Color { get; private set; }
+
+        // static method 
+        // Always return the most primitive data type - don't print it on the console!
+        public static string WhatDoesTheCatSay()
+        {
+            return "Mew!";
+        }
     }
 }

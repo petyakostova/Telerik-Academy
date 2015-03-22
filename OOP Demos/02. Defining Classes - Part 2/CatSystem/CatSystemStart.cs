@@ -31,6 +31,8 @@
             Console.WriteLine(peshoOwner.AllCats);
 
             Console.WriteLine(Cat.NumberOfLegs);
+
+            Console.WriteLine(Cat.WhatDoesTheCatSay());
         }
     }
 }
