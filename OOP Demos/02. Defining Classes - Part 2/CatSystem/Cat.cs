@@ -2,6 +2,15 @@
 {
     public class Cat
     {
+        // static property
+        public static int NumberOfLegs
+        {
+            get
+            {
+                return 4;
+            }
+        }
+
         // constructor
         public Cat(CatColor color)
         {

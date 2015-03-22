@@ -29,6 +29,8 @@
 
             // this will cause Unhandled Exception: System.NullReferenceException: Object reference not set to an instance of an object. => Line 25 in Owner.cs
             Console.WriteLine(peshoOwner.AllCats);
+
+            Console.WriteLine(Cat.NumberOfLegs);
         }
     }
 }
