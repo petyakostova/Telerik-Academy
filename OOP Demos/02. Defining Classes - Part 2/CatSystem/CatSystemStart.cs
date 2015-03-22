@@ -4,6 +4,9 @@
     using System;
     using System.Collections.Generic;
 
+    using FirstCat = CatSystem.Cat;
+    using SecondCat = AnimalSystem.Cat;
+
     public class CatSystemStart
     {
         public static void ChangeCatName(Cat cat)
@@ -83,6 +86,12 @@
             // example for generic method T Min<T>(T first, T second) where T : IComparable<T>
             var min = Min<int>(5, 6);
             Console.WriteLine(min); //5
+
+            // two classes with same name in different namespaces
+            var secondCat = new AnimalSystem.Cat(); // secondCat.somethingElse...
+            FirstCat kitten = new FirstCat(CatColor.Brown);
+            SecondCat anotherKitten = new SecondCat();
+
         }
 
 
