@@ -21,5 +21,7 @@ public class DelegatesExample
 
 		// Invocation of the method, pointed by delegate
 		d("test");
+        //I was called by a delegate.
+        //I got parameter: test.
 	}
 }
