@@ -9,7 +9,7 @@ public class Program
         ListWithChangedEvent list = new ListWithChangedEvent();
 
         // Add and remove items from the list.
-        Console.WriteLine("----- Adding item 1");
+        Console.WriteLine("----- Adding item 1");//----- Adding item 1
         list.Add("item 1");
         list.Clear();
 
@@ -26,13 +26,18 @@ public class Program
         // Attach anonymous type as a listener
         list.Changed += (sender, args) => Console.WriteLine("(sender, args) =>");
 
-        Console.WriteLine("----- Adding item 2");
+        Console.WriteLine("----- Adding item 2");//----- Adding item 2
         list.Add("item 2");
+        //ListOnChanged(object sender, EventArgs eventArgs)
+        //degate(object sender, EventArgs args)
+        //(sender, args) =>
 
         list.Changed -= ListOnChanged;
 
-        Console.WriteLine("----- Adding item 3");
+        Console.WriteLine("----- Adding item 3");//----- Adding item 3
         list.Add("item 3");
+        //degate(object sender, EventArgs args)
+        //(sender, args) =>
     }
 
     private static void ListOnChanged(object sender, EventArgs eventArgs)

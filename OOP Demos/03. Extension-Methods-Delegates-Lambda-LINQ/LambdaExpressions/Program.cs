@@ -10,7 +10,7 @@ public class Program
         var evenNumbers = list.FindAll(x => (x % 2) == 0);
         foreach (var num in evenNumbers)
         {
-            Console.Write("{0} ", num);
+            Console.Write("{0} ", num);//2 4
         }
 
         Console.WriteLine();
@@ -20,7 +20,7 @@ public class Program
         list.RemoveAll(x => x > 3);
         foreach (var num in list)
         {
-            Console.Write("{0} ", num);
+            Console.Write("{0} ", num);//1 2 3
         }
 
         Console.WriteLine();
@@ -39,7 +39,10 @@ public class Program
         {
             Console.WriteLine("{0} -> {1}", pet.Name, pet.Age);
         }
-
+        //Strela -> 1
+        //Rex -> 4
+        //Odin -> 5
+        //Sharo -> 8
         Console.WriteLine();
 
         list = new List<int>() { 20, 1, 4, 8, 9, 44 };
@@ -51,11 +54,16 @@ public class Program
                     Console.WriteLine("value of i is: {0}", i);
                     return (i % 2) == 0;
                 });
-
+        //value of i is: 20
+        //value of i is: 1
+        //value of i is: 4
+        //value of i is: 8
+        //value of i is: 9
+        //value of i is: 44
         Console.WriteLine("Here are your even numbers:");
         foreach (int even in evenNumbers)
         {
-            Console.Write("{0} ", even);
+            Console.Write("{0} ", even);//20 4 8 44
         }
 
         Console.WriteLine();
@@ -65,7 +73,7 @@ public class Program
         Func<int, bool> intFunc = (x) => x < 10;
         if (boolFunc() && intFunc(5))
         {
-            Console.WriteLine("5 < 10");
+            Console.WriteLine("5 < 10");//5 < 10
         }
 
         var towns = new List<string>() { "Sofia", "Plovdiv", "Varna", "Sopot", "Silistra" };
@@ -82,5 +90,8 @@ public class Program
         {
             Console.WriteLine(town);
         }
+        //Sofia
+        //Sopot
+        //Silistra
     }
 }

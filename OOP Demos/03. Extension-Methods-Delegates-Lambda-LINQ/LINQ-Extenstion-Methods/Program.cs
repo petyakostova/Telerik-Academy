@@ -22,10 +22,9 @@ public class Program
 
         foreach (var num in querySmallNums)
         {
-            Console.Write(num.ToString() + " ");
+            Console.Write(num.ToString() + " ");//4 1 3 2 0
         }
-
-        // The result is 4 1 3 2 0
+        
         Console.WriteLine();
         Console.WriteLine();
 
@@ -40,6 +39,31 @@ public class Program
         {
             Console.WriteLine(townPair);
         }
+        //{ T1 = Sofia, T2 = Sofia }
+        //{ T1 = Sofia, T2 = Varna }
+        //{ T1 = Sofia, T2 = Pleven }
+        //{ T1 = Sofia, T2 = Ruse }
+        //{ T1 = Sofia, T2 = Bourgas }
+        //{ T1 = Varna, T2 = Sofia }
+        //{ T1 = Varna, T2 = Varna }
+        //{ T1 = Varna, T2 = Pleven }
+        //{ T1 = Varna, T2 = Ruse }
+        //{ T1 = Varna, T2 = Bourgas }
+        //{ T1 = Pleven, T2 = Sofia }
+        //{ T1 = Pleven, T2 = Varna }
+        //{ T1 = Pleven, T2 = Pleven }
+        //{ T1 = Pleven, T2 = Ruse }
+        //{ T1 = Pleven, T2 = Bourgas }
+        //{ T1 = Ruse, T2 = Sofia }
+        //{ T1 = Ruse, T2 = Varna }
+        //{ T1 = Ruse, T2 = Pleven }
+        //{ T1 = Ruse, T2 = Ruse }
+        //{ T1 = Ruse, T2 = Bourgas }
+        //{ T1 = Bourgas, T2 = Sofia }
+        //{ T1 = Bourgas, T2 = Varna }
+        //{ T1 = Bourgas, T2 = Pleven }
+        //{ T1 = Bourgas, T2 = Ruse }
+        //{ T1 = Bourgas, T2 = Bourgas }
 
         Console.WriteLine();
 
@@ -55,6 +79,10 @@ public class Program
         {
             Console.WriteLine(fruit);
         }
+        //apple
+        //banana
+        //blueberry
+        //cherry
 
         Console.WriteLine();
     }
@@ -152,3 +180,25 @@ public class Program
         }
     }
 }
+
+//1; Name: Ivan; Courses: 2
+//3; Name: Pesho; Courses: 2
+
+//0; Name: 1; Courses: 0
+//0; Name: 2; Courses: 0
+//0; Name: 3; Courses: 0
+//{ Id = 1, Courses = 2 }
+//{ Id = 2, Courses = 3 }
+//{ Id = 3, Courses = 2 }
+//1; Name: Ivan; Courses: 2
+//3; Name: Pesho; Courses: 2
+//2; Name: Gosho; Courses: 3
+//True
+//True
+//False
+//1; Name: Ivan; Courses: 2
+//2; Name: Gosho; Courses: 3
+//3; Name: Pesho; Courses: 2
+//1; Name: Ivan; Courses: 2
+//2; Name: Gosho; Courses: 3
+//3; Name: Pesho; Courses: 2
