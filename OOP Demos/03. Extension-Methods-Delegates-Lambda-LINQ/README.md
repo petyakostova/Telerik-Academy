@@ -57,7 +57,7 @@ Homework: Extension-Methods-Delegates-Lambda-LINQ
 
 ### Problem 16.* Groups
 *	Create a class `Group` with properties `GroupNumber` and `DepartmentName`.
-*	Introduce a property `Group` in the `Student` class.
+*	Introduce a property `GroupNumber` in the `Student` class.
 *	Extract all students from "Mathematics" department.
 *	Use the `Join` operator.
 
@@ -65,8 +65,8 @@ Homework: Extension-Methods-Delegates-Lambda-LINQ
 *	Write a program to return the string with maximum length from an array of strings.
 *	Use LINQ.
 
-### Problem 18. Grouped by GroupName
-*	Create a program that extracts all students grouped by `GroupName` and then prints them to the console.
+### Problem 18. Grouped by GroupNumber
+*	Create a program that extracts all students grouped by `GroupNumber` and then prints them to the console.
 *	Use LINQ.
 
 ### Problem 19. Grouped by GroupName extensions

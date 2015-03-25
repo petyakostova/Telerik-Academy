@@ -1,13 +1,11 @@
 ﻿using System;
 
-class AnnonymousTypes
+public static class AnnonymousTypes
 {
-    static void Main()
+    public static void Main()
     {
-        var myCar =
-            new { Color = "Red", Brand = "BMW", Speed = 180 };
-        Console.WriteLine("My car is a {0} {1}.",
-            myCar.Color, myCar.Brand);//My car is a Red BMW.
+        var myCar = new { Color = "Red", Brand = "BMW", Speed = 180 };
+        Console.WriteLine("My car is a {0} {1}.", myCar.Color, myCar.Brand);//My car is a Red BMW.
         Console.WriteLine("It runs {0} km/h.", myCar.Speed);//It runs 180 km/h.
 
         Console.WriteLine();
@@ -27,11 +25,11 @@ class AnnonymousTypes
         Console.WriteLine();
 
         var arr = new[]
-		{
-			new { X = 3, Y = 5 },
-            new { X = 1, Y = 2 }, 
-			new { X = 0, Y = 7 } 
-		};
+                      {
+                          new { X = 3, Y = 5 },
+                          new { X = 1, Y = 2 },
+                          new { X = 0, Y = 7 }
+                      };
         foreach (var item in arr)
         {
             Console.WriteLine("({0}, {1})", item.X, item.Y);
@@ -39,5 +37,5 @@ class AnnonymousTypes
             //(1, 2)
             //(0, 7)
         }
-	}
+    }
 }
