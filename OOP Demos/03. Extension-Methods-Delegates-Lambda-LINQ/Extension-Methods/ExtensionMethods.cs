@@ -38,13 +38,13 @@ class ExtensionMethods
     {
         string s = "Hello Extension Methods";
         int i = s.WordCount();
-        Console.WriteLine(i);
+        Console.WriteLine(i);   //3
 
         List<int> ints = new List<int> { 1, 2, 3, 4, 5 };
-        Console.WriteLine(ints.ToString());
-        Console.WriteLine(ints.ToString<int>());
+        Console.WriteLine(ints.ToString());     //System.Collections.Generic.List`1[System.Int32]
+        Console.WriteLine(ints.ToString<int>());//[ 1 2 3 4 5 ]
 
         ints.IncreaseWidth(5);
-        Console.WriteLine(ints.ToString<int>());
+        Console.WriteLine(ints.ToString<int>());//[ 6 7 8 9 10 ]
     }
 }
