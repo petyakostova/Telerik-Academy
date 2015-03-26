@@ -95,6 +95,8 @@ public class Program
         // where
         var someStudents = students.Where(st => st.Name == "Ivan" || st.Name == "Pesho");
         PrintCollection(someStudents);
+        //1; Name: Ivan; Courses: 2
+        //3; Name: Pesho; Courses: 2
 
         // first
         Student first = students.FirstOrDefault(st => st.Courses.Count == 4); // First
@@ -104,58 +106,80 @@ public class Program
         var projectedItems = students.Select(
             st => new Student { Name = st.Id.ToString(), Courses = new List<Course>() });
         PrintCollection(projectedItems);
+        //0; Name: 1; Courses: 0
+        //0; Name: 2; Courses: 0
+        //0; Name: 3; Courses: 0
 
         // select to annonymous
         var annStudents = students.Select(st => new { Id = st.Id, Courses = st.Courses.Count });
         PrintCollection(annStudents);
+        //{ Id = 1, Courses = 2 }
+        //{ Id = 2, Courses = 3 }
+        //{ Id = 3, Courses = 2 }
 
         // order by
         var ordered = students.OrderBy(st => st.Courses.Count).ThenBy(st => st.Name);
         PrintCollection(ordered);
+        //1; Name: Ivan; Courses: 2
+        //3; Name: Pesho; Courses: 2
+        //2; Name: Gosho; Courses: 3
 
         // any
         bool checkAny = students.Any(st => st.Name.StartsWith("I"));
-        Console.WriteLine(checkAny);
+        Console.WriteLine(checkAny);//True
 
         // all
         bool checkAll = students.All(st => st.Name != string.Empty);
-        Console.WriteLine(checkAll);
+        Console.WriteLine(checkAll);//True
         checkAll = students.All(st => st.Id > 2);
-        Console.WriteLine(checkAll);
+        Console.WriteLine(checkAll);//False
 
         // ToList and ToArray
         Student[] arrayOfStudents = students.ToArray();
         PrintCollection(arrayOfStudents);
+        //1; Name: Ivan; Courses: 2
+        //2; Name: Gosho; Courses: 3
+        //3; Name: Pesho; Courses: 2
+
         List<Student> listOfStudents = arrayOfStudents.ToList();
         PrintCollection(listOfStudents);
+        //1; Name: Ivan; Courses: 2
+        //2; Name: Gosho; Courses: 3
+        //3; Name: Pesho; Courses: 2
 
         // reading string of numbers separated by space
-        int[] numbers = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+        int[] numbers = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();//1 2 3
         PrintCollection(numbers);
+        //1
+        //2
+        //3
 
         // reverse
         students.Reverse();
         PrintCollection(students);
+        //1; Name: Ivan; Courses: 2
+        //2; Name: Gosho; Courses: 3
+        //3; Name: Pesho; Courses: 2
 
         // average
         double averageCourses = students.Average(st => st.Courses.Count);
-        Console.WriteLine(averageCourses);
+        Console.WriteLine(averageCourses);//2,33333333333333
 
         // max
         int max = students.Max(st => st.Courses.Count);
-        Console.WriteLine(max);
+        Console.WriteLine(max);//3
 
         // min
         int min = students.Min(st => st.Courses.Count);
-        Console.WriteLine(min);
+        Console.WriteLine(min);//2
 
         // count
         int count = students.Count(st => st.Name.Length > 4);
-        Console.WriteLine(count);
+        Console.WriteLine(count);//2
 
         // sum
         int sum = students.Sum(st => st.Courses.Count);
-        Console.WriteLine(sum);
+        Console.WriteLine(sum);//7
 
         // extension methods
         var someCollection =
@@ -166,10 +190,14 @@ public class Program
                 .ToArray();
 
         PrintCollection(someCollection);
+        //{ Name = Gosho, Courses = 3 }
+        //{ Name = Pesho, Courses = 2 }
 
         // nesting
         var someOtherStudents = students.Where(st => st.Courses.Any(c => c.Name == "OOP")).OrderBy(st => st.Name);
         PrintCollection(someOtherStudents);
+        //2; Name: Gosho; Courses: 3
+        //1; Name: Ivan; Courses: 2
     }
 
     private static void PrintCollection(IEnumerable collection)
@@ -180,25 +208,3 @@ public class Program
         }
     }
 }
-
-//1; Name: Ivan; Courses: 2
-//3; Name: Pesho; Courses: 2
-
-//0; Name: 1; Courses: 0
-//0; Name: 2; Courses: 0
-//0; Name: 3; Courses: 0
-//{ Id = 1, Courses = 2 }
-//{ Id = 2, Courses = 3 }
-//{ Id = 3, Courses = 2 }
-//1; Name: Ivan; Courses: 2
-//3; Name: Pesho; Courses: 2
-//2; Name: Gosho; Courses: 3
-//True
-//True
-//False
-//1; Name: Ivan; Courses: 2
-//2; Name: Gosho; Courses: 3
-//3; Name: Pesho; Courses: 2
-//1; Name: Ivan; Courses: 2
-//2; Name: Gosho; Courses: 3
-//3; Name: Pesho; Courses: 2
