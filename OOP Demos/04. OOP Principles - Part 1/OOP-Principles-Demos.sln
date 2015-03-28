@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio Express 2013 for Windows Desktop
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Abstract-Classes", "Abstract-Classes\4. Abstract-Classes.csproj", "{02143BC2-7D69-45C5-9EE1-FBF7E65A5002}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Simple-Inheritance", "Simple-Inheritance\1. Simple-Inheritance.csproj", "{FB225393-E61F-4871-9EB4-AC6C5F4D409D}"
@@ -12,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Interfaces", "Interfaces-and-Implementation\3. Interfaces.csproj", "{B064DB72-79D8-4888-AB6F-CE540F788824}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6. Encapsulation", "Encapsulation\6. Encapsulation.csproj", "{09FEA9EA-5E8F-4E06-ABC5-086CF84FA947}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Document-System", "Document-System\Document-System.csproj", "{8105FC07-C18D-41F0-9503-BF744F402F4E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,6 +87,16 @@ Global
 		{09FEA9EA-5E8F-4E06-ABC5-086CF84FA947}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{09FEA9EA-5E8F-4E06-ABC5-086CF84FA947}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{09FEA9EA-5E8F-4E06-ABC5-086CF84FA947}.Release|x86.ActiveCfg = Release|Any CPU
+		{8105FC07-C18D-41F0-9503-BF744F402F4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8105FC07-C18D-41F0-9503-BF744F402F4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8105FC07-C18D-41F0-9503-BF744F402F4E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{8105FC07-C18D-41F0-9503-BF744F402F4E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{8105FC07-C18D-41F0-9503-BF744F402F4E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8105FC07-C18D-41F0-9503-BF744F402F4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8105FC07-C18D-41F0-9503-BF744F402F4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8105FC07-C18D-41F0-9503-BF744F402F4E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{8105FC07-C18D-41F0-9503-BF744F402F4E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{8105FC07-C18D-41F0-9503-BF744F402F4E}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
