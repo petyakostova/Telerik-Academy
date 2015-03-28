@@ -14,7 +14,7 @@
             IEnumerable<string> enumerable = new List<string>(); //using System.Collections.Generic;
             IEnumerable<string> hashset = new HashSet<string>();      //using System.Collections.Generic;
             // List and HashSet can be foreach... because there are from same interface
-
+             
             ISet<string> set = new SortedSet<string>();     
             ISet<string> anotherSet = new HashSet<string>();
             // SortedSet and HashSet implement ISet<T> and have same methods
