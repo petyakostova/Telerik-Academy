@@ -1,6 +1,6 @@
 ﻿namespace Document_System
 {
-    public class BinaryDocument : Document, IDocument
+    public abstract class BinaryDocument : Document, IDocument
     {
         // Binary documents can have size (in bytes). 
 
@@ -19,11 +19,15 @@
         public long Size { get; private set; }  // encapsulation
         // must be added constructor too
 
-        // we want fo change method's logic (the method is virtual)
-        public override string Information()
-        {                      
-            return base.Information() + " " + this.Size;
-            //return this.Name + " " + this.Content + " " + this.Size;
-        }
+        //// we want fo change method's logic (the method is virtual)
+        //public override string Information()
+        //{                      
+        //    return base.Information() + " " + this.Size;
+        //    //return this.Name + " " + this.Content + " " + this.Size;
+        //}
+
+        //public new abstract string GetInformation();    // new, because we want to hide it
+        //// when we have abstract method in some class, the class must be abstract too
+        
     }
 }

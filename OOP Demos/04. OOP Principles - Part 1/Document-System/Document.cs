@@ -1,6 +1,6 @@
 ﻿namespace Document_System
 {
-    public class Document : IDocument   // Ctrl+. => for implementing Name and Content
+    public abstract class Document : IDocument   // Ctrl+. => for implementing Name and Content
     {
         // constructor
         public Document(string name)
@@ -26,11 +26,13 @@
 
         public string Content { get; private set; }
 
-        // virtual mehtod, which returns string with information about the document
-        public virtual string Information()
-        {
-            return this.Name + " " + this.Content;
-        }
-        
+        //// virtual method, which returns string with information about the document
+        //public virtual string Information()
+        //{
+        //    return this.Name + " " + this.Content;
+        //}
+
+        // abstract method => don't emplemented hier
+        public abstract string GetInformation();        
     }
 }

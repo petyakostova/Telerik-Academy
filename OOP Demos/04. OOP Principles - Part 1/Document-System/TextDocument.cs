@@ -1,6 +1,6 @@
 ﻿namespace Document_System
 {
-    public class TextDocument : Document, IDocument   // first class, then interfaces
+    public abstract class TextDocument : Document, IDocument   // first class, then interfaces
     {
         // Name and Content are already implemented in Document => TeXtDocument inherits Document
 
@@ -21,5 +21,11 @@
         //we don't have given interface for charset, so we should guess what it should be => utf8=> string
         public string Charset { get; private set; } //encapsulation again
         // Charset is already implemented, but we should implemented a constructor too
+
+        //// implement the method GetInformation()
+        //public override string GetInformation()
+        //{
+        //    return this.Name + " " + this.Content;
+        //}
     }
 }

@@ -23,12 +23,17 @@
             this.IsEncrypted = false;
         }
 
-        // override a vitrual method Information()
-        public override string Information()
+        //// override a vitrual method Information()
+        //public override string Information()
+        //{
+        //    return base.Information() + " " + this.Version + " " + this.NumberOfCharacters;
+        //    // base. invokes the method in the base class - that's the better way instead of:
+        //    //return this.Name + " " + this.Content + " " + this.Size + " " + this.Version + " " + this.NumberOfCharacters;
+        //}
+
+        public override string GetInformation()
         {
-            return base.Information() + " " + this.Version + " " + this.NumberOfCharacters;
-            // base. invokes the method in the base class - that's the better way instead of:
-            //return this.Name + " " + this.Content + " " + this.Size + " " + this.Version + " " + this.NumberOfCharacters;
+            return this.Name + " " + this.Size;
         }
     }
 }
