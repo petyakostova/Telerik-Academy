@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6. Encapsulation", "Encapsu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Document-System", "Document-System\Document-System.csproj", "{8105FC07-C18D-41F0-9503-BF744F402F4E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Students", "Students\Students.csproj", "{CE6906C1-DE92-46C5-AC3E-C3C51AE0282B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +99,16 @@ Global
 		{8105FC07-C18D-41F0-9503-BF744F402F4E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{8105FC07-C18D-41F0-9503-BF744F402F4E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{8105FC07-C18D-41F0-9503-BF744F402F4E}.Release|x86.ActiveCfg = Release|Any CPU
+		{CE6906C1-DE92-46C5-AC3E-C3C51AE0282B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE6906C1-DE92-46C5-AC3E-C3C51AE0282B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE6906C1-DE92-46C5-AC3E-C3C51AE0282B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{CE6906C1-DE92-46C5-AC3E-C3C51AE0282B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{CE6906C1-DE92-46C5-AC3E-C3C51AE0282B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CE6906C1-DE92-46C5-AC3E-C3C51AE0282B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE6906C1-DE92-46C5-AC3E-C3C51AE0282B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE6906C1-DE92-46C5-AC3E-C3C51AE0282B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{CE6906C1-DE92-46C5-AC3E-C3C51AE0282B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{CE6906C1-DE92-46C5-AC3E-C3C51AE0282B}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
