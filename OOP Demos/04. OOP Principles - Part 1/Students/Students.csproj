@@ -44,6 +44,7 @@
     <Compile Include="IEnurable.cs" />
     <Compile Include="IPerson.cs" />
     <Compile Include="JuniorStudent.cs" />
+    <Compile Include="MySet.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="StudentsMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
