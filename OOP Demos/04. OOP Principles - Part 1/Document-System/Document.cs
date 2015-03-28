@@ -25,6 +25,12 @@
         //}
 
         public string Content { get; private set; }
+
+        // virtual mehtod, which returns string with information about the document
+        public virtual string Information()
+        {
+            return this.Name + " " + this.Content;
+        }
         
     }
 }

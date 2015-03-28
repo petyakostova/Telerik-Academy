@@ -18,5 +18,12 @@
 
         public long Size { get; private set; }  // encapsulation
         // must be added constructor too
+
+        // we want fo change method's logic (the method is virtual)
+        public override string Information()
+        {                      
+            return base.Information() + " " + this.Size;
+            //return this.Name + " " + this.Content + " " + this.Size;
+        }
     }
 }
