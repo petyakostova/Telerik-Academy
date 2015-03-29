@@ -2,7 +2,7 @@
 {
     public abstract class BinaryDocument : Document, IDocument
     {
-        // Binary documents can have size (in bytes). 
+        // Binary documents can have size (in bytes)... 
 
         public BinaryDocument(string name, long size)
             :base(name)

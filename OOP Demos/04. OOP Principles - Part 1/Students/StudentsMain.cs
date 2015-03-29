@@ -13,12 +13,12 @@
             {
                 jns.Name = null;
             }
-            catch (ArgumentException)
+            catch (ArgumentNullException)
             {
                 Console.WriteLine("You entered empty or null name");
             }
             //jns.Name = "Ivan";
-            Console.WriteLine(jns .GetAllCourses());
+            Console.WriteLine(jns.GetAllCourses());
 
             // this is not the right way to add marks (by fictive list):
             //jns.Marks.Add(50);

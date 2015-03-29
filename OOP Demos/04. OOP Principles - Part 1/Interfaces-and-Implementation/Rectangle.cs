@@ -10,13 +10,13 @@
         this.height = height;
     }
 
-    public void SetPosition(int x, int y)
+    public void SetPosition(int x, int y)   // implementation of the method SetPosition()
     {
         this.x = x;
         this.y = y;
     }
 
-    public double CalculateSurface()
+    public double CalculateSurface()    // implementation of the method CalculateSurface()
     {
         return width * height;
     }

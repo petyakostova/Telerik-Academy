@@ -9,11 +9,11 @@ class PlayWithInterfaces
         Circle circle = new Circle(0, 0, 5);
         if (square is IShape)
         {
-            Console.WriteLine("{0} is IShape", square.GetType());
+            Console.WriteLine("{0} is IShape", square.GetType());   //Square is IShape
         }
         if (rect is IResizable)
         {
-            Console.WriteLine("{0} is IResizable", rect.GetType());
+            Console.WriteLine("{0} is IResizable", rect.GetType()); //Rectangle is IResizable
         }
         if (circle is IResizable)
         {
@@ -27,5 +27,8 @@ class PlayWithInterfaces
             Console.WriteLine("Type: {0};  surface: {1}", 
                 shape.GetType(), shape.CalculateSurface());
         }
+        //Type: Square;  surface: 100
+        //Type: Rectangle;  surface: 120
+        //Type: Circle;  surface: 78,5398163397448
     }
 }

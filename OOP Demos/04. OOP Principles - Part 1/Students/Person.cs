@@ -18,7 +18,7 @@
             {
                 if (string.IsNullOrEmpty(value))
                 {
-                    throw new ArgumentException("Name cannot be empty");
+                    throw new ArgumentNullException("Name cannot be empty");
                 }
 
                 if (value.Length < 2)

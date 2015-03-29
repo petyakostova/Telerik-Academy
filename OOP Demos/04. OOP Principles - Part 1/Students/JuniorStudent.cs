@@ -11,6 +11,7 @@
             allMarks = new List<int>();
         }
 
+        // encapsulation
         public List<int> Marks
         {
             get

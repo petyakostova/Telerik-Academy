@@ -1,5 +1,6 @@
 ﻿using System;
 
+// IComparable gives method for comparing two objects
 public abstract class Animal : IComparable<Animal>
 {
 	// Abstract methods --> should be implemented in the child classes
@@ -15,6 +16,6 @@ public abstract class Animal : IComparable<Animal>
 	// Interface method
 	public int CompareTo(Animal other)
 	{
-		return this.Speed.CompareTo(other.Speed);
+		return this.Speed.CompareTo(other.Speed);   // compare them by speed
 	}
 }

@@ -1,5 +1,7 @@
-﻿public class Turtle : Animal
+﻿// instance class
+public class Turtle : Animal
 {
+    // implement the abstract methods in Animal
     public override int Speed
     {
         get

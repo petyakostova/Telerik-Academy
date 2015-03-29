@@ -45,7 +45,7 @@ class Person
 
 	public override string ToString()
 	{
-		return string.Format("Person(name={0}, age={1})",
+		return string.Format("Person (name = {0}, age = {1})",
 			this.name, this.age);
 	}
 

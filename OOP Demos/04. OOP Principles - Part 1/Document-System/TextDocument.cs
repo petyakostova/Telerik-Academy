@@ -1,8 +1,8 @@
 ﻿namespace Document_System
 {
-    public abstract class TextDocument : Document, IDocument   // first class, then interfaces
+    public abstract class TextDocument : Document, IDocument   // first class, then interfaces, separated by commas
     {
-        // Name and Content are already implemented in Document => TeXtDocument inherits Document
+        // Name and Content are already implemented in Document => TextDocument inherits Document
 
         //constructor
         public TextDocument(string name, string charset)    // in the base class the name is mandatory so its first (because it's in base)

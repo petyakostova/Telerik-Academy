@@ -1,6 +1,7 @@
 ﻿using System;
 
-public class Cheetah : Animal
+// instance class
+public class Cheetah : Animal   
 {
     public override int Speed
     {
