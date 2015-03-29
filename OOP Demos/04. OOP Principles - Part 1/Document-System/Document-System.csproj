@@ -52,6 +52,7 @@
     <Compile Include="WordDocument.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="DocumentSystemDiagram.cd" />
     <None Include="OOP-Sample-Exam.docx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
