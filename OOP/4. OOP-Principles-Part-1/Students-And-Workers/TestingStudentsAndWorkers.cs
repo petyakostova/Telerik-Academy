@@ -1,12 +1,11 @@
-﻿namespace Animal_Hierarchy
+﻿namespace Students_And_Workers
 {
     using System;
 
-    class Program
+    class TestingStudentsAndWorkers
     {
         static void Main()
         {
-
         }
     }
 }

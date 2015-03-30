@@ -2,7 +2,7 @@
 {
     using System;
 
-    class Program
+    class TestingSchoolClasses
     {
         static void Main()
         {
