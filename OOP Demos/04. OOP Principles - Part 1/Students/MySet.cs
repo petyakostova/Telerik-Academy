@@ -4,7 +4,7 @@
 
     public class MySet<T> : ISet<T>         // generic
     {
-        // and implement all that:
+        // TODO implement all that:
         public bool Add(T item)
         {
             throw new System.NotImplementedException();

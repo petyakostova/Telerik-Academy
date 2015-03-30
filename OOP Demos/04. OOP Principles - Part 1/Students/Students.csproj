@@ -41,7 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IEnurable.cs" />
     <Compile Include="IPerson.cs" />
     <Compile Include="JuniorStudent.cs" />
     <Compile Include="MySet.cs" />

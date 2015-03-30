@@ -8,6 +8,7 @@
         static void Main()
         {
             JuniorStudent jns = new JuniorStudent();
+
             //jns.Name = null;    // this will cause System.ArgumentException: Name cannot be empty
             try
             {
@@ -17,6 +18,7 @@
             {
                 Console.WriteLine("You entered empty or null name");
             }
+
             //jns.Name = "Ivan";
             Console.WriteLine(jns.GetAllCourses());
 
@@ -34,7 +36,7 @@
 
             Console.WriteLine(jns);
 
-            IEnumerable<string> enumerable = new List<string>(); //using System.Collections.Generic;
+            IEnumerable<string> enumerable = new List<string>();      //using System.Collections.Generic;
             IEnumerable<string> hashset = new HashSet<string>();      //using System.Collections.Generic;
             // List and HashSet can be foreach... because there are from same interface
              
