@@ -8,13 +8,13 @@
     {
         private List<Discipline> allDisciplines;    // set of disciplines
 
-        public Teacher(string name, IEnumerable<Discipline> disciplines)
+        public Teacher(string name, IEnumerable<Discipline> disciplines) // IEnumerable => using System.Collections.Generic;
             : base(name)
         {
             this.allDisciplines = disciplines.ToList(); // ToList() => using System.Linq;
         }
 
-        public Teacher(string name, IEnumerable<Discipline> disciplines, string comment)
+        public Teacher(string name, IEnumerable<Discipline> disciplines, string comment) // IEnumerable => using System.Collections.Generic;
             : this(name, disciplines)
         {
             this.Comment = comment;

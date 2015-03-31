@@ -10,12 +10,12 @@
         private string textIdentifier;
         private string comment; // optional
 
-        public ClassOfStudents(IEnumerable<Teacher> teachers, string textId)
+        public ClassOfStudents(IEnumerable<Teacher> teachers, string textId) // IEnumerable => using System.Collections.Generic;
         {
             this.allTeachers = teachers.ToList(); // ToList() => using System.Linq;
         }
 
-        public ClassOfStudents(IEnumerable<Teacher> teachers, string textId, string comment)
+        public ClassOfStudents(IEnumerable<Teacher> teachers, string textId, string comment) // IEnumerable => using System.Collections.Generic;
             : this(teachers, textId)
         {
             this.Comment = comment;
