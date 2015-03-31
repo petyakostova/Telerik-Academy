@@ -7,7 +7,7 @@
         private string name;
         private int numberOfLectures;
         private int numberOfExercises;
-        private string comments;
+        private string comment; // optional
 
         public Discipline(string name, int numOfLectures, int numOfExercises)
         {
@@ -75,28 +75,28 @@
             }
         }
 
-        public string Comments
+        public string Comment
         {
             get
             {
-                // if (this.comments == null)
-                if (String.IsNullOrWhiteSpace(this.comments))
+                // if (this.comment == null)
+                if (String.IsNullOrWhiteSpace(this.comment))
                 {
-                    return "No comments yet.";
+                    return "No comment yet.";
                 }
 
-                return this.comments;
+                return this.comment;
             }
             set
             {
-                this.comments = value;
+                this.comment = value;
             }
         }
 
         public override string ToString()
         {
-            return String.Format("Discipline Name: {0}, Number of lectures: {1}, Number of exercises: {2}, Comments: {3}", 
-                this.Name, this.NumberOfLectures, this.NumberOfExercises, this.Comments);
+            return String.Format("Discipline Name: {0}, Number of lectures: {1}, Number of exercises: {2}, Comment: {3}", 
+                this.Name, this.NumberOfLectures, this.NumberOfExercises, this.Comment);
         }
 
     }

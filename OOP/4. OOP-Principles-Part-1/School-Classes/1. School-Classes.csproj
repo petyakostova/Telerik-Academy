@@ -41,9 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassOfStudents.cs" />
     <Compile Include="Discipline.cs" />
     <Compile Include="ICommentable.cs" />
     <Compile Include="Person.cs" />
+    <Compile Include="School.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="Teacher.cs" />
     <Compile Include="TestingSchoolClasses.cs" />

@@ -11,6 +11,12 @@
             this.ClassNumber = classNumber;
         }
 
+        public Student(string name, int classNumber, string comment)
+            : this(name, classNumber)
+        {
+            this.Comment = comment;
+        }
+
         public int ClassNumber
         {
             get 
@@ -26,8 +32,6 @@
                 this.classNumber = value; 
             }
         }
-
-
         
     }
 }

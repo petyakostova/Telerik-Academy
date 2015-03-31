@@ -5,12 +5,18 @@
     public abstract class Person : ICommentable
     {
         private string name;
-        private string comments;
+        private string comment; // optional
 
         public Person(string name)
         {
             this.Name = name;
         }
+
+        //public Person(string name, string comment)
+        //    : this(name)
+        //{
+        //    this.Comment = comment;
+        //}
 
         public string Name
         {
@@ -37,21 +43,21 @@
             }
         }
 
-        public string Comments
+        public string Comment
         {
             get
             {
-                // if (this.comments == null)
-                if (String.IsNullOrWhiteSpace(this.comments))   
+                // if (this.comment == null)
+                if (String.IsNullOrWhiteSpace(this.comment))   
                 {
-                    return "No comments yet.";
+                    return "No comment yet.";
                 }
 
-                return this.comments;
+                return this.comment;
             }
             set
             {
-                this.comments = value;
+                this.comment = value;
             }
         }
 
