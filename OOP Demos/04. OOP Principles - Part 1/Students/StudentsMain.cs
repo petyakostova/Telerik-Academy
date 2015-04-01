@@ -3,9 +3,9 @@
     using System;
     using System.Collections.Generic;
 
-    class StudentsMain
+    public class StudentsMain
     {
-        static void Main()
+        public static void Main()
         {
             JuniorStudent jns = new JuniorStudent();
 

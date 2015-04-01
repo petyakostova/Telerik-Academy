@@ -1,14 +1,12 @@
 ﻿namespace School_Classes
 {
     using System;
-    using System.Collections.Generic;
-    using System.Text;
 
-    class TestingSchoolClasses
+    public class TestingSchoolClasses
     {
-        static void Main()
+        public static void Main()
         {
-            Console.BufferHeight = 70;
+            //Console.BufferHeight = 70;
 
             // Creating school
             School telerik = new School("Telerik Academy");
