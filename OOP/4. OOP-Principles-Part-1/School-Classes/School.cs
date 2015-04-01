@@ -42,14 +42,14 @@
             this.allClasses.Add(classStudents);
         }
 
-        //public void RemoveClass(ClassOfStudents classStudents)
-        //{
-        //    if (!this.allClasses.Contains(classStudents))
-        //    {
-        //        throw new ArgumentException("No such class of students in school.");
-        //    }
-        //    this.allClasses.Remove(classStudents);
-        //}
+        public void RemoveClass(ClassOfStudents classStudents)
+        {
+            if (!this.allClasses.Contains(classStudents))
+            {
+                throw new ArgumentException("No such class of students in school.");
+            }
+            this.allClasses.Remove(classStudents);
+        }
 
         public override string ToString()
         {

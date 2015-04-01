@@ -66,6 +66,10 @@
             telerik.AddClass(firstClass);
             telerik.AddClass(secondClass);
 
+            //telerik.RemoveClass(secondClass);
+            //secondClass.RemoveTeacher(nikolay);
+            //nikolay.RemoveDiscipline(hTML);
+
             Console.WriteLine(telerik);          
 
         }

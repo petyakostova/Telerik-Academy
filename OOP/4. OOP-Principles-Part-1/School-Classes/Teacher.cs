@@ -63,14 +63,14 @@
             }
         }
 
-        //public void RemoveDiscipline(Discipline discipline)
-        //{
-        //    if (!this.allDisciplines.Contains(discipline))
-        //    {
-        //        throw new ArgumentException("No such discipline in the set.");
-        //    }
-        //    this.allDisciplines.Remove(discipline);
-        //}
+        public void RemoveDiscipline(Discipline discipline)
+        {
+            if (!this.allDisciplines.Contains(discipline))
+            {
+                throw new ArgumentException("No such discipline in the set.");
+            }
+            this.allDisciplines.Remove(discipline);
+        }
 
         public override string ToString()
         {

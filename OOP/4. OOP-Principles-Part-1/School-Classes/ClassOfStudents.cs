@@ -91,14 +91,14 @@
             }
         }
 
-        //public void RemoveTeacher(Teacher teacher)
-        //{
-        //    if (!this.listOfTeachers.Contains(teacher))
-        //    {
-        //        throw new ArgumentException("No such teacher in the set.");
-        //    }
-        //    this.listOfTeachers.Remove(teacher);
-        //}
+        public void RemoveTeacher(Teacher teacher)
+        {
+            if (!this.listOfTeachers.Contains(teacher))
+            {
+                throw new ArgumentException("No such teacher in the set.");
+            }
+            this.listOfTeachers.Remove(teacher);
+        }
 
         public void AddStudent(Student student)
         {
