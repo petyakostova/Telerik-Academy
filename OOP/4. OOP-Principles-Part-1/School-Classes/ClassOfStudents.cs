@@ -3,22 +3,26 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using System.Text;
 
     public class ClassOfStudents : ICommentable
     {
-        private List<Teacher> allTeachers;  // set of teachers
+        private List<Teacher> listOfTeachers;  // set of teachers
         private string textIdentifier;
         private string comment; // optional
+        private List<Student> listOfStudents;
 
-        public ClassOfStudents(IEnumerable<Teacher> teachers, string textId) // IEnumerable => using System.Collections.Generic;
+        public ClassOfStudents(string textId)
         {
-            this.allTeachers = teachers.ToList(); // ToList() => using System.Linq;
+            this.TextIdentifier = textId;
+            this.listOfTeachers = new List<Teacher>();
+            this.listOfStudents = new List<Student>(); 
         }
 
-        public ClassOfStudents(IEnumerable<Teacher> teachers, string textId, string comment) // IEnumerable => using System.Collections.Generic;
-            : this(teachers, textId)
+        public ClassOfStudents(string textId, string comment)
+            : this(textId)
         {
-            this.Comment = comment;
+            this.Comment = comment;           
         }
 
         public string TextIdentifier
@@ -29,6 +33,11 @@
             }
             set
             {
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new ArgumentNullException("Text Identifier cannot be null or empty");
+                }
+
                 this.textIdentifier = value;
             }
         }
@@ -51,34 +60,76 @@
             }
         }
 
-        public List<Teacher> Teachers
+        public List<Teacher> ListOfTeachers
         {
             get
             {
                 // don't want someone to clear the marks so instead of 
-                // return this.allTeachers; =>
-                return new List<Teacher>(this.allTeachers);
+                // return this.listOfTeachers; =>
+                return new List<Teacher>(this.listOfTeachers);
+            }
+        }
+
+        public List<Student> ListOfStudents
+        {
+            get
+            {
+                return new List<Student>(this.listOfStudents);
             }
         }
 
         public void AddTeacher(Teacher teacher)
         {
-            this.allTeachers.Add(teacher);
+            this.listOfTeachers.Add(teacher);
         }
 
-        public void RemoveTeacher(Teacher teacher)
+        public void AddTeacher(params Teacher[] teachers)
         {
-            if (!this.allTeachers.Contains(teacher))
+            for (int i = 0; i < teachers.Length; i++)
             {
-                throw new ArgumentException("No such teacher in the set.");
+                this.listOfTeachers.Add(teachers[i]);
             }
-            this.allTeachers.Remove(teacher);
+        }
+
+        //public void RemoveTeacher(Teacher teacher)
+        //{
+        //    if (!this.listOfTeachers.Contains(teacher))
+        //    {
+        //        throw new ArgumentException("No such teacher in the set.");
+        //    }
+        //    this.listOfTeachers.Remove(teacher);
+        //}
+
+        public void AddStudent(Student student)
+        {
+            this.listOfStudents.Add(student);
+        }
+
+        public void AddStudent(params Student[] students)
+        {
+            for (int i = 0; i < students.Length; i++)
+            {
+                this.listOfStudents.Add(students[i]);
+            }
         }
 
         public override string ToString()
         {
-            return String.Format("Set of teachers: {0}, Text identifier: {1}, Comment: {2}",
-                this.Teachers, this.TextIdentifier, this.Comment);
+            StringBuilder result = new StringBuilder();
+
+            result.AppendLine(string.Format("Text identifier: {0}; Comment: {1}", this.TextIdentifier, this.Comment));
+
+            foreach (Teacher teacher in this.ListOfTeachers)
+            {
+                result.Append(" *" + teacher.ToString());
+            }
+
+            foreach (Student st in this.ListOfStudents)
+            {
+                result.AppendLine("          " + st.ToString());
+            }
+
+            return result.ToString();
         }
 
     }

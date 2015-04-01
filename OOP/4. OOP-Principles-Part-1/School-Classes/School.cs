@@ -2,15 +2,17 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.Linq;
+    using System.Text;
 
     public class School
     {
         private List<ClassOfStudents> allClasses;   // classes of students
+        private string name;
 
-        public School(IEnumerable<ClassOfStudents> classes) // IEnumerable => using System.Collections.Generic;
+        public School(string name)
         {
-            this.allClasses = classes.ToList(); // ToList() => using System.Linq;
+            this.Name = name;
+            this.allClasses = new List<ClassOfStudents>();
         }
 
         public List<ClassOfStudents> Classes
@@ -23,23 +25,44 @@
             }
         }
 
+        public string Name
+        {
+            get
+            {
+                return this.name;
+            }
+            set
+            {
+                this.name = value;
+            }
+        }
+
         public void AddClass(ClassOfStudents classStudents)
         {
             this.allClasses.Add(classStudents);
         }
 
-        public void RemoveClass(ClassOfStudents classStudents)
-        {
-            if (!this.allClasses.Contains(classStudents))
-            {
-                throw new ArgumentException("No such class of students in school.");
-            }
-            this.allClasses.Remove(classStudents);
-        }
+        //public void RemoveClass(ClassOfStudents classStudents)
+        //{
+        //    if (!this.allClasses.Contains(classStudents))
+        //    {
+        //        throw new ArgumentException("No such class of students in school.");
+        //    }
+        //    this.allClasses.Remove(classStudents);
+        //}
 
         public override string ToString()
         {
-            return string.Join(", ", this.Classes);
+            StringBuilder result = new StringBuilder();
+
+            result.AppendLine(string.Format("School: {0}{1}", this.Name, Environment.NewLine));            
+
+            foreach (ClassOfStudents currentClass in this.Classes)
+            {
+                result.AppendLine(currentClass.ToString());
+            }
+
+            return result.ToString();
         }
 
     }

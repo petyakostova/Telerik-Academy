@@ -2,22 +2,24 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.Linq;
+    using System.Text;
 
     public class Teacher : Person, ICommentable
     {
         private List<Discipline> allDisciplines;    // set of disciplines
+        private string comment; // optional
 
-        public Teacher(string name, IEnumerable<Discipline> disciplines) // IEnumerable => using System.Collections.Generic;
+        public Teacher(string name)
             : base(name)
         {
-            this.allDisciplines = disciplines.ToList(); // ToList() => using System.Linq;
+            this.allDisciplines = new List<Discipline>();
         }
 
-        public Teacher(string name, IEnumerable<Discipline> disciplines, string comment) // IEnumerable => using System.Collections.Generic;
-            : this(name, disciplines)
+        public Teacher(string name, string comment)
+            : base(name)
         {
             this.Comment = comment;
+            this.allDisciplines = new List<Discipline>();
         }
 
         public List<Discipline> Disciplines
@@ -26,7 +28,25 @@
             {
                 // don't want someone to clear the marks so instead of 
                 // return this.allDisciplines; =>
-                return new List<Discipline>(this.allDisciplines);
+                return new List<Discipline>(this.allDisciplines);                
+            }
+        }
+
+        public string Comment
+        {
+            get
+            {
+                // if (this.comment == null)
+                if (String.IsNullOrWhiteSpace(this.comment))
+                {
+                    return "No comment yet.";
+                }
+
+                return this.comment;
+            }
+            set
+            {
+                this.comment = value;
             }
         }
 
@@ -35,18 +55,35 @@
             this.allDisciplines.Add(discipline);
         }
 
-        public void RemoveDiscipline(Discipline discipline)
+        public void AddDiscipline(params Discipline[] disciplines)
         {
-            if (!this.allDisciplines.Contains(discipline))
+            for (int i = 0; i < disciplines.Length; i++)
             {
-                throw new ArgumentException("No such discipline in the set.");
+                this.allDisciplines.Add(disciplines[i]);
             }
-            this.allDisciplines.Remove(discipline);
         }
+
+        //public void RemoveDiscipline(Discipline discipline)
+        //{
+        //    if (!this.allDisciplines.Contains(discipline))
+        //    {
+        //        throw new ArgumentException("No such discipline in the set.");
+        //    }
+        //    this.allDisciplines.Remove(discipline);
+        //}
 
         public override string ToString()
         {
-            return this.Name + string.Join(", ", this.Disciplines);
+            StringBuilder result = new StringBuilder();
+
+            result.AppendLine(string.Format("Teacher: {0}; Comment: {1}", this.Name, this.Comment));
+
+            foreach (Discipline discipline in allDisciplines)
+            {
+                result.Append("    -> " + discipline.ToString());
+            }
+                        
+            return result.ToString();
         }
 
     }

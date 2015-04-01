@@ -7,16 +7,10 @@
         private string name;
         private string comment; // optional
 
-        public Person(string name)
+        protected Person(string name)
         {
             this.Name = name;
         }
-
-        //public Person(string name, string comment)
-        //    : this(name)
-        //{
-        //    this.Comment = comment;
-        //}
 
         public string Name
         {
@@ -43,23 +37,7 @@
             }
         }
 
-        public string Comment
-        {
-            get
-            {
-                // if (this.comment == null)
-                if (String.IsNullOrWhiteSpace(this.comment))   
-                {
-                    return "No comment yet.";
-                }
-
-                return this.comment;
-            }
-            set
-            {
-                this.comment = value;
-            }
-        }
+        public string Comment { get; set; }
 
     }
 }
