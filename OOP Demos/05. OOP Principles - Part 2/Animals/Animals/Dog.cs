@@ -4,7 +4,8 @@
 
     public class Dog : Animal, IAnimal
     {
-        public Dog(string name)
+        public Dog(string name, int age) 
+            : base(age)
         {
             this.Name = name;
         }
@@ -19,6 +20,11 @@
         public string CatchBone()
         {
             return string.Format(base.Speak() + " I catch the bone!", this.Name);
+        }
+
+        public override string ToString()
+        {
+            return "I'm a dog.";
         }
     }
 }

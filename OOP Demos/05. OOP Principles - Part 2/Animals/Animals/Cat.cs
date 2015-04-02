@@ -4,7 +4,8 @@
 
     public class Cat : Animal, IAnimal
     {
-        public Cat(string name)
+        public Cat(string name, int age)
+            : base(age)
         {
             this.Name = name;                
         }

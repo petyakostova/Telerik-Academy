@@ -22,22 +22,22 @@
         public static void Main()
         {
             // polymorphism - we use given data type through other data type (interface or parent class)
-            IAnimal cat = new Cat("Dzhoni");
-            IAnimal dog = new Dog("Sharo");
+            IAnimal cat = new Cat("Dzhoni", 7);
+            IAnimal dog = new Dog("Sharo", 5);
 
             Console.WriteLine(cat.Speak());
             Console.WriteLine(dog.Speak());
 
             // no polymorphism
-            var secondCat = new Cat("Dzhinks");
-            Cat thirdCat = new Cat("Fluffy");
+            var secondCat = new Cat("Dzhinks", 3);
+            Cat thirdCat = new Cat("Fluffy", 1);
 
             Console.WriteLine(secondCat.Purr());
             Console.WriteLine(thirdCat.Purr());
             // cat has no Purr() method, because it's IAnimal
 
-            var secondDog = new Dog("Doggy");
-            Dog thirdDog = new Dog("Spike");
+            var secondDog = new Dog("Doggy", 3);
+            Dog thirdDog = new Dog("Spike", 4);
 
             Console.WriteLine(secondDog.CatchBone());
             Console.WriteLine(thirdDog.CatchBone());
@@ -97,14 +97,26 @@
             string animalType = "Cat";
             switch (animalType)
             {
-                case "Cat": { animal = new Cat("Puh"); Console.WriteLine(animal.Name); break; }
-                case "Dog": { animal = new Dog("Snoop"); Console.WriteLine(animal.Name); break; }
+                case "Cat": { animal = new Cat("Puh", 1); Console.WriteLine(animal.Name); break; }
+                case "Dog": { animal = new Dog("Snoop", 1); Console.WriteLine(animal.Name); break; }
                 default:
                     break;
             }
 
-             
-            
-        }
+            Console.WriteLine();
+
+            // polymorphism
+            Animal fourthCat = new Cat("Sam", 5);
+            Animal fourthDog = new Dog("Chestar", 4);
+
+            Console.WriteLine(fourthCat.ToString());//Animals.Animals.Cat
+            Console.WriteLine(fourthDog.ToString());//I'm a dog.
+
+            Console.WriteLine(fourthCat.Age);
+            Console.WriteLine(fourthDog.Age);
+
+            Kitten kitten = new Kitten("Baby", 1);
+            Console.WriteLine(kitten.Speak());
+        } 
     }
 }
