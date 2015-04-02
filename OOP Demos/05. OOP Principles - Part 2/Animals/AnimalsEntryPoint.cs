@@ -1,6 +1,7 @@
 ﻿namespace Animals
 {
     using Animals;
+    using Exceptions;
     using System;
     using System.Collections.Generic;
 
@@ -117,6 +118,19 @@
 
             Kitten kitten = new Kitten("Baby", 1);
             Console.WriteLine(kitten.Speak());
+
+            Console.WriteLine();
+
+            try
+            {
+                Animal oldCat = new Cat("Oldi", 150);
+            }
+            catch (InvalidAnimalAgeException ex)    // defined exception class in folder Exceptions
+            {
+                Console.WriteLine(ex.MinAge);
+                Console.WriteLine(ex.MaxAge); 
+            }
+ 
         } 
     }
 }

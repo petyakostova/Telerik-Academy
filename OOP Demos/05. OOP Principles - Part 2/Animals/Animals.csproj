@@ -47,6 +47,7 @@
     <Compile Include="Animals\Dog.cs" />
     <Compile Include="Animals\IAnimal.cs" />
     <Compile Include="Animals\Kitten.cs" />
+    <Compile Include="Exceptions\InvalidAnimalAgeException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

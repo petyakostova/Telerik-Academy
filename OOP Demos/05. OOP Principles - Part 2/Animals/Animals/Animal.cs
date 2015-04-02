@@ -1,6 +1,7 @@
 ﻿namespace Animals.Animals
 {
     using System;
+    using Exceptions;
 
     public abstract class Animal : IAnimal
     {
@@ -30,11 +31,16 @@
 
                 if (value > 100)
                 {
-                    throw new ArgumentOutOfRangeException();
+                    throw new InvalidAnimalAgeException("Invalid age", 0, 100);
                 }
 
                 this.age = value;
             }
+        }
+
+        public void IncreaseAge(int age)
+        {
+            this.Age += age;
         }
                 
         // virtual method => can be changed from the inheritors
