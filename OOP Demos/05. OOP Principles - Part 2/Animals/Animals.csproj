@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnimalsEntryPoint.cs" />
+    <Compile Include="Animals\Animal.cs" />
     <Compile Include="Animals\Cat.cs" />
     <Compile Include="Animals\Dog.cs" />
     <Compile Include="Animals\IAnimal.cs" />

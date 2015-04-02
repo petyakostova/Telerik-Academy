@@ -2,23 +2,24 @@
 {
     using System;
 
-    public class Cat : IAnimal
+    public class Cat : Animal, IAnimal
     {
         public Cat(string name)
         {
             this.Name = name;                
         }
 
-        public string Name { get; private set; }
+        // string Name { get; private set; }   => removed because of Animal.cs
 
-        public string Speak()
+        public override string Speak()
         {
-            return string.Format("{0} says Myau!", this.Name);
+            // base.Speak() invokes the method Speak() from the base class
+            return string.Format(base.Speak() + " Myau!", this.Name);
         }
 
         public string Purr()
         {
-            return string.Format("{0} says Mrrr!", this.Name);
+            return string.Format(base.Speak() + " Mrrr!", this.Name);
         }
     }
 }
