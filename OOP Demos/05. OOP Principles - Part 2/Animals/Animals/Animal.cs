@@ -36,9 +36,7 @@
                 this.age = value;
             }
         }
-
-        
-
+                
         // virtual method => can be changed from the inheritors
         public virtual string Speak()
         {
