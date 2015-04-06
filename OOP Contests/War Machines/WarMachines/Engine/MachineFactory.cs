@@ -14,6 +14,7 @@
         public ITank ManufactureTank(string name, double attackPoints, double defensePoints)
         {
             // Implement this method
+            return new Tank(name, attackPoints, defensePoints);
         }
 
         public IFighter ManufactureFighter(string name, double attackPoints, double defensePoints, bool stealthMode)
