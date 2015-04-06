@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\Validator.cs" />
     <Compile Include="Engine\WarMachineEngine.cs" />
     <Compile Include="Engine\Command.cs" />
     <Compile Include="Interfaces\ICommand.cs" />
@@ -51,6 +52,7 @@
     <Compile Include="Interfaces\ITank.cs" />
     <Compile Include="Interfaces\IMachineFactory.cs" />
     <Compile Include="Engine\MachineFactory.cs" />
+    <Compile Include="Machines\Machine.cs" />
     <Compile Include="Machines\Pilot.cs" />
     <Compile Include="WarMachinesProgram.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

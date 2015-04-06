@@ -13,7 +13,7 @@
 
         public ITank ManufactureTank(string name, double attackPoints, double defensePoints)
         {
-            // TODO: Implement this method
+            // Implement this method
         }
 
         public IFighter ManufactureFighter(string name, double attackPoints, double defensePoints, bool stealthMode)

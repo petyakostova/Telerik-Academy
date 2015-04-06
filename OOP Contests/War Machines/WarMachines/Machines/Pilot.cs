@@ -5,6 +5,7 @@
     using System.Linq;
     using System.Text;
 
+    using WarMachines.Common;
     using WarMachines.Interfaces;
 
     public class Pilot : IPilot
@@ -31,11 +32,7 @@
             }
             protected set
             {
-                if (string.IsNullOrEmpty(value))
-                {
-                    throw new ArgumentNullException("Name", "Name cannot be null");
-                    // can be NullReferenceException too
-                }
+                Validator.CheckIfStringIsNullOrEmpty(value, "Pilot name cannot be null!");
 
                 this.name = value;
             }
@@ -44,10 +41,7 @@
         public void AddMachine(IMachine machine)
         {
             // check object is it null
-            if (machine == null)       // protective programming
-            {
-                throw new NullReferenceException("Null machine cannot be added to pilot");
-            }
+            Validator.CheckIfNull(machine, "Null machine cannot be added to pilot!"); 
 
             this.machines.Add(machine);
         }
