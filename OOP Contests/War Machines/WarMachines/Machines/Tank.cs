@@ -27,7 +27,7 @@
             if (this.DefenseMode)
             {
                 this.AttackPoints -= AttackPointsChange;
-                this.DefenseMode += DefensePointsChange;
+                this.DefensePoints += DefensePointsChange;
             }
             else
             {

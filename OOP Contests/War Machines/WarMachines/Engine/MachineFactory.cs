@@ -20,6 +20,7 @@
         public IFighter ManufactureFighter(string name, double attackPoints, double defensePoints, bool stealthMode)
         {
             // TODO: Implement this method
+            return new Fighter(name, attackPoints, defensePoints, stealthMode);
         }
     }
 }
