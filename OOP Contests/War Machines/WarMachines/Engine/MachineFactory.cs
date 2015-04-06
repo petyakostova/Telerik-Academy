@@ -7,7 +7,8 @@
     {
         public IPilot HirePilot(string name)
         {
-            // TODO: Implement this method
+            // Implement this method
+            return new Pilot(name);
         }
 
         public ITank ManufactureTank(string name, double attackPoints, double defensePoints)

@@ -51,12 +51,11 @@
     <Compile Include="Interfaces\ITank.cs" />
     <Compile Include="Interfaces\IMachineFactory.cs" />
     <Compile Include="Engine\MachineFactory.cs" />
+    <Compile Include="Machines\Pilot.cs" />
     <Compile Include="WarMachinesProgram.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Machines\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
