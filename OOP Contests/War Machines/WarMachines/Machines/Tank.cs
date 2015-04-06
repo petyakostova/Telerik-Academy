@@ -1,5 +1,7 @@
 ﻿namespace WarMachines.Machines
 {
+    using System.Text;
+
     using WarMachines.Interfaces;
 
     // IMachine is implemented already, so Ctrl + . to ITank =>
@@ -34,6 +36,22 @@
                 this.AttackPoints += AttackPointsChange;
                 this.DefensePoints -= DefensePointsChange;
             }
+        }
+
+        public override string ToString()
+        {
+            var baseString = base.ToString();
+
+            var result = new StringBuilder();
+
+            result.Append(baseString);
+            result.AppendLine(string.Format(
+                " *Defense: {0}", 
+                    this.DefenseMode 
+                    ? "ON" 
+                    : "OFF"));
+
+            return result.ToString();
         }
     }
 }

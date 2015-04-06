@@ -1,5 +1,7 @@
 ﻿namespace WarMachines.Machines
 {
+    using System.Text;
+
     using WarMachines.Interfaces;
 
     public class Fighter : Machine, IFighter, IMachine
@@ -17,6 +19,22 @@
         public void ToggleStealthMode()
         {
             this.StealthMode = !this.StealthMode;
+        }
+
+        public override string ToString()
+        {
+            var baseString = base.ToString();
+
+            var result = new StringBuilder();
+
+            result.Append(baseString);
+            result.AppendLine(string.Format(
+                " *Stealth: {0}", 
+                this.StealthMode 
+                ? "ON" 
+                : "OFF"));
+
+            return result.ToString();
         }
     }
 }
