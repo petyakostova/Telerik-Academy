@@ -240,13 +240,18 @@
                 return string.Format(InvalidAttackTarget, attackingMachineName, defendingMachineName);
             }
 
-            attackingMachine.Targets.Add(defendingMachineName);
+            // this line is wrong
+            //attackingMachine.Targets.Add(defendingMachineName);
+
+            // must be:
+            attackingMachine.Attack(defendingMachineName);
+
 
             var attackPoints = attackingMachine.AttackPoints;
             var defensePoints = defendingMachine.DefensePoints;
 
             var damage = attackPoints - defensePoints;
-
+             
             if (damage > 0)
             {
                 var newHeathPoints = defendingMachine.HealthPoints - damage;
