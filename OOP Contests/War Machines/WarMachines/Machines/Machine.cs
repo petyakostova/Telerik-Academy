@@ -2,6 +2,7 @@
 {
     using System.Collections;
     using System.Collections.Generic;
+    using System.Text;
 
     using WarMachines.Common;
     using WarMachines.Interfaces;
@@ -19,7 +20,7 @@
             this.AttackPoints = attackPoints;
             this.DefensePoints = defensePoints;
             this.HealthPoints = healthPoints;
-            this.targets = new List<string>(); 
+            this.targets = new List<string>();
         }
 
         public string Name
@@ -73,6 +74,30 @@
             Validator.CheckIfStringIsNullOrEmpty(target);
 
             this.targets.Add(target);
+        }
+
+        public override string ToString()
+        {
+            var result = new StringBuilder();
+
+            result.AppendLine(string.Format("- {0}", this.Name));
+
+            // GetType().Name => get the type and give the name (like string)
+            result.AppendLine(string.Format(" *Type: {0}", this.GetType().Name));
+
+            result.AppendLine(string.Format(" *Health: {0}", this.HealthPoints));
+            result.AppendLine(string.Format(" *Attack: {0}", this.AttackPoints));
+            result.AppendLine(string.Format(" *Defense: {0}", this.DefensePoints));
+
+            // in this case it's better to use targets instead of Targets, so don't foreach once more
+            var targetsAsString = 
+                this.targets.Count > 0
+                    ? string.Join(", ", this.targets)
+                    : "None";
+
+            result.AppendLine(string.Format(" *Targets: {0}", targetsAsString));
+
+            return result.ToString();
         }
     }
 }
