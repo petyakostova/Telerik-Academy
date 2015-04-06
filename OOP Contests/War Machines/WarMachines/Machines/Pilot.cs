@@ -52,6 +52,7 @@
                 this.machines
                     .OrderBy(m => m.HealthPoints)   //using System.Linq;
                     .ThenBy(m => m.Name);
+            // OrderBy and ThenBy return new collection and must be declared new variable to get the result
 
             var noMachineMaybe =
                 this.machines.Count > 0
@@ -67,7 +68,7 @@
 
             result.AppendLine(string.Format("{0} - {1} {2}", this.Name, noMachineMaybe, pluralMachinesMaybe));
 
-            foreach (var machine in sortedMachines)
+            foreach (var machine in sortedMachines) // very important is to be sortedMachines, not machines
             {
                 result.AppendLine(machines.ToString());
             }
