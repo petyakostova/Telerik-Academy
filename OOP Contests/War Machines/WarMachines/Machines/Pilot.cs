@@ -73,7 +73,7 @@
                 result.AppendLine(machine.ToString());  // very important is to be machine, not machines
             }
 
-            return result.ToString();
+            return result.ToString().Trim();
         }
     }
 }
