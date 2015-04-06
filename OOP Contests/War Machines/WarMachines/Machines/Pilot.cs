@@ -70,7 +70,7 @@
 
             foreach (var machine in sortedMachines) // very important is to be sortedMachines, not machines
             {
-                result.AppendLine(machines.ToString());
+                result.AppendLine(machine.ToString());  // very important is to be machine, not machines
             }
 
             return result.ToString();

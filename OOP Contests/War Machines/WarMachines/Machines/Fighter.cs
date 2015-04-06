@@ -28,7 +28,7 @@
             var result = new StringBuilder();
 
             result.Append(baseString);
-            result.AppendLine(string.Format(
+            result.Append(string.Format(
                 " *Stealth: {0}", 
                 this.StealthMode 
                 ? "ON" 

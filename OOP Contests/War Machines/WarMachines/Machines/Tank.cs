@@ -45,7 +45,7 @@
             var result = new StringBuilder();
 
             result.Append(baseString);
-            result.AppendLine(string.Format(
+            result.Append(string.Format(
                 " *Defense: {0}", 
                     this.DefenseMode 
                     ? "ON" 
