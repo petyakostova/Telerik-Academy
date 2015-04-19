@@ -2,6 +2,16 @@
     background-color: #ADD8E6;
 }
 
+dl dt {
+    font-style: italic;
+}
+
+body img {
+    width: 160px;
+    height: 160px;
+    border: 1px solid black;
+}
+
 .infoField {
     font-weight: 900;
 }
