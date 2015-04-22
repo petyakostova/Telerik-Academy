@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Calculator</title>    
+    <style>        
+        .double {
+            width: 80px;
+        }
+
+        body form table thead input {
+            text-align: right;
+        }
+
+        body form table tbody {
+            text-align: center;
+        }
+        
+        body form table {
+            border: 1px solid skyblue;
+            background-color: aliceblue;
+        }
+
+            body form table td {
+                border: 1px solid skyblue;
+                background-color: aliceblue;
+            }
+
+            body form table button {
+                width: 30px;
+                height: 30px;
+                border: none;
+                background-color: aliceblue;
+            }
+    </style>
+    </head>
+<body>
+    <form>
+        <table>
+            <thead>
+                <tr>
+                    <td colspan="4">
+                        <input type="text" placeholder="123" id="result" />
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><button>1</button></td>
+                    <td><button>2</button></td>
+                    <td><button>3</button></td>
+                    <td><button>+</button></td>
+                </tr>
+                <tr>
+                    <td><button>4</button></td>
+                    <td><button>5</button></td>
+                    <td><button>6</button></td>
+                    <td><button>-</button></td>
+                </tr>
+                <tr>
+                    <td><button>7</button></td>
+                    <td><button>8</button></td>
+                    <td><button>9</button></td>
+                    <td><button>*</button></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"><button class="double">0</button></td>
+                    <td><button>.</button></td>
+                    <td><button>/</button></td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</body>
+</html>
