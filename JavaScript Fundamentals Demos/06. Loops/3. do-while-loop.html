@@ -28,7 +28,10 @@
 
 			do {
 				fact *= number;
-				factStr += number + '*'
+				factStr += number;
+				if (number != 1) {
+					factStr += '*';
+				}
 				number--;
 			} while (number);
 
