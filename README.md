@@ -1,4 +1,4 @@
-## Telerik Software Academy 2015/2016
+## Telerik Software Academy
 
 <p align="center"><a href="http://academy.telerik.com/"><img src="https://raw.githubusercontent.com/fast4y/TelerikAcademy/master/ta.png" /></a></p>
 
@@ -11,7 +11,7 @@ Course assignments - homeworks, presentations, demos, projects and teamworks.
 * [High Quality Code]()
 * [Data Structures and Algorithms]()
 
-### Front-End
+### Front-end
 1. [HTML]()
 * [CSS]()
 * [JavaScript - Fundamentals]()
@@ -19,8 +19,3 @@ Course assignments - homeworks, presentations, demos, projects and teamworks.
 * [JavaScript - UI and DOM]()
 * [JavaScript - Applications]()
 * [JavaScript - AngularJS]()
-
-### Back-End
-1. [Databases]()
-* [Web Services and Cloud]()
-* [NodeJS Applications]()
