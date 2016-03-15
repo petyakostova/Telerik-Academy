@@ -18,4 +18,3 @@ Course assignments - homeworks, presentations, demos, projects and teamworks.
 * [JavaScript - OOP]()
 * [JavaScript - UI and DOM]()
 * [JavaScript - Applications]()
-* [JavaScript - AngularJS]()
