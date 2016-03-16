@@ -18,7 +18,7 @@ class PrintLongSequence
             {
                 Console.Write(i * (-1) + "  ");
             }
-            if (i % 14 == 0)                        //Added for more perspicuous printing
+            if (i % 14 == 0)                    //Added for more perspicuous printing
             {
                 Console.WriteLine();
             }

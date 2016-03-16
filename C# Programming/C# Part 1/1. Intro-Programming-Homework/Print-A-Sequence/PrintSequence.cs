@@ -17,6 +17,6 @@ class PrintSequence
             {
                 Console.Write(i * (-1) + "  ");
             }
-        }
+        }        
     }
 }

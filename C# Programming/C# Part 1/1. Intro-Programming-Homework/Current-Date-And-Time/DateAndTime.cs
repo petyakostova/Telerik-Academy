@@ -7,6 +7,6 @@ class DateAndTime
 {
     static void Main()
     {
-        Console.WriteLine(DateTime.Now);            // using DateTime
+        Console.WriteLine(DateTime.Now);          
     }
 }

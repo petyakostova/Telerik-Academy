@@ -7,6 +7,6 @@ class PrintNumbers
 {
     static void Main()
     {
-        Console.WriteLine("{0}\r\n{1}\r\n{2}", 1, 101, 1001);       //  \r\n insert new line
+        Console.WriteLine("{0}\r\n{1}\r\n{2}", 1, 101, 1001);  // \r\n insert new line
     }
 }
