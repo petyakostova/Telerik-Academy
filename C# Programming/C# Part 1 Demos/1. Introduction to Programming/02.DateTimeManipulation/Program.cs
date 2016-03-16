@@ -2,7 +2,7 @@
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
         DateTime now = DateTime.Now;
         DateTime yesterday = new DateTime(2013, 5, 10);
