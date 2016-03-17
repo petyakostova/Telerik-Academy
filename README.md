@@ -4,14 +4,14 @@
 
 Course assignments - homeworks, presentations, demos, projects and teamworks.
 
-### CSharp Programming
-1. [C# - Part I](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23%20Programming/C%23%20Part%201)
-* [C# - Part II]()
-* [OOP]()
+### [CSharp Programming] ()
+1. [CSharp - Part I]()
+* [CSharp - Part II]()
+* [Object-oriented programming]()
 * [High Quality Code]()
 * [Data Structures and Algorithms]()
 
-### Front-end
+### [Front-end] (Front-end)
 1. [HTML]()
 * [CSS]()
 * [JavaScript - Fundamentals]()
