@@ -29,6 +29,7 @@ class ComparingFloats
         double b = double.Parse(Console.ReadLine());
         double eps = 0.000001;
         double difference = Math.Abs(a - b);
+        
         // first way
         if (difference < eps)
         {
@@ -38,6 +39,9 @@ class ComparingFloats
         {
             Console.WriteLine("false");
         }
-        // other way bool difference = difference < eps;
+
+        //// other way 
+        //bool equal = difference < eps;
+        //Console.WriteLine(equal);
     }
 }

@@ -28,7 +28,7 @@ class BankAccountData
         Console.WriteLine("Your bank is {0}", bankName);
 
         string iBAN = "BGN07FFUU87005555735555";
-        Console.WriteLine("IBAN / {0}", iBAN);
+        Console.WriteLine("IBAN: {0}", iBAN);
 
         ulong creditCard1 = 5370961434345976;
         Console.WriteLine("The number of your first credit card is: {0}", creditCard1);

@@ -30,30 +30,37 @@ class RecordsOfEmployees
         Console.WriteLine("First name: {0}\nLast name: {1}\nAge: {2}", firstName, lastName, age);
         if (gender == 'm')
         {
-            Console.WriteLine("Your gender is male");
+            Console.WriteLine("Your gender is male.");
         }
         else if (gender == 'f')
         {
-            Console.WriteLine("Your gender is female");
+            Console.WriteLine("Your gender is female.");
         }
         else
         {
-            Console.WriteLine("Wrong symbol");
+            Console.WriteLine("Wrong symbol for gender.");
         }
-        
-        Console.WriteLine("ID number: {0}", iDNumber);
-        
+
+        if (iDNumber < 0)
+        {
+            Console.WriteLine("Wrong ID number.");
+        }
+        else
+        {
+            Console.WriteLine("ID number: {0}", iDNumber);
+        }
+
         if (uniqueN < 27560000)
         {
-            Console.WriteLine("Wrong unique employee number ");
+            Console.WriteLine("Wrong unique employee number.");
         }
         else if (uniqueN > 27569999)
         {
-            Console.WriteLine("Wrong unique employee number");
+            Console.WriteLine("Wrong unique employee number.");
         }
         else
         {
-            Console.WriteLine("ID number: {0}", uniqueN);
+            Console.WriteLine("Unique employee number: {0}", uniqueN);
         }
     }
 }

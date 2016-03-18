@@ -12,13 +12,13 @@ class AssignNullValues
         double? doubleVar = null;
         Console.WriteLine("The values of int is: {0}\nThe values of double is: {1}", intVar, doubleVar);
         intVar += 5;
-        Console.WriteLine("Add some number = 5: {0}", intVar);
+        Console.WriteLine("After adding 5 => {0}", intVar);
         doubleVar += null;
-        Console.WriteLine("Add the null literal: {0}", doubleVar);
+        Console.WriteLine("After adding the null literal => {0}", doubleVar);
 
-        // other
-        Console.WriteLine("If we use GetValueOrDefault() the result is:");
-        Console.WriteLine(intVar.GetValueOrDefault() + 6);
-        Console.WriteLine(doubleVar.GetValueOrDefault() + 7);
+        //// how to make it work
+        //Console.WriteLine("\nIf we use GetValueOrDefault() the result is:");
+        //Console.WriteLine(intVar.GetValueOrDefault() + 6);
+        //Console.WriteLine(doubleVar.GetValueOrDefault() + 7);
     }
 }

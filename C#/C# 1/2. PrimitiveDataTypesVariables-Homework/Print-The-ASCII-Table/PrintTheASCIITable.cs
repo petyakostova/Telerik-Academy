@@ -6,15 +6,15 @@
  * Note: You may need to use for-loops (learn in Internet how). */
 
 using System;
-using System.Text;
 
 class PrintTheASCIITable
 {
     static void Main()
     {
-        Console.BufferHeight = 256;
-        Console.OutputEncoding = Encoding.Unicode;
-        for (int i = 0; i <= 255; i++)
+        Console.BufferHeight = 258;
+        Console.OutputEncoding = System.Text.Encoding.Unicode;
+        
+        for (int i = 0; i < 256; i++)
         {
             Console.WriteLine("{0} => {1}", i, (char)i);    // Convert.ToChar(i);
         }

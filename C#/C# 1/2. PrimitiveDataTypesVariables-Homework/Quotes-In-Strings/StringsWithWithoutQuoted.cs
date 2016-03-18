@@ -10,6 +10,6 @@ class StringsWithWithoutQuoted
     {
         string withQuoted = @"The ""use"" of quotations causes difficulties.";
         string withoutQuoted = "The \"use\" of quotations causes difficulties.";
-        Console.WriteLine("With Quoted strings: {0}\nWhithout Quoted strings: {1}", withQuoted, withoutQuoted);
+        Console.WriteLine("With quoted strings: {0}\nWithout quoted strings: {1}", withQuoted, withoutQuoted);
     }
 }
