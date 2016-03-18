@@ -10,14 +10,13 @@ class NullableTypes
 			new string('-', 40));
 
 		int? someInteger = null;
-        //int someInteger = null;
+        //int someInteger = null;   // this is wrong
         Console.WriteLine(
 			"This is the integer with Null value -> " + someInteger);
         someInteger = 5;
         Console.WriteLine(
 			"This is the integer with value 5 -> " + someInteger);
-
-        
+                
 		Console.WriteLine(
 			new string('-', 40) + 
 			"\nExample with double\n" + 
@@ -33,7 +32,7 @@ class NullableTypes
 			"This is the double with value 2.5 -> " + someDouble);
 
 		int? value = null;
-		Console.WriteLine(value.GetValueOrDefault());
-		// Console.WriteLine(value.Value); // This will cause an exception
+		Console.WriteLine(value.GetValueOrDefault());   // 0
+		//Console.WriteLine(value.Value); // This will cause an exception
 	}
 }
