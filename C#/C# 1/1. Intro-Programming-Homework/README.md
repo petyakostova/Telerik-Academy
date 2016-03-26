@@ -51,11 +51,11 @@ Create, compile and run a **Hello World** application - it should print the stri
 
 ### Problem 5.	Print Name
 
-## Description
+##### Description
 - Create a C# application that print your name on the console.
 - Ensure you have named the application well (e.g. “PrintMyName”).
 
-## Submission
+##### Submission
 - You do not have to submit anything for this problem
 
 ### Problem 6.	Print Numbers
