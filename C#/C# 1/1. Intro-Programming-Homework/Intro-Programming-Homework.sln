@@ -13,8 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. Square-Root", "Square-R
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. Print-A-Sequence", "Print-A-Sequence\09. Print-A-Sequence.csproj", "{5551D682-7D88-41F8-AADD-DBC08A9F7E17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. Reformat-CSharp-Code", "Reformat-CSharp-Code\10. Reformat-CSharp-Code.csproj", "{08712003-B449-4D04-AAE8-D439F6083A22}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14. Current-Date-And-Time", "Current-Date-And-Time\14. Current-Date-And-Time.csproj", "{138D9292-8526-435E-8A68-A3940C0599E0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15. Age-After-10-Years", "Age-After-10-Years\15. Age-After-10-Years.csproj", "{483506BA-CFA4-4D49-996A-551886DC4A75}"
@@ -53,10 +51,6 @@ Global
 		{5551D682-7D88-41F8-AADD-DBC08A9F7E17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5551D682-7D88-41F8-AADD-DBC08A9F7E17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5551D682-7D88-41F8-AADD-DBC08A9F7E17}.Release|Any CPU.Build.0 = Release|Any CPU
-		{08712003-B449-4D04-AAE8-D439F6083A22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{08712003-B449-4D04-AAE8-D439F6083A22}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{08712003-B449-4D04-AAE8-D439F6083A22}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{08712003-B449-4D04-AAE8-D439F6083A22}.Release|Any CPU.Build.0 = Release|Any CPU
 		{138D9292-8526-435E-8A68-A3940C0599E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{138D9292-8526-435E-8A68-A3940C0599E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{138D9292-8526-435E-8A68-A3940C0599E0}.Release|Any CPU.ActiveCfg = Release|Any CPU

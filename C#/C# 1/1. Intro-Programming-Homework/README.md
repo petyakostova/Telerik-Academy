@@ -169,21 +169,103 @@ i++)
 
 ### Problem 11.	Programming Languages
 
+##### Description
+- Perform a research (e.g. in _Google_ or _Wikipedia_) and provide a short list with information about the most popular programming languages. How similar are they to C#? How do they differ from C#?
+- Write in a text file called **programming-languages.txt** at least five languages along with 2-3 sentences about each of them. Use English.
+
+##### Submission
+- You do not have to submit anything for this problem
 
 ### Problem 12.	Development Environments
 
+##### Description
+- Perform a research (e.g. in _Google_ or _Wikipedia_) and provide a short list with popular development environments (**IDE**s) like Visual Studio.
+- Write in a text file called **list-of-IDEs.txt** at least five IDEs along with 2-3 sentences about each of them. Use English.
+
+##### Submission
+- You do not have to submit anything for this problem
 
 ### Problem 13.	C# and .NET Differences
 
+##### Description
+- Describe the difference between **C#** and **.NET Framework** in 2-3 sentences.
+- Write your description in a text file called **csharp-and-dot-net-framework.txt**. Use English.
+
+##### Submission
+- You do not have to submit anything for this problem
 
 ### Problem 14.	Current Date and Time
 
+## Description
+- Create a console application that prints the current date and time. Find out how in Internet.
+
+## Submission
+- You do not have to submit anything for this problem
 
 ### Problem 15.	Age
 
+##### Description
+Write a program that reads your birthday(in the format `MM.DD.YYYY`) from the console and prints on the console how old you are you now and how old will you be after 10 years.
+
+##### Input
+- The input will always consist of a single line - a birthdate.
+
+##### Output
+- You should print two lines with one number on the each line:
+  1. How old are you now, on the first line.
+  2. How old will you be after 10 years, on the second line.
+  
+##### Constraints
+- The date read from the console will always be in a valid DateTime format.
+- All dates will be earlier than 2016.
+- Time limit: **0.1s**
+- Memory limit: **16MB**
+
+##### Sample Tests
+
+| Input    | Output  |
+|----------|---------|
+|03.05.2016|0<br/>10 |
+|05.06.1994|21<br/>31|
+
+##### Submission
+- Submit your code [here](http://bgcoder.com/Contests/Compete/Index/314#4)
 
 ### Problem 16.	Print Long Sequence
 
+##### Description
+Write a program that prints the first 1000 members of the sequence: `2, -3, 4, -5, 6, -7, …`
+  - You might need to learn how to use loops in C# (search in Internet).
+
+##### Input
+- There is no input for this task.
+
+##### Output
+- Output the first 1000 members of the sequence, each on a separate line.
+
+```
+2
+-3
+4
+-5
+6
+...
+```
+
+##### Constraints
+- Time limit: **0.1s**
+- Memory limit: **8MB**
+
+##### Submission
+- Submit your code [here](http://bgcoder.com/Contests/Compete/Index/314#5)
 
 ### Problem 17.	Play with the VS Debugger
+
+##### Description
+- Write a program that prints at the console the numbers from `1 to 1000`, each at a separate line.
+- You might need to learn how to use loops (search in Internet).
+- Set a breakpoint in the line, which prints the next number in the Visual Studio code editor. Run the program through the debugger using the `[F5]` key. When the debugger stops at the breakpoint trace the code execution with `[F10]` key.
+
+##### Submission
+- You do not have to submit anything for this problem
 
