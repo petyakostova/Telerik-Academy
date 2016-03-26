@@ -60,18 +60,112 @@ Create, compile and run a **Hello World** application - it should print the stri
 
 ### Problem 6.	Print Numbers
 
+##### Description
+Write a program that prints the numbers **1**, **101** and **1001**, each on a separate line. Submit the code at the contest in [www.bgcoder.com](http://bgcoder.com/Contests/314/CSharp-Fundamentals-01-Introduction-to-Programming).
+
+##### Input
+- There is no input for this task.
+
+##### Output
+- You program should print the numbers **1**, **101** and **1001** on three separate lines.
+
+##### Constraints
+- Time limit: **0.1s**
+- Memory limit: **16MB**
+
+##### Submission
+- Submit your code [here](http://bgcoder.com/Contests/Compete/Index/314#1)
 
 ### Problem 7.	Print First and Last Name
 
+##### Description
+- Create console application that prints your first and last name, each at a separate line.
+
+##### Submission
+- You do not have to submit anything for this problem
 
 ### Problem 8.	Square Root
 
+##### Description
+Write a program that calculates the square root of the number **12345** and prints it on the console.
+
+##### Input
+- There is no input for this task.
+
+##### Output
+- Write a single number on the console - the square root of the number **12345**.
+
+##### Constraints
+- Time limit: **0.1s**
+- Memory limit: **16MB**
+
+##### Submission
+- Submit your code [here](http://bgcoder.com/Contests/Compete/Index/314#2)
 
 ### Problem 9.	Print Sequence
 
+##### Description
+Write a program that prints the first 10 members of the sequence: `2, -3, 4, -5, 6, -7, ...`
+
+##### Input
+- There will be no input for this task.
+
+##### Output
+- Print on the console the first 10 members of the sequence from the description. Print each member on a separate line.
+
+```
+2
+-3
+4
+-5
+...
+```
+
+##### Constraints
+- Time limit: **0.1s**
+- Memory limit: **16MB**
+
+##### Submission
+- Submit your code [here](http://bgcoder.com/Contests/Compete/Index/314#3)
 
 ### Problem 10.	Format Code
+##### Description
+  - Reformat the following C# code to make it readable according to the C# best practices for code formatting. Change the casing of the identifiers in the code (e.g. use PascalCase for the class name):
+**HorribleCode.cs**
+    - You do not have to submit anything for this problem.
 
+```csharp
+using
+
+System;
+
+class hoRRiblEcoDe
+{
+	static
+	 void
+
+		Main()
+	{
+		Console.
+
+	WriteLine("Hi, I am horribly formatted program"
+); Console.
+	  WriteLine("Numbers and squares:")
+; for (int i = 0;
+i < 10;
+i++)
+		{
+			Console.WriteLine(i +
+				" --> " + i
+				*
+				i);
+		}
+	}
+}
+```
+
+##### Submission
+- You do not have to submit anything for this problem
 
 ### Problem 11.	Programming Languages
 
