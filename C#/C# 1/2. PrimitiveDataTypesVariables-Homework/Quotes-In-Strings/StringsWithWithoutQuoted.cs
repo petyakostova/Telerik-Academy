@@ -1,15 +1,21 @@
 ﻿//Problem 7. Quotes in Strings
-//Declare two string variables and assign them with following value: The "use" of quotations causes difficulties.
-//Do the above in two different ways - with and without using quoted strings.
-//Print the variables to ensure that their value was correctly defined.
+//Description => Write a program that outputs The "use" of quotations causes difficulties.
+//Input => None
+//Output => Print on a single line 
+//The "use" of quotations causes difficulties.
 
 using System;
 class StringsWithWithoutQuoted
 {
     static void Main()
     {
+        // first way - with using quoted strings
         string withQuoted = @"The ""use"" of quotations causes difficulties.";
+        // second way - without using quoted strings
         string withoutQuoted = "The \"use\" of quotations causes difficulties.";
-        Console.WriteLine("With quoted strings: {0}\nWithout quoted strings: {1}", withQuoted, withoutQuoted);
+        //Console.WriteLine("With quoted strings: {0}\nWithout quoted strings: {1}", withQuoted, withoutQuoted);
+
+        Console.WriteLine(withQuoted);
+        //Console.WriteLine(withoutQuoted);
     }
 }

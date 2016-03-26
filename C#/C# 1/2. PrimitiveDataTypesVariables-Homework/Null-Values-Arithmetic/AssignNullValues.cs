@@ -3,6 +3,7 @@
 //Try to print these variables at the console.
 //Try to add some number or the null literal to these variables and print the result.
 
+
 using System;
 class AssignNullValues
 {

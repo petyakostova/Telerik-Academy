@@ -1,4 +1,4 @@
-## Telerik Software Academy Season 2016-2017
+## Telerik Software Academy Season 2016/2017
 
 <p align="center"><a href="http://academy.telerik.com/"><img src="https://raw.githubusercontent.com/fast4y/TelerikAcademy/master/ta.png" /></a></p>
 

@@ -29,7 +29,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12. Null-Values-Arithmetic"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13. Comparing-Floats", "Comparing-Floats\13. Comparing-Floats.csproj", "{ECC83FCC-1A16-41F2-9C07-CB5934EC6465}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14. Print-The-ASCII-Table", "Print-The-ASCII-Table\14. Print-The-ASCII-Table.csproj", "{54530AEC-56F1-49A7-B295-07B4F6039665}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Print-The-ASCII-Table", "Print-The-ASCII-Table\Print-The-ASCII-Table.csproj", "{54530AEC-56F1-49A7-B295-07B4F6039665}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14. Print-ASCII-Visible-Characters", "Print-ASCII-Visible-Characters\14. Print-ASCII-Visible-Characters.csproj", "{5A943959-29AD-4425-8BDB-D0513A4212CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{54530AEC-56F1-49A7-B295-07B4F6039665}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54530AEC-56F1-49A7-B295-07B4F6039665}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54530AEC-56F1-49A7-B295-07B4F6039665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A943959-29AD-4425-8BDB-D0513A4212CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A943959-29AD-4425-8BDB-D0513A4212CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A943959-29AD-4425-8BDB-D0513A4212CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A943959-29AD-4425-8BDB-D0513A4212CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
