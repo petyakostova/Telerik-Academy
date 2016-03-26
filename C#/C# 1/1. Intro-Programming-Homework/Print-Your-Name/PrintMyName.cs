@@ -1,5 +1,9 @@
-﻿//Problem 5. Print Your Name
-//Modify the previous application to print your name. Ensure you have named the application well (e.g. “PrintMyName”).
+﻿//Problem 5. Print Name
+//Description
+//- Create a C# application that print your name on the console.
+//- Ensure you have named the application well(e.g. “PrintMyName”).
+//Submission
+//- You do not have to submit anything for this problem
 
 using System;
 

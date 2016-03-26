@@ -1,5 +1,7 @@
 ﻿//Problem 4. Hello World
-//Create, compile and run a “Hello C#” console application. Ensure you have named the application well (e.g. “”HelloCSharp”).
+//Description => Create, compile and run a Hello World application - it should print the string Hello, C#! on the console.
+//Input => There is no input for this task.
+//Output => Print Hello, C#! on the console.
 
 using System;
 
@@ -7,6 +9,6 @@ class HelloCSharp
 {
     static void Main()
     {
-        Console.WriteLine("Hello, C#");
+        Console.WriteLine("Hello, C#!");
     }
 }
