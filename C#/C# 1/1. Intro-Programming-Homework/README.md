@@ -2,26 +2,32 @@ Homework: Introduction to Programming
 ========
 
 ### Problem 1.	Play with Visual Studio
+
 #####Description
 - Install **Visual Studio** on your laptop or home computer. Go to the official [Visual Studio](https://www.visualstudio.com/) site and download the **Community 2015** version.
 - Start Visual Studio and familiarize yourself with it. Create a simple C# program (console application), compile and run it.
+
 #####Submission
 - You do not have to submit anything for this problem
 
 ### Problem 2.	Blank Solution
+
 #####Description
 - Create a blank solution in Visual Studio called *“Intro-Programming-Homework”*. use this solution to hold all your homework projects, code and files. 
   For each problem (exercises) add a separate project with self-descriptive name like **Hello-World** and **Print-Your-Name**.
+  
 #####Submission
 - You do not have to submit anything for this problem
 
 ### Problem 3.	Play with MSDN Library
+
 #####Description
 - Play with [Microsoft Developer Network (MSDN)](http://msdn.microsoft.com/library) Library Documentation.
 	- Find information about Console.WriteLine() method in MSDN.
     - Find information about Console.ReadLine() method in MSDN.
 	- Find information about the Console class.
 	- Find information about the class keyword.
+	
 #####Submission
 - You do not have to submit anything for this problem
 
