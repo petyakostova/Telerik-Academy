@@ -7,6 +7,7 @@ class Program
         int number = int.Parse(Console.ReadLine());
         int position = int.Parse(Console.ReadLine());
 
+        // get the bit at position in number
         int mask = 1 << position;
         int result = mask & number;
         result = result >> position;
