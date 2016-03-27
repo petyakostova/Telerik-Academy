@@ -1,9 +1,10 @@
 ## ![alt tag](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![alt tag](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![alt tag](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![alt tag](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![alt tag](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)   Telerik Software Academy   ![alt tag](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![alt tag](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![alt tag](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![alt tag](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![alt tag](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)
 
-<p align="center"><a href="http://academy.telerik.com/"><img src="https://raw.githubusercontent.com/fast4y/TelerikAcademy/master/ta.png" /></a></p>
+* Course assignments - homeworks, presentations, demos, projects and teamworks.
 
-Course assignments - homeworks, presentations, demos, projects and teamworks.
-The training is practice-oriented and involves solving hundreds of problems, which develop algorithmic thinking and skills.
+* The training is **practice-oriented** and involves solving hundreds of problems, which **develop algorithmic thinking and skills**.
+
+<p align="center"><a href="http://academy.telerik.com/"><img src="https://raw.githubusercontent.com/fast4y/TelerikAcademy/master/ta.png" /></a></p>
 
 ### [CSharp Programming] (C%23)
 ####1. CSharp Fundamentals (C# 1)
