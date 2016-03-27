@@ -1,9 +1,9 @@
-## ![alt tag](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![alt tag](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![alt tag](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![alt tag](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![alt tag](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)   ![telerik](https://github.com/petyakostova/Telerik-Academy/blob/master/images/telerik-academy-logo.jpg)   ![alt tag](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![alt tag](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![alt tag](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![alt tag](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![alt tag](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)
+## ![star](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![star](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![star](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![star](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![star](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)   ![Telerik](https://github.com/petyakostova/Telerik-Academy/blob/master/images/telerik-academy-logo.jpg)   ![star](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![star](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![star](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![star](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![star](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)
 
-Course assignments - homeworks, presentations, demos, projects and teamworks.
+_Course assignments - homeworks, presentations, demos, projects and teamworks._
 
-The training is **practice-oriented** and involves solving hundreds of problems, which 
-**develop algorithmic thinking and skills**.
+_The training is **practice-oriented** and involves solving hundreds of problems, 
+which **develop algorithmic thinking and skills**._
 
 ### [CSharp Programming] (C%23)
 ####1. CSharp Fundamentals (C# 1)
