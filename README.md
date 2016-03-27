@@ -1,4 +1,4 @@
-## Telerik Software Academy ![alt tag](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star.jpg {width=50px height=50px})
+## Telerik Software Academy ![alt tag](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star.jpg = 50x50)
 
 <p align="center"><a href="http://academy.telerik.com/"><img src="https://raw.githubusercontent.com/fast4y/TelerikAcademy/master/ta.png" /></a></p>
 
