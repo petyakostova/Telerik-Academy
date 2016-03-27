@@ -1,9 +1,9 @@
 ## ![star](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![star](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![star](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![star](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![star](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)   ![Telerik](https://github.com/petyakostova/Telerik-Academy/blob/master/images/telerik-academy-logo.jpg)   ![star](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![star](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![star](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![star](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)  ![star](https://github.com/petyakostova/Telerik-Academy/blob/master/images/star23.jpg)
 
-_Course assignments - homeworks, presentations, demos, projects and teamworks._
+_Course assignments - homeworks, presentations, demos, projects and teamworks.
 
-_The training is **practice-oriented** and involves solving hundreds of problems, 
-which **develop algorithmic thinking and skills**._
+The training is **practice-oriented** and involves solving hundreds of problems, 
+which **develop algorithmic thinking and skills**.
 
 ### [CSharp Programming] (C%23)
 ####1. CSharp Fundamentals (C# 1)
@@ -19,4 +19,4 @@ The course "C# Fundamentals" introduces the fundamentals of programming. The cou
 ####3. JavaScript - Fundamentals
 ####4. JavaScript - OOP
 ####5. JavaScript - UI and DOM
-####6. JavaScript - Applications
+####6. JavaScript - Applications_
