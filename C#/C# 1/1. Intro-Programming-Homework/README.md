@@ -31,7 +31,7 @@ Homework: Introduction to Programming
 #####Submission
 - You do not have to submit anything for this problem
 
-### Problem 4.	[Hello World](Hello-World)
+### Problem 4.	[Hello World](C%23/C%23 1/1. Intro-Programming-Homework/Hello-World)
 
 ##### Description
 Create, compile and run a **Hello World** application - it should print the string `Hello, C#!` on the console.
