@@ -31,7 +31,7 @@ Homework: Introduction to Programming
 #####Submission
 - You do not have to submit anything for this problem
 
-### Problem 4.	[Hello World](C%23/C%23 1/1. Intro-Programming-Homework/Hello-World)
+### Problem 4.	[Hello World](Hello-World)
 
 ##### Description
 Create, compile and run a **Hello World** application - it should print the string `Hello, C#!` on the console.
@@ -49,7 +49,7 @@ Create, compile and run a **Hello World** application - it should print the stri
 ##### Submission
 - Submit your code [here](http://bgcoder.com/Contests/Compete/Index/314#0)
 
-### Problem 5.	[Print Name](./Print-Name)
+### Problem 5.	[Print Name] (Print-Name)
 
 ##### Description
 - Create a C# application that print your name on the console.
