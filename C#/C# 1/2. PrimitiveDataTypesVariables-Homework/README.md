@@ -1,7 +1,7 @@
 Homework: Primitive Data Types and Variables
 ============================================
 
-### Problem 1.	Declare Variables
+### Problem 1.	[Declare Variables](Declare-Variables)
 
 ##### Description
 Declare five variables choosing for each of them the most appropriate of the types `byte, sbyte, short, ushort, int, uint, long, ulong` to represent the following values: `52130, -115, 4825932, 97, -10000`.
@@ -10,7 +10,7 @@ Choose a large enough type for each number to ensure it will fit in it. Try to c
 ##### Submission
 - You do not have to submit anything for this problem
 
-### Problem 2.	Float or Double
+### Problem 2.	[Float or Double](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/2.%20PrimitiveDataTypesVariables-Homework/Float-Or-Double)
 
 ##### Description
 Which of the following values can be assigned to a variable of type `float` and which to a variable of type `double`: `34.567839023, 12.345, 8923.1234857, 3456.091`?
