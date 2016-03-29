@@ -15,7 +15,7 @@ Homework: Operators and Expressions
 #### 10. [Point, Circle, Rectangle](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/3.%20Operators-Expressions-Statements-Homework/Point-Circle-Rectangle)
 #### 11. [3rd Bit](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/3.%20Operators-Expressions-Statements-Homework/Get-3rd-Bit)
 #### 12. [N-th Bit](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/3.%20Operators-Expressions-Statements-Homework/Get-Nth-Bit)
-#### 13. [Modify Bit](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/3.%20Operators-Expressions-Statements-Homework/)
+#### 13. [Modify Bit](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/3.%20Operators-Expressions-Statements-Homework/Modify-P-Bit-To-Value)
 #### 14. [BitExchange](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/3.%20Operators-Expressions-Statements-Homework/)
 #### 15. [BitSwap](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/3.%20Operators-Expressions-Statements-Homework/)
 

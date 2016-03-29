@@ -15,9 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. Trapezoids", "Trapezoid
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. Point-Circle-Rectangle", "Point-Circle-Rectangle\10. Point-Circle-Rectangle.csproj", "{54C80622-CE60-45F9-88BE-CC7734EC2D3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13. Check-Bit-At-Position", "Check-Bit-At-Position\13. Check-Bit-At-Position.csproj", "{31FE1045-A0F7-48F8-A631-C32E3228619D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14. Modify-P-Bit-To-Value", "Modify-P-Bit-To-Value\14. Modify-P-Bit-To-Value.csproj", "{63E74E68-58F0-4D91-9AD9-FC0A68DB6B57}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13. Modify-P-Bit-To-Value", "Modify-P-Bit-To-Value\13. Modify-P-Bit-To-Value.csproj", "{63E74E68-58F0-4D91-9AD9-FC0A68DB6B57}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15. Bits-Exchange", "Bits-Exchange\15. Bits-Exchange.csproj", "{E8032481-15E7-4B6E-8008-BD6362273CF7}"
 EndProject
@@ -65,10 +63,6 @@ Global
 		{54C80622-CE60-45F9-88BE-CC7734EC2D3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54C80622-CE60-45F9-88BE-CC7734EC2D3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54C80622-CE60-45F9-88BE-CC7734EC2D3E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{31FE1045-A0F7-48F8-A631-C32E3228619D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{31FE1045-A0F7-48F8-A631-C32E3228619D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{31FE1045-A0F7-48F8-A631-C32E3228619D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{31FE1045-A0F7-48F8-A631-C32E3228619D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{63E74E68-58F0-4D91-9AD9-FC0A68DB6B57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{63E74E68-58F0-4D91-9AD9-FC0A68DB6B57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63E74E68-58F0-4D91-9AD9-FC0A68DB6B57}.Release|Any CPU.ActiveCfg = Release|Any CPU

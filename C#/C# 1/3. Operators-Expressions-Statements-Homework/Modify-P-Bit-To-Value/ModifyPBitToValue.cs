@@ -1,13 +1,17 @@
-﻿/* Problem 14. Modify a Bit at Given Position
-We are given an integer number n, a bit value v (v=0 or 1) and a position p.
-Write a sequence of operators (a few lines of C# code) that modifies n to hold the value v at the position p from the binary representation of n while preserving all other bits in n.
-Examples:
-n 	    binary representation of n 	    p 	    v 	    binary result 	    result
-5 	    00000000 00000101 	            2 	    0 	    00000000 00000001 	1
-0 	    00000000 00000000 	            9 	    1 	    00000010 00000000 	512
-15 	    00000000 00001111 	            1 	    1 	    00000000 00001111 	15
-5343 	00010100 11011111 	            7 	    0 	    00010100 01011111 	5215
-62241 	11110011 00100001 	            11 	    0 	    11110011 00100001 	62241           */
+﻿/* Problem 13. Modify Bit  
+   We are given an integer number N(read from the console), a bit value v(read from the console as well) (v = 0 or 1) and a position P(read from the console). Write a sequence of operators (a few lines of C# code) that modifies N to hold the value v at the position P from the binary representation of N while preserving all other bits in N. Print the resulting number on the console.
+   The input will consist of exactly 3 lines containing the following:
+        First line - the integer number N.
+        Second line - the position P.
+        Third line - the bit value v.
+   Output a single line containing the value of the number N with the modified bit.
+        |     Input         |Binary representation|Modified value    |    Output     |
+        |-------------------|---------------------|------------------|---------------|
+        |5    <br/>2 <br/>0 |00000000 00000101    |00000000 00000001 |1              |
+        |0    <br/>9 <br/>1 |00000000 00000000    |00000010 00000000 |512            |
+        |15   <br/>1 <br/>1 |00000000 00001111    |00000000 00001111 |15             |
+        |5343 <br/>7 <br/>0 |00010100 11011111    |00010100 01011111 |5215           |
+        |62241<br/>11<br/>0 |11110011 00100001    |11110011 00100001 |62241          |  */
 
 using System;
 
@@ -15,36 +19,25 @@ class ModifyPBitToValue
 {
     static void Main()
     {
-        Console.WriteLine("Insert an integer number: ");
-        int number = int.Parse(Console.ReadLine());      /* Read the input as a string (using ReadLine()) and convert this string to a number. 
-                                                             * The operation of converting a string into another type is called parsing. */
-        Console.WriteLine("Insert an index (position) of the bit, which value you want to modify: ");
+        int number = int.Parse(Console.ReadLine());
         int position = int.Parse(Console.ReadLine());
-        while (position < 0)
-        {
-            Console.WriteLine("Incorrect position format. Please insert an integer index: position >= 0: ");
-            position = int.Parse(Console.ReadLine());
-        }
-        Console.WriteLine("Insert a value (0 or 1): ");
         int value = int.Parse(Console.ReadLine());
-        while ((value != 0) && (value != 1))
-        {
-            Console.WriteLine("Incorrect value. Please insert a value 0 or 1: ");
-            value = int.Parse(Console.ReadLine());
-        }
+
+        Console.WriteLine("Binary representation: " + Convert.ToString(number, 2).PadLeft(16, '0'));
+
         if (value == 0)
         {
             int mask = ~(1 << position);
             int result = number & mask;
-            Console.WriteLine("The binary result is: " + Convert.ToString(result, 2).PadLeft(16, '0'));      // print the binary number
-            Console.WriteLine("The result is: " + result + "\n");            
+            Console.WriteLine("Modified value:        " + Convert.ToString(result, 2).PadLeft(16, '0'));      
+            Console.WriteLine("Result: " + result);            
         }
         else
         {
             int mask = 1 << position;
             int result = number | mask;
-            Console.WriteLine("The binary result is: " + Convert.ToString(result, 2).PadLeft(16, '0'));
-            Console.WriteLine("The result is: " + result + "\n");            
+            Console.WriteLine("Modified value:        " + Convert.ToString(result, 2).PadLeft(16, '0'));
+            Console.WriteLine("Result: " + result);            
         }
     }
 }
