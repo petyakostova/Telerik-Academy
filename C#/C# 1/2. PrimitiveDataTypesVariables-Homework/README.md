@@ -1,7 +1,7 @@
 Homework: Primitive Data Types and Variables
 ============================================
 
-### Problem 1.	[Declare Variables](Declare-Variables)
+### Problem 1.	[Declare Variables](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/2.%20PrimitiveDataTypesVariables-Homework/Declare-Variables)
 
 ##### Description
 Declare five variables choosing for each of them the most appropriate of the types `byte, sbyte, short, ushort, int, uint, long, ulong` to represent the following values: `52130, -115, 4825932, 97, -10000`.
@@ -19,7 +19,7 @@ Write a program to assign the numbers in variables and print them to ensure no p
 ##### Submission
 - You do not have to submit anything for this problem
 
-### Problem 3.	Variable in Hexadecimal Format
+### Problem 3.	[Variable in Hexadecimal Format](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/2.%20PrimitiveDataTypesVariables-Homework/Variable-In-Hexa-Format)
 
 ##### Description
 Declare an integer variable and assign it with the value `254` in hexadecimal format (`0x##`).
@@ -29,7 +29,7 @@ Print the variable and ensure that the result is `254`.
 ##### Submission
 - You do not have to submit anything for this problem
 
-### Problem 4.	Unicode Character
+### Problem 4.	[Unicode Character](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/2.%20PrimitiveDataTypesVariables-Homework/Unicode-Character)
 
 ##### Description
 Declare a character variable and assign it with the symbol that has Unicode code `42` (decimal) using the `\u00XX` syntax, and then print it.
@@ -39,7 +39,7 @@ _Hint: first, use the Windows Calculator to find the hexadecimal representation 
 ##### Submission
 - You do not have to submit anything for this problem
 
-### Problem 5.	Boolean Variable
+### Problem 5.	[Boolean Variable](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/2.%20PrimitiveDataTypesVariables-Homework/Boolean-Variable)
 
 ##### Description
 Declare a Boolean variable called `isFemale` and assign an appropriate value corresponding to your gender.
@@ -48,7 +48,7 @@ Print it on the console.
 ##### Submission
 - You do not have to submit anything for this problem
 
-### Problem 6.	Strings and Objects
+### Problem 6.	[Strings and Objects](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/2.%20PrimitiveDataTypesVariables-Homework/Strings-And-Objects)
 
 ##### Description
 Declare two string variables and assign them with `Hello` and `World`.
@@ -58,7 +58,7 @@ Declare a third string variable and initialize it with the value of the object v
 ##### Submission
 - You do not have to submit anything for this problem
 
-### Problem 7.	Quotes in Strings
+### Problem 7.	[Quotes in Strings](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/2.%20PrimitiveDataTypesVariables-Homework/Quotes-In-Strings)
 
 ##### Description
 Write a program that outputs `The "use" of quotations causes difficulties.`
@@ -76,7 +76,7 @@ Write a program that outputs `The "use" of quotations causes difficulties.`
 ##### Submission
 - Submit your code [here](http://bgcoder.com/Contests/Compete/Index/313#0)
 
-### Problem 8.	Isosceles Triangle
+### Problem 8.	[Isosceles Triangle](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/2.%20PrimitiveDataTypesVariables-Homework/Isosceles-Triangle)
 
 ##### Description
 Write a program that prints an isosceles triangle of 9 copyright symbols `©`, something like this:
@@ -98,7 +98,7 @@ _Note: Under old versions of Windows the `©` symbol may still be displayed inco
 ##### Submission
 - You do not have to submit anything for this problem
 
-### Problem 9.	Exchange Variable Values
+### Problem 9.	[Exchange Variable Values](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/2.%20PrimitiveDataTypesVariables-Homework/Exchange-Variable-Values)
 
 ##### Description
 Declare two integer variables `a` and `b` and assign them with `5` and `10` and after that exchange their values by using some programming logic.
@@ -107,7 +107,7 @@ Print the variable values before and after the exchange.
 ##### Submission
 - You do not have to submit anything for this problem
 
-### Problem 10.	Employee Data
+### Problem 10.	[Employee Data](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/2.%20PrimitiveDataTypesVariables-Homework/Employee-Data)
 
 ##### Description
 A marketing company wants to keep record of its employees. Each record would have the following characteristics:
@@ -123,7 +123,7 @@ Declare the variables needed to keep the information for a single employee using
 ##### Submission
 - You do not have to submit anything for this problem
 
-### Problem 11.	Bank Account Data
+### Problem 11.	[Bank Account Data](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/2.%20PrimitiveDataTypesVariables-Homework/Bank-Account-Data)
 
 ##### Description
 A bank account has a holder name (first name, middle name and last name), available amount of money (balance), bank name, IBAN, 3 credit card numbers associated with the account.
@@ -132,7 +132,7 @@ Declare the variables needed to keep the information for a single bank account u
 ##### Submission
 - You do not have to submit anything for this problem
 
-### Problem 12.	Null Values Arithmetic
+### Problem 12.	[Null Values Arithmetic](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/2.%20PrimitiveDataTypesVariables-Homework/Null-Values-Arithmetic)
 
 ##### Description
 Create a program that assigns null values to an integer and to a double variable. 
@@ -142,7 +142,7 @@ Create a program that assigns null values to an integer and to a double variable
 ##### Submission
 - You do not have to submit anything for this problem
 
-### Problem 13.	Comparing Floats
+### Problem 13.	[Comparing Floats](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/2.%20PrimitiveDataTypesVariables-Homework/Comparing-Floats)
 
 ##### Description
 Write a program that safely compares two floating-point numbers (double) with precision `eps = 0.000001`.
@@ -176,7 +176,7 @@ _Hint: Use double.Parse(Console.ReadLine()) to read input_
 ##### Submission
 - Submit your code [here](http://bgcoder.com/Contests/Compete/Index/313#1)
 
-### Problem 14.	Print the ASCII Table
+### Problem 14.	[Print the ASCII Table Visible Characters](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/2.%20PrimitiveDataTypesVariables-Homework/Print-ASCII-Visible-Characters)
 
 Find online more information about ASCII (American Standard Code for Information Interchange) and write a program that prints the visible characters of the ASCII table on the console (characters from `33` to `126` including).
 
@@ -194,3 +194,5 @@ _Note: You may need to use for-loops (learn in Internet how)._
 
 ##### Submission
 - Submit your code [here](http://bgcoder.com/Contests/Compete/Index/313#2)
+
+### Problem 14*.	[Print the entire ASCII Table ](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/2.%20PrimitiveDataTypesVariables-Homework/Print-The-ASCII-Table)
