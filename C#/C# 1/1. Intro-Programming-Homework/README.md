@@ -31,7 +31,7 @@ Homework: Introduction to Programming
 #####Submission
 - You do not have to submit anything for this problem
 
-### Problem 4.	[Hello World](Hello-World)
+### Problem 4.	[Hello World](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/1.%20Intro-Programming-Homework/Hello-World)
 
 ##### Description
 Create, compile and run a **Hello World** application - it should print the string `Hello, C#!` on the console.
@@ -58,7 +58,7 @@ Create, compile and run a **Hello World** application - it should print the stri
 ##### Submission
 - You do not have to submit anything for this problem
 
-### Problem 6.	[Print Numbers](./Print-Numbers)
+### Problem 6.	[Print Numbers](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/1.%20Intro-Programming-Homework/Print-Numbers)
 
 ##### Description
 Write a program that prints the numbers **1**, **101** and **1001**, each on a separate line. Submit the code at the contest in [www.bgcoder.com](http://bgcoder.com/Contests/314/CSharp-Fundamentals-01-Introduction-to-Programming).
@@ -76,7 +76,7 @@ Write a program that prints the numbers **1**, **101** and **1001**, each on a s
 ##### Submission
 - Submit your code [here](http://bgcoder.com/Contests/Compete/Index/314#1)
 
-### Problem 7.	[Print First and Last Name](./Print-First-And-Last-Name)
+### Problem 7.	[Print First and Last Name](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/1.%20Intro-Programming-Homework/Print-First-And-Last-Name)
 
 ##### Description
 - Create console application that prints your first and last name, each at a separate line.
@@ -84,7 +84,7 @@ Write a program that prints the numbers **1**, **101** and **1001**, each on a s
 ##### Submission
 - You do not have to submit anything for this problem
 
-### Problem 8.	[Square Root](./Square-Root)
+### Problem 8.	[Square Root](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/1.%20Intro-Programming-Homework/Square-Root)
 
 ##### Description
 Write a program that calculates the square root of the number **12345** and prints it on the console.
@@ -102,7 +102,7 @@ Write a program that calculates the square root of the number **12345** and prin
 ##### Submission
 - Submit your code [here](http://bgcoder.com/Contests/Compete/Index/314#2)
 
-### Problem 9.	[Print Sequence](./Print-A-Sequence)
+### Problem 9.	[Print Sequence](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/1.%20Intro-Programming-Homework/Print-A-Sequence)
 
 ##### Description
 Write a program that prints the first 10 members of the sequence: `2, -3, 4, -5, 6, -7, ...`
@@ -128,7 +128,7 @@ Write a program that prints the first 10 members of the sequence: `2, -3, 4, -5,
 ##### Submission
 - Submit your code [here](http://bgcoder.com/Contests/Compete/Index/314#3)
 
-### Problem 10.	[Format Code](./Format-Code)
+### Problem 10.	[Format Code](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/1.%20Intro-Programming-Homework/Format-Code)
 ##### Description
   - Reformat the following C# code to make it readable according to the C# best practices for code formatting. Change the casing of the identifiers in the code (e.g. use PascalCase for the class name):
 **HorribleCode.cs**
@@ -167,7 +167,7 @@ i++)
 ##### Submission
 - You do not have to submit anything for this problem
 
-### Problem 11.	[Programming Languages](./programming-languages.txt)
+### Problem 11.	[Programming Languages](https://github.com/petyakostova/Telerik-Academy/blob/master/C%23/C%23 1/1. Intro-Programming-Homework/programming-languages.txt)
 
 ##### Description
 - Perform a research (e.g. in _Google_ or _Wikipedia_) and provide a short list with information about the most popular programming languages. How similar are they to C#? How do they differ from C#?
@@ -176,7 +176,7 @@ i++)
 ##### Submission
 - You do not have to submit anything for this problem
 
-### Problem 12.	[Development Environments](./list-of-IDEs.txt)
+### Problem 12.	[Development Environments](https://github.com/petyakostova/Telerik-Academy/blob/master/C%23/C%23 1/1. Intro-Programming-Homework/list-of-IDEs.txt)
 
 ##### Description
 - Perform a research (e.g. in _Google_ or _Wikipedia_) and provide a short list with popular development environments (**IDE**s) like Visual Studio.
@@ -185,7 +185,7 @@ i++)
 ##### Submission
 - You do not have to submit anything for this problem
 
-### Problem 13.	[C# and .NET Differences](./csharp-and-dot-net-framework.txt)
+### Problem 13.	[C# and .NET Differences](https://github.com/petyakostova/Telerik-Academy/blob/master/C%23/C%23 1/1. Intro-Programming-Homework/csharp-and-dot-net-framework.txt)
 
 ##### Description
 - Describe the difference between **C#** and **.NET Framework** in 2-3 sentences.
@@ -194,7 +194,7 @@ i++)
 ##### Submission
 - You do not have to submit anything for this problem
 
-### Problem 14.	[Current Date and Time](./Current-Date-And-Time)
+### Problem 14.	[Current Date and Time](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/1.%20Intro-Programming-Homework/Current-Date-And-Time)
 
 ## Description
 - Create a console application that prints the current date and time. Find out how in Internet.
@@ -202,7 +202,7 @@ i++)
 ## Submission
 - You do not have to submit anything for this problem
 
-### Problem 15.	[Age](./Age-After-10-Years)
+### Problem 15.	[Age](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/1.%20Intro-Programming-Homework/Age-After-10-Years)
 
 ##### Description
 Write a program that reads your birthday(in the format `MM.DD.YYYY`) from the console and prints on the console how old you are you now and how old will you be after 10 years.
@@ -231,7 +231,7 @@ Write a program that reads your birthday(in the format `MM.DD.YYYY`) from the co
 ##### Submission
 - Submit your code [here](http://bgcoder.com/Contests/Compete/Index/314#4)
 
-### Problem 16.	[Print Long Sequence](./Print-Long-Sequence)
+### Problem 16.	[Print Long Sequence](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/1.%20Intro-Programming-Homework/Print-Long-Sequence)
 
 ##### Description
 Write a program that prints the first 1000 members of the sequence: `2, -3, 4, -5, 6, -7, …`
@@ -259,7 +259,7 @@ Write a program that prints the first 1000 members of the sequence: `2, -3, 4, -
 ##### Submission
 - Submit your code [here](http://bgcoder.com/Contests/Compete/Index/314#5)
 
-### Problem 17.	[Play with the VS Debugger](./Play-With-The-Debugger)
+### Problem 17.	[Play with the VS Debugger](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/1.%20Intro-Programming-Homework/Play-With-The-Debugger)
 
 ##### Description
 - Write a program that prints at the console the numbers from `1 to 1000`, each at a separate line.
