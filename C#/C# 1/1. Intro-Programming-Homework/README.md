@@ -49,7 +49,7 @@ Create, compile and run a **Hello World** application - it should print the stri
 ##### Submission
 - Submit your code [here](http://bgcoder.com/Contests/Compete/Index/314#0)
 
-### Problem 5.	[Print Name] (Print-Name)
+### Problem 5.	[Print Name] (https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/1.%20Intro-Programming-Homework/Print-Name)
 
 ##### Description
 - Create a C# application that print your name on the console.
