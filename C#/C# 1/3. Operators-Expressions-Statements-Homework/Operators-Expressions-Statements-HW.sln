@@ -17,8 +17,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. Point-Circle-Rectangle"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13. Modify-P-Bit-To-Value", "Modify-P-Bit-To-Value\13. Modify-P-Bit-To-Value.csproj", "{63E74E68-58F0-4D91-9AD9-FC0A68DB6B57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15. Bits-Exchange", "Bits-Exchange\15. Bits-Exchange.csproj", "{E8032481-15E7-4B6E-8008-BD6362273CF7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16. Advanced-Bit-Exchange", "Advanced-Bit-Exchange\16. Advanced-Bit-Exchange.csproj", "{37FBE704-1516-4DBA-9721-38E099881FAC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Odd-Or-Even", "Odd-Or-Even\01. Odd-Or-Even.csproj", "{92D1B4F8-4F96-4E92-8C3E-B3F2DB82AEE0}"
@@ -32,6 +30,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. Get-3rd-Bit", "Get-3rd-Bit\11. Get-3rd-Bit.csproj", "{9888FDF9-46F8-4346-AB4F-621B787DD33B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12. Get-Nth-Bit", "Get-Nth-Bit\12. Get-Nth-Bit.csproj", "{58FEA9F1-D63D-4139-91C5-39156C41A8BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14. Bit-Exchange", "Bit-Exchange\14. Bit-Exchange.csproj", "{4D603D0E-565F-410E-885E-17F35738DD7D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,10 +67,6 @@ Global
 		{63E74E68-58F0-4D91-9AD9-FC0A68DB6B57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63E74E68-58F0-4D91-9AD9-FC0A68DB6B57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63E74E68-58F0-4D91-9AD9-FC0A68DB6B57}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E8032481-15E7-4B6E-8008-BD6362273CF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E8032481-15E7-4B6E-8008-BD6362273CF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E8032481-15E7-4B6E-8008-BD6362273CF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E8032481-15E7-4B6E-8008-BD6362273CF7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{37FBE704-1516-4DBA-9721-38E099881FAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{37FBE704-1516-4DBA-9721-38E099881FAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37FBE704-1516-4DBA-9721-38E099881FAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -99,6 +95,10 @@ Global
 		{58FEA9F1-D63D-4139-91C5-39156C41A8BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58FEA9F1-D63D-4139-91C5-39156C41A8BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58FEA9F1-D63D-4139-91C5-39156C41A8BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D603D0E-565F-410E-885E-17F35738DD7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D603D0E-565F-410E-885E-17F35738DD7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D603D0E-565F-410E-885E-17F35738DD7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D603D0E-565F-410E-885E-17F35738DD7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

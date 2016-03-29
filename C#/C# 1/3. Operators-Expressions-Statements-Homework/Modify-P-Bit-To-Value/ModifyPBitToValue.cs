@@ -5,6 +5,7 @@
         Second line - the position P.
         Third line - the bit value v.
    Output a single line containing the value of the number N with the modified bit.
+
         |     Input         |Binary representation|Modified value    |    Output     |
         |-------------------|---------------------|------------------|---------------|
         |5    <br/>2 <br/>0 |00000000 00000101    |00000000 00000001 |1              |
