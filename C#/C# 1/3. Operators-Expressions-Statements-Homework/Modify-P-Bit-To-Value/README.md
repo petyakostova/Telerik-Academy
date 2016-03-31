@@ -7,10 +7,10 @@ Write a sequence of operators (a few lines of C# code) that modifies **N** to ho
 
 ## Input
 - The input will consist of exactly **3** lines containing the following:
-  1. First line - the integer number **N**.
-  1. Second line - the bit value **v**.
-  1. Third line - the position **P**.
-
+  1. First line - the integer number **N**.  
+  1. Second line - the position **P**.
+  1. Third line - the bit value **v**.  
+  
 ## Output
 - Output a single line containing the value of the number **N** with the modified bit.
 
