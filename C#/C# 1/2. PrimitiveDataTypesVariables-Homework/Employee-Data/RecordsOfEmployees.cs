@@ -16,50 +16,58 @@ class RecordsOfEmployees
     {
         Console.WriteLine("Your first name:");
         string firstName = Console.ReadLine();
+
         Console.WriteLine("Your last name:");
         string lastName = Console.ReadLine();
+
         Console.WriteLine("Your age:");
-        byte age = byte.Parse(Console.ReadLine());
-        Console.WriteLine("Your Gender is (f or m):");
-        char gender = char.Parse(Console.ReadLine());
+        byte age;
+        // parsing and input check (validating the user data)
+        while (!byte.TryParse(Console.ReadLine(), out age) || age <= 0 || age >= 100)
+        {
+            Console.WriteLine("Invalid age.");
+            Console.WriteLine("Please enter age in the interval (0;100): ");
+        }
+
+        Console.WriteLine("Your gender is (f or m):");
+        char gender;
+        // parsing and input check (validating the user data)
+        while (!char.TryParse(Console.ReadLine(), out gender) || (gender != 'f' && gender != 'm'))
+        {
+            Console.WriteLine("Invalid gender.");
+            Console.WriteLine("Please enter gender (f or m): ");
+        }
+
         Console.WriteLine("Enter your personal ID number:");
-        ulong iDNumber = ulong.Parse(Console.ReadLine());
+        ulong iDNumber;
+        // parsing and input check (validating the user data)
+        while (!ulong.TryParse(Console.ReadLine(), out iDNumber) || iDNumber == 0)
+        {
+            Console.WriteLine("Invalid ID number.");
+            Console.WriteLine("Please enter your personal ID number (ID > 0): ");
+        }
+
         Console.WriteLine("Enter your unique employee number(from 27560000 to 27569999)");
-        int uniqueN = int.Parse(Console.ReadLine());
+        int uniqueN;
+        // parsing and input check (validating the user data)
+        while (!int.TryParse(Console.ReadLine(), out uniqueN) || (uniqueN < 27560000) || (uniqueN > 27569999))
+        {
+            Console.WriteLine("Invalid employee number.");
+            Console.WriteLine("Please enter  your unique employee number(from 27560000 to 27569999): ");
+        }
+
         Console.WriteLine("First name: {0}\nLast name: {1}\nAge: {2}", firstName, lastName, age);
+
         if (gender == 'm')
         {
             Console.WriteLine("Your gender is male.");
         }
-        else if (gender == 'f')
+        else
         {
             Console.WriteLine("Your gender is female.");
         }
-        else
-        {
-            Console.WriteLine("Wrong symbol for gender.");
-        }
 
-        if (iDNumber < 0)
-        {
-            Console.WriteLine("Wrong ID number.");
-        }
-        else
-        {
-            Console.WriteLine("ID number: {0}", iDNumber);
-        }
-
-        if (uniqueN < 27560000)
-        {
-            Console.WriteLine("Wrong unique employee number.");
-        }
-        else if (uniqueN > 27569999)
-        {
-            Console.WriteLine("Wrong unique employee number.");
-        }
-        else
-        {
-            Console.WriteLine("Unique employee number: {0}", uniqueN);
-        }
+        Console.WriteLine("ID number: {0}", iDNumber);
+        Console.WriteLine("Unique employee number: {0}", uniqueN);
     }
 }
