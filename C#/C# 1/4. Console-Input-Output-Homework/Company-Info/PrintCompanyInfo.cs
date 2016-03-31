@@ -1,5 +1,5 @@
-﻿/*2. Company Info  
-  A company has name, address, phone number, fax number, web site and manager. The manager has first name, last name, age and a phone number. Write a program that reads the information about a company and its manager and prints it back on the console. Make sure that you print "(no fax)" if an empty line is passed as fax number. */
+﻿/* 2. Company Info  
+   A company has name, address, phone number, fax number, web site and manager. The manager has first name, last name, age and a phone number. Write a program that reads the information about a company and its manager and prints it back on the console. Make sure that you print "(no fax)" if an empty line is passed as fax number. */
 
 using System;
 
