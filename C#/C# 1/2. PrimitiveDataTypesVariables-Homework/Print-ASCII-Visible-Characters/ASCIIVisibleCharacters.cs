@@ -7,19 +7,16 @@ Input => None
 Output => The 94 characters on single line */
 
 using System;
-using System.Text;
 
 class ASCIIVisibleCharacters
 {
     static void Main()
     {
-        //Console.BufferHeight = 95;
-        Console.OutputEncoding = Encoding.Unicode;
-
         for (int i = 33; i < 127; i++)
         {
-            //Console.WriteLine("{0} => {1}", i, (char)i);    // Convert.ToChar(i);
-            Console.Write("{0}", Convert.ToChar(i));   
+            Console.Write("{0}", (char)i);    
+            //Console.Write("{0}", Convert.ToChar(i));   
+
         }
     }
 }
