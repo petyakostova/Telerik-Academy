@@ -20,20 +20,9 @@ class FourDigitNumber
 
         Console.WriteLine(digit1 + digit2 + digit3 + digit4);
 
-        if (digit4 != 0)
-        {
-            Console.WriteLine("{3}{2}{1}{0}", digit1, digit2, digit3, digit4);
-        }
-        else
-        {
-            Console.WriteLine((digit3 == 0)
-                ? "{1}{0}"
-                : "{2}{1}{0}", digit1, digit2, digit3);
-        }
+        Console.WriteLine("{3}{2}{1}{0}", digit1, digit2, digit3, digit4);              
 
-        Console.WriteLine((digit4 == 0)
-                ? "{0}{1}{2}"
-                : "{3}{0}{1}{2}", digit1, digit2, digit3, digit4);
+        Console.WriteLine("{3}{0}{1}{2}", digit1, digit2, digit3, digit4);
 
         Console.WriteLine("{0}{2}{1}{3}", digit1, digit2, digit3, digit4);
     }

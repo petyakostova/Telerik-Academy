@@ -24,21 +24,21 @@ class ModifyPBitToValue
         int position = int.Parse(Console.ReadLine());
         int value = int.Parse(Console.ReadLine());
 
-        Console.WriteLine("Binary representation: " + Convert.ToString(number, 2).PadLeft(16, '0'));
+        //Console.WriteLine("Binary representation: " + Convert.ToString(number, 2).PadLeft(16, '0'));
 
         if (value == 0)
         {
             int mask = ~(1 << position);
             int result = number & mask;
-            Console.WriteLine("Modified value:        " + Convert.ToString(result, 2).PadLeft(16, '0'));      
-            Console.WriteLine("Result: " + result);            
+            //Console.WriteLine("Modified value:        " + Convert.ToString(result, 2).PadLeft(16, '0'));      
+            Console.WriteLine(result);            
         }
         else
         {
             int mask = 1 << position;
             int result = number | mask;
-            Console.WriteLine("Modified value:        " + Convert.ToString(result, 2).PadLeft(16, '0'));
-            Console.WriteLine("Result: " + result);            
+            //Console.WriteLine("Modified value:        " + Convert.ToString(result, 2).PadLeft(16, '0'));
+            Console.WriteLine(result);            
         }
     }
 }

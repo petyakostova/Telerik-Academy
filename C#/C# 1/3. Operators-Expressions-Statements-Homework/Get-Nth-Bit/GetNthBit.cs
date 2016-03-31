@@ -18,7 +18,7 @@ class GetNthBit
         int number = int.Parse(Console.ReadLine());    
         int position = int.Parse(Console.ReadLine());
 
-        Console.WriteLine("Binary representation: {0}", Convert.ToString(number, 2).PadLeft(16, '0'));
+        //Console.WriteLine("Binary representation: {0}", Convert.ToString(number, 2).PadLeft(16, '0'));
 
         int numberRightP = number >> position;
         int bit = numberRightP & 1;
