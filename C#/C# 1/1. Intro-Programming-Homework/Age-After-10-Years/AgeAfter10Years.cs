@@ -6,19 +6,21 @@
 //    How old will you be after 10 years, on the second line.
 
 using System;
+using System.Globalization;
 
 class AgeAfter10Years
 {
     static void Main()
-    {        
-        //Console.Write("Which date were you born (dd.mm.yyyy): ");
-        // use the Convert.ToDateTime(String) method to convert a string-based date to a System.DateTime object
-        DateTime dateOfBirth = Convert.ToDateTime(Console.ReadLine());
+    {
+        //Console.Write("Which date were you born (MM.dd.yyyy): ");
+        // Converts the specified string representation of a date and time to its DateTime equivalent using the specified format and culture-specific format information 
+        DateTime dateOfBirth = DateTime.ParseExact(Console.ReadLine(), "MM.dd.yyyy", CultureInfo.InvariantCulture);
 
         DateTime presentYear = DateTime.Now;        
         TimeSpan ts = presentYear - dateOfBirth;
 
-        // DateTime.MinValue => 1.1.0001 г. 0:00:00
+        // DateTime.MinValue => 01/01/0001 00:00:00
+
         DateTime Age = DateTime.MinValue.AddDays(ts.Days);
 
         Console.WriteLine(Age.Year - 1);

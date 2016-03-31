@@ -21,8 +21,8 @@ Write a program that reads your birthday(in the format `MM.DD.YYYY`) from the co
 
 | Input    | Output  |
 |----------|---------|
-|03.03.2016|0<br/>10 |
-|05.06.1994|21<br/>31|
+|03.05.2016|0<br/>10 |
+|05.16.1994|21<br/>31|
 
 ## Submission
 - Submit your code [here](http://bgcoder.com/Contests/Compete/Index/314#4)
