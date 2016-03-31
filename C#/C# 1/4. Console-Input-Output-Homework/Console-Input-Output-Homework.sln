@@ -7,9 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Sum-Of-3-Numbers", "Sum
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Circle-Perimeter-And-Area", "Circle-Perimeter-And-Area\03. Circle-Perimeter-And-Area.csproj", "{F6601496-32E2-424C-8178-B60D0ADB3BAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Number-Comparer", "Number-Comparer\04. Number-Comparer.csproj", "{0105A1AC-91B3-4218-A1D2-65C35F3A9198}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Number-Comparer", "Number-Comparer\05. Number-Comparer.csproj", "{0105A1AC-91B3-4218-A1D2-65C35F3A9198}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Formatting-Numbers", "Formatting-Numbers\05. Formatting-Numbers.csproj", "{191EC05C-8BEA-4EAA-8AB2-A92A6D22975B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Formatting-Numbers", "Formatting-Numbers\04. Formatting-Numbers.csproj", "{191EC05C-8BEA-4EAA-8AB2-A92A6D22975B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Quadratic-Equation", "Quadratic-Equation\06. Quadratic-Equation.csproj", "{87D77998-1398-4BAB-960F-0C7981B25DFD}"
 EndProject
