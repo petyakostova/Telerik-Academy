@@ -35,10 +35,9 @@ class ComparingFloats
         // fix the decimal point to "."
         Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
 
-        Console.Write("Enter first number a = ");
         double a = double.Parse(Console.ReadLine());
-        Console.Write("Enter second number b = ");
         double b = double.Parse(Console.ReadLine());
+
         double eps = 0.000001;
         double difference = Math.Abs(a - b);
         
