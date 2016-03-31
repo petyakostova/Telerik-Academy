@@ -17,28 +17,28 @@ class BitExchange
     {
         uint number = uint.Parse(Console.ReadLine());
 
-        Console.WriteLine("Binary representation:                " + Convert.ToString(number, 2).PadLeft(32, '0'));
+        //Console.WriteLine("Binary representation:                " + Convert.ToString(number, 2).PadLeft(32, '0'));
 
         uint[] pArray = new uint[3];
         uint[] qArray = new uint[3];
         uint result;
 
         // get the bits at position 3, 4 and 5 and put them in pArray
-        for (int position = 3; position < 6; position++)    
+        for (int position = 3; position < 6; position++)
         {
             uint numberRightP = number >> position;
             pArray[position - 3] = numberRightP & 1;
         }
 
         // get the bits at position 24, 25 and 26 and put them in qArray
-        for (int position = 24; position < 27; position++)  
+        for (int position = 24; position < 27; position++)
         {
             uint numberRightP = number >> position;
             qArray[position - 24] = numberRightP & 1;
         }
 
         // exchange the bits at position 3, 4 and 5
-        for (int position = 3; position < 6; position++)    
+        for (int position = 3; position < 6; position++)
         {
             if (qArray[position - 3] == 0)                  // to 0
             {
@@ -54,7 +54,7 @@ class BitExchange
         }
 
         // exchange the bits at position 24, 25 and 26
-        for (int position = 24; position < 27; position++)    
+        for (int position = 24; position < 27; position++)
         {
             if (pArray[position - 24] == 0)                   // to 0
             {
@@ -69,7 +69,7 @@ class BitExchange
             number = result;
         }
 
-        Console.WriteLine("Binary representation after exchange: " + Convert.ToString(number, 2).PadLeft(32, '0'));
+        //Console.WriteLine("Binary representation after exchange: " + Convert.ToString(number, 2).PadLeft(32, '0'));
 
         Console.WriteLine(number);
     }

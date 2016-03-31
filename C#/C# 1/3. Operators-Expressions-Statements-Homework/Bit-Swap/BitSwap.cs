@@ -19,14 +19,15 @@ class BitSwap
         int k = int.Parse(Console.ReadLine());
 
         Console.WriteLine("Binary representation:             " + Convert.ToString((uint)number, 2).PadLeft(32, '0'));
-        
-        if (Math.Max(p, q) + k > 32)    // checks
+
+        // checks
+        if (Math.Max(p, q) + k > 32)    
         {
-            Console.WriteLine("out of range");
+            Console.WriteLine("Out of range.");
         }
         else if (Math.Min(p, q) + k > Math.Max(p, q))
         {
-            Console.WriteLine("overlapping");
+            Console.WriteLine("Overlapping.");
         }
         else
         {
@@ -81,6 +82,7 @@ class BitSwap
             }
 
             Console.WriteLine("Binary representation after swaps: " + Convert.ToString(((uint)number), 2).PadLeft(32, '0'));
+
             Console.WriteLine(number);
         }
     }
