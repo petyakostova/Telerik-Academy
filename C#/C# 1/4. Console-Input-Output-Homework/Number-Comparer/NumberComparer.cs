@@ -1,4 +1,4 @@
-﻿/* Problem 5. Number Comparer
+﻿/* 5. Number Comparer
    Write a program that gets two numbers from the console and prints the greater of them. 
    Try implementing it without using if-statements. The numbers A and B will always be valid real numbers. */
 
