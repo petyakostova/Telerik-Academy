@@ -9,7 +9,7 @@ class RegionalSettingsDemo
 	{
 		Console.OutputEncoding = Encoding.UTF8;
 		Console.WriteLine("Това е кирилица: ☺");
-		Console.WriteLine("© Светлин Наков, 2011");
+		Console.WriteLine("© Николай Костов, 2011");
 
 		// This will not be displayed in case the
 		// Console font does not support Arabic

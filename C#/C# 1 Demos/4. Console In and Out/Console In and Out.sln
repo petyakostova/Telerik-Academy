@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. PrintingToConsole", "PrintingToConsole\01. PrintingToConsole.csproj", "{A7CF5B59-8E32-4A09-9FF1-E90D5278BCA0}"
 EndProject
@@ -22,6 +22,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. RegionalSettings", "RegionalSettings\07. RegionalSettings.csproj", "{EA69A27D-2F75-4E97-B23E-CD2B7F403AF7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustSnake", "JustSnake\JustSnake.csproj", "{002CBC3C-E324-4E8B-82C9-EC6D8C7DD8A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. Rounding", "Rounding\10. Rounding.csproj", "{80FB6DF7-FDAA-4A2A-B3CB-2F15F464522C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -133,6 +135,18 @@ Global
 		{002CBC3C-E324-4E8B-82C9-EC6D8C7DD8A2}.Release|Mixed Platforms.Build.0 = Release|x86
 		{002CBC3C-E324-4E8B-82C9-EC6D8C7DD8A2}.Release|x86.ActiveCfg = Release|x86
 		{002CBC3C-E324-4E8B-82C9-EC6D8C7DD8A2}.Release|x86.Build.0 = Release|x86
+		{80FB6DF7-FDAA-4A2A-B3CB-2F15F464522C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80FB6DF7-FDAA-4A2A-B3CB-2F15F464522C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80FB6DF7-FDAA-4A2A-B3CB-2F15F464522C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{80FB6DF7-FDAA-4A2A-B3CB-2F15F464522C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{80FB6DF7-FDAA-4A2A-B3CB-2F15F464522C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{80FB6DF7-FDAA-4A2A-B3CB-2F15F464522C}.Debug|x86.Build.0 = Debug|Any CPU
+		{80FB6DF7-FDAA-4A2A-B3CB-2F15F464522C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80FB6DF7-FDAA-4A2A-B3CB-2F15F464522C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80FB6DF7-FDAA-4A2A-B3CB-2F15F464522C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{80FB6DF7-FDAA-4A2A-B3CB-2F15F464522C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{80FB6DF7-FDAA-4A2A-B3CB-2F15F464522C}.Release|x86.ActiveCfg = Release|Any CPU
+		{80FB6DF7-FDAA-4A2A-B3CB-2F15F464522C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

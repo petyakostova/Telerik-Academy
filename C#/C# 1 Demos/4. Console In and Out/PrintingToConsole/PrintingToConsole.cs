@@ -52,6 +52,7 @@ class PrintingToConsole
         Console.WriteLine("Have a nice day!");
 
 		Console.WriteLine();
+        // left and right aligned
 		Console.WriteLine("{0,-15} | {1,10:F2} |", cola, colaPrice);
 		Console.WriteLine("{0,-15} | {1,10:F2} |", fanta, fantaPrice);
 		Console.WriteLine("{0,-15} | {1,10:F2} |", zagorka, zagorkaPrice);
