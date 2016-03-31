@@ -18,7 +18,7 @@ class BitSwap
         int q = int.Parse(Console.ReadLine());
         int k = int.Parse(Console.ReadLine());
 
-        Console.WriteLine("Binary representation:             " + Convert.ToString((uint)number, 2).PadLeft(32, '0'));
+        //Console.WriteLine("Binary representation:             " + Convert.ToString((uint)number, 2).PadLeft(32, '0'));
 
         // checks
         if (Math.Max(p, q) + k > 32)    
@@ -81,7 +81,7 @@ class BitSwap
                 number = result;
             }
 
-            Console.WriteLine("Binary representation after swaps: " + Convert.ToString(((uint)number), 2).PadLeft(32, '0'));
+            //Console.WriteLine("Binary representation after swaps: " + Convert.ToString(((uint)number), 2).PadLeft(32, '0'));
 
             Console.WriteLine(number);
         }
