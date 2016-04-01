@@ -1,11 +1,11 @@
 ﻿/* Problem 4. Rectangles
-Write an expression that calculates rectangle’s perimeter and area by given width and height. */
+Write an expression that calculates rectangle’s area and perimeter by given width and height. */
 
 using System;
 using System.Threading;                                                     
 using System.Globalization;
 
-class RectanglesPerimeterArea
+class RectanglesAreaPerimeter
 {
     static void Main()
     {
@@ -17,8 +17,8 @@ class RectanglesPerimeterArea
         double perimeter = 2 * (width + height);
         double area = width * height;
 
-        Console.WriteLine("{0:F2} {1:F2}", perimeter, area);
-        //Console.WriteLine("{0:0.00} {1:0.00}", perimeter, area);
-        //Console.WriteLine("{0} {1}", perimeter.ToString("F2"), area.ToString("F2"));
+        Console.WriteLine("{0:F2} {1:F2}", area, perimeter);
+        //Console.WriteLine("{0:0.00} {1:0.00}", area, perimeter);
+        //Console.WriteLine("{0} {1}", area.ToString("F2"), perimeter.ToString("F2"));
     }
 }
