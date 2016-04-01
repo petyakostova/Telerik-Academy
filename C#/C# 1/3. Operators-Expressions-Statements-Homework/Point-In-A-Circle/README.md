@@ -21,16 +21,16 @@ The program should then print **"yes DISTANCE"** if the point is inside the circ
 
 |     Input      |    Output     |
 |----------------|---------------|
-|0<br/>1         |true           |
-|-2<br/>0        |true           |
-|-1<br/>2        |false          |
-|1.5<br/>-1      |true           |
-|-1.5<br/>-1.5   |false  |
-|100<br/>-30     |false  |
-|0<br/>0         |true   |
-|0.2<br/>-0.8    |true   |
-|0.9<br/>-1.93   |false  |
-|1<br/>1.655     |true   |
+|-2<br/>0        |yes 2.00       |
+|-1<br/>2        |no 2.24        |
+|1.5<br/>-1      |yes 1.80       |
+|-1.5<br/>-1.5   |no 2.12        |
+|100<br/>-30     |no 104.40      |
+|0<br/>0         |yes 0.00       |
+|0.2<br/>-0.8    |yes 0.82       |
+|0.9<br/>-1.93   |no 2.13        |
+|1<br/>1.655     |yes 1.93       |
+|0<br/>1         |yes 1.00       |
 
 ## Submission
 - Submit your code [here](http://bgcoder.com/Contests/Compete/Index/310#6)
