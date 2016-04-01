@@ -1,18 +1,8 @@
 ﻿/* Problem 12.* Zero Subset
-   We are given 5 integer numbers. Write a program that finds all subsets of these numbers whose sum is 0.
+   We are given 5 integer numbers. 
+   Write a program that finds all subsets of these numbers whose sum is 0.
    Assume that repeating the same subset several times is not a problem.
-Examples:
-numbers 	    result
-3 -2 1 1 8 	    -2 + 1 + 1 = 0	
-3 1 -7 35 22 	no zero subset	
-1 3 -4 -2 -1 	1 + -1 = 0
-	            1 + 3 + -4 = 0
-	            3 + -2 + -1 = 0	
-1 1 1 -1 -1 	1 + -1 = 0
-	            1 + 1 + -1 + -1 = 0	
-0 0 0 0 0 	    0 + 0 + 0 + 0 + 0 = 0
-Hint: you may check for zero each of the 31 subsets with 31 if statements.
-*/
+   Hint: you may check for zero each of the 31 subsets with 31 if statements. */
 
 using System;
 
@@ -20,35 +10,11 @@ class ZeroSubset
 {
     static void Main()
     {
-        int a, b, c, d, e;
-        Console.Write("Enter an integer number a = ");
-        while (!int.TryParse(Console.ReadLine(), out a))                    // parsing and input check (validating the user data)
-        {
-            Console.WriteLine("Invalid number!");
-            Console.WriteLine("Enter a correct integer number a= ");
-        }
-        Console.Write("Enter an integer number b = ");
-        while (!int.TryParse(Console.ReadLine(), out b))                    // parsing and input check (validating the user data)
-        {
-            Console.WriteLine("Invalid number!");
-            Console.WriteLine("Enter a correct integer number b= ");
-        }
-        Console.Write("Enter an integer number c = ");
-        while (!int.TryParse(Console.ReadLine(), out c))                    // parsing and input check (validating the user data)
-        {
-            Console.WriteLine("Invalid number!");
-            Console.WriteLine("Enter a correct integer number c= ");
-        } Console.Write("Enter an integer number d = ");
-        while (!int.TryParse(Console.ReadLine(), out d))                    // parsing and input check (validating the user data)
-        {
-            Console.WriteLine("Invalid number!");
-            Console.WriteLine("Enter a correct integer number d= ");
-        } Console.Write("Enter an integer number e = ");
-        while (!int.TryParse(Console.ReadLine(), out e))                    // parsing and input check (validating the user data)
-        {
-            Console.WriteLine("Invalid number!");
-            Console.WriteLine("Enter a correct integer number e= ");
-        }
+        int a = int.Parse(Console.ReadLine());
+        int b = int.Parse(Console.ReadLine());
+        int c = int.Parse(Console.ReadLine());
+        int d = int.Parse(Console.ReadLine());
+        int e = int.Parse(Console.ReadLine());
 
         int count = 0;
 
