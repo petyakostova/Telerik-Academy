@@ -13,8 +13,6 @@ Homework: Conditional Statements
 #### 8. [Digit as Word](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/5.%20Conditional-Statements-Homework/Digit-As-Word)
 #### 9. [Int, Double, String](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/5.%20Conditional-Statements-Homework/Int-Double-String)
 ================================
-#### 10. [Beer Time](
-https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/5.%20Conditional-Statements-Homework/Beer-Time)
+#### 10. [Beer Time](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/5.%20Conditional-Statements-Homework/Beer-Time)
 #### 11. [Number As Words]( https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/5.%20Conditional-Statements-Homework/Number-As-Words)
-#### 12. [Zero Subset](
-https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/5.%20Conditional-Statements-Homework/Zero-Subset)
+#### 12. [Zero Subset](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/5.%20Conditional-Statements-Homework/Zero-Subset)
