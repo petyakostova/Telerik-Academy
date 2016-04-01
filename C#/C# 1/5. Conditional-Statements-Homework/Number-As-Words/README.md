@@ -14,7 +14,6 @@ Write a program that converts a number in the range [0…999] to words, correspo
 | 19      | Nineteen                      | 
 | 25      | Twenty five                   | 
 | 98      | Ninety eight                  | 
-| 98      | Ninety eight                  | 
 | 273     | Two hundred and seventy three | 
 | 400     | Four hundred                  | 
 | 501     | Five hundred and one          | 

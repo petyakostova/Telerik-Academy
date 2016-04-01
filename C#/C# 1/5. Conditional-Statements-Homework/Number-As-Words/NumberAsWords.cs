@@ -13,10 +13,10 @@ class NumberAsWords
             Console.Write("Incorrect input data! Enter number in the interval [0...999]: ");
         }
 
-        string num = number.ToString();
+        string numAsWords = number.ToString();
         if (number >= 100 && number <= 999)
         {
-            switch (num[0])
+            switch (numAsWords[0])
             {
                 case '1': Console.Write("One hundred "); break;
                 case '2': Console.Write("Two hundred "); break;
@@ -28,9 +28,9 @@ class NumberAsWords
                 case '8': Console.Write("Eight hundred "); break;
                 case '9': Console.Write("Nine hundred "); break;
             }
-            if (num[1] == '0')
+            if (numAsWords[1] == '0')
             {
-                switch (num[2])
+                switch (numAsWords[2])
                 {
                     case '1': Console.WriteLine("and one"); break;
                     case '2': Console.WriteLine("and two"); break;
@@ -43,9 +43,9 @@ class NumberAsWords
                     case '9': Console.WriteLine("and nine"); break;
                 }
             }
-            else if (num[1] == '1')
+            else if (numAsWords[1] == '1')
             {
-                switch (num[2])
+                switch (numAsWords[2])
                 {
                     case '0': Console.WriteLine("and ten"); break;
                     case '1': Console.WriteLine("and eleven"); break;
@@ -59,9 +59,9 @@ class NumberAsWords
                     case '9': Console.WriteLine("and nineteen"); break;
                 }
             }
-            else if (num[1] != '1')
+            else if (numAsWords[1] != '1')
             {
-                switch (num[1])
+                switch (numAsWords[1])
                 {
                     case '2': Console.Write("and twenty "); break;
                     case '3': Console.Write("and thirty "); break;
@@ -72,9 +72,9 @@ class NumberAsWords
                     case '8': Console.Write("and eighty "); break;
                     case '9': Console.Write("and ninety "); break;
                 }
-                if (num[2] != '0')
+                if (numAsWords[2] != '0')
                 {
-                    switch (num[2])
+                    switch (numAsWords[2])
                     {
                         case '1': Console.WriteLine("one"); break;
                         case '2': Console.WriteLine("two"); break;
@@ -91,7 +91,7 @@ class NumberAsWords
         }
         if (number >= 20 && number < 100)
         {
-            switch (num[0])
+            switch (numAsWords[0])
             {
                 case '2': Console.Write("Twenty "); break;
                 case '3': Console.Write("Thirty "); break;
@@ -102,9 +102,9 @@ class NumberAsWords
                 case '8': Console.Write("Eighty "); break;
                 case '9': Console.Write("Ninety "); break;
             }
-            if (num[1] != '0')
+            if (numAsWords[1] != '0')
             {
-                switch (num[1])
+                switch (numAsWords[1])
                 {
                     case '1': Console.WriteLine("one"); break;
                     case '2': Console.WriteLine("two"); break;
@@ -120,7 +120,7 @@ class NumberAsWords
         }
         if (number >= 10 && number <= 19)
         {
-            switch (num[1])
+            switch (numAsWords[1])
             {
                 case '0': Console.WriteLine("Ten"); break;
                 case '1': Console.WriteLine("Eleven"); break;
@@ -136,7 +136,7 @@ class NumberAsWords
         }
         if (number >= 1 && number <= 9)
         {
-            switch (num[0])
+            switch (numAsWords[0])
             {
                 case '1': Console.WriteLine("One"); break;
                 case '2': Console.WriteLine("Two"); break;
@@ -149,10 +149,11 @@ class NumberAsWords
                 case '9': Console.WriteLine("Nine"); break;
             }
         }
-        else if (num[0] == '0')
+        else if (numAsWords[0] == '0')
         {
             Console.WriteLine("Zero");
         }
+
         Console.WriteLine();
     }
 }
