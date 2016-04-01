@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("The-Biggest-Of-3-Numbers")]
+[assembly: AssemblyTitle("Biggest-Of-3-Numbers")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("The-Biggest-Of-3-Numbers")]
-[assembly: AssemblyCopyright("Copyright ©  2015")]
+[assembly: AssemblyProduct("Biggest-Of-3-Numbers")]
+[assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("3ebfd47b-6c8c-4522-9b78-61536f9fbabb")]
+[assembly: Guid("21d3c7b5-ab40-42ad-9ca2-ef600bd57242")]
 
 // Version information for an assembly consists of the following four values:
 //
