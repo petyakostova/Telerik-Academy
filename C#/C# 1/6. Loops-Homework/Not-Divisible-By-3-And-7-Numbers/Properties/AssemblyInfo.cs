@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Nums-Not-Divisible-By-3-And-7")]
+[assembly: AssemblyTitle("Not-Divisible-By-3-And-7-Numbers")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Nums-Not-Divisible-By-3-And-7")]
-[assembly: AssemblyCopyright("Copyright ©  2015")]
+[assembly: AssemblyProduct("Not-Divisible-By-3-And-7-Numbers")]
+[assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("e21617fa-0d85-4209-9e1a-dda5d0b3758b")]
+[assembly: Guid("a7cb23f4-7d27-4a25-8dce-fffe2e50c3c3")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2013 for Windows Desktop
-VisualStudioVersion = 12.0.30723.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Numbers-From-1-To-N", "Numbers-From-1-To-N\01. Numbers-From-1-To-N.csproj", "{2CDDAFE7-E415-422A-ACF8-EF12358D781E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Numbers-Not-Divisible-By-3-And-7", "Nums-Not-Divisible-By-3-And-7\02. Numbers-Not-Divisible-By-3-And-7.csproj", "{3A6EA8A2-4BFF-4498-84AC-F587EA7DCF6C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Min-Max-Sum-Average-Of-N-Numbers", "Min-Max-Sum-Average-Of-N-Nums\03. Min-Max-Sum-Average-Of-N-Numbers.csproj", "{319D7FA7-3558-4A6B-9C56-FFF272E38FF7}"
 EndProject
@@ -43,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12. Randomize-The-Numbers-1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19. Spiral Matrix", "19. Spiral Matrix\19. Spiral Matrix.csproj", "{FF60D814-E968-476A-A6A2-2A052F7ED600}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Not-Divisible-By-3-And-7-Numbers", "Not-Divisible-By-3-And-7-Numbers\02. Not-Divisible-By-3-And-7-Numbers.csproj", "{A7CB23F4-7D27-4A25-8DCE-FFFE2E50C3C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,10 +53,6 @@ Global
 		{2CDDAFE7-E415-422A-ACF8-EF12358D781E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CDDAFE7-E415-422A-ACF8-EF12358D781E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CDDAFE7-E415-422A-ACF8-EF12358D781E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3A6EA8A2-4BFF-4498-84AC-F587EA7DCF6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3A6EA8A2-4BFF-4498-84AC-F587EA7DCF6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3A6EA8A2-4BFF-4498-84AC-F587EA7DCF6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3A6EA8A2-4BFF-4498-84AC-F587EA7DCF6C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{319D7FA7-3558-4A6B-9C56-FFF272E38FF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{319D7FA7-3558-4A6B-9C56-FFF272E38FF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{319D7FA7-3558-4A6B-9C56-FFF272E38FF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -129,6 +125,10 @@ Global
 		{FF60D814-E968-476A-A6A2-2A052F7ED600}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF60D814-E968-476A-A6A2-2A052F7ED600}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF60D814-E968-476A-A6A2-2A052F7ED600}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7CB23F4-7D27-4A25-8DCE-FFFE2E50C3C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7CB23F4-7D27-4A25-8DCE-FFFE2E50C3C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7CB23F4-7D27-4A25-8DCE-FFFE2E50C3C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7CB23F4-7D27-4A25-8DCE-FFFE2E50C3C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
