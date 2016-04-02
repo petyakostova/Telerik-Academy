@@ -14,18 +14,17 @@
 
 using System;
 
-class GetNthBit
+class GetNthBitWithString
 {
     static void Main()
     {
-        long number = long.Parse(Console.ReadLine());    
+        long number = long.Parse(Console.ReadLine());
         int position = int.Parse(Console.ReadLine());
 
-        //Console.WriteLine("Binary representation: \r\n{0}", Convert.ToString(number, 2).PadLeft(64, '0'));
+        string binaryNum = Convert.ToString(number, 2).PadLeft(64, '0');
 
-        //If the first operand is a long or ulong (64-bit quantity), the shift count is given by the low-order six bits of the second operand. That is, the actual shift count is 0 to 63 bits.
-        long numberRightP = number >> position;
-        long bit = numberRightP & 1;
-        Console.WriteLine(bit);
+        int bitIndex = (binaryNum.Length - 1) - position;
+
+        Console.WriteLine(binaryNum[bitIndex]);
     }
 }
