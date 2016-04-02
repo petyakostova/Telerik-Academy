@@ -1,3 +1,9 @@
+/* Print the following triangle of numbers
+                1
+                1 2
+                ...
+                1 2 3 ... n             */
+
 using System;
 
 class Triangle

@@ -1,3 +1,5 @@
+// sum of the first n natural numbers
+
 using System;
 
 class Sum

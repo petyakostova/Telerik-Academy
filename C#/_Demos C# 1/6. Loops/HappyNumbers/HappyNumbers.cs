@@ -1,9 +1,13 @@
+// All 4 digit numbers in format ABCD such that A+B = C+D (known as happy numbers)
+
 using System;
 
 class HappyNumbers
 {
     static void Main()
     {
+        Console.BufferHeight = 620;
+
         for (int a = 1; a <= 9; a++)
         {
             for (int b = 0; b <= 9; b++)
@@ -22,4 +26,3 @@ class HappyNumbers
         }
     }
 }
-

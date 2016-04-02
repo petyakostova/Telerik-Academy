@@ -30,4 +30,3 @@ class Factorial
         Console.WriteLine(" = {0}", factorial);
     }
 }
-

@@ -1,3 +1,5 @@
+// Primes in the range [n..m]
+
 using System;
 
 class Primes
@@ -11,13 +13,13 @@ class Primes
         numberAsString = Console.ReadLine();
         int m = int.Parse(numberAsString);
 
-        if ((n > 1) && (m > n))
+        if ((n > 1) && (n < m))
         {
             for (int num = n; num <= m; num++)
             {
                 bool prime = true;
                 int divider = 2;
-                int maxDivider = (int) Math.Sqrt(num);
+                int maxDivider = (int)Math.Sqrt(num);
                 while (divider <= maxDivider)
                 {
                     if (num % divider == 0)

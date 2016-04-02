@@ -1,3 +1,4 @@
+// sum all odd numbers in [1...n], not divisors of 7
 using System;
 
 class SumOdd
@@ -13,8 +14,11 @@ class SumOdd
 		for (int i = 1; i <= n; i += 2)
 		{
 			if ((i % 7) == 0)
-				continue;
-			sum += i;
+            {
+                // bypasses the current iteration of the inner-most loop without exits the inner-most loop
+                continue;
+            }
+            sum += i;
 		}
 		Console.WriteLine("sum = {0}", sum);
 	}

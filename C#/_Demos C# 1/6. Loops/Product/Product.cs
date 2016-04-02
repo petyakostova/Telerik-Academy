@@ -1,3 +1,5 @@
+//calculating the product of all integers in the interval [n...m]
+
 using System;
 
 class Product

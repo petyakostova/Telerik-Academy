@@ -1,3 +1,6 @@
+// Print all combinations from TOTO 6/49 lottery
+// combinations without repetition on 49 elements sixth class
+
 using System;
 
 class Toto
@@ -16,6 +19,6 @@ class Toto
                                 // Try to comment the above row to speed up the program
                                 counter++;
                             }
-        Console.WriteLine("{0} combinations", counter);
+        Console.WriteLine("{0} combinations", counter); //13983816 combinations
     }		
 }
