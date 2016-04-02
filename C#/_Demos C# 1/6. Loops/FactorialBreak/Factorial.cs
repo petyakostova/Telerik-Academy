@@ -19,12 +19,14 @@ class Factorial
             Console.Write(n); 
             if (n == 1) 
             {
+                // exits the inner-most loop
                 break;
             }
             Console.Write(" * ");
             factorial *= n;
             n--;
         }
+
         Console.WriteLine(" = {0}", factorial);
     }
 }

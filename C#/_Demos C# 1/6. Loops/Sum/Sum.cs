@@ -7,6 +7,7 @@ class Sum
         Console.Write("n = ");
         string consoleInput = Console.ReadLine();
         int n = int.Parse(consoleInput);
+
         int number = 1;
         int sum = 1;
 

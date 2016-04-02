@@ -1,6 +1,7 @@
 using System;
 
-//using System.Numerics;
+using System.Numerics;
+// don't forget to add a reference to System.Numerics.dll
 
 class Factorial
 {
@@ -9,16 +10,22 @@ class Factorial
         Console.Write("n = ");
         string consoleInput = Console.ReadLine();
         int n = Convert.ToInt32(consoleInput);
-        decimal factorial = 1;
-        //BigInteger factorial = 1;
+
+        Console.Write("{0}! = ", n);
+
+        //decimal factorial = 1;
+        BigInteger factorial = 1;
 
         do
         {
-            factorial *= n;
+            if (n > 0)
+            {
+                factorial *= n;
+            }
             n--;
         }
         while (n > 0);
-		
-        Console.WriteLine("n! = " + factorial);
+
+        Console.WriteLine(factorial);
     }
 }
