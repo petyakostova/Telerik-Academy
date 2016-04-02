@@ -17,6 +17,7 @@ Homework: Operators and Expressions
 #### 12. [N-th Bit With Bitwise Operators](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/3.%20Operators-Expressions-Statements-Homework/Get-Nth-Bit)
 * [N-th Bit With String](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/3.%20Operators-Expressions-Statements-Homework/Get-Nth-Bit-With-String)
 * [N-th Bit With Array](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/3.%20Operators-Expressions-Statements-Homework/Get-Nth-Bit-With-Array)
+
 #### 13. [Modify Bit](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/3.%20Operators-Expressions-Statements-Homework/Modify-P-Bit-To-Value)
 #### 14. [BitExchange](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/3.%20Operators-Expressions-Statements-Homework/Bit-Exchange)
 #### 15. [BitSwap](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/3.%20Operators-Expressions-Statements-Homework/Bit-Swap)
