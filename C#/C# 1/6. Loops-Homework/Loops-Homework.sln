@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Print-A-Deck-Of-52-Card
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Calculate-The-Sum-Of-Sequence", "Calculate-The-Sum-Of-Sequence\05. Calculate-The-Sum-Of-Sequence.csproj", "{AE28BC13-087C-4F9A-B34C-3D5C55B4719E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Calculate-quotient-NfactKfact", "Calculate-quotient-NfactKfact\06. Calculate-quotient-NfactKfact.csproj", "{AADD12A0-018D-411B-87DE-F8E138668BD2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Calculate-Quotient-NfactKfact", "Calculate-quotient-NfactKfact\06. Calculate-Quotient-NfactKfact.csproj", "{AADD12A0-018D-411B-87DE-F8E138668BD2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Calculate-Combinations", "Calculate-Combinations\07. Calculate-Combinations.csproj", "{0200BBB8-87DE-467D-9627-AEB6342FF5C9}"
 EndProject
