@@ -16,8 +16,9 @@ class WeightOnTheMoon
 
         double weightOnTheMoon = weightOnTheEarth * 0.17;
         
-        Console.WriteLine(weightOnTheMoon.ToString("F3"));
+        Console.WriteLine("{0:F3}", weightOnTheMoon);
+        //Console.WriteLine("{0:0.000}", weightOnTheMoon);
+        //Console.WriteLine(weightOnTheMoon.ToString("F3"));
         //Console.WriteLine(weightOnTheMoon.ToString("N3"));
-        //Console.WriteLine("{0:F3}", weightOnTheMoon);
     }
 }
