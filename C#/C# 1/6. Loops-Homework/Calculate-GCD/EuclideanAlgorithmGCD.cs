@@ -1,11 +1,9 @@
-﻿/*Problem 17.* Calculate GCD
-  Write a program that calculates the greatest common divisor (GCD) of given two integers a and b.
-  Use the Euclidean algorithm (find it in Internet).
-Examples:
-a 	b 	    GCD(a, b)
-3 	2 	    1
-60 	40 	    20
-5 	-15 	5                                */ 
+﻿/* 15.* Calculate GCD
+   Write a program that calculates the greatest common divisor (GCD) of given two integers A and B.
+   Use the Euclidean algorithm (find it in Internet).
+   On the first and only line of the input you will receive the 2 integers A and B, separated by a whitespace.
+   Output a single number - the GCD of the numbers A and B.
+   Constraints: The numbers A and B will always be valid integers in the range [2, 500].                 */
 
 using System;
 
@@ -28,8 +26,10 @@ class EuclideanAlgorithmGCD
                 Console.WriteLine("Incorrect input!");
                 Console.Write("Please enter an integer number: ");
             }
+
             int numBigger = Math.Abs(firstNum);
             int numSmaller = Math.Abs(secondNum);
+
             if (numSmaller > numBigger)
             {
                 numSmaller += numBigger;                                           // exchange the values - first way
@@ -39,13 +39,16 @@ class EuclideanAlgorithmGCD
                 //numA = numB;
                 //numB = helpingExchangeVar;
             }
+
             int remainder = numBigger % numSmaller;
+
             while (remainder != 0)
             {
                 numBigger = numSmaller;
                 numSmaller = remainder;
                 remainder = numBigger % numSmaller;
             }
+
             int gcd = numSmaller;
 
             //while (numSmaller > 0)                                          // other way
@@ -58,5 +61,6 @@ class EuclideanAlgorithmGCD
 
             Console.WriteLine("GCD ({0}, {1}) = {2}", firstNum, secondNum, gcd);
         }
+
     }
 }

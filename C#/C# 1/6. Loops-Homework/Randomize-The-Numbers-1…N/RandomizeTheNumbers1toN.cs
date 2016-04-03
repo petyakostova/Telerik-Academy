@@ -1,4 +1,4 @@
-﻿/*  Problem 12.* Randomize the Numbers 1…N
+﻿/*  Problem * Randomize the Numbers 1…N
     Write a program that enters an integer n and prints the numbers 1, 2, …, n in random order.
 Examples:
 n 	    randomized numbers 1…n

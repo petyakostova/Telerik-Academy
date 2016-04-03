@@ -21,25 +21,23 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. Matrix-of-Numbers", "Ma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. Odd-And-Even-Product", "Odd-And-Even-Product\10. Odd-And-Even-Product.csproj", "{FFE1FC85-66EF-4DF2-8C41-DD25B6938C32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. Random-Numbers-In-Given-Range", "Random-Numbers-In-Given-Range\11. Random-Numbers-In-Given-Range.csproj", "{3C54C610-C57D-4C93-9C65-8FE8BE91AFAA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Random-Numbers-In-Given-Range", "Random-Numbers-In-Given-Range\Random-Numbers-In-Given-Range.csproj", "{3C54C610-C57D-4C93-9C65-8FE8BE91AFAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13. Binary-To-Decimal-Number", "Binary-To-Decimal-Number\13. Binary-To-Decimal-Number.csproj", "{D560C2C0-5881-4826-A0F1-2A6B67088D0B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. Binary-To-Decimal-Number", "Binary-To-Decimal-Number\11. Binary-To-Decimal-Number.csproj", "{D560C2C0-5881-4826-A0F1-2A6B67088D0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14. Decimal-To-Binary-Number", "Decimal-To-Binary-Number\14. Decimal-To-Binary-Number.csproj", "{20C94AF3-C458-4C91-B674-954E180526F0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12. Decimal-To-Binary-Number", "Decimal-To-Binary-Number\12. Decimal-To-Binary-Number.csproj", "{20C94AF3-C458-4C91-B674-954E180526F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15. Hexadecimal-To-Decimal-Number", "Hexadecimal-To-Decimal-Number\15. Hexadecimal-To-Decimal-Number.csproj", "{23154F57-DFEC-42AF-B828-0743BE6127C9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14. Hexadecimal-To-Decimal-Number", "Hexadecimal-To-Decimal-Number\14. Hexadecimal-To-Decimal-Number.csproj", "{23154F57-DFEC-42AF-B828-0743BE6127C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16. Decimal-To-Hexadecimal-Number", "Decimal-To-Hexadecimal-Number\16. Decimal-To-Hexadecimal-Number.csproj", "{D03AABC6-50E0-4710-B227-4DDA2B2BEBB1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13. Decimal-To-Hexadecimal-Number", "Decimal-To-Hexadecimal-Number\13. Decimal-To-Hexadecimal-Number.csproj", "{D03AABC6-50E0-4710-B227-4DDA2B2BEBB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17. Calculate-GCD", "Calculate-GCD\17. Calculate-GCD.csproj", "{75133C38-70BF-420D-9F86-0FD21CFBB283}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15. Calculate-GCD", "Calculate-GCD\15. Calculate-GCD.csproj", "{75133C38-70BF-420D-9F86-0FD21CFBB283}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18. Trailing-Zeroes-In-NFactorial", "Trailing-Zeroes-In-NFactorial\18. Trailing-Zeroes-In-NFactorial.csproj", "{9AD23658-732D-43FA-9D04-E23F63A67915}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16. Trailing-Zeroes-In-NFactorial", "Trailing-Zeroes-In-NFactorial\16. Trailing-Zeroes-In-NFactorial.csproj", "{9AD23658-732D-43FA-9D04-E23F63A67915}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19. Spiral-Matrix", "Spiral-Matrix\19. Spiral-Matrix.csproj", "{1475F407-8E93-4294-B370-1771F84A4456}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17. Spiral-Matrix", "Spiral-Matrix\17. Spiral-Matrix.csproj", "{1475F407-8E93-4294-B370-1771F84A4456}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12. Randomize-The-Numbers-1…N", "Randomize-The-Numbers-1…N\12. Randomize-The-Numbers-1…N.csproj", "{BCE4BF09-C0BA-4B45-B9C1-2ECFC607DB12}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19. Spiral Matrix", "19. Spiral Matrix\19. Spiral Matrix.csproj", "{FF60D814-E968-476A-A6A2-2A052F7ED600}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Randomize-The-Numbers-1…N", "Randomize-The-Numbers-1…N\Randomize-The-Numbers-1…N.csproj", "{BCE4BF09-C0BA-4B45-B9C1-2ECFC607DB12}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Not-Divisible-By-3-And-7-Numbers", "Not-Divisible-By-3-And-7-Numbers\02. Not-Divisible-By-3-And-7-Numbers.csproj", "{A7CB23F4-7D27-4A25-8DCE-FFFE2E50C3C3}"
 EndProject
@@ -121,10 +119,6 @@ Global
 		{BCE4BF09-C0BA-4B45-B9C1-2ECFC607DB12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCE4BF09-C0BA-4B45-B9C1-2ECFC607DB12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCE4BF09-C0BA-4B45-B9C1-2ECFC607DB12}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FF60D814-E968-476A-A6A2-2A052F7ED600}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FF60D814-E968-476A-A6A2-2A052F7ED600}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FF60D814-E968-476A-A6A2-2A052F7ED600}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FF60D814-E968-476A-A6A2-2A052F7ED600}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A7CB23F4-7D27-4A25-8DCE-FFFE2E50C3C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A7CB23F4-7D27-4A25-8DCE-FFFE2E50C3C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7CB23F4-7D27-4A25-8DCE-FFFE2E50C3C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
