@@ -19,18 +19,21 @@ class NthCatalanNumbers
 
             for (int i = 1; i <= (2 * n); i++)
             {
-                numerator *= i;
+                // (2*n)!
+                numerator *= i; 
             }
 
             BigInteger denominator = 1;
 
             for (int i = 1; i <= (n + 1); i++)
             {
+                // (n+1)!
                 denominator *= i;
             }
 
             for (int i = 1; i <= n; i++)
             {
+                // n!
                 denominator *= i;
             }
 
