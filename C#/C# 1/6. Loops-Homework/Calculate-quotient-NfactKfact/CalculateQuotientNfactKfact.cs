@@ -1,11 +1,9 @@
-﻿/*  Problem 6. Calculate N! / K!
-    Write a program that calculates n! / k! for given n and k (1 < k < n < 100).
-    Use only one loop.
-Examples:
-    n 	k 	n! / k!
-    5 	2 	60
-    6 	5 	6
-    8 	3 	6720                        */
+﻿/* 6. Calculate N! / K!
+   Write a program that calculates N! / K! for given N and K.
+   Use only one loop.
+   Input: On the first line, there will be only one number - N. On the second line, there will be only one number - K.
+   Output a single line, consisting of the result from the calculation described above.
+   Constraints: 1 < K < N < 100. N and K will always be valid integer numbers. Hint: overflow is possible.  */
 
 using System;
 
@@ -15,9 +13,9 @@ class CalculateQuotientNfactKfact
     {
         checked
         {
-            Console.Write("Enter an integer number n: 1 < n < 100   n= ");
+            //Console.Write("Enter an integer number n: 1 < n < 100   n= ");
             int n = int.Parse(Console.ReadLine());
-            Console.Write("Enter an integer number k: 1 < k < {0}   k= ", n);
+            //Console.Write("Enter an integer number k: 1 < k < {0}   k= ", n);
             int k = int.Parse(Console.ReadLine());
             if (1 < k && k < n && n < 100)
             {
@@ -26,6 +24,7 @@ class CalculateQuotientNfactKfact
                 {
                     result *= (ulong)i;
                 }
+
                 Console.WriteLine(result);
             }
             else
