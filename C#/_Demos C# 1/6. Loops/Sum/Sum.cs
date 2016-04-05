@@ -1,4 +1,4 @@
-// sum of the first n natural numbers
+// Sum of the first n natural numbers
 
 using System;
 
@@ -20,6 +20,7 @@ class Sum
             sum += number;
             Console.Write("+{0}", number);
         }
+
         Console.WriteLine(" = {0}", sum);
     }
 }
