@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Randomize-The-Numbers-1…N
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Not-Divisible-By-3-And-7-Numbers", "Not-Divisible-By-3-And-7-Numbers\02. Not-Divisible-By-3-And-7-Numbers.csproj", "{A7CB23F4-7D27-4A25-8DCE-FFFE2E50C3C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15. GCD", "GCD\15. GCD.csproj", "{B1B3966D-6049-41B9-83EA-B6607C751E14}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{A7CB23F4-7D27-4A25-8DCE-FFFE2E50C3C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7CB23F4-7D27-4A25-8DCE-FFFE2E50C3C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7CB23F4-7D27-4A25-8DCE-FFFE2E50C3C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1B3966D-6049-41B9-83EA-B6607C751E14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1B3966D-6049-41B9-83EA-B6607C751E14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1B3966D-6049-41B9-83EA-B6607C751E14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1B3966D-6049-41B9-83EA-B6607C751E14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
