@@ -5,8 +5,6 @@
    Output a single number - the count of trailing zeroes for the N!
    Constraints: N will always be a valid positive integer number. */
 
-// Note: by given big numbers like 100000 it takes time to calculating the answer, but it's correct
-
 using System;
 using System.Numerics;  // must be added in References; needed for BigInteger
 
@@ -14,13 +12,7 @@ class ZeroesInTheEndOfFactorial
 {
     static void Main()
     {
-        int number;
-        Console.Write("Enter an integer number: ");
-        while (!int.TryParse(Console.ReadLine(), out number))          // parsing and input check (validating the user data)
-        {
-            Console.WriteLine("Incorrect input!");
-            Console.Write("Please enter an integer number: ");
-        }
+        int number = int.Parse(Console.ReadLine());
 
         BigInteger factorial = 1;
 
@@ -29,7 +21,7 @@ class ZeroesInTheEndOfFactorial
             factorial *= number;
             number--;
         }
-
+        
         int counterZeroes = 0;
 
         while (factorial % 10 == 0)
@@ -39,5 +31,6 @@ class ZeroesInTheEndOfFactorial
         }
 
         Console.WriteLine(counterZeroes);
+        // Note: by given big numbers like 100000 it takes time to calculating the answer, but it's correct
     }
 }
