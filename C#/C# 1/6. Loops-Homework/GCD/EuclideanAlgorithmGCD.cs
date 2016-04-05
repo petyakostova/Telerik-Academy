@@ -11,56 +11,46 @@ class EuclideanAlgorithmGCD
 {
     static void Main()
     {
-        checked
+        string[] splitNumbers = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+        int firstNum = int.Parse(splitNumbers[0]);
+        int secondNum = int.Parse(splitNumbers[1]);
+
+        int numBigger = Math.Abs(firstNum);
+        int numSmaller = Math.Abs(secondNum);
+
+        if (numSmaller > numBigger)
         {
-            int firstNum, secondNum;
-            Console.Write("Enter an integer number: ");
-            while (!int.TryParse(Console.ReadLine(), out firstNum))     // parsing and input check (validating the user data)
-            {
-                Console.WriteLine("Incorrect input!");
-                Console.Write("Please enter an integer number: ");
-            }
-            Console.Write("Enter an integer number: ");
-            while (!int.TryParse(Console.ReadLine(), out secondNum))    // parsing and input check (validating the user data)
-            {
-                Console.WriteLine("Incorrect input!");
-                Console.Write("Please enter an integer number: ");
-            }
+            // exchange the values - first way
+            numSmaller += numBigger;
+            numBigger = numSmaller - numBigger;
+            numSmaller = numSmaller - numBigger;
 
-            int numBigger = Math.Abs(firstNum);
-            int numSmaller = Math.Abs(secondNum);
-
-            if (numSmaller > numBigger)
-            {
-                numSmaller += numBigger;                                           // exchange the values - first way
-                numBigger = numSmaller - numBigger;
-                numSmaller = numSmaller - numBigger;
-                //int helpingExchangeVar = numA;                        // exchange the values - second way
-                //numA = numB;
-                //numB = helpingExchangeVar;
-            }
-
-            int remainder = numBigger % numSmaller;
-
-            while (remainder != 0)
-            {
-                numBigger = numSmaller;
-                numSmaller = remainder;
-                remainder = numBigger % numSmaller;
-            }
-
-            int gcd = numSmaller;
-
-            //while (numSmaller > 0)                                          // other way
-            //{
-            //    int remainder = numBigger % numSmaller;
-            //    numBigger = numSmaller;
-            //    numSmaller = remainder;
-            //}
-            //int gcd = numBigger;
-
-            Console.WriteLine("GCD ({0}, {1}) = {2}", firstNum, secondNum, gcd);
+            // exchange the values - second way
+            //int helpingExchangeVar = numSmaller;
+            //numSmaller = numBigger;
+            //numBigger = helpingExchangeVar;
         }
 
+        // first way
+        int remainder = numBigger % numSmaller;
+        while (remainder != 0)
+        {
+            numBigger = numSmaller;
+            numSmaller = remainder;
+            remainder = numBigger % numSmaller;
+        }
+        int gcd = numSmaller;
+
+        // second way
+        //while (numSmaller > 0)
+        //{
+        //    int remainder = numBigger % numSmaller;
+        //    numBigger = numSmaller;
+        //    numSmaller = remainder;
+        //}
+        //int gcd = numBigger;
+
+        Console.WriteLine(gcd);
+        
     }
 }
