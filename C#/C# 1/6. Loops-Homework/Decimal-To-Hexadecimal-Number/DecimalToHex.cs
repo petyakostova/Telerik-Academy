@@ -11,23 +11,23 @@ class DecimalToHex
 {
     static void Main()
     {
-        long decimalNumber;
-        Console.Write("Enter an integer number: ");
-        while (!long.TryParse(Console.ReadLine(), out decimalNumber))       // parsing and input check (validating the user data)
-        {
-            Console.WriteLine("Invalid input!");
-            Console.Write("Enter an integer number: ");
-        }
+        long decimalNumber = long.Parse(Console.ReadLine());
+
+        //Console.WriteLine(decimalNumber.ToString("X"));
+        //Console.WriteLine("{0:X}", decimalNumber);
+        //Console.WriteLine(Convert.ToString(decimalNumber, 16).ToUpper());
+
         if (decimalNumber == 0)
         {
             Console.WriteLine(0);
         }
         else
         {
-            string hexaNumber = "";                                         // other way: string hexaNumber = null;         
+            string hexaNumber = "";   // other way: string hexaNumber = null;         
             while (decimalNumber > 0)
             {
-                long checkRemainder = (long)decimalNumber % 16;           // must be long; when this type is int the result is wrong
+                // must be long; when this type is int the result is wrong
+                long checkRemainder = decimalNumber % 16;           
                 string remainder = "";
                 switch (checkRemainder)
                 {
@@ -42,6 +42,7 @@ class DecimalToHex
                 hexaNumber = remainder + hexaNumber;
                 decimalNumber /= 16;
             }
+
             Console.WriteLine(hexaNumber);
         }
 

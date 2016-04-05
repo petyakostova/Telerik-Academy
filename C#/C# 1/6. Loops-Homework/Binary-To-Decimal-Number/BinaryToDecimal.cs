@@ -8,7 +8,7 @@
 
 using System;
 
-class BinaryToDecimalNumber
+class BinaryToDecimal
 {
     static void Main()
     {

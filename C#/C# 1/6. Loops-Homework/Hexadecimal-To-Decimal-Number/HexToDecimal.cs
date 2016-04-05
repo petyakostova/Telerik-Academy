@@ -7,20 +7,22 @@
 
 using System;
 
-class HexadecimalToDecimalNumber
+class HexToDecimal
 {
     static void Main()
     {
-        Console.Write("Enter a hexadecimal number: ");
-        string hexaNumber = Console.ReadLine();
+        //Console.Write("Enter a hexadecimal number: ");
+        string hexNumber = Console.ReadLine();
+
+        //Console.WriteLine(Convert.ToInt64(hexNumber, 16));
 
         long decimalNumber = 0;
 
-        for (int i = 0; i < hexaNumber.Length; i++)
+        for (int i = 0; i < hexNumber.Length; i++)
         {
             int multiplier;
 
-            switch (hexaNumber[hexaNumber.Length - i - 1])
+            switch (hexNumber[hexNumber.Length - i - 1])
             {
                 case 'A': multiplier = 10; break;
                 case 'B': multiplier = 11; break;
@@ -28,8 +30,8 @@ class HexadecimalToDecimalNumber
                 case 'D': multiplier = 13; break;
                 case 'E': multiplier = 14; break;
                 case 'F': multiplier = 15; break;
-                default: multiplier = int.Parse(hexaNumber[hexaNumber.Length - i - 1].ToString()); break;
-                //default: multiplier = (int)hexaNumber[hexaNumber.Length - i - 1] - 48; break;    // other way for default
+                default: multiplier = int.Parse(hexNumber[hexNumber.Length - i - 1].ToString()); break;
+                //default: multiplier = (int)hexNumber[hexNumber.Length - i - 1] - 48; break; // other way for default
             }
 
             decimalNumber += multiplier * (long)Math.Pow(16, i);
