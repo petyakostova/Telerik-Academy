@@ -181,3 +181,7 @@ UpgradeLog*.htm
 
 # Microsoft Fakes
 FakesAssemblies/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
