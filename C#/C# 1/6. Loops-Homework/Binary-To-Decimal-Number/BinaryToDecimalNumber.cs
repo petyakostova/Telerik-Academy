@@ -13,19 +13,19 @@ class BinaryToDecimalNumber
     static void Main()
     {
         //Console.Write("Enter a binary number (consisted of 0 and 1): ");
-        string binaryNumber = Console.ReadLine();       
+        string binaryNumber = Console.ReadLine();
+
+        //long numDec = Convert.ToInt64(binaryNumber, 2);
+        //Console.WriteLine(numDec);   
 
         long decimalNumber = 0;
 
         for (int i = 0; i < binaryNumber.Length; i++)
         {
-            if (binaryNumber[binaryNumber.Length - i - 1] == '0')
+            if (binaryNumber[binaryNumber.Length - i - 1] == '1')
             {
-                // bypasses the iteration of the inner-most loop and jumps to the update expression in for loop
-                continue;           
+                decimalNumber += (long)Math.Pow(2, i);
             }
-
-            decimalNumber += (long)Math.Pow(2, i);
         }
 
         Console.WriteLine(decimalNumber);

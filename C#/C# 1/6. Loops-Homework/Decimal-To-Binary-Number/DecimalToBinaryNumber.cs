@@ -14,6 +14,8 @@ class DecimalToBinaryNumber
     {
         long decimalNumber = long.Parse(Console.ReadLine());
 
+        //Console.WriteLine(Convert.ToString(decimalNumber, 2));
+
         if (decimalNumber == 0)
         {
             Console.WriteLine(0);
