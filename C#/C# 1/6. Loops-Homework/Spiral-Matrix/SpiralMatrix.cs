@@ -73,17 +73,17 @@ class SpiralMatrix2
             {
                 for (int j = 0; j < matrix.GetLength(1); j++)
                 {
-                    Console.SetCursorPosition(j * 5, i * 2);
+                    Console.SetCursorPosition(j * 4, i * 2);
                     Console.Write(matrix[i, j]);
+                    //Console.Write(matrix[i, j] + " ");
                 }
-
                 Console.WriteLine();
             }
+
         }
         else
         {
             Console.WriteLine("out of range");
         }
-
     }
 }
