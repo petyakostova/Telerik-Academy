@@ -1,0 +1,2 @@
+more: 2
+tops left: 2, legs left: 8

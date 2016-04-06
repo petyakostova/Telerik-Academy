@@ -1,0 +1,2 @@
+less: -100
+tops needed: 100, legs needed: 0

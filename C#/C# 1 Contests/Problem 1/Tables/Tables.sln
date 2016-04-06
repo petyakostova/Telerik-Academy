@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Tables", "1. Tables\1. Tables.csproj", "{D7AE199B-6450-4957-8FD4-22A9D6FAA45E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tables-AS", "Tables-AS\Tables-AS.csproj", "{3CAAC7A3-9529-4847-BBF0-40D035D6BA37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7AE199B-6450-4957-8FD4-22A9D6FAA45E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7AE199B-6450-4957-8FD4-22A9D6FAA45E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7AE199B-6450-4957-8FD4-22A9D6FAA45E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7AE199B-6450-4957-8FD4-22A9D6FAA45E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CAAC7A3-9529-4847-BBF0-40D035D6BA37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CAAC7A3-9529-4847-BBF0-40D035D6BA37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CAAC7A3-9529-4847-BBF0-40D035D6BA37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CAAC7A3-9529-4847-BBF0-40D035D6BA37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
