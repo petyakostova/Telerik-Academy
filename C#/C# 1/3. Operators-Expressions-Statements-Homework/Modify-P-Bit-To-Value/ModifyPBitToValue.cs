@@ -5,6 +5,10 @@
         Second line - the position P.
         Third line - the bit value v.
    Output a single line containing the value of the number N with the modified bit.
+   Constraints:
+        N will always be a valid 64-bit unsigned integer.
+        P will always be between in the range [0, 64).
+        v will be always either 0 or 1.
 
         |     Input         |Binary representation|Modified value    |    Output     |
         |-------------------|---------------------|------------------|---------------|
@@ -20,7 +24,7 @@ class ModifyPBitToValue
 {
     static void Main()
     {
-        int number = int.Parse(Console.ReadLine());
+        ulong number = ulong.Parse(Console.ReadLine());
         int position = int.Parse(Console.ReadLine());
         int value = int.Parse(Console.ReadLine());
 
@@ -28,17 +32,17 @@ class ModifyPBitToValue
 
         if (value == 0)
         {
-            int mask = ~(1 << position);
-            int result = number & mask;
+            ulong mask = (ulong)~(1 << position);
+            ulong result = number & mask;
             //Console.WriteLine("Modified value:        " + Convert.ToString(result, 2).PadLeft(16, '0'));      
-            Console.WriteLine(result);            
+            Console.WriteLine(result);
         }
         else
         {
-            int mask = 1 << position;
-            int result = number | mask;
+            ulong mask = (ulong)1 << position;
+            ulong result = number | mask;
             //Console.WriteLine("Modified value:        " + Convert.ToString(result, 2).PadLeft(16, '0'));
-            Console.WriteLine(result);            
+            Console.WriteLine(result);
         }
     }
 }
