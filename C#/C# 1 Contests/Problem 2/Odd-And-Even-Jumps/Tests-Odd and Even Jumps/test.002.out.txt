@@ -1,0 +1,2 @@
+Odd: 1336AD
+Even: 132EDA

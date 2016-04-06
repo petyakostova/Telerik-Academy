@@ -25,8 +25,8 @@ class Tables
         }
         else if (tablesMade < tablesToBeMade)  
         {
-            long topsNeeded;    // колко плота още ни трябват
-            long legsNeeded;    // колко крачета още ни трябват
+            long topsNeeded;    
+            long legsNeeded;    
 
             if (tablesToBeMade >= tableTops)
             {
