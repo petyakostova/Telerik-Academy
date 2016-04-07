@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Odd-Even-Sum", "02. Odd-Even-Sum\02. Odd-Even-Sum.csproj", "{F2C73051-C801-48D7-8229-513908462FB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odd-Even-Sum-AS", "Odd-Even-Sum-AS\Odd-Even-Sum-AS.csproj", "{28E73B2B-47F5-4590-87F0-7C3EC858B85A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2C73051-C801-48D7-8229-513908462FB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2C73051-C801-48D7-8229-513908462FB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2C73051-C801-48D7-8229-513908462FB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2C73051-C801-48D7-8229-513908462FB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28E73B2B-47F5-4590-87F0-7C3EC858B85A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28E73B2B-47F5-4590-87F0-7C3EC858B85A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28E73B2B-47F5-4590-87F0-7C3EC858B85A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28E73B2B-47F5-4590-87F0-7C3EC858B85A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
