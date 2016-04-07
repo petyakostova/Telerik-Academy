@@ -185,3 +185,6 @@ FakesAssemblies/
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
+
+#OS junk files
+[Tt]humbs.db
