@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Exam-Schedule", "01. Exam-Schedule\01. Exam-Schedule.csproj", "{C92DC32D-B704-4A9E-8A9A-1413E7BC55D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam-Schedule-AS", "Exam-Schedule-AS\Exam-Schedule-AS.csproj", "{F4AB1BB8-E9E7-43D6-B4D9-4DB1579BB34A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C92DC32D-B704-4A9E-8A9A-1413E7BC55D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C92DC32D-B704-4A9E-8A9A-1413E7BC55D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C92DC32D-B704-4A9E-8A9A-1413E7BC55D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C92DC32D-B704-4A9E-8A9A-1413E7BC55D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4AB1BB8-E9E7-43D6-B4D9-4DB1579BB34A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4AB1BB8-E9E7-43D6-B4D9-4DB1579BB34A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4AB1BB8-E9E7-43D6-B4D9-4DB1579BB34A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4AB1BB8-E9E7-43D6-B4D9-4DB1579BB34A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
