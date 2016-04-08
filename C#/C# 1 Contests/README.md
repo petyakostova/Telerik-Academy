@@ -30,16 +30,16 @@
 |    8 November 2014    |   Baba Tinche Airlines   |         Numerology        |        RockLq       |          Gambling         |    Bit Builder    |
 |    7 November 2014    |          Budget          |    Odd or Even Counter    |        Plane        |     Weird Combinations    |    Bit Swapper    |
 |     26 August 2014    |     Tic-Tac-Toe Power    |        Jumping Sums       |         Star        |      Winning Numbers      |       X-Bits      |
-|     22 August 2014    |          Tables          |        Book Orders        |         Car         |        Chess Queens       |    Double Downs   |
-|  25 July 2014 Evening |        [Electricity](./Problem 1/Electricity)       |     Odd and Even Jumps    | House with a Window |      Nakovs Matching      |  Change Even Bits |
+|     22 August 2014    |          [Tables](./Problem 1/Tables/)          |        Book Orders        |         Car         |        Chess Queens       |    Double Downs   |
+|  25 July 2014 Evening |        [Electricity](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201%20Contests/Problem%201/Electricity)       |     Odd and Even Jumps    | House with a Window |      Nakovs Matching      |  Change Even Bits |
 |  25 July 2014 Morning |  Melons and Watermelons  | Letters, Symbols, Numbers | Panda Scotland Flag |     Morse Code Numbers    |     Bit Paths     |
 |        May 2014       |    Simple Calculation    |        Simple Loops       |     Draw Figure     |        Nested Loops       | Bitwise Operators |
 |     28 April 2014     |      Fit Box in Box      |   Sequence of K Numbers   |         Disk        |       Poker Straight      |    Friend Bits    |
 | 14 April 2014 Evening |    Inside the Building   |       Student Cables      |    Programmer DNA   |     Magic Car Numbers     |    Bit Flipper    |
 | 14 April 2014 Morning |       Fruit Market       |       Biggest Triple      |      Wine Glass     | Longest Alphabetical Word |    Bit Shooter    |
-| 12 April 2014 Evening |       Exam Schedule      |     Odd Even Elements     |        Arrow        |    Five Special Letters   |     BitRoller     |
-| 12 April 2014 Morning |         Triangle         |           Pairs           |        House        |        Magic dates        |    Bits Killer    |
+| 12 April 2014 Evening |       [Exam Schedule](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201%20Contests/Problem%201/Exam-Schedule)      |     Odd Even Elements     |        Arrow        |    Five Special Letters   |     BitRoller     |
+| 12 April 2014 Morning |         [Triangle](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201%20Contests/Problem%201/Triangle)         |           Pairs           |        House        |        Magic dates        |    Bits Killer    |
 | 11 April 2014 Evening |          Cinema          |         Illuminati        |      New House      |     Crossing Sequences    |   Catch The Bits  |
 | 11 April 2014 Morning |        Work Hours        |      Sum Of Elements      |     The Explorer    |       Magic Strings       |    Bit Sifting    |
-| 10 April 2014 Evening |        Volleyball        |        Odd Even Sum       |       Eclipse       |       Hayvan Numbers      |       BitsUp      |
+| 10 April 2014 Evening |        [Volleyball](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201%20Contests/Problem%201/Volleyball)        |        Odd Even Sum       |       Eclipse       |       Hayvan Numbers      |       BitsUp      |
 | 10 April 2014 Morning | Joro The Football Player |          Half Sum         |      Sunglasses     |  Nine Digit Magic Numbers |   Bits Inverter   |
