@@ -12,7 +12,10 @@ class FibonacciNumbers
     {
         uint n = uint.Parse(Console.ReadLine());
 
-        Console.Write("0"); // prints the first member of the Fibonacci sequence
+        if (n > 0)
+        {
+            Console.Write("0"); // prints the first member of the Fibonacci sequence
+        }
 
         if (n > 1)
         {
@@ -21,11 +24,11 @@ class FibonacciNumbers
 
         if (n > 2)
         {
-            uint memberN = 0;
-            uint memberNplus1 = 1;
+            long memberN = 0;
+            long memberNplus1 = 1;
             for (int i = 3; i <= n; i++)
             {
-                uint memberNplus2 = memberN + memberNplus1;
+                long memberNplus2 = memberN + memberNplus1;
                 Console.Write(", {0}", memberNplus2); // prints the i-member of the Fibonacci sequence
                 memberN = memberNplus1;
                 memberNplus1 = memberNplus2;
