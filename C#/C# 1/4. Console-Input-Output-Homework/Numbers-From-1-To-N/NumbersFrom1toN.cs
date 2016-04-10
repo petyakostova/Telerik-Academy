@@ -7,7 +7,7 @@ class NumbersFrom1toN
 {
     static void Main()
     {
-        Console.BufferHeight = 1001;
+        //Console.BufferHeight = 1001;
 
         int n = int.Parse(Console.ReadLine());
         
