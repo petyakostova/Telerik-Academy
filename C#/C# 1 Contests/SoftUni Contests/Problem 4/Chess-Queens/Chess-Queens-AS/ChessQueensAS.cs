@@ -6,8 +6,11 @@ class ChessQueensAS
     {
         int n = int.Parse(Console.ReadLine());
         int d = int.Parse(Console.ReadLine());
+
         int diff = d + 1;
+
         char[] letters = new char[n];
+
         bool noValid = true;
 
         for (int i = 0; i < n; i++)
