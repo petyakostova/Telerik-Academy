@@ -1,0 +1,3 @@
+(h|ello) matches (c|sharp) by 13996 nakovs
+(he|llo) matches (cs|harp) by 17557 nakovs
+(hell|o) matches (cshar|p) by 11567 nakovs

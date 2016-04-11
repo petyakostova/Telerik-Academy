@@ -1,0 +1,11 @@
+(q|abcdxxxqefgh) matches (p|qraaastuvwxyz) by 22634 nakovs
+(qa|bcdxxxqefgh) matches (pq|raaastuvwxyz) by 18630 nakovs
+(qab|cdxxxqefgh) matches (pqr|aaastuvwxyz) by 14814 nakovs
+(qabc|dxxxqefgh) matches (pqra|aastuvwxyz) by 36206 nakovs
+(qabcdx|xxqefgh) matches (pqraaas|tuvwxyz) by 46144 nakovs
+(qabcdxx|xqefgh) matches (pqraaast|uvwxyz) by 18024 nakovs
+(qabcdxxx|qefgh) matches (pqraaastu|vwxyz) by 8706 nakovs
+(qabcdxxxq|efgh) matches (pqraaastuv|wxyz) by 23000 nakovs
+(qabcdxxxqe|fgh) matches (pqraaastuvw|xyz) by 16968 nakovs
+(qabcdxxxqef|gh) matches (pqraaastuvwx|yz) by 11124 nakovs
+(qabcdxxxqefg|h) matches (pqraaastuvwxy|z) by 5468 nakovs

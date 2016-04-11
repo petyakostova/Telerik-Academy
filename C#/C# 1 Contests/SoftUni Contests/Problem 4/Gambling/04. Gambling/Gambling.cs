@@ -34,15 +34,15 @@ class Gambling
 
         double greaterHands = 0;
         int totalHands = 0;
-        for (int i = 2; i <= 14; i++)
+        for (int card1 = 2; card1 <= 14; card1++)
         {
-            for (int j = 2; j <= 14; j++)
+            for (int card2 = 2; card2 <= 14; card2++)
             {
-                for (int k = 2; k <= 14; k++)
+                for (int card3 = 2; card3 <= 14; card3++)
                 {
-                    for (int m = 2; m <= 14; m++)
+                    for (int card4 = 2; card4 <= 14; card4++)
                     {
-                        int currentHandStrength = i + j + k + m;
+                        int currentHandStrength = card1 + card2 + card3 + card4;
                         if (currentHandStrength > strength)
                         {
                             greaterHands++;
@@ -63,6 +63,7 @@ class Gambling
         {
             Console.WriteLine("DRAW");
         }
+
         Console.WriteLine("{0:0.00}", 2 * cash * chance);
     }
 }

@@ -1,0 +1,6 @@
+(z|zzzzzz) matches (a|aaaaaa) by 0 nakovs
+(zz|zzzzz) matches (aa|aaaaa) by 0 nakovs
+(zzz|zzzz) matches (aaa|aaaa) by 0 nakovs
+(zzzz|zzz) matches (aaaa|aaa) by 0 nakovs
+(zzzzz|zz) matches (aaaaa|aa) by 0 nakovs
+(zzzzzz|z) matches (aaaaaa|a) by 0 nakovs

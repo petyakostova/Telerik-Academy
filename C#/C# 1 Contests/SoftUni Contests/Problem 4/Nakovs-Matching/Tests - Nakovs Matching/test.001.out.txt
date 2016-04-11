@@ -1,0 +1,13 @@
+(s|oftuni) matches (so|ftwareuniversity) by 54279 nakovs
+(s|oftuni) matches (sof|twareuniversity) by 24873 nakovs
+(so|ftuni) matches (softw|areuniversity) by 14434 nakovs
+(so|ftuni) matches (softwa|reuniversity) by 60838 nakovs
+(sof|tuni) matches (softwar|euniversity) by 54392 nakovs
+(sof|tuni) matches (software|university) by 23984 nakovs
+(soft|uni) matches (softwareun|iversity) by 31516 nakovs
+(soft|uni) matches (softwareuni|versity) by 49964 nakovs
+(softu|ni) matches (softwareuniv|ersity) by 92117 nakovs
+(softu|ni) matches (softwareunive|rsity) by 13741 nakovs
+(softu|ni) matches (softwareuniver|sity) by 74723 nakovs
+(softun|i) matches (softwareunivers|ity) by 55707 nakovs
+(softun|i) matches (softwareuniversi|ty) by 25773 nakovs
