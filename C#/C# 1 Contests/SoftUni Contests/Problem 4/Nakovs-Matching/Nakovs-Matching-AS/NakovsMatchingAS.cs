@@ -9,10 +9,11 @@ public class NakovsMatchingAS
         int maxDiff = int.Parse(Console.ReadLine());
 
         bool found = false;
+
         for (int firstIndex = 1; firstIndex <= firstStr.Length - 1; firstIndex++)
         {
-            string leftFirstStr = firstStr.Substring(0, firstIndex);
-            string rightFirstStr = firstStr.Substring(firstIndex);
+            string leftFirstStr = firstStr.Substring(0, firstIndex); //public String Substring(int startIndex, int length);
+            string rightFirstStr = firstStr.Substring(firstIndex); //public String Substring(int startIndex);
             int leftFirstWeight = SumChars(leftFirstStr);
             int rightFirstWeight = SumChars(rightFirstStr);
 
@@ -24,6 +25,7 @@ public class NakovsMatchingAS
                 int rightSecondWeight = SumChars(rightSecondStr);
 
                 int diff = Math.Abs(leftFirstWeight * rightSecondWeight - rightFirstWeight * leftSecondWeight);
+
                 if (diff <= maxDiff)
                 {
                     Console.WriteLine(
@@ -43,10 +45,12 @@ public class NakovsMatchingAS
     static int SumChars(string str)
     {
         int sum = 0;
+
         foreach (char ch in str)
         {
             sum += (int)ch;
         }
+
         return sum;
     }
 }
