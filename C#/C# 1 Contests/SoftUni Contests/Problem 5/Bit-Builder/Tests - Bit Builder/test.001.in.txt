@@ -1,0 +1,8 @@
+1024
+2
+flip
+10
+flip
+6
+flip
+quit

@@ -1,0 +1,16 @@
+203
+0
+skip
+4
+skip
+10
+remove
+5
+remove
+1
+remove
+8
+flip
+14
+flip
+quit

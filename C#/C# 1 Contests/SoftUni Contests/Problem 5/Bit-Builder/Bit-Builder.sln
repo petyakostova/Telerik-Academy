@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bit-Builder-AS", "Bit-Builder-AS\Bit-Builder-AS.csproj", "{85C092C5-80D0-49C7-BC33-4E31EEA5FBFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Bit-Builder", "05. Bit-Builder\05. Bit-Builder.csproj", "{8E3F8F4B-9733-4668-A56A-331606C3E12B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{85C092C5-80D0-49C7-BC33-4E31EEA5FBFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85C092C5-80D0-49C7-BC33-4E31EEA5FBFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85C092C5-80D0-49C7-BC33-4E31EEA5FBFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85C092C5-80D0-49C7-BC33-4E31EEA5FBFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E3F8F4B-9733-4668-A56A-331606C3E12B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E3F8F4B-9733-4668-A56A-331606C3E12B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E3F8F4B-9733-4668-A56A-331606C3E12B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E3F8F4B-9733-4668-A56A-331606C3E12B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

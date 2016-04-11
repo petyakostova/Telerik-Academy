@@ -1,0 +1,10 @@
+255
+0
+flip
+10
+insert
+1
+remove
+8
+skip
+quit

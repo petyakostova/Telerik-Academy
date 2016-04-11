@@ -1,0 +1,16 @@
+124242
+23
+flip
+20
+remove
+10
+insert
+3
+flip
+2
+skip
+7
+remove
+14
+insert
+quit

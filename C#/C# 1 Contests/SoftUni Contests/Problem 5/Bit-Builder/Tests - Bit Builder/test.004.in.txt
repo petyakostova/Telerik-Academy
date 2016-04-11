@@ -1,0 +1,16 @@
+2013
+1
+insert
+5
+skip
+2
+insert
+10
+insert
+3
+remove
+12
+remove
+16
+insert
+quit

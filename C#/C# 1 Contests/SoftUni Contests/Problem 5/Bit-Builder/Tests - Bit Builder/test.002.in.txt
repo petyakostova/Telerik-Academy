@@ -1,0 +1,10 @@
+230
+11
+flip
+5
+flip
+0
+flip
+20
+flip
+quit

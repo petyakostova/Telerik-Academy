@@ -1,0 +1,10 @@
+11230
+9
+insert
+15
+remove
+0
+remove
+2
+flip
+quit
