@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spy-Hard-AS", "Spy-Hard-AS\Spy-Hard-AS.csproj", "{6FDC1493-8DE5-4DA6-891E-5EDE8A33DF2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Spy-Hard", "02. Spy-Hard\02. Spy-Hard.csproj", "{FEBF2DE5-2D59-4354-9BC2-F76A9A155DD8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FDC1493-8DE5-4DA6-891E-5EDE8A33DF2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FDC1493-8DE5-4DA6-891E-5EDE8A33DF2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FDC1493-8DE5-4DA6-891E-5EDE8A33DF2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FDC1493-8DE5-4DA6-891E-5EDE8A33DF2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEBF2DE5-2D59-4354-9BC2-F76A9A155DD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEBF2DE5-2D59-4354-9BC2-F76A9A155DD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEBF2DE5-2D59-4354-9BC2-F76A9A155DD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEBF2DE5-2D59-4354-9BC2-F76A9A155DD8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
