@@ -1,4 +1,5 @@
-﻿using System;
+﻿// 70 / 100
+using System;
 
 class BitBuilder
 {
