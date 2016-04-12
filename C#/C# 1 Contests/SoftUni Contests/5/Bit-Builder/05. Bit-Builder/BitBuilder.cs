@@ -42,10 +42,11 @@ class BitBuilder
     {
         int result = 0;
         int addition = 0;
-
+        
         for (int i = 0; i < 32; i++)
         {
             int mask = 1 << i;
+            //int mask = num << i;
 
             if (i == pos)
             {
@@ -64,10 +65,11 @@ class BitBuilder
     {
         int result = 0;
         int addition = 0;
-
+        
         for (int i = 0; i < 32; i++)
         {
             int mask = 1 << i;
+            //int mask = num << i;
 
             if (i == pos)
             {

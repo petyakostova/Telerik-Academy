@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Author's Solution
+
+using System;
 
 class BitBuilderAS
 {
