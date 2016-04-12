@@ -30,6 +30,8 @@ class BitBuilder
                 case "remove":
                     num = RemoveBit(num, position);
                     break;
+                default:
+                    break;
             }
         }
 
@@ -82,10 +84,13 @@ class BitBuilder
 
     static int FlipBit(int num, int pos)
     {
-        // get the bit at position pos from a number num
-        int bit = (num >> pos) & 1;
-
         int mask = 1 << pos;
+
+        // get the bit at position pos from a number num - first way
+        int bit = (num >> pos) & 1;
+        // get the bit at position pos from a number num - second way
+        //int bit = mask & num;
+
         if (bit == 1)
         {
             // set the bit at position pos to 0
