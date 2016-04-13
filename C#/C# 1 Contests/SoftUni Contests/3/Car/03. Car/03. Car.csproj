@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="03.Car.docx" />
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="car example 1 &amp; 2.png" />

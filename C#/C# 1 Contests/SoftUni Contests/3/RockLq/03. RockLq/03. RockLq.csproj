@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="03.RockLq.docx" />
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="RockLq Examples.png" />
