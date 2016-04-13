@@ -15,16 +15,19 @@ class BiggestOf3Numbers
         double a = double.Parse(Console.ReadLine());
         double b = double.Parse(Console.ReadLine());
         double c = double.Parse(Console.ReadLine());
+        
+        Console.WriteLine(Math.Max(Math.Max(a, b), c));
 
-        double biggest = a;
-        if (b > biggest)
-        {
-            biggest = b;
-        }
-        if (c > biggest)
-        {
-            biggest = c;
-        }
-        Console.WriteLine(biggest);
+        // other way
+        //double biggest = a;
+        //if (b > biggest)
+        //{
+        //    biggest = b;
+        //}
+        //if (c > biggest)
+        //{
+        //    biggest = c;
+        //}
+        //Console.WriteLine(biggest);
     }
 }

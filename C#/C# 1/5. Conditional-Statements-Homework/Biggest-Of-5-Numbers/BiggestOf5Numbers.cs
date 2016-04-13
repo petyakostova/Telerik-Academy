@@ -17,25 +17,27 @@ class BiggestOf5Numbers
         double c = double.Parse(Console.ReadLine());
         double d = double.Parse(Console.ReadLine());
         double e = double.Parse(Console.ReadLine());
-        
-        double biggest = a;
-        if (b > biggest)
-        {
-            biggest = b;
-        }
-        if (c > biggest)
-        {
-            biggest = c;
-        }
-        if (d > biggest)
-        {
-            biggest = d;
-        }
-        if (e > biggest)
-        {
-            biggest = e;
-        }
 
-        Console.WriteLine(biggest);
+        Console.WriteLine(Math.Max(Math.Max(Math.Max(a, b), Math.Max(c, d)), e));
+
+        // other way
+        //double biggest = a;
+        //if (b > biggest)
+        //{
+        //    biggest = b;
+        //}
+        //if (c > biggest)
+        //{
+        //    biggest = c;
+        //}
+        //if (d > biggest)
+        //{
+        //    biggest = d;
+        //}
+        //if (e > biggest)
+        //{
+        //    biggest = e;
+        //}
+        //Console.WriteLine(biggest);
     }
 }
