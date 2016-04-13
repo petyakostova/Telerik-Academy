@@ -44,19 +44,25 @@ class BitBuilder
                     number ^= 1 << position;
                     break;
                 case "remove":
-                    //to avoid mistakes
-                    number >>= position + 1; // first: move number to the right (position+1) times 
-                    number <<= position; // then: move number to the left (position) times
-                    // last: add the right bits, which we keep
-                    number |= rightBits; //number = number | rightBits
-                    break;
+                    {
+                        //to avoid mistakes
+                        number >>= position + 1; // first: move number to the right (position+1) times 
+                        number <<= position; // then: move number to the left (position) times
+
+                        // last: add the right bits, which we keep
+                        number |= rightBits; //number = number | rightBits
+                        break;
+                    }
                 case "insert":
-                    number >>= position;
-                    number <<= position + 1; // 1 is the space for the one we want to add
-                    //adding the one; 1 must be long, because the position can be 31 (otherwise number will become negative)  
-                    number |= (long)1 << position;
-                    number |= rightBits; // add the right bits, which we keep
-                    break;
+                    {
+                        number >>= position;
+                        number <<= position + 1; // 1 is the space for the one we want to add
+
+                        //adding the one; 1 must be long, because the position can be 31 (otherwise number will become negative) 
+                        number |= (long)1 << position;
+                        number |= rightBits; // add the right bits, which we keep
+                        break;
+                    }
             }
 
             command = Console.ReadLine();
