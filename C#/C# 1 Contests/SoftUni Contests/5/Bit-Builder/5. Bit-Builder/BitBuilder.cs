@@ -5,7 +5,7 @@ class BitBuilder
 {
     static void Main()
     {
-        int num = int.Parse(Console.ReadLine());
+        long num = long.Parse(Console.ReadLine());
 
         while (true)
         {
@@ -30,23 +30,21 @@ class BitBuilder
                 case "remove":
                     num = RemoveBit(num, position);
                     break;
-                default:
-                    break;
             }
         }
 
         Console.WriteLine(num);
     }
 
-    static int RemoveBit(int number, int pos)
+    static long RemoveBit(long number, int pos)
     {
-        int result = 0;
+        long result = 0;
         int addition = 0;
 
         for (int i = 0; i < 32; i++)
         {
-            int mask = 1 << i;
-            //int mask = num << i;
+            long mask = 1 << i;
+            //long mask = num << i;
 
             if (i == pos)
             {
@@ -61,15 +59,15 @@ class BitBuilder
         return result;
     }
 
-    static int InsertBit(int number, int pos)
+    static long InsertBit(long number, int pos)
     {
-        int result = 0;
+        long result = 0;
         int addition = 0;
 
         for (int i = 0; i < 32; i++)
         {
-            int mask = 1 << i;
-            //int mask = num << i;
+            long mask = 1 << i;
+            //long mask = num << i;
 
             if (i == pos)
             {
@@ -84,14 +82,14 @@ class BitBuilder
         return result;
     }
 
-    static int FlipBit(int num, int pos)
+    static long FlipBit(long num, int pos)
     {
-        int mask = 1 << pos;
+        long mask = 1 << pos;
 
         // get the bit at position pos from a number num - first way
-        int bit = (num >> pos) & 1;
+        long bit = (num >> pos) & 1;
         // get the bit at position pos from a number num - second way
-        //int bit = mask & num;
+        //long bit = mask & num;
 
         if (bit == 1)
         {
