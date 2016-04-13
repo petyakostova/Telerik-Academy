@@ -1,4 +1,4 @@
-﻿// 70/100 in bgcoder
+﻿// 80/100 in https://judge.softuni.bg/Contests/Practice/Index/36#4
 
 using System;
 
@@ -44,7 +44,7 @@ class BitBuilder
 
         for (int i = 0; i < 32; i++)
         {
-            long mask = 1 << i;
+            long mask = 1L << i;
             //long mask = number << i;
 
             if (i == pos)
@@ -67,7 +67,7 @@ class BitBuilder
 
         for (int i = 0; i < 32; i++)
         {
-            long mask = 1 << i;
+            long mask = 1L << i;
             //long mask = number << i;
 
             if (i == pos)
@@ -85,7 +85,7 @@ class BitBuilder
 
     static long FlipBit(long number, int pos)
     {
-        long mask = 1 << pos;
+        long mask = 1L << pos;
 
         // get the bit at position pos from a number num - first way
         long bit = (number >> pos) & 1;
