@@ -1,9 +1,9 @@
 ﻿using System;
-using System.Text;
+using System.Text; // for StringBuilder
 
 class SpyHard
 {
-    static void Main(string[] args)
+    static void Main()
     {
         int baseOfSystem = int.Parse(Console.ReadLine());
         Console.Write(baseOfSystem);
