@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="05.BitBuilder_.docx" />
+    <None Include="insert 9 explanation.docx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

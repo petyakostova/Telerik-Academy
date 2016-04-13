@@ -1,4 +1,5 @@
-﻿// 70 / 100
+﻿// 70/100 in bgcoder
+
 using System;
 
 class BitBuilder
@@ -44,7 +45,7 @@ class BitBuilder
         for (int i = 0; i < 32; i++)
         {
             long mask = 1 << i;
-            //long mask = num << i;
+            //long mask = number << i;
 
             if (i == pos)
             {
@@ -67,7 +68,7 @@ class BitBuilder
         for (int i = 0; i < 32; i++)
         {
             long mask = 1 << i;
-            //long mask = num << i;
+            //long mask = number << i;
 
             if (i == pos)
             {
@@ -82,28 +83,28 @@ class BitBuilder
         return result;
     }
 
-    static long FlipBit(long num, int pos)
+    static long FlipBit(long number, int pos)
     {
         long mask = 1 << pos;
 
         // get the bit at position pos from a number num - first way
-        long bit = (num >> pos) & 1;
+        long bit = (number >> pos) & 1;
         // get the bit at position pos from a number num - second way
-        //long bit = mask & num;
+        //long bit = mask & number;
 
         if (bit == 1)
         {
             // set the bit at position pos to 0
-            num = num & ~mask;
+            number = number & ~mask;
         }
         else
         {
             // set the bit at position pos to 1
-            num = num | mask;
+            number = number | mask;
         }
 
         //Console.WriteLine(Convert.ToString(num, 2).PadLeft(16, '0')); //medium check
-        return num;
+        return number;
     }
 
 }
