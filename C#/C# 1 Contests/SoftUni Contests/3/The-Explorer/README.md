@@ -1,6 +1,6 @@
 ## The Explorer
 
-### Input	  	Output
+### Input	=>	Output
 
 **5**		
 	
