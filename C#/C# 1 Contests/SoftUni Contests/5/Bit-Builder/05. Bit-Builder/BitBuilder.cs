@@ -1,111 +1,67 @@
-﻿// 70 / 100
-using System;
+﻿using System;
 
 class BitBuilder
 {
     static void Main()
     {
-        int num = int.Parse(Console.ReadLine());
+        long number = int.Parse(Console.ReadLine());
+        string command = Console.ReadLine();
 
-        while (true)
+        while (command != "quit")
         {
-            string input = Console.ReadLine();
-            if (input == "quit")
+            int position = int.Parse(command);
+            command = Console.ReadLine();
+
+            // creating mask from ones
+            long mask = 0;
+
+            // first way for creating the mask
+            string binaryMask = new string('1', position);
+            if (position != 0) // important check; otherwise Runtime error in 3 tests
             {
-                break;
+                //long number in binary numeral system
+                mask = Convert.ToInt64(binaryMask, 2); // the opposite of Convert.ToString()
             }
 
-            int position = int.Parse(input);
+            // other way for creating the mask
+            //for (int i = 0; i < position; i++)
+            //{
+            //    mask <<= 1; //shift the mask to the left 1 time for creating space for the one 
+            //    mask |= 1; // adding 1 to the mask 
+            //}
 
-            string order = Console.ReadLine();
+            long rightBits = number & mask; // the bits to the right, which we want to keep
+            /* Explanation:
+                position        =>  10                  4               1
+                number          =>  000 1111 1110       000 1111 1110   100 1111 1110 
+                mask            =>  011 1111 1111       000 0000 1111   000 0000 0001
+                number & mask   =>  000 1111 1110       000 0000 1110   000 0000 0000
+            */
 
-            switch (order)
+            switch (command)
             {
                 case "flip":
-                    num = FlipBit(num, position);
-                    break;
-                case "insert":
-                    num = InsertBit(num, position);
+                    number ^= 1 << position;
                     break;
                 case "remove":
-                    num = RemoveBit(num, position);
+                    //to avoid mistakes
+                    number >>= position + 1; // first: move number to the right (position+1) times 
+                    number <<= position; // then: move number to the left (position) times
+                    // last: add the right bits, which we keep
+                    number |= rightBits; //number = number | rightBits
                     break;
-                default:
+                case "insert":
+                    number >>= position;
+                    number <<= position + 1; // 1 is the space for the one we want to add
+                    //adding the one; 1 must be long, because the position can be 31 (otherwise number will become negative)  
+                    number |= (long)1 << position;
+                    number |= rightBits; // add the right bits, which we keep
                     break;
             }
+
+            command = Console.ReadLine();
         }
 
-        Console.WriteLine(num);
+        Console.WriteLine(number);
     }
-
-    static int RemoveBit(int number, int pos)
-    {
-        int result = 0;
-        int addition = 0;
-        
-        for (int i = 0; i < 32; i++)
-        {
-            int mask = 1 << i;
-            //int mask = num << i;
-
-            if (i == pos)
-            {
-                addition = 1;
-                continue;
-            }
-
-            result += (number & mask) >> addition;
-        }
-
-        //Console.WriteLine(Convert.ToString(result, 2).PadLeft(16, '0')); //medium check
-        return result;
-    }
-
-    static int InsertBit(int number, int pos)
-    {
-        int result = 0;
-        int addition = 0;
-        
-        for (int i = 0; i < 32; i++)
-        {
-            int mask = 1 << i;
-            //int mask = num << i;
-
-            if (i == pos)
-            {
-                result += 1 << pos;
-                addition = 1;
-            }
-
-            result += (number & mask) << addition;
-        }
-
-        //Console.WriteLine(Convert.ToString(result, 2).PadLeft(16, '0')); //medium check
-        return result;
-    }
-
-    static int FlipBit(int num, int pos)
-    {
-        int mask = 1 << pos;
-
-        // get the bit at position pos from a number num - first way
-        int bit = (num >> pos) & 1;
-        // get the bit at position pos from a number num - second way
-        //int bit = mask & num;
-
-        if (bit == 1)
-        {
-            // set the bit at position pos to 0
-            num = num & ~mask;
-        }
-        else
-        {
-            // set the bit at position pos to 1
-            num = num | mask;
-        }
-
-        //Console.WriteLine(Convert.ToString(num, 2).PadLeft(16, '0')); //medium check
-        return num;
-    }
-
 }
