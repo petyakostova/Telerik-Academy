@@ -20,7 +20,8 @@ class Headphones2
         int dashesIn = d;
         for (int i = 0; i < d / 2; i++)
         {
-            Console.WriteLine("{0}{1}{2}{1}{0}", new string('-', dashesOut), new string('*', stars), new string('-', dashesIn)); // part 3
+            Console.WriteLine("{0}{1}{2}{1}{0}", 
+                new string('-', dashesOut), new string('*', stars), new string('-', dashesIn)); // part 3
             stars += 2;
             dashesOut--;
             dashesIn -= 2;
@@ -33,7 +34,8 @@ class Headphones2
         dashesIn = 3;
         for (int i = 0; i < d / 2; i++)
         {
-            Console.WriteLine("{0}{1}{2}{1}{0}", new string('-', dashesOut), new string('*', stars), new string('-', dashesIn)); // part 5
+            Console.WriteLine("{0}{1}{2}{1}{0}", 
+                new string('-', dashesOut), new string('*', stars), new string('-', dashesIn)); // part 5
             stars -= 2;
             dashesOut++;
             dashesIn += 2;

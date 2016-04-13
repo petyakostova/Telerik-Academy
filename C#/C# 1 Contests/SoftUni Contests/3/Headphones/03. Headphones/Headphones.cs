@@ -15,12 +15,14 @@ class Headphones
 
         for (int i = 0; i < diameter / 2; i++)
         {
-            Console.WriteLine("{0}{1}{2}{1}{0}", new string('-', diameter / 2 - 1 - i), new string('*', 3 + 2 * i), new string('-', diameter - 2 - 2 * i)); // part 3
+            Console.WriteLine("{0}{1}{2}{1}{0}", 
+                new string('-', diameter / 2 - 1 - i), new string('*', 3 + 2 * i), new string('-', diameter - 2 - 2 * i)); // part 3
         }
 
         for (int i = 0; i < diameter / 2; i++)
         {
-            Console.WriteLine("{0}{1}{2}{1}{0}", new string('-', 1 + i), new string('*', diameter - 2 - 2 * i), new string('-', 3 + 2 * i)); // part 4
+            Console.WriteLine("{0}{1}{2}{1}{0}", 
+                new string('-', 1 + i), new string('*', diameter - 2 - 2 * i), new string('-', 3 + 2 * i)); // part 4
         }
     }
 }
