@@ -1,7 +1,7 @@
 ## Telerik Logo
 
-### *Solution using Arrays and the Ping Pong Ball Method => [TelerikLogoMatrix](https://github.com/petyakostova/Telerik-Academy/blob/master/C%23/C%23%201%20Contests/4/Telerik-Logo/04.%20Telerik-Logo/TelerikLogoMatrix.cs)* 
-### *Solution using `new string()` => [TelerikLogo](https://github.com/petyakostova/Telerik-Academy/blob/master/C%23/C%23%201%20Contests/4/Telerik-Logo/4.%20Telerik-Logo/TelerikLogo.cs)*
+### *I. Solution using Arrays and the Ping Pong Ball Method => [TelerikLogoMatrix](https://github.com/petyakostova/Telerik-Academy/blob/master/C%23/C%23%201%20Contests/4/Telerik-Logo/04.%20Telerik-Logo/TelerikLogoMatrix.cs)* 
+### *II. Solution using `new string()` => [TelerikLogo](https://github.com/petyakostova/Telerik-Academy/blob/master/C%23/C%23%201%20Contests/4/Telerik-Logo/4.%20Telerik-Logo/TelerikLogo.cs)*
 
 ### Input	=>	Output
 
