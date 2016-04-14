@@ -2,7 +2,7 @@
 
 using System;
 
-class TelerikLogo
+class TelerikLogoMatrix
 {
     static void Main()
     {
