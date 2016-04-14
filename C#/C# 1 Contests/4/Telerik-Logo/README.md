@@ -2,6 +2,7 @@
 
 ### *I. Solution using Arrays and the Ping Pong Ball Method => [TelerikLogoMatrix](https://github.com/petyakostova/Telerik-Academy/blob/master/C%23/C%23%201%20Contests/4/Telerik-Logo/04.%20Telerik-Logo/TelerikLogoMatrix.cs)* 
 ### *II. Solution using `new string()` => [TelerikLogo](https://github.com/petyakostova/Telerik-Academy/blob/master/C%23/C%23%201%20Contests/4/Telerik-Logo/4.%20Telerik-Logo/TelerikLogo.cs)*
+### *III. Solution using `new string()` and split the second part to 3 parts (middle and 2 symmetric horns) => [TelerikLogoHorns](https://github.com/petyakostova/Telerik-Academy/blob/master/C%23/C%23%201%20Contests/4/Telerik-Logo/4.%20Telerik-Logo-Horns/TelerikLogoHorns.cs)*
 
 ### Input	=>	Output
 

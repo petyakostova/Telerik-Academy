@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telerik-Logo-AS", "Telerik-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Telerik-Logo", "4. Telerik-Logo\4. Telerik-Logo.csproj", "{90D01819-B5F1-4834-9D54-D3581832749B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Telerik-Logo-Horns", "4. Telerik-Logo-Horns\4. Telerik-Logo-Horns.csproj", "{BC8D91E8-1E09-46F3-A781-1A868B3EB344}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{90D01819-B5F1-4834-9D54-D3581832749B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90D01819-B5F1-4834-9D54-D3581832749B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90D01819-B5F1-4834-9D54-D3581832749B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC8D91E8-1E09-46F3-A781-1A868B3EB344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC8D91E8-1E09-46F3-A781-1A868B3EB344}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC8D91E8-1E09-46F3-A781-1A868B3EB344}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC8D91E8-1E09-46F3-A781-1A868B3EB344}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
