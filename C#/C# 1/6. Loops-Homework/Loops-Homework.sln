@@ -33,7 +33,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13. Decimal-To-Hexadecimal-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16. 2. Trailing-Zeroes-In-NFactorial", "Trailing-Zeroes-In-NFactorial\16. 2. Trailing-Zeroes-In-NFactorial.csproj", "{9AD23658-732D-43FA-9D04-E23F63A67915}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17. Spiral-Matrix", "Spiral-Matrix\17. Spiral-Matrix.csproj", "{1475F407-8E93-4294-B370-1771F84A4456}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17. 1. Spiral-Matrix", "Spiral-Matrix\17. 1. Spiral-Matrix.csproj", "{1475F407-8E93-4294-B370-1771F84A4456}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19. Randomize-The-Numbers-1…N", "Randomize-The-Numbers-1…N\19. Randomize-The-Numbers-1…N.csproj", "{BCE4BF09-C0BA-4B45-B9C1-2ECFC607DB12}"
 EndProject
@@ -44,6 +44,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16. 1. Trailing-Zeroes-In-NFactorial-Faster", "Trailing-Zeroes-In-NFactorial-Faster\16. 1. Trailing-Zeroes-In-NFactorial-Faster.csproj", "{F6DB17BC-7CD1-4599-ACA7-1CDB87CCA65E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. 1. Print-A-Deck", "Print-A-Deck\04. 1. Print-A-Deck.csproj", "{471D1B3A-6990-4780-B361-53C1E721E095}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17. 2. Spiral-Matrix-With-Console-Clear", "Spiral-Matrix-With-Console-Clear\17. 2. Spiral-Matrix-With-Console-Clear.csproj", "{2B4A0118-65F0-465C-8226-CE612B7D7AFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +137,10 @@ Global
 		{471D1B3A-6990-4780-B361-53C1E721E095}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{471D1B3A-6990-4780-B361-53C1E721E095}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{471D1B3A-6990-4780-B361-53C1E721E095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B4A0118-65F0-465C-8226-CE612B7D7AFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B4A0118-65F0-465C-8226-CE612B7D7AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B4A0118-65F0-465C-8226-CE612B7D7AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B4A0118-65F0-465C-8226-CE612B7D7AFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
