@@ -23,7 +23,7 @@ class SumQuotientsFactorialsPowers
         double x = double.Parse(Console.ReadLine());
 
         double sum = 1;
-        int factorial = 1;
+        int factorial = 1; // factorial must be int
 
         if (x == 0) // check
         {
