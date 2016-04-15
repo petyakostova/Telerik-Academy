@@ -20,41 +20,39 @@ class SumQuotientsFactorialsPowers
         Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
 
         int number = int.Parse(Console.ReadLine());
-        decimal x = decimal.Parse(Console.ReadLine());
+        double x = double.Parse(Console.ReadLine());
 
-        decimal sum = 1;
-        decimal factorial = 1;
+        double sum = 1;
+        int factorial = 1;
 
-        //if (x == 0)
-        //{
-        //    Console.WriteLine("Invalid input!  x != 0");
-        //}
-        //else
-        //{
-
-        // Sum = 0!/X^0 + 1!/X^1 + 2!/X^2 + … + N!/X^N 
-
-        // first way
-        //decimal power = 1;
-        //for (int i = 1; i <= number; i++)
-        //{
-        //    factorial *= i;
-        //    power *= x;
-        //    sum += (factorial / power);
-        //}
-
-        // second way
-
-        for (int i = 1; i <= number; i++)
+        if (x == 0) // check
         {
-            factorial *= i;
-
-            sum += factorial / (decimal)(Math.Pow((double)x, i));
+            Console.WriteLine("Invalid input!  x != 0");
         }
+        else
+        {
+            // Sum = 0!/X^0 + 1!/X^1 + 2!/X^2 + … + N!/X^N 
 
-        Console.WriteLine("{0:F5}", sum); // other way {0:0.00000}
+            // first way
+            for (int i = 1; i <= number; i++)
+            {
+                factorial *= i;
 
-        //}
+                sum += factorial / Math.Pow(x, i);
+            }
+
+            // second way
+            //double power = 1;
+            //for (int i = 1; i <= number; i++)
+            //{
+            //    factorial *= i;
+            //    power *= x;
+            //    sum += (factorial / power);
+            //}
+
+            Console.WriteLine("{0:F5}", sum); // other way {0:0.00000}
+
+        }
 
     }
 }
