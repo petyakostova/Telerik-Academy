@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Numbers-From-1-To-N", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Min-Max-Sum-Average-Of-N-Numbers", "Min-Max-Sum-Average-Of-N-Nums\03. Min-Max-Sum-Average-Of-N-Numbers.csproj", "{319D7FA7-3558-4A6B-9C56-FFF272E38FF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Print-A-Deck-Of-52-Cards", "Print-A-Deck-Of-52-Cards\04. Print-A-Deck-Of-52-Cards.csproj", "{8E26AFD1-FEDF-417C-8903-28428F5AB176}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. 2. Print-A-Deck-Of-52-Cards", "Print-A-Deck-Of-52-Cards\04. 2. Print-A-Deck-Of-52-Cards.csproj", "{8E26AFD1-FEDF-417C-8903-28428F5AB176}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Calculate-The-Sum-Of-Sequence", "Calculate-The-Sum-Of-Sequence\05. Calculate-The-Sum-Of-Sequence.csproj", "{AE28BC13-087C-4F9A-B34C-3D5C55B4719E}"
 EndProject
@@ -42,6 +42,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15. GCD", "GCD\15. GCD.csproj", "{B1B3966D-6049-41B9-83EA-B6607C751E14}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16. 1. Trailing-Zeroes-In-NFactorial-Faster", "Trailing-Zeroes-In-NFactorial-Faster\16. 1. Trailing-Zeroes-In-NFactorial-Faster.csproj", "{F6DB17BC-7CD1-4599-ACA7-1CDB87CCA65E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. 1. Print-A-Deck", "Print-A-Deck\04. 1. Print-A-Deck.csproj", "{471D1B3A-6990-4780-B361-53C1E721E095}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +131,10 @@ Global
 		{F6DB17BC-7CD1-4599-ACA7-1CDB87CCA65E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6DB17BC-7CD1-4599-ACA7-1CDB87CCA65E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6DB17BC-7CD1-4599-ACA7-1CDB87CCA65E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{471D1B3A-6990-4780-B361-53C1E721E095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{471D1B3A-6990-4780-B361-53C1E721E095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{471D1B3A-6990-4780-B361-53C1E721E095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{471D1B3A-6990-4780-B361-53C1E721E095}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
