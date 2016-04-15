@@ -21,7 +21,7 @@ Homework: Loops
 #### 15. [GCD](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/6.%20Loops-Homework/GCD)
 #### 16.1. [Trailing 0 in N! - I way (faster) - Counting 5s in prime factors](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/6.%20Loops-Homework/Trailing-Zeroes-In-NFactorial-Faster)
 #### 16.2. [Trailing 0 in N! - II way - Counting trailing 0s in the calculated factorial](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/6.%20Loops-Homework/Trailing-Zeroes-In-NFactorial)
-#### 17.1. [Spiral Matrix - I way](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/6.%20Loops-Homework/Spiral-Matrix)
+#### 17.1. [Spiral Matrix - I way - using directions](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/6.%20Loops-Homework/Spiral-Matrix)
 #### 17.2. [Spiral Matrix - II way - With Console.Clear() => doesn't work in bgcoder](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/6.%20Loops-Homework/Spiral-Matrix-With-Console-Clear)
 ================================
 #### 18. [Random Numbers in Given Range](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201/6.%20Loops-Homework/Random-Numbers-In-Given-Range)

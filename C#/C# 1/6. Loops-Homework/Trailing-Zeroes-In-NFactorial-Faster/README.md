@@ -11,4 +11,4 @@ A simple way is to calculate floor(n/5). For example, 7! has one 5; 10! has two 
 Handling this is simple, first divide n by 5 and remove all single 5s, then divide by 25 to remove extra 5s and so on. Following is the summarized formula for counting trailing 0s.
 
 ### Trailing 0s in N! = Count of 5s in prime factors of N! = 
-###                  `= floor(n/5) + floor(n/25) + floor(n/125) + ....`
+###                  `= Floor(n/5) + Floor(n/25) + Floor(n/125) + ....`
