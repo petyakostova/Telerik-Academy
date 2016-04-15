@@ -21,18 +21,20 @@ class ZeroesInTheEndOfFactorialFaster
         {
             counterZeroes = 1;
         }
-
-        // first way
-        for (int i = 5; number / i >= 1; i *= 5)
+        else
         {
-            counterZeroes += number / i;
-        }
+            // first way
+            for (int i = 5; number / i >= 1; i *= 5)
+            {
+                counterZeroes += number / i;
+            }
 
-        // second way
-        //for (int power5 = 5; power5 <= number; power5 *= 5)
-        //{
-        //    counterZeroes += number / power5;
-        //}
+            // second way
+            //for (int power5 = 5; power5 <= number; power5 *= 5)
+            //{
+            //    counterZeroes += number / power5;
+            //}
+        }
 
         Console.WriteLine(counterZeroes);
     }
