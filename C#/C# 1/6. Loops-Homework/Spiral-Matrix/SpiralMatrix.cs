@@ -28,14 +28,17 @@ public class Program
 
     private static void FillMatrix(int[,] spiralMatrix, int N)
     {
+        int maxValue = N * N;
+
         int row = 0;
         int col = 0;
-        int maxValue = N * N;
         string direction = "right";
 
         for (int i = 1; i <= maxValue; i++)
         {
-            if (direction == "right" && (col > N - 1 || spiralMatrix[row, col] != 0))
+            // check for changing the direction
+
+            if (direction == "right" && (col > (N - 1) || spiralMatrix[row, col] != 0))
             {
                 direction = "down";
                 row++;
@@ -63,7 +66,11 @@ public class Program
                 col++;
             }
 
+            // fill the current element
+
             spiralMatrix[row, col] = i;
+
+            // go to the next element in this direction
 
             if (direction == "right")
             {
