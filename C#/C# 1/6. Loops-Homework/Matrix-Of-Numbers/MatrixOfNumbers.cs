@@ -20,9 +20,9 @@ class MatrixOfNumbers
 
         for (int row = 1; row <= n; row++)
         {
-            for (int num = row; num <= (row + n - 1); num++)    // num < row + n
+            for (int num = row; num < row + n; num++)    // num <= (row + n - 1)
             {
-                Console.Write("{0, 3}", num);
+                Console.Write("{0} ", num);
             }
             Console.WriteLine();
         }

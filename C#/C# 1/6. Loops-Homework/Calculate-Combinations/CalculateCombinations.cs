@@ -19,26 +19,30 @@ class CalculateCombinaions
         int n = int.Parse(Console.ReadLine());
         //Console.Write("Enter an integer number k: 1 < k < {0}   k= ", n);
         int k = int.Parse(Console.ReadLine());
-        if (1 < k && k < n && n < 100)
-        {
-            BigInteger result = 1;
+
+        //if (1 < k && k < n && n < 100)
+        //{
+
+            BigInteger numerator = 1;
+            BigInteger denominator = 1;
 
             for (int i = k + 1; i <= n; i++)
             {
-                result *= i;
+                numerator *= i;
             }
 
-            for (int j = 1; j <= (n - k); j++)
+            for (int j = 2; j <= (n - k); j++)
             {
-                result /= j;
+                denominator *= j;
             }
 
+            BigInteger result = numerator / denominator;
             Console.WriteLine(result);
-        }
-        else
-        {
-            Console.WriteLine("Invalid input!");
-        }
 
+        //}
+        //else
+        //{
+        //    Console.WriteLine("Invalid input!");
+        //}
     }
 }
