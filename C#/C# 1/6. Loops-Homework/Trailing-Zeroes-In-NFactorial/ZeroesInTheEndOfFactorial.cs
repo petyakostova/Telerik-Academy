@@ -1,9 +1,11 @@
-﻿/* 16.* Trailing Zeroes in N!
+﻿/* 16. Trailing Zeroes in N!
    Write a program that calculates with how many zeroes the factorial of a given number N has at its end.
    Your program should work well for very big numbers, e.g. N = 100000.
    On the only input line, you will receive a single integer - the number N
    Output a single number - the count of trailing zeroes for the N!
    Constraints: N will always be a valid positive integer number. */
+
+//The simple method is to first calculate factorial of number, then count trailing 0s in the result.
 
 using System;
 using System.Numerics;  // must be added in References; needed for BigInteger
