@@ -6,31 +6,31 @@
    Constraints: 1 < K < N < 100. N and K will always be valid integer numbers. Hint: overflow is possible.  */
 
 using System;
+using System.Numerics; //must be added in References
 
 class CalculateQuotientNfactKfact
 {
     static void Main()
     {
-        checked
-        {
-            //Console.Write("Enter an integer number n: 1 < n < 100   n= ");
-            int n = int.Parse(Console.ReadLine());
-            //Console.Write("Enter an integer number k: 1 < k < {0}   k= ", n);
-            int k = int.Parse(Console.ReadLine());
-            if (1 < k && k < n && n < 100)
-            {
-                ulong result = 1;
-                for (int i = k + 1; i <= n; i++)
-                {
-                    result *= (ulong)i;
-                }
+        //Console.Write("Enter an integer number n: 1 < n < 100   n= ");
+        int n = int.Parse(Console.ReadLine());
+        //Console.Write("Enter an integer number k: 1 < k < {0}   k= ", n);
+        int k = int.Parse(Console.ReadLine());
 
-                Console.WriteLine(result);
-            }
-            else
+        //if (1 < k && k < n && n < 100)
+        //{
+            BigInteger result = 1;
+
+            for (int i = k + 1; i <= n; i++)
             {
-                Console.WriteLine("Invalid input!");
+                result *= i;
             }
-        }
+
+            Console.WriteLine(result);
+        //}
+        //else
+        //{
+        //    Console.WriteLine("Invalid input!");
+        //}
     }
 }

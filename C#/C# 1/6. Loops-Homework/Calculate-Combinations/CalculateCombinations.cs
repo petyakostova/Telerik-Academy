@@ -9,39 +9,36 @@
     Constraints: 1 < K < N < 100        Hint: overflow is possible                             */
 
 using System;
-using System.Numerics;  //must be added in References; needed for BigInteger
+using System.Numerics;  //must be added in References
 
 class CalculateCombinaions
 {
     static void Main()
     {
-        //checked
-        //{
-            //Console.Write("Enter an integer number n: 1 < n < 100   n= ");
-            int n = int.Parse(Console.ReadLine());
-            //Console.Write("Enter an integer number k: 1 < k < {0}   k= ", n);
-            int k = int.Parse(Console.ReadLine());
-            if (1 < k && k < n && n < 100)
+        //Console.Write("Enter an integer number n: 1 < n < 100   n= ");
+        int n = int.Parse(Console.ReadLine());
+        //Console.Write("Enter an integer number k: 1 < k < {0}   k= ", n);
+        int k = int.Parse(Console.ReadLine());
+        if (1 < k && k < n && n < 100)
+        {
+            BigInteger result = 1;
+
+            for (int i = k + 1; i <= n; i++)
             {
-                BigInteger result = 1;
-
-                for (int i = k + 1; i <= n; i++)
-                {
-                    result *= i;
-                }
-
-                for (int j = 1; j <= (n - k); j++)
-                {
-                    result /= j;
-                }
-
-                Console.WriteLine(result);
+                result *= i;
             }
-            else
+
+            for (int j = 1; j <= (n - k); j++)
             {
-                Console.WriteLine("Invalid input!");
+                result /= j;
             }
-        //}
+
+            Console.WriteLine(result);
+        }
+        else
+        {
+            Console.WriteLine("Invalid input!");
+        }
 
     }
 }
