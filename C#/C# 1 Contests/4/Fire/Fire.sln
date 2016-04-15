@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Fire", "04. Fire\04. Fi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fire-AS", "Fire-AS\Fire-AS.csproj", "{792A3C55-ADE6-42C8-9CD6-84AAC350A630}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fire-AS-Without-NewString", "Fire-AS-Without-NewString\Fire-AS-Without-NewString.csproj", "{1DAC946E-6384-4491-B653-72340E4704DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{792A3C55-ADE6-42C8-9CD6-84AAC350A630}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{792A3C55-ADE6-42C8-9CD6-84AAC350A630}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{792A3C55-ADE6-42C8-9CD6-84AAC350A630}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DAC946E-6384-4491-B653-72340E4704DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DAC946E-6384-4491-B653-72340E4704DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DAC946E-6384-4491-B653-72340E4704DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DAC946E-6384-4491-B653-72340E4704DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
