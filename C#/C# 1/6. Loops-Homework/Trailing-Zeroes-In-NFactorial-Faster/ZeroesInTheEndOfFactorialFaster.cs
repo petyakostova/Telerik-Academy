@@ -22,12 +22,13 @@ class ZeroesInTheEndOfFactorialFaster
             counterZeroes = 1;
         }
 
+        // first way
         for (int i = 5; number / i >= 1; i *= 5)
         {
             counterZeroes += number / i;
         }
 
-        // other way
+        // second way
         //for (int power5 = 5; power5 <= number; power5 *= 5)
         //{
         //    counterZeroes += number / power5;
