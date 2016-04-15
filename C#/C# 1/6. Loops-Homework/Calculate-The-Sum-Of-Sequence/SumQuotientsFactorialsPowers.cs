@@ -10,7 +10,7 @@
                 X * N will always be less than 50                                       */
 
 using System;
-using System.Globalization;                                         
+using System.Globalization;
 using System.Threading;
 
 class SumQuotientsFactorialsPowers
@@ -19,41 +19,40 @@ class SumQuotientsFactorialsPowers
     {
         Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
 
-        //checked
+        int n = int.Parse(Console.ReadLine());
+        decimal x = decimal.Parse(Console.ReadLine());
+
+        //if (x == 0)
         //{
-            int n = int.Parse(Console.ReadLine());
-            int x = int.Parse(Console.ReadLine());
-            //if (x == 0)
+        //    Console.WriteLine("Invalid input!  x != 0");
+        //}
+        //else
+        //{
+
+            // Sum = 0!/X^0 + 1!/X^1 + 2!/X^2 + … + N!/X^N 
+
+            //// first way
+            //decimal sum = 1;                   
+            //decimal factorial = 1;
+            //decimal power = 1;
+            //for (int i = 1; i <= n; i++)
             //{
-            //    Console.WriteLine("Invalid input!  x != 0");
+            //    factorial *= i;
+            //    power *= x;
+            //    sum += (factorial / power);
             //}
-            //else
-            //{
 
-                // Sum = 0!/X^0 + 1!/X^1 + 2!/X^2 + … + N!/X^N 
+            // second way
+            decimal sum = 1;
+            decimal factorial = 1;
+            for (int i = 1; i <= n; i++)
+            {
+                factorial *= i;
+                sum += factorial / (decimal)(Math.Pow((double)x, i));
+            }
 
-                // first way
-                double sum = 1;                   
-                double factorial = 1;
-                double power = 1;
-                for (int i = 1; i <= n; i++)
-                {
-                    factorial *= i;
-                    power *= x;
-                    sum += (factorial / power);
-                }
+            Console.WriteLine("{0:F5}", sum); // other way {0:0.00000}
 
-                //// second way
-                //double sum = 1;                 
-                //double factorial = 1;
-                //for (int i = 1; i <= n; i++)
-                //{
-                //    factorial *= i;
-                //    sum += factorial / Math.Pow(x, i);
-                //}
-
-                Console.WriteLine("{0:F5}", sum); // other way {0:0.00000}
-            //}
         //}
 
     }

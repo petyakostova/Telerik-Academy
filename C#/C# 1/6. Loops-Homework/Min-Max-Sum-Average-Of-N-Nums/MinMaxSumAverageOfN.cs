@@ -36,6 +36,6 @@ class MinMaxSumAverageOfN
             sum += number;
         }
 
-        Console.WriteLine("min={0} \r\nmax={1} \r\nsum={2} \r\navg={3:F2}", min, max, sum, sum / n);
+        Console.WriteLine("min={0:F2} \r\nmax={1:F2} \r\nsum={2:F2} \r\navg={3:F2}", min, max, sum, sum / n);
     }
 }
