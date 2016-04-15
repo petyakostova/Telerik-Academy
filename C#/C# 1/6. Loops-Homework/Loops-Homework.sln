@@ -31,7 +31,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14. Hexadecimal-To-Decimal-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13. Decimal-To-Hexadecimal-Number", "Decimal-To-Hexadecimal-Number\13. Decimal-To-Hexadecimal-Number.csproj", "{D03AABC6-50E0-4710-B227-4DDA2B2BEBB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16. Trailing-Zeroes-In-NFactorial", "Trailing-Zeroes-In-NFactorial\16. Trailing-Zeroes-In-NFactorial.csproj", "{9AD23658-732D-43FA-9D04-E23F63A67915}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16. 2. Trailing-Zeroes-In-NFactorial", "Trailing-Zeroes-In-NFactorial\16. 2. Trailing-Zeroes-In-NFactorial.csproj", "{9AD23658-732D-43FA-9D04-E23F63A67915}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17. Spiral-Matrix", "Spiral-Matrix\17. Spiral-Matrix.csproj", "{1475F407-8E93-4294-B370-1771F84A4456}"
 EndProject
@@ -40,6 +40,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Not-Divisible-By-3-And-7-Numbers", "Not-Divisible-By-3-And-7-Numbers\02. Not-Divisible-By-3-And-7-Numbers.csproj", "{A7CB23F4-7D27-4A25-8DCE-FFFE2E50C3C3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15. GCD", "GCD\15. GCD.csproj", "{B1B3966D-6049-41B9-83EA-B6607C751E14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16. 1. Trailing-Zeroes-In-NFactorial-Faster", "Trailing-Zeroes-In-NFactorial-Faster\16. 1. Trailing-Zeroes-In-NFactorial-Faster.csproj", "{F6DB17BC-7CD1-4599-ACA7-1CDB87CCA65E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{B1B3966D-6049-41B9-83EA-B6607C751E14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1B3966D-6049-41B9-83EA-B6607C751E14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1B3966D-6049-41B9-83EA-B6607C751E14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6DB17BC-7CD1-4599-ACA7-1CDB87CCA65E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6DB17BC-7CD1-4599-ACA7-1CDB87CCA65E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6DB17BC-7CD1-4599-ACA7-1CDB87CCA65E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6DB17BC-7CD1-4599-ACA7-1CDB87CCA65E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

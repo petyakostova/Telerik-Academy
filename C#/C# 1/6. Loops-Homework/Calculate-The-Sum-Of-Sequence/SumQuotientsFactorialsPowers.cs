@@ -19,8 +19,11 @@ class SumQuotientsFactorialsPowers
     {
         Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
 
-        int n = int.Parse(Console.ReadLine());
+        int number = int.Parse(Console.ReadLine());
         decimal x = decimal.Parse(Console.ReadLine());
+
+        decimal sum = 1;
+        decimal factorial = 1;
 
         //if (x == 0)
         //{
@@ -29,29 +32,27 @@ class SumQuotientsFactorialsPowers
         //else
         //{
 
-            // Sum = 0!/X^0 + 1!/X^1 + 2!/X^2 + … + N!/X^N 
+        // Sum = 0!/X^0 + 1!/X^1 + 2!/X^2 + … + N!/X^N 
 
-            //// first way
-            //decimal sum = 1;                   
-            //decimal factorial = 1;
-            //decimal power = 1;
-            //for (int i = 1; i <= n; i++)
-            //{
-            //    factorial *= i;
-            //    power *= x;
-            //    sum += (factorial / power);
-            //}
+        // first way
+        //decimal power = 1;
+        //for (int i = 1; i <= number; i++)
+        //{
+        //    factorial *= i;
+        //    power *= x;
+        //    sum += (factorial / power);
+        //}
 
-            // second way
-            decimal sum = 1;
-            decimal factorial = 1;
-            for (int i = 1; i <= n; i++)
-            {
-                factorial *= i;
-                sum += factorial / (decimal)(Math.Pow((double)x, i));
-            }
+        // second way
 
-            Console.WriteLine("{0:F5}", sum); // other way {0:0.00000}
+        for (int i = 1; i <= number; i++)
+        {
+            factorial *= i;
+
+            sum += factorial / (decimal)(Math.Pow((double)x, i));
+        }
+
+        Console.WriteLine("{0:F5}", sum); // other way {0:0.00000}
 
         //}
 
