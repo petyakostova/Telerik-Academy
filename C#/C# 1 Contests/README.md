@@ -1,7 +1,7 @@
 ## Telerik Software Academy Contests CSharp Part 1
 ### Seasons 2015/2016, 2013/2014, 2012/2013 and 2011/2012
 
-|        Contest       |          Problem 1          |         Problem 2        |      Problem 3      |      Problem 4      |       Problem 5       |
+|        Contest       |          [Problem 1](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201%20Contests/1)          |         [Problem 2](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201%20Contests/2)        |      [Problem 3](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201%20Contests/3)      |      [Problem 4]https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201%20Contests/4      |       [Problem 5](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%201%20Contests/5)       |
 |:--------------------:|:---------------------------:|:------------------------:|:-------------------:|:-------------------:|:---------------------:|
 |  [3 Feb 2015 Evening](http://bgcoder.com/Contests/205/Telerik-Academy-Exam-1-3-February-2015-Evening)  |          A, B and C         |     Symbol to Number     | ConsoleApplication2 |       Ex-rugs       |       Find Bits       |
 |  [3 Feb 2015 Morning](http://bgcoder.com/Contests/204/Telerik-Academy-Exam-1-3-February-2015-Morning)  |        Three Numbers        |         Decoding         | ConsoleApplication1 |     Persian rugs    |     Search in Bits    |
