@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Formula-Bit-1", "05. Formula-Bit-1\05. Formula-Bit-1.csproj", "{1B3096F9-66E2-45E4-AECE-AAC5E42D20DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Formula-Bit-1-AS", "Formula-Bit-1-AS\Formula-Bit-1-AS.csproj", "{79F0C3F0-9AC5-44DB-A621-72400B7900CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B3096F9-66E2-45E4-AECE-AAC5E42D20DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B3096F9-66E2-45E4-AECE-AAC5E42D20DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B3096F9-66E2-45E4-AECE-AAC5E42D20DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B3096F9-66E2-45E4-AECE-AAC5E42D20DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79F0C3F0-9AC5-44DB-A621-72400B7900CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79F0C3F0-9AC5-44DB-A621-72400B7900CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79F0C3F0-9AC5-44DB-A621-72400B7900CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79F0C3F0-9AC5-44DB-A621-72400B7900CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

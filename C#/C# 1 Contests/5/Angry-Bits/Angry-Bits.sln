@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Angry-Bits", "05. Angry-Bits\05. Angry-Bits.csproj", "{BEC6E968-4391-449B-81A5-DD521D7234D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angry-Bits-AS", "Angry-Bits-AS\Angry-Bits-AS.csproj", "{AF674C6A-B79D-4B44-BBD6-81D21906B414}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEC6E968-4391-449B-81A5-DD521D7234D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEC6E968-4391-449B-81A5-DD521D7234D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEC6E968-4391-449B-81A5-DD521D7234D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEC6E968-4391-449B-81A5-DD521D7234D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF674C6A-B79D-4B44-BBD6-81D21906B414}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF674C6A-B79D-4B44-BBD6-81D21906B414}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF674C6A-B79D-4B44-BBD6-81D21906B414}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF674C6A-B79D-4B44-BBD6-81D21906B414}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

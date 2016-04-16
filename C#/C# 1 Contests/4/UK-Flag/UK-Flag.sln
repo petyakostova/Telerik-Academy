@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. UK-Flag", "04. UK-Flag\04. UK-Flag.csproj", "{F6C9BEA0-0BD2-41EC-B5D0-79FBB4945E29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UK-Flag-AS", "UK-Flag-AS\UK-Flag-AS.csproj", "{1EC87F22-3564-4621-8CC1-B161EE9FC75D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6C9BEA0-0BD2-41EC-B5D0-79FBB4945E29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6C9BEA0-0BD2-41EC-B5D0-79FBB4945E29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6C9BEA0-0BD2-41EC-B5D0-79FBB4945E29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6C9BEA0-0BD2-41EC-B5D0-79FBB4945E29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EC87F22-3564-4621-8CC1-B161EE9FC75D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EC87F22-3564-4621-8CC1-B161EE9FC75D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EC87F22-3564-4621-8CC1-B161EE9FC75D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EC87F22-3564-4621-8CC1-B161EE9FC75D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
