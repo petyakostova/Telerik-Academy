@@ -38,6 +38,7 @@ public class ThreeNumbers
 
         // Arithmetic mean 
         double arithmeticMean = (A + B + C) / 3.0;
+
         Console.WriteLine("{0:F3}", arithmeticMean);
     }
 }
