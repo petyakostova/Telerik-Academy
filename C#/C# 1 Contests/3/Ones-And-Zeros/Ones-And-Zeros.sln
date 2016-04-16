@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Ones-And-Zeros", "03. Ones-And-Zeros\03. Ones-And-Zeros.csproj", "{DD42C96A-D280-41B5-9801-E10681911CC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ones-And-Zeros-AS", "Ones-And-Zeros-AS\Ones-And-Zeros-AS.csproj", "{AF3A2C1B-AF3E-4999-B010-6D3FE07055BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD42C96A-D280-41B5-9801-E10681911CC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD42C96A-D280-41B5-9801-E10681911CC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD42C96A-D280-41B5-9801-E10681911CC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD42C96A-D280-41B5-9801-E10681911CC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF3A2C1B-AF3E-4999-B010-6D3FE07055BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF3A2C1B-AF3E-4999-B010-6D3FE07055BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF3A2C1B-AF3E-4999-B010-6D3FE07055BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF3A2C1B-AF3E-4999-B010-6D3FE07055BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

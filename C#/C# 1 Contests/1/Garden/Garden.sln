@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Garden", "01. Garden\01. Garden.csproj", "{3BD2B05A-0C56-4322-9F85-1199B5552B54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Garden-AS", "Garden-AS\Garden-AS.csproj", "{8E03521A-B171-4910-A4B3-41BEAA67A3D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BD2B05A-0C56-4322-9F85-1199B5552B54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BD2B05A-0C56-4322-9F85-1199B5552B54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BD2B05A-0C56-4322-9F85-1199B5552B54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BD2B05A-0C56-4322-9F85-1199B5552B54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E03521A-B171-4910-A4B3-41BEAA67A3D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E03521A-B171-4910-A4B3-41BEAA67A3D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E03521A-B171-4910-A4B3-41BEAA67A3D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E03521A-B171-4910-A4B3-41BEAA67A3D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

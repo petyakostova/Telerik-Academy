@@ -1,0 +1,3 @@
+First player wins!
+Score: -3990
+Games won: 10
