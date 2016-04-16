@@ -1,0 +1,42 @@
+                    :::::::::::::::::::::
+                   :///////////////////::
+                  :///////////////////:X:
+                 :///////////////////:XX:
+                :///////////////////:XXX:
+               :///////////////////:XXXX:
+              :///////////////////:XXXXX:
+             :///////////////////:XXXXXX:
+            :///////////////////:XXXXXXX:
+           :///////////////////:XXXXXXXX:
+          :///////////////////:XXXXXXXXX:
+         :///////////////////:XXXXXXXXXX:
+        :///////////////////:XXXXXXXXXXX:
+       :///////////////////:XXXXXXXXXXXX:
+      :///////////////////:XXXXXXXXXXXXX:
+     :///////////////////:XXXXXXXXXXXXXX:
+    :///////////////////:XXXXXXXXXXXXXXX:
+   :///////////////////:XXXXXXXXXXXXXXXX:
+  :///////////////////:XXXXXXXXXXXXXXXXX:
+ :///////////////////:XXXXXXXXXXXXXXXXXX:
+:::::::::::::::::::::XXXXXXXXXXXXXXXXXXX:
+:                   :XXXXXXXXXXXXXXXXXX: 
+:                   :XXXXXXXXXXXXXXXXX:  
+:                   :XXXXXXXXXXXXXXXX:   
+:                   :XXXXXXXXXXXXXXX:    
+:                   :XXXXXXXXXXXXXX:     
+:                   :XXXXXXXXXXXXX:      
+:                   :XXXXXXXXXXXX:       
+:                   :XXXXXXXXXXX:        
+:                   :XXXXXXXXXX:         
+:                   :XXXXXXXXX:          
+:                   :XXXXXXXX:           
+:                   :XXXXXXX:            
+:                   :XXXXXX:             
+:                   :XXXXX:              
+:                   :XXXX:               
+:                   :XXX:                
+:                   :XX:                 
+:                   :X:                  
+:                   ::                   
+:::::::::::::::::::::                    
+

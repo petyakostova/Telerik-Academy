@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Symbol-To-Number", "02. Symbol-To-Number\02. Symbol-To-Number.csproj", "{50C325AD-9642-43BF-A16E-F1AE08274AD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Symbol-To-Number-AS", "Symbol-To-Number-AS\Symbol-To-Number-AS.csproj", "{54D1D39A-7172-4F76-B42C-4660020C200A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50C325AD-9642-43BF-A16E-F1AE08274AD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50C325AD-9642-43BF-A16E-F1AE08274AD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50C325AD-9642-43BF-A16E-F1AE08274AD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50C325AD-9642-43BF-A16E-F1AE08274AD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54D1D39A-7172-4F76-B42C-4660020C200A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54D1D39A-7172-4F76-B42C-4660020C200A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54D1D39A-7172-4F76-B42C-4660020C200A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54D1D39A-7172-4F76-B42C-4660020C200A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
