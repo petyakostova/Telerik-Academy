@@ -11,7 +11,7 @@ class BullsAndCowsWithArrays
         bool solutionFound = false;
 
         // Check all possible 4-digit numbers
-        for (int candidate = 1; candidate <= 9999; candidate++)
+        for (int candidate = 1000; candidate <= 9999; candidate++)
         {
             char[] digits = candidate.ToString().ToCharArray();
             if (digits.Length == 4 && digits[0] >= '1' &&
