@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pillars", "Pillars\Pillars.csproj", "{4A174A84-E6A4-4797-AAEE-68BCAAFFC938}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pillars-AS", "Pillars-AS\Pillars-AS.csproj", "{BB8D896C-C39C-49D4-96B7-7AEC855B9317}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A174A84-E6A4-4797-AAEE-68BCAAFFC938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A174A84-E6A4-4797-AAEE-68BCAAFFC938}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A174A84-E6A4-4797-AAEE-68BCAAFFC938}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A174A84-E6A4-4797-AAEE-68BCAAFFC938}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB8D896C-C39C-49D4-96B7-7AEC855B9317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB8D896C-C39C-49D4-96B7-7AEC855B9317}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB8D896C-C39C-49D4-96B7-7AEC855B9317}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB8D896C-C39C-49D4-96B7-7AEC855B9317}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

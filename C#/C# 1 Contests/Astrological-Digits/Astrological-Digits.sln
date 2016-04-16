@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astrological-Digits", "Astrological-Digits\Astrological-Digits.csproj", "{B02ED990-DD2C-44C2-852D-0540B1DA804F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astrological-Digits-AS", "Astrological-Digits-AS\Astrological-Digits-AS.csproj", "{0A03B8E1-14F3-4615-83CE-D644E5D1E98E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B02ED990-DD2C-44C2-852D-0540B1DA804F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B02ED990-DD2C-44C2-852D-0540B1DA804F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B02ED990-DD2C-44C2-852D-0540B1DA804F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B02ED990-DD2C-44C2-852D-0540B1DA804F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A03B8E1-14F3-4615-83CE-D644E5D1E98E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A03B8E1-14F3-4615-83CE-D644E5D1E98E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A03B8E1-14F3-4615-83CE-D644E5D1E98E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A03B8E1-14F3-4615-83CE-D644E5D1E98E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

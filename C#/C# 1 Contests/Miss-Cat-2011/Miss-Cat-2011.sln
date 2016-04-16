@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Miss-Cat-2011", "Miss-Cat-2011\Miss-Cat-2011.csproj", "{0C326E8E-C318-450C-BC49-7E37C4374EB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Miss-Cat-2011-AS", "Miss-Cat-2011-AS\Miss-Cat-2011-AS.csproj", "{9B8B45CB-2C37-49A0-85F0-38AF3BE8B64F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C326E8E-C318-450C-BC49-7E37C4374EB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C326E8E-C318-450C-BC49-7E37C4374EB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C326E8E-C318-450C-BC49-7E37C4374EB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C326E8E-C318-450C-BC49-7E37C4374EB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B8B45CB-2C37-49A0-85F0-38AF3BE8B64F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B8B45CB-2C37-49A0-85F0-38AF3BE8B64F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B8B45CB-2C37-49A0-85F0-38AF3BE8B64F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B8B45CB-2C37-49A0-85F0-38AF3BE8B64F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Math-Expression", "Math-Expression\Math-Expression.csproj", "{93F4D3C8-D89C-4814-8DC7-BD951A4EB56F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Math-Expression-AS", "Math-Expression-AS\Math-Expression-AS.csproj", "{F1BA859D-878A-4833-907D-14935EF4AB7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93F4D3C8-D89C-4814-8DC7-BD951A4EB56F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93F4D3C8-D89C-4814-8DC7-BD951A4EB56F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93F4D3C8-D89C-4814-8DC7-BD951A4EB56F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93F4D3C8-D89C-4814-8DC7-BD951A4EB56F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1BA859D-878A-4833-907D-14935EF4AB7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1BA859D-878A-4833-907D-14935EF4AB7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1BA859D-878A-4833-907D-14935EF4AB7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1BA859D-878A-4833-907D-14935EF4AB7C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
