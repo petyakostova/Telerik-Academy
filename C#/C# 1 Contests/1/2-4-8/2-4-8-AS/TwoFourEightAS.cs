@@ -27,5 +27,6 @@ class TwoFourEightAS
         }
 
         Console.WriteLine(result);
+
     }
 }
