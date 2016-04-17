@@ -2,7 +2,7 @@
 using System;
 using System.Numerics;
 
-class ConsoleApplicationString
+class ConsoleApplication2String
 {
     static void Main()
     {

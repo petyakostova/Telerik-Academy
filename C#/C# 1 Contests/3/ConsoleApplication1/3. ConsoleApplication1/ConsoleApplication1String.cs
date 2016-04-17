@@ -1,11 +1,11 @@
 ﻿// 80/100 in bgcoder
 
-namespace _03.ConsoleApplication1
+namespace _3.ConsoleApplication1
 {
     using System;
     using System.Numerics;
 
-    class ConsoleApplication1
+    class ConsoleApplication1String
     {
         static void Main()
         {
@@ -19,16 +19,13 @@ namespace _03.ConsoleApplication1
             {
                 if (position % 2 != 0 && input != "0")
                 {
-                    BigInteger currentNumber = BigInteger.Parse(input);
-
                     BigInteger product = 1;
-                    while (currentNumber > 0)
+                    foreach (var symbol in input)
                     {
-                        if (currentNumber % 10 != 0)
+                        if (symbol != '0')
                         {
-                            product *= currentNumber % 10;
+                            product *= symbol - '0';
                         }
-                        currentNumber /= 10;
                     }
 
                     if (position < 10)
@@ -50,6 +47,7 @@ namespace _03.ConsoleApplication1
             {
                 Console.WriteLine(productAfter10);
             }
+
         }
     }
 }
