@@ -1,4 +1,5 @@
-﻿using System;
+﻿// 80/100 in bgcoder
+using System;
 using System.Numerics;
 
 class ConsoleApplication2AS
