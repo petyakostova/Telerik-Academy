@@ -1,11 +1,16 @@
 ﻿using System;
 
-namespace _01.Next_Date
+class NextDate
 {
-    class NextDate
+    static void Main()
     {
-        static void Main(string[] args)
-        {
-        }
+        int day = int.Parse(Console.ReadLine());
+        int month = int.Parse(Console.ReadLine());
+        int year = int.Parse(Console.ReadLine());
+
+        DateTime date = new DateTime(year, month, day);
+        DateTime nextDate = date.AddDays(1);
+
+        Console.WriteLine("{0}.{1}.{2}", nextDate.Day, nextDate.Month, nextDate.Year);
     }
 }
