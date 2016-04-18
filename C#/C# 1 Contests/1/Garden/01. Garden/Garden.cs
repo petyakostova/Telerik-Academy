@@ -1,11 +1,9 @@
 ﻿using System;
 
-namespace _01.Garden
+class Garden
 {
-    class Garden
+    static void Main()
     {
-        static void Main(string[] args)
-        {
-        }
+
     }
 }
