@@ -1,11 +1,63 @@
-﻿using System;
+﻿// 70/100 in bgcoder
 
-namespace _01.Triple_Rotation_Оf_Digits
+using System;
+
+class TripleRotationОfDigits
 {
-    class TripleRotationОfDigits
+    static void Main()
     {
-        static void Main(string[] args)
+        int number = int.Parse(Console.ReadLine());
+
+        if (0 < number && number < 10)
         {
+            Console.WriteLine(number);
         }
+        else if (9 < number && number < 100)
+        {
+            if (number % 10 != 0)
+            {
+                Console.WriteLine("{0}{1}", number % 10, number / 10);
+            }
+            else
+            {
+                Console.WriteLine(number / 10);
+            }
+        }
+        else if (99 < number && number < 1000)
+        {
+            Console.WriteLine(number);
+        }        
+        else
+        {
+            int firstDigits = number / 1000;
+            int last3Digits = number % 1000;
+            int digit1 = last3Digits / 100;
+            int digit2 = last3Digits / 10 % 10;
+            int digit3 = last3Digits % 10;
+
+            if (digit1 == 0)
+            {
+                if (digit2 == 0)
+                {
+                    if (digit3 == 0)
+                    {
+                        Console.WriteLine(firstDigits);
+                    }
+                    else
+                    {
+                        Console.WriteLine("{0}{1}", digit3, firstDigits);
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("{0}{1}{2}", digit2, digit3, firstDigits);
+                }
+            }
+            else
+            {
+                Console.WriteLine("{0}{1}{2}{3}", digit1, digit2, digit3, firstDigits);
+            }
+        }
+
     }
 }
