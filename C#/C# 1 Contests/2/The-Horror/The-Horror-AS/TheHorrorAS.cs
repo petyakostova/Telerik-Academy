@@ -35,5 +35,4 @@ class TheHorrorAS
 
         Console.WriteLine(counter + " " + result);
     }
-
 }

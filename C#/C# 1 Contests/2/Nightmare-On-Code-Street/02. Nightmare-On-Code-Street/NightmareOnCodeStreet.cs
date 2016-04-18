@@ -1,12 +1,22 @@
-﻿using System;
+﻿// 70/100 in bgcoder
 
-namespace _02.Nightmare_On_Code_Street
+using System;
+
+class NightmareOnCodeStreet
 {
-    class NightmareOnCodeStreet
+    static void Main()
     {
-        static void Main(string[] args)
-        {
+        string numberAsString = Console.ReadLine();
 
+        int sum = 0;
+        for (int i = 1; i < numberAsString.Length; i += 2)
+        {
+            if (numberAsString[i] != '-')
+            {
+                sum += numberAsString[i] - '0';
+            }
         }
+
+        Console.WriteLine("{0} {1}", numberAsString.Length / 2, sum);
     }
 }

@@ -1,11 +1,25 @@
-﻿using System;
+﻿// 70/100 in bgcoder
 
-namespace _02.The_Horror
+using System;
+
+class TheHorror
 {
-    class TheHorror
+    static void Main()
     {
-        static void Main(string[] args)
+        string numberAsString = Console.ReadLine();
+
+        int sum = 0;
+        int count = 0;
+        for (int i = 0; i < numberAsString.Length; i += 2)
         {
+            if (numberAsString[i] != '-')
+            {
+                sum += numberAsString[i] - '0';
+                count++;
+            }
         }
+
+        Console.WriteLine("{0} {1}", count, sum);
+
     }
 }
