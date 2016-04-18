@@ -15,6 +15,7 @@ class TripleRotationОfDigitsAS
                 k = int.Parse("" + lastDigit + firstDigits);
             }
         }
+
         Console.WriteLine(k);
     }
 }

@@ -1,4 +1,6 @@
-﻿// 70/100 in bgcoder
+﻿// 90/100 in bgcoder
+/* Note that zeroes could also take part in the play and 
+the leading digits are lost after each rotation: 123400 -> 4123  */
 
 using System;
 
@@ -35,28 +37,38 @@ class TripleRotationОfDigits
             int digit2 = last3Digits / 10 % 10;
             int digit3 = last3Digits % 10;
 
-            if (digit1 == 0)
+            if (digit1 == 0 && digit2 == 0 && digit3 == 0)
             {
-                if (digit2 == 0)
-                {
-                    if (digit3 == 0)
-                    {
-                        Console.WriteLine(firstDigits);
-                    }
-                    else
-                    {
-                        Console.WriteLine("{0}{1}", digit3, firstDigits);
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("{0}{1}{2}", digit2, digit3, firstDigits);
-                }
+                Console.WriteLine(firstDigits);
+            }
+            else if (digit1 == 0 && digit2 == 0)
+            {
+                Console.WriteLine("{0}{1}", digit3, firstDigits);
+            }
+            else if (digit1 == 0 && digit3 == 0)
+            {
+                Console.WriteLine("{0}{1}", digit2, firstDigits);
+            }
+            else if (digit2 == 0 && digit3 == 0)
+            {
+                Console.WriteLine("{0}{1}", digit1, firstDigits);
+            }
+            else if (digit1 == 0)
+            {
+                Console.WriteLine("{0}{1}{2}", digit2, digit3, firstDigits);
+            }
+            else if (digit2 == 0)
+            {
+                Console.WriteLine("{0}{1}{2}", digit1, digit3, firstDigits);
+            }
+            else if (digit3 == 0)
+            {
+                Console.WriteLine("{0}{1}{2}", digit1, digit2, firstDigits);
             }
             else
             {
                 Console.WriteLine("{0}{1}{2}{3}", digit1, digit2, digit3, firstDigits);
-            }
+            }            
         }
 
     }
