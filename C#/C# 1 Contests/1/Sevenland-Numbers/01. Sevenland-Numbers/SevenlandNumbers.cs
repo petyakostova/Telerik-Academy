@@ -1,11 +1,28 @@
-﻿using System;
+﻿// 80/100 in bgcoder
 
-namespace _01.Sevenland_Numbers
+using System;
+
+class SevenlandNumbers
 {
-    class SevenlandNumbers
+    static void Main()
     {
-        static void Main(string[] args)
+        int number = int.Parse(Console.ReadLine());
+        int nextNumber = 0;
+        int count = 1;
+
+        while (nextNumber <= number)
         {
+            if (count % 7==0)
+            {
+                nextNumber += 4;
+            }
+            else
+            {
+                nextNumber++;
+            }
+            count++;
         }
+
+        Console.WriteLine(nextNumber);
     }
 }
