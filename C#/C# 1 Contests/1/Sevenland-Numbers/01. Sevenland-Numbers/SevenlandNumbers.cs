@@ -1,6 +1,4 @@
-﻿// 80/100 in bgcoder
-
-using System;
+﻿using System;
 
 class SevenlandNumbers
 {
@@ -9,10 +7,20 @@ class SevenlandNumbers
         int number = int.Parse(Console.ReadLine());
         int nextNumber = 0;
         int count = 1;
+        int pow = 1;
 
         while (nextNumber <= number)
         {
-            if (count % 7==0)
+            if (nextNumber == 666)
+            {
+                nextNumber = 1000;
+            }
+            else if (count % 49 == 0)
+            {
+                nextNumber += 34;
+                pow++;
+            }
+            else if (count % 7 == 0)
             {
                 nextNumber += 4;
             }
