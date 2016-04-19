@@ -13,6 +13,7 @@ public class AngryFemaleGPSas
 
         int oddDigitsSum = 0;
         int evenDigitsSum = 0;
+
         while (number > 0)
         {
             byte digit = (byte)(number % 10);

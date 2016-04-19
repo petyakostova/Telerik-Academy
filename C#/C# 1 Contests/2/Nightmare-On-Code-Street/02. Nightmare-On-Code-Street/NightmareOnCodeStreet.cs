@@ -8,7 +8,7 @@ class NightmareOnCodeStreet
     {
         string numberAsString = Console.ReadLine();
 
-        int sum = 0;
+        long sum = 0;
         for (int i = 1; i < numberAsString.Length; i += 2)
         {
             if (numberAsString[i] != '-')
