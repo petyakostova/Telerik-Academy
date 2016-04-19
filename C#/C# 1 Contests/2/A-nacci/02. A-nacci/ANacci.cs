@@ -1,6 +1,4 @@
-﻿// 80/100 in bgcoder
-
-using System;
+﻿using System;
 
 class ANacci
 {
@@ -11,6 +9,10 @@ class ANacci
         int lines = int.Parse(Console.ReadLine());
 
         char nextEl = (char)(firstEl + secondEl - 64); //(firstEl - 64 + secondEl - 64) + 64
+        if (firstEl - 64 + secondEl - 64 > 26) // > 'Z'
+        {
+            nextEl = (char)(((firstEl - 64 + secondEl - 64) % 26) + 64);
+        }
 
         // print the first line
         Console.WriteLine(firstEl);
