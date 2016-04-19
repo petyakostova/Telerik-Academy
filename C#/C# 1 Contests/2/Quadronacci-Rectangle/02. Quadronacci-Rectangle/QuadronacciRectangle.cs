@@ -1,11 +1,9 @@
 ﻿using System;
 
-namespace _02.Quadronacci_Rectangle
+class QuadronacciRectangle
 {
-    class QuadronacciRectangle
+    static void Main()
     {
-        static void Main(string[] args)
-        {
-        }
+
     }
 }

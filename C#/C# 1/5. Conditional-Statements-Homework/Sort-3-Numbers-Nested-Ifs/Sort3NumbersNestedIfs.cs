@@ -5,15 +5,11 @@
    The three numbers will always be valid integer numbers in the range [-1000, 1000]. */
 
 using System;
-using System.Globalization;
-using System.Threading;
 
 class Sort3NumbersNestedIfs
 {
     static void Main()
     {
-        Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
-
         int a = int.Parse(Console.ReadLine());
         int b = int.Parse(Console.ReadLine());
         int c = int.Parse(Console.ReadLine());
@@ -51,5 +47,6 @@ class Sort3NumbersNestedIfs
                 Console.WriteLine("{0} {1} {2}", c, b, a);
             }
         }
+
     }
 }
