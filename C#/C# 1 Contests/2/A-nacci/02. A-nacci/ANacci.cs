@@ -1,4 +1,6 @@
-﻿using System;
+﻿// 80/100 in bgcoder
+
+using System;
 
 class ANacci
 {
@@ -28,10 +30,20 @@ class ANacci
             {
                 for (int j = 1; j < 3; j++)
                 {
-                    nextEl = (char)(firstEl + secondEl - 64);
+                    if (firstEl - 64 + secondEl - 64 <= 26)
+                    {
+                        nextEl = (char)(firstEl + secondEl - 64); //(firstEl - 64 + secondEl - 64) + 64
+                    }
+                    else // > 'Z'
+                    {
+                        nextEl = (char)(((firstEl - 64 + secondEl - 64) % 26) + 64);
+                    }
+
                     Console.Write(nextEl);
+
                     firstEl = secondEl;
                     secondEl = nextEl;
+
                     if (j != 2)
                     {
                         Console.Write(new string(' ', i));
