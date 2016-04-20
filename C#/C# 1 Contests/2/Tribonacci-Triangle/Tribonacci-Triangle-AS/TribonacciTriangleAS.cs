@@ -2,7 +2,7 @@
 
 class TribonacciTriangleAS
 {
-    static void Main(string[] args)
+    static void Main()
     {
 
         long oldest = long.Parse(Console.ReadLine()),
