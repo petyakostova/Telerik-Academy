@@ -22,6 +22,7 @@ namespace Sand_Glass_AS
                 string stars = new string('*', n - 2 * i);
                 Console.WriteLine("{0}{1}{2}", dots, stars, dots);
             }
+
         }
     }
 }
