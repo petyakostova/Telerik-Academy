@@ -43,6 +43,7 @@ namespace Trapezoid_AS
                 Console.Write('*');
             }
             Console.WriteLine();
+
         }
     }
 }
