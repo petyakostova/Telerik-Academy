@@ -26,6 +26,7 @@ namespace Fir_Tree_AS
             Console.Write("*");
             Console.Write(finalDots);
             Console.WriteLine();
+
         }
     }
 }
