@@ -51,6 +51,7 @@ namespace FlagHard
                 leftDiagonalPosition++;
                 rightDiagonalPosition--;
             }
+
         }
     }
 }
