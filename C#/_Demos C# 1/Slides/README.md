@@ -1,8 +1,8 @@
 ##  C# Fundamentals Slides
 
-### [00. Course Introduction](https://github.com/petyakostova/Telerik-Academy/blob/master/C%23/_Demos%20C%23%201/Slides/00.%20Course-Intro%20Slides/index.html)
+### [00. Course Introduction](https://rawgit.com/petyakostova/Telerik-Academy/blob/master/C%23/_Demos%20C%23%201/Slides/00.%20Course-Intro%20Slides/index.html)
 
-### [01. Introduction to Programming](https://github.com/petyakostova/Telerik-Academy/blob/master/C%23/_Demos%20C%23%201/Slides/01.%20Introduction-to-Programming%20Slides/index.html)
+### [01. Introduction to Programming](https://rawgit.com/TelerikAcademy/CSharp-Part-1/master/Topics/01.%20Introduction-to-Programming/slides/index.html)
 
 ### [02. Data Types and Variables](https://github.com/petyakostova/Telerik-Academy/blob/master/C%23/_Demos%20C%23%201/Slides/02.%20Data-Types-and-Variables%20Slides/index.html)
 
