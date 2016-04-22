@@ -1,6 +1,4 @@
-﻿// 70/100 in bgcoder
-
-using System;
+﻿using System;
 
 class NightmareOnCodeStreet
 {
@@ -8,15 +6,17 @@ class NightmareOnCodeStreet
     {
         string numberAsString = Console.ReadLine();
 
-        long sum = 0;
+        int counterOfDigits = 0;
+        int sum = 0;
         for (int i = 1; i < numberAsString.Length; i += 2)
         {
-            if ('0' < numberAsString[i] && numberAsString[i] <= '9')
+            if ('0' <= numberAsString[i] && numberAsString[i] <= '9')
             {
                 sum += numberAsString[i] - '0';
+                counterOfDigits++;
             }
         }
 
-        Console.WriteLine("{0} {1}", numberAsString.Length / 2, sum);
+        Console.WriteLine("{0} {1}", counterOfDigits, sum);
     }
 }
