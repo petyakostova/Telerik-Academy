@@ -1,5 +1,4 @@
-﻿// 90/100 in bgcoder
-/* Note that zeroes could also take part in the play and 
+﻿/* Note that zeroes could also take part in the play and 
 the leading digits are lost after each rotation: 123400 -> 4123  */
 
 using System;
@@ -27,8 +26,27 @@ class TripleRotationОfDigits
         }
         else if (99 < number && number < 1000)
         {
-            Console.WriteLine(number);
-        }        
+            int digit1 = number / 100;
+            int digit2 = number / 10 % 10;
+            int digit3 = number % 10;
+
+            if (digit2 == 0 && digit3 == 0)
+            {
+                Console.WriteLine(digit1);
+            }
+            else if (digit2 == 0)
+            {
+                Console.WriteLine("{0}{1}", digit1, digit3);
+            }
+            else if (digit3 == 0)
+            {
+                Console.WriteLine("{0}{1}", digit1, digit2);
+            }
+            else
+            {
+                Console.WriteLine("{0}{1}{2}", digit1, digit2, digit3);
+            }
+        }
         else
         {
             int firstDigits = number / 1000;
@@ -68,7 +86,7 @@ class TripleRotationОfDigits
             else
             {
                 Console.WriteLine("{0}{1}{2}{3}", digit1, digit2, digit3, firstDigits);
-            }            
+            }
         }
 
     }
