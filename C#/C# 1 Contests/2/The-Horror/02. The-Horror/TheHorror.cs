@@ -12,7 +12,7 @@ class TheHorror
         int count = 0;
         for (int i = 0; i < numberAsString.Length; i += 2)
         {
-            if (numberAsString[i] != '-')
+            if ('0' <= numberAsString[i] && numberAsString[i] <= '9')
             {
                 sum += numberAsString[i] - '0';
                 count++;
