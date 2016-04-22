@@ -11,10 +11,7 @@ class NightmareOnCodeStreet
         long sum = 0;
         for (int i = 1; i < numberAsString.Length; i += 2)
         {
-            if (numberAsString[i] != '-')
-            {
-                sum += numberAsString[i] - '0';
-            }
+            sum += numberAsString[i] - '0';
         }
 
         Console.WriteLine("{0} {1}", numberAsString.Length / 2, sum);
