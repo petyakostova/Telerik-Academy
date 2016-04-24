@@ -1,5 +1,4 @@
-﻿// 80/100 in bgcoder
-namespace _03.ConsoleApplication2
+﻿namespace _03.ConsoleApplication2
 {
     using System;
     using System.Numerics;
