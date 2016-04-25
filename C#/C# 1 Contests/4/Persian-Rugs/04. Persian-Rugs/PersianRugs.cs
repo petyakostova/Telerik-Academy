@@ -11,11 +11,22 @@ class PersianRugs
         // part 1
         for (int row = 0; row < n; row++)
         {
-            Console.Write(new string('#', row));
-            Console.Write("\\");
-            Console.Write(new string(' ', width - 2 * row - 2));
-            Console.Write("/");
-            Console.Write(new string('#', row));
+            Console.Write(new string('#', row) + "\\");
+
+            int spaceLeft = width - 2 * row - 2 - 2 * d;
+            if (spaceLeft >= 2) // because of line with new string('.', spaceLeft - 2) 
+            // if (spaceLeft > 2) // this works too
+            {
+                Console.Write(new string(' ', d) + "\\");
+                Console.Write(new string('.', spaceLeft - 2));
+                Console.Write("/" + new string(' ', d));
+            }
+            else
+            {
+                Console.Write(new string(' ', width - 2 * row - 2));
+            }
+
+            Console.Write("/" + new string('#', row));
 
             Console.WriteLine();
         }
@@ -26,11 +37,22 @@ class PersianRugs
         // part 3 - symmetric to part 1
         for (int row = n - 1; row >= 0; row--)
         {
-            Console.Write(new string('#', row));
-            Console.Write("/");
-            Console.Write(new string(' ', width - 2 * row - 2));
-            Console.Write("\\");
-            Console.Write(new string('#', row));
+            Console.Write(new string('#', row) + "/");
+
+            int spaceLeft = width - 2 * row - 2 - 2 * d;
+            if (spaceLeft >= 2) // because of line with new string('.', spaceLeft - 2)
+            // if (spaceLeft > 2) // this works too
+            {
+                Console.Write(new string(' ', d) + "/");
+                Console.Write(new string('.', spaceLeft - 2));
+                Console.Write("\\" + new string(' ', d));
+            }
+            else
+            {
+                Console.Write(new string(' ', width - 2 * row - 2));
+            }
+
+            Console.Write("\\" + new string('#', row));
 
             Console.WriteLine();
         }
