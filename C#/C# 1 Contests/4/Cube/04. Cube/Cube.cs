@@ -1,11 +1,10 @@
 ﻿using System;
 
-namespace _04.Cube
+class Cube
 {
-    class Cube
+    static void Main()
     {
-        static void Main(string[] args)
-        {
-        }
+        
+
     }
 }
