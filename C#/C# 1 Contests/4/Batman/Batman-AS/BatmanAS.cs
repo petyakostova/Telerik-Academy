@@ -14,6 +14,7 @@ class BatmanAS
         for (int i = 0; i < size / 2; i++)
         {
             str = new string(symbol, size - i);
+
             if (i == 0)
             {
                 middle = new string(' ', size);
