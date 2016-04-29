@@ -1,6 +1,6 @@
 ﻿using System;
 
-class MalkoKoteStartup
+class MalkoKoteAS
 {
     static void Main()
     {

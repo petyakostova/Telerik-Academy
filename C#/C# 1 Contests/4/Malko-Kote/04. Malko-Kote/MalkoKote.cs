@@ -7,7 +7,7 @@ class MalkoKote
         int size = int.Parse(Console.ReadLine());
         char character = char.Parse(Console.ReadLine());
 
-        int height = size;
+        //int height = size;
         int width = size / 2 + 4;
         int catBodyWidth = width / 2 + 1;
 
