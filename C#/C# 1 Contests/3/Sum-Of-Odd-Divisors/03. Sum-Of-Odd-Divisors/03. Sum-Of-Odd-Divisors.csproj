@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{25E6B36D-EE68-4ACA-BF3E-C7FB031B81B7}</ProjectGuid>
+    <ProjectGuid>{E678A1C2-FC9A-40C0-80E9-6AC0318A756D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sum_Of_Odd_Divisors_AS</RootNamespace>
-    <AssemblyName>Sum-Of-Odd-Divisors-AS</AssemblyName>
+    <RootNamespace>_03.Sum_Of_Odd_Divisors</RootNamespace>
+    <AssemblyName>_03.Sum_Of_Odd_Divisors</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SumOfOddDivisorsAS.cs" />
+    <Compile Include="SumOfOddDivisors.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
