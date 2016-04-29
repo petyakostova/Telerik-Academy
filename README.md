@@ -17,6 +17,8 @@ The course "C# Fundamentals" introduces the fundamentals of programming. The cou
 
 ### [Front-end] (Front-end)
 ####1. HTML
+The course "HTML Basics" is the first step in the development of modern web applications. The course is introductionary and covers only the basics of web development. Yet it is a fundamental for everybody who wants to grow as a web professional, both front-end developer or web developer. The course includes topics such as **HTML tags**, **using tables**, **forms and inputs** and more...
+
 ####2. CSS
 ####3. JavaScript - Fundamentals
 ####4. JavaScript - OOP
