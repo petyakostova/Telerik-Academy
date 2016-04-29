@@ -1,4 +1,4 @@
-﻿// String solution - Don't work in bgcoder
+﻿// String solution - Doesn't work in bgcoder
 
 using System;
 
