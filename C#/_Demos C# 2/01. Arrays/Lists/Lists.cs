@@ -18,9 +18,10 @@ public class Lists
         Console.WriteLine(new string('-', 20));
         foreach (string str in listOfStrings)
         {
-            Console.WriteLine(str);
+            Console.Write(str + " ");
         }
 
+        Console.WriteLine();
         Console.WriteLine(new string('-', 50));
         Console.WriteLine("Using \"for\" loop to traverse the List");
         Console.WriteLine(new string('-', 20));
@@ -29,7 +30,19 @@ public class Lists
 
         for (int i = 0; i < listOfStrings.Count; i++)
         {
-            Console.WriteLine(listOfStrings[i]);
+            Console.Write(listOfStrings[i] + " ");
+        }
+
+        Console.WriteLine();
+        Console.WriteLine(new string('-', 50));
+
+        // public void Insert(int index, T item);
+        // Inserts an element into the System.Collections.Generic.List`1 at the specified index.
+        listOfStrings.Insert(1, "Dimiter"); 
+
+        for (int i = 0; i < listOfStrings.Count; i++)
+        {
+            Console.Write(listOfStrings[i] + " ");
         }
 
         Console.WriteLine();
