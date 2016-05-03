@@ -1,6 +1,6 @@
 using System;
 
-public class PrintArrys
+public class PrintArrày
 {
     static void Main()
     {

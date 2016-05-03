@@ -4,7 +4,8 @@ public class DaysOfWeek
 {
     static void Main()
     {
-        string[] daysOfWeek =               //new string[] не е нужно да се пише
+        // new string[] it's not necessary
+        string[] daysOfWeek =               
         {
             "Monday",
             "Tuesday",

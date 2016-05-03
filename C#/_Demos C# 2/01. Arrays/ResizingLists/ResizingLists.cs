@@ -6,7 +6,7 @@ public class ResizingLists
     static void Main()
     {
         List<int> list = new List<int>();
-        int n = int.Parse(Console.ReadLine());  // колко числа добавяме в списъка
+        int n = int.Parse(Console.ReadLine());  // how much numbers we add to the array
 
         string lineBreak = new string('-', 20);
 
@@ -18,5 +18,6 @@ public class ResizingLists
                 capacity, count, lineBreak);
             list.Add(i);
         }
+
     }
 }

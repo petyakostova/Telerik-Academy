@@ -9,9 +9,12 @@ class WithAffect
 
         int[] arr1 = { 1, 2, 3 };
         int[] arr2 = arr1;
+
         Console.WriteLine(arr1[1]);
         Console.WriteLine(arr2[1]);
+
         Console.WriteLine(new string('-', 10));
+
         arr2[1] = 123;
         Console.WriteLine(arr1[1]);
         Console.WriteLine(arr2[1]);

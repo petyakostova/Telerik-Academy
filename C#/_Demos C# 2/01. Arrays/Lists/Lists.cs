@@ -6,7 +6,9 @@ public class Lists
     static void Main()
     {
         List<string> listOfStrings = new List<string>();
+
         string[] arrayOfStrings = { "Pesho", "Ivan", "Dobri", "Gosho" };
+
         foreach (string str in arrayOfStrings)
         {
             listOfStrings.Add(str);
@@ -22,6 +24,9 @@ public class Lists
         Console.WriteLine(new string('-', 50));
         Console.WriteLine("Using \"for\" loop to traverse the List");
         Console.WriteLine(new string('-', 20));
+
+        listOfStrings.Add("Batman");
+
         for (int i = 0; i < listOfStrings.Count; i++)
         {
             Console.WriteLine(listOfStrings[i]);

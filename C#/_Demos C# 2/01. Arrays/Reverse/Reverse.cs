@@ -4,7 +4,8 @@ public class Reverse
 {
     static void Main()
     {
-        int[] array = { 1, 2, 3, 4, 5 };  // int[] array = new int[] { 1, 2, 3, 4, 5 };
+        // int[] array = new int[] { 1, 2, 3, 4, 5 };
+        int[] array = { 1, 2, 3, 4, 5 };
 
         // Get array size
         int length = array.Length;
@@ -23,5 +24,6 @@ public class Reverse
         {
             Console.WriteLine(reversed[index]);
         }
+
     }
 }
