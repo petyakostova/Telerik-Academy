@@ -1,21 +1,27 @@
-﻿/*  Problem 3. Compare char arrays
-    Write a program that compares two char arrays lexicographically (letter by letter).
- */
-/*Notes: In lexicographic order the elements are compared one by one starting from the very left. If the elements are not the same, the array, whose element is smaller (comes earlier in the alphabet), comes first. If the elements are equal, the next character is compared. If the end of one of the arrays is reached, without finding different elements, the shorter array is the smaller (comes earlier lexicographically). If all elements are equal, the arrays are equal.
+﻿/* Problem 3. Compare char arrays
+   Write a program that compares two char arrays lexicographically (letter by letter). 
+        Print < if the first array is lexicographically smaller
+        Print > if the second array is lexicographically smaller
+        Print = if the arrays are equal                                  */
+/* Notes: In lexicographic order the elements are compared one by one starting from the very left. 
+   If the elements are not the same, the array, whose element is smaller (comes earlier in the alphabet), comes first. 
+   If the elements are equal, the next character is compared. 
+   If the end of one of the arrays is reached, without finding different elements, the shorter array is the smaller 
+   (comes earlier lexicographically). 
+   If all elements are equal, the arrays are equal.
  */
 
+// 80/100 in bgcoder
 using System;
 
 class CompareCharArrays
 {
     static void Main()
     {
-        Console.WriteLine("Please enter the first char array (on a single line without spaces): ");
         string firstChars = Console.ReadLine();
         char[] firstArray = firstChars.ToCharArray();   // convert string to char array
         int firstArrayLength = firstArray.Length;       // gets length of the first array
 
-        Console.WriteLine("Please enter the second char array (on a single line without spaces): ");
         string secondChars = Console.ReadLine();
         char[] secondArray = secondChars.ToCharArray();
         int secondArrayLength = secondArray.Length;
@@ -23,18 +29,20 @@ class CompareCharArrays
         int minLength = Math.Min(secondArrayLength, firstArrayLength); // gets min length of the two arrays
 
         bool equalChars = true;
-        
+
         for (int i = 0; i < minLength; i++)
         {
             if (firstArray[i] < secondArray[i])
             {
-                Console.WriteLine("The first array comes earlier lexicographically.");
+                // the first array is lexicographically smaller (comes earlier)
+                Console.WriteLine("<");
                 equalChars = false;
                 break;
             }
             else if (firstArray[i] > secondArray[i])
             {
-                Console.WriteLine("The second array comes earlier lexicographically.");
+                // the second array is lexicographically smaller(comes earlier)
+                Console.WriteLine(">");
                 equalChars = false;
                 break;
             }
@@ -44,16 +52,19 @@ class CompareCharArrays
         {
             if (firstArrayLength < secondArrayLength)
             {
-                Console.WriteLine("The first array (the shorter) comes earlier lexicographically.");
+                // the first array is lexicographically smaller (comes earlier)
+                Console.WriteLine("<");
             }
             else if (firstArrayLength > secondArrayLength)
             {
-                Console.WriteLine("The second array (the shorter) comes earlier lexicographically.");
+                // the second array is lexicographically smaller (comes earlier) 
+                Console.WriteLine(">");
             }
             else
             {
-                Console.WriteLine("The arrays are equal. (All elements are equal.)");
-            }            
+                // the arrays are equal
+                Console.WriteLine("=");
+            }
         }
 
     }
