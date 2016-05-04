@@ -1,6 +1,8 @@
 ﻿/*  Problem 14. Quick sort
     Write a program that sorts an array of integers using the Quick sort algorithm.
- */
+    Input: On the first line you will receive the number N. On the next N lines the numbers of the array will be given
+    Output: Print the sorted array. Each number should be on a new line
+    Constraints: 1 <= N <= 1024                                              */
 
 using System;
 using System.Collections.Generic;
@@ -9,19 +11,12 @@ class QuickSort
 {
     static void Main()
     {
-        // 2, 3, 5, 0, 123, 3, 23, 1234, 87
-        // Input array
-        Console.WriteLine("Enter an array of integer elements on a single line, separated by commas:");
-        string input = Console.ReadLine();
-
-        // Split the elements into an array
-        string[] inputElements = input.Split(new char[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
-
-        // Fill an integer array from string array
-        int[] array = new int[inputElements.Length];
-        for (int i = 0; i < inputElements.Length; i++)
+        // Input 
+        int n = int.Parse(Console.ReadLine());
+        var array = new int[n];        
+        for (int i = 0; i < n; i++)
         {
-            array[i] = int.Parse(inputElements[i]);
+            array[i] = int.Parse(Console.ReadLine());
         }
 
         // Converting array to list   
@@ -31,7 +26,7 @@ class QuickSort
         
         for (int i = 0; i < sortedArray.Count; i++)
         {
-            Console.Write(i != sortedArray.Count - 1 ? sortedArray[i] + ", " : sortedArray[i] + "\n");
+            Console.WriteLine(sortedArray[i]);
         } 
 
     }
@@ -46,6 +41,7 @@ class QuickSort
         int pivot = unsortedList.Count / 2;
         int pivotValue = unsortedList[pivot];
 
+        //public void RemoveAt(int index); => Removes the element at the specified index 
         unsortedList.RemoveAt(pivot);
 
         List<int> less = new List<int>();
@@ -64,13 +60,13 @@ class QuickSort
         }
 
         List<int> result = new List<int>();
-
-        result.AddRange(QuickSorting(less));
+        
+        // Add the elements of the specified collection to the end of the System.Collections.Generic.List`1.
+        result.AddRange(QuickSorting(less)); //public void AddRange(IEnumerable<T> collection)
         result.Add(pivotValue);
         result.AddRange(QuickSorting(greater));
 
         return result;
-
     }
     
 }
