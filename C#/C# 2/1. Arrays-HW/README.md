@@ -5,8 +5,8 @@ Homework: Arrays
 
 #### 1. [Allocate array](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Allocate-Array)
 #### 2. [Compare arrays](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Compare-Arrays)
-#### 3.1. [Compare char arrays Using Arrays](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Compare-Char-Arrays)
-#### 3.2. [Compare char arrays Using Strings](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Compare-Char-Arrays-WithStrings)
+#### 3.1. [Compare char arrays - Using Arrays](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Compare-Char-Arrays)
+#### 3.2. [Compare char arrays - Using Strings](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Compare-Char-Arrays-WithStrings)
 #### 4. [Maximal sequence]()
 #### 5. [Maximal increasing sequence]()
 #### 6. [Maximal K sum]()
