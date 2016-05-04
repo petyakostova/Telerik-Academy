@@ -11,7 +11,6 @@
    If all elements are equal, the arrays are equal.
  */
 
-// 80/100 in bgcoder
 using System;
 
 class CompareCharArrays
@@ -20,51 +19,51 @@ class CompareCharArrays
     {
         string firstChars = Console.ReadLine();
         char[] firstArray = firstChars.ToCharArray();   // convert string to char array
-        int firstArrayLength = firstArray.Length;       // gets length of the first array
+        int firstLength = firstArray.Length;            // gets length of the first array
 
         string secondChars = Console.ReadLine();
         char[] secondArray = secondChars.ToCharArray();
-        int secondArrayLength = secondArray.Length;
+        int secondLength = secondArray.Length;
 
-        int minLength = Math.Min(secondArrayLength, firstArrayLength); // gets min length of the two arrays
+        bool equal = true;
 
-        bool equalChars = true;
-
-        for (int i = 0; i < minLength; i++)
+        if (firstLength < secondLength)
         {
-            if (firstArray[i] < secondArray[i])
+            equal = false;
+            // the first array is lexicographically smaller (comes earlier)
+            Console.WriteLine("<");
+        }
+        else if (firstLength > secondLength)
+        {
+            equal = false;
+            // the second array is lexicographically smaller (comes earlier) 
+            Console.WriteLine(">");
+        }
+        else  // firstLength == secondLength
+        {
+            for (int i = 0; i < firstLength; i++)
             {
-                // the first array is lexicographically smaller (comes earlier)
-                Console.WriteLine("<");
-                equalChars = false;
-                break;
-            }
-            else if (firstArray[i] > secondArray[i])
-            {
-                // the second array is lexicographically smaller(comes earlier)
-                Console.WriteLine(">");
-                equalChars = false;
-                break;
+                if (firstArray[i] < secondArray[i])
+                {
+                    // the first array is lexicographically smaller (comes earlier)
+                    Console.WriteLine("<");
+                    equal = false;
+                    break;
+                }
+                else if (firstArray[i] > secondArray[i])
+                {
+                    // the second array is lexicographically smaller(comes earlier)
+                    Console.WriteLine(">");
+                    equal = false;
+                    break;
+                }
             }
         }
 
-        if (equalChars)     // if no differences are found
+        if (equal)
         {
-            if (firstArrayLength < secondArrayLength)
-            {
-                // the first array is lexicographically smaller (comes earlier)
-                Console.WriteLine("<");
-            }
-            else if (firstArrayLength > secondArrayLength)
-            {
-                // the second array is lexicographically smaller (comes earlier) 
-                Console.WriteLine(">");
-            }
-            else
-            {
-                // the arrays are equal
-                Console.WriteLine("=");
-            }
+            // the arrays are equal
+            Console.WriteLine("=");
         }
 
     }
