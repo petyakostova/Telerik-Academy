@@ -11,6 +11,7 @@ Homework: Arrays
 #### 5. [Maximal increasing sequence - to the first element of the increasing sequence](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Maximal-Increasing-From1stElement-Sequence)
 #### 5. * [Maximal increasing sequence](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Maximal-Increasing-Sequence)
 #### 6. [Maximal K sum](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Maximal-K-Sum)
+#### 6. * [Maximal Consecutive K sum and those elements](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Maximal-Consecutive-K-Sum)
 #### 7. [Selection sort]()
 #### 8. [Maximal sum]()
 #### 9. [Frequent number]()
