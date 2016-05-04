@@ -27,21 +27,21 @@ class BinarySearch
         // Binary search works only on sorted arrays.
         Array.Sort(arrayNums);
 
-        int left = 0;
-        int right = arrayNums.Length - 1;
+        int leftRange = 0;
+        int rightRange = arrayNums.Length - 1;
         int middle = 0;
         int index = -1;
 
-        while (right >= left)
+        while (leftRange <= rightRange)
         {
-            middle = (left + right) / 2;
+            middle = (leftRange + rightRange) / 2;
             if (arrayNums[middle] < element)
             {
-                left = middle + 1;
+                leftRange = middle + 1;
             }
             else if (arrayNums[middle] > element)
             {
-                right = middle - 1;
+                rightRange = middle - 1;
             }
             else  // array[middle] == element 
             {
