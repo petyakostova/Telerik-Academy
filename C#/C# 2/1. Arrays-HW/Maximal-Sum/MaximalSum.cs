@@ -16,14 +16,14 @@ class MaximalSum
             arrayNums[i] = int.Parse(Console.ReadLine());
         }
 
-        int startIndex = 0, bestStart = 0, bestEnd = 0;
         int currentSum = 0, maxSum = int.MinValue;
-
+        //int startIndex = 0, bestStart = 0, bestEnd = 0;
+        
         for (int i = 0; i < arrayNums.Length; i++)
         {
             if (currentSum <= 0)
             {
-                startIndex = i;
+                //startIndex = i;
                 currentSum = 0;
             }
 
@@ -32,8 +32,8 @@ class MaximalSum
             if (currentSum > maxSum)
             {
                 maxSum = currentSum;
-                bestStart = startIndex;
-                bestEnd = i;
+                //bestStart = startIndex;
+                //bestEnd = i;
             }
         }
 
