@@ -12,6 +12,12 @@ class MergeSort
 {
     static void Main()
     {
+        int n = int.Parse(Console.ReadLine());
+        int[] arrayNums = new int[n];
+        for (int i = 0; i < n; i++)
+        {
+            arrayNums[i] = int.Parse(Console.ReadLine());
+        }
 
 
     }

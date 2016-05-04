@@ -1,11 +1,12 @@
-﻿/*  Problem 18.* Remove elements from array
+﻿/*  Problem 18. Remove elements from array
     Write a program that reads an array of integers and removes from it a minimal number of elements 
-    in such a way that the remaining array is sorted in increasing order.
-    Print the remaining sorted array.
-    Example:
-        input 	                            result
-        6, 1, 4, 3, 0, 3, 6, 4, 5 	        1, 3, 3, 4, 5
- */
+    in such a way that the remaining array is sorted in increasing order. 
+    Print the minimal number of elements that need to be removed in order for the array to become sorted.
+    Input:
+            On the first line you will receive the number N
+            On the next N lines the numbers of the array will be given
+    Output: Print the minimal number of elements that need to be removed
+    Constraints: 1 <= N <= 1024                                             */
 
 // works like that 1 3 4 5
 // first way
@@ -17,15 +18,11 @@ class LongestIncreasingSubset
     static void Main()
     {
         //Input
-        string input = Console.ReadLine();
-        //Split the elements into an array
-        string[] inputElements = input.Split(new char[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries);
-
-        //Fill an integer array from string array
-        int[] elementsArray = new int[inputElements.Length];
-        for (int i = 0; i < inputElements.Length; i++)
+        int n = int.Parse(Console.ReadLine());
+        int[] array = new int[n];
+        for (int i = 0; i < n; i++)
         {
-            elementsArray[i] = int.Parse(inputElements[i]);
+            array[i] = int.Parse(Console.ReadLine());
         }
 
         List<int> longestSequenceList = new List<int>();
@@ -35,9 +32,9 @@ class LongestIncreasingSubset
         int lenghtCount = 1;
         int currentCount = 1;
 
-        for (int i = 0; i < elementsArray.Length - 1; i++) //could start on index 1 and check current with previous elements
+        for (int i = 0; i < array.Length - 1; i++) //could start on index 1 and check current with previous elements
         {
-            if (elementsArray[i] == elementsArray[i + 1])
+            if (array[i] == array[i + 1])
             {
                 currentCount++;
 
@@ -56,12 +53,12 @@ class LongestIncreasingSubset
         //Make the sequence currently longest
         for (int i = 0; i < lenghtCount; i++)
         {
-            longestSequenceList.Add(elementsArray[startIndex + i]);
+            longestSequenceList.Add(array[startIndex + i]);
         }
 
         //Find how many combinations of sequences can be there
         long combinations = 1;
-        for (int i = 0; i < elementsArray.Length; i++) //Instead of Math.Pow
+        for (int i = 0; i < array.Length; i++) //Instead of Math.Pow
         {
             combinations *= 2;
         }
@@ -70,7 +67,7 @@ class LongestIncreasingSubset
         {
             //convert current combination number to its binary representation.
             //That way we will use the positions with bit "1" with the elements on the same position in the array
-            string binary = Convert.ToString(combination, 2).PadLeft(elementsArray.Length, '0');
+            string binary = Convert.ToString(combination, 2).PadLeft(array.Length, '0');
             char[] tempArr = binary.ToCharArray();
             Array.Reverse(tempArr);
             string revBinary = new string(tempArr);
@@ -78,11 +75,11 @@ class LongestIncreasingSubset
             List<int> tempList = new List<int>();
             int bitsCount = 0;
 
-            for (int i = 0; i < elementsArray.Length; i++)
+            for (int i = 0; i < array.Length; i++)
             {
                 if (revBinary[i] == '1')
                 {
-                    tempList.Add(elementsArray[i]);
+                    tempList.Add(array[i]);
                     bitsCount++;
                 }
             }
