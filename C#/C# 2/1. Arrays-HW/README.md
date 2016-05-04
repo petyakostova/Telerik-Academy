@@ -17,7 +17,7 @@ Homework: Arrays
 #### 9. [Frequent number](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Frequent-Number)
 #### 10. [Find sum in array](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Find-Sum-In-Array)
 #### 11. [Binary search](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Binary-Search)
-#### 12. [Index of letters]()
+#### 12. [Index of letters](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Index-Of-Letters)
 #### 13. [Merge sort]()
 #### 14. [Quick sort]()
 #### 15. [Prime numbers]()
