@@ -1,8 +1,8 @@
 ﻿/*  Problem 7. Selection sort
-    Sorting an array means to arrange its elements in increasing order. Write a program to sort an array.
+    Sorting an array means to arrange its elements in increasing order. Write a program to sort an array. 
     Use the Selection sort algorithm: Find the smallest element, move it at the first position, 
     find the smallest from the rest, move it at the second position, etc.
- */
+    Print the sorted array. Each number should be on a new line.                     */
 
 using System;
 
@@ -10,11 +10,9 @@ class SelectionSort
 {
     static void Main()
     {
-        Console.WriteLine("Enter a number for N:");
+        // input
         int n = int.Parse(Console.ReadLine());
-
         int[] arrayNums = new int[n];
-        Console.WriteLine("Enter {0} numbers to array:", n);
         for (int i = 0; i < n; i++)
         {
             arrayNums[i] = int.Parse(Console.ReadLine());
@@ -39,6 +37,7 @@ class SelectionSort
                     indexMin = j;
                 }
             }
+
             // swaping
             if (indexMin != j)
             {
@@ -48,8 +47,12 @@ class SelectionSort
             }
         }
 
-        Console.WriteLine("After sorting using Selection Sort Algorithm: ");
-        Console.WriteLine(string.Join(" ", arrayNums) + "\n");
+        foreach (var item in arrayNums)
+        {
+            Console.WriteLine(item);
+        }
 
+        // other input => printed on a single line, separated by spaces
+        //Console.WriteLine(string.Join(" ", arrayNums) + "\n");
     }
 }
