@@ -41,7 +41,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Maximal-Increasing-From
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13. Merge-Sort", "Merge-Sort\13. Merge-Sort.csproj", "{474F7737-2EC1-4FAE-ABE3-91CCE823BFC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18. Remove-Min-Elements-Increasing-Array", "Remove-Min-Elements-Increasing-Array\18. Remove-Min-Elements-Increasing-Array.csproj", "{BEFFA150-F017-4A6D-8F10-3A221DBF1034}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18.1. Remove-Min-Els-Increasing-Array", "Remove-Min-Elements-Increasing-Array\18.1. Remove-Min-Els-Increasing-Array.csproj", "{BEFFA150-F017-4A6D-8F10-3A221DBF1034}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18.2. Remove-Min-Els-Increasing-Array-Memory", "Remove-Min-Els-Increasing-Array-Memory\18.2. Remove-Min-Els-Increasing-Array-Memory.csproj", "{CC87B654-543D-4F75-B53B-27E918CC51A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +131,10 @@ Global
 		{BEFFA150-F017-4A6D-8F10-3A221DBF1034}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEFFA150-F017-4A6D-8F10-3A221DBF1034}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEFFA150-F017-4A6D-8F10-3A221DBF1034}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC87B654-543D-4F75-B53B-27E918CC51A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC87B654-543D-4F75-B53B-27E918CC51A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC87B654-543D-4F75-B53B-27E918CC51A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC87B654-543D-4F75-B53B-27E918CC51A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -23,7 +23,8 @@ Homework: Arrays
 #### 15. [Prime numbers](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Prime-Numbers)
 #### 16. Subset with sum S
 #### 17. Subset K with sum S
-#### 18. [Remove elements from array](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Longest-Increasing-Subset)
+#### 18. Remove elements from array
+#### 18. * [Remove elements from array - Using Lots of memory](https://github.com/petyakostova/Telerik-Academy/blob/master/C%23/C%23%202/1.%20Arrays-HW/Remove-Min-Els-Increasing-Array-Memory/RemoveMinElsIncrArray.cs)
 #### 19. Permutations of set
 #### 20. Variations of set
 #### 21. Combinations of set
