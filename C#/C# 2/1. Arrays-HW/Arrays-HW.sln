@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18. Longest-Increasing-Subs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Compare-Char-Arrays-WithStrings", "Compare-Char-Arrays-WithStrings\03. Compare-Char-Arrays-WithStrings.csproj", "{9D9DC9C1-7ADB-4FB4-976C-F916E9CA8595}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Maximal-Increasing-From1stElement-Sequence", "Maximal-Increasing-From1stElement-Sequence\05. Maximal-Increasing-From1stElement-Sequence.csproj", "{07429E53-99B1-42D9-9507-9E92D0C96560}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{9D9DC9C1-7ADB-4FB4-976C-F916E9CA8595}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D9DC9C1-7ADB-4FB4-976C-F916E9CA8595}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D9DC9C1-7ADB-4FB4-976C-F916E9CA8595}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07429E53-99B1-42D9-9507-9E92D0C96560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07429E53-99B1-42D9-9507-9E92D0C96560}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07429E53-99B1-42D9-9507-9E92D0C96560}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07429E53-99B1-42D9-9507-9E92D0C96560}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

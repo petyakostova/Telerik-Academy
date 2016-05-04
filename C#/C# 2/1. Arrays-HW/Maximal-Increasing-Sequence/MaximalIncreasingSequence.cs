@@ -1,11 +1,11 @@
-﻿/*  Problem 5. Maximal increasing sequence
+﻿/*  5. Maximal increasing sequence 
     Write a program that finds the length of the maximal increasing sequence in an array of N integers.
     Input:
             On the first line you will receive the number N
             On the next N lines the numbers of the array will be given
-    Output: Print the length of the maximal increasing sequence                 */
+    Output: Print the length of the maximal increasing sequence and the maximal increasing sequence    */
 
-// Note: The increasing elements are consecutively placed.
+// Note: The increasing elements are consecutively placed. This solution is not for bgcoder!
 
 using System;
 
@@ -23,7 +23,7 @@ class MaximalIncreasingSequence
         
         int currentLength = 1;
         int maxLength = 0;
-        //int endIndexBestLength = 0;
+        int endIndexBestLength = 0;
 
         for (int i = 0; i < arrayNums.Length - 1; i++)
         {
@@ -36,7 +36,7 @@ class MaximalIncreasingSequence
                 if (currentLength > maxLength)
                 {
                     maxLength = currentLength;
-                    //endIndexBestLength = i;
+                    endIndexBestLength = i;
                 }
                 currentLength = 1;
             }
@@ -46,15 +46,15 @@ class MaximalIncreasingSequence
         if (currentLength > maxLength)
         {
             maxLength = currentLength;
-            //endIndexBestLength = arrayNums.Length - 1;
+            endIndexBestLength = arrayNums.Length - 1;
         }
 
         Console.WriteLine(maxLength);
 
-        //for (int i = endIndexBestLength - maxLength + 1; i <= endIndexBestLength; i++)
-        //{
-        //    Console.Write(i != endIndexBestLength ? arrayNums[i] + ", " : arrayNums[i] + "\n");
-        //}       
+        for (int i = endIndexBestLength - maxLength + 1; i <= endIndexBestLength; i++)
+        {
+            Console.Write(i != endIndexBestLength ? arrayNums[i] + ", " : arrayNums[i] + "\n");
+        }
 
     }
 }
