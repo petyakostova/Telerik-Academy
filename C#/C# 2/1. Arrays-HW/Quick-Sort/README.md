@@ -24,4 +24,4 @@ Write a program that sorts an array of integers using the [Quick sort](http://en
 | 10<br>**36<br>10<br>1<br>34<br>28<br>38<br>31<br>27<br>30<br>20** | 1<br>10<br>20<br>27<br>28<br>30<br>31<br>34<br>36<br>38 |
 
 ## More info for the solution:
-[Quicksort](https://en.wikipedia.org/wiki/Quicksort#Algorithm)
+- [Quicksort](https://en.wikipedia.org/wiki/Quicksort#Algorithm)

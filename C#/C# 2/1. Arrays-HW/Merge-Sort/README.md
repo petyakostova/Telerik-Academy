@@ -27,4 +27,4 @@ Write a program that sorts an array of integers using the [Merge sort](http://en
 - Submit your code [here](http://bgcoder.com/Contests/Compete/Index/315#11)
 
 ## More info for the solution:
-[Merge sort](https://en.wikipedia.org/wiki/Merge_sort)
+- [Merge sort](https://en.wikipedia.org/wiki/Merge_sort)
