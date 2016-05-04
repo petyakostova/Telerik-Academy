@@ -8,7 +8,7 @@
 
 using System;
 
-class MergeSort
+class MergeSortAlgorithm
 {
     static int[] arrayNums;
 
@@ -47,7 +47,7 @@ class MergeSort
     {
         int[] sortedArr = new int[arrayNums.Length];
 
-        int valuesLocalArr = start; // for saving the values of the local array, which always starts from start
+        int leftLocalArr = start; // for saving the values of the local array, which always starts from start
         int leftArrStart = start; // for the beginning of the left array
         int middleArrStart = middle + 1; // where starts the right sub-array <=> the left range ot the right sub-array
 
@@ -56,23 +56,23 @@ class MergeSort
         {
             if (arrayNums[leftArrStart] > arrayNums[middleArrStart])
             {
-                sortedArr[valuesLocalArr++] = arrayNums[middleArrStart++];
+                sortedArr[leftLocalArr++] = arrayNums[middleArrStart++];
             }
             else
             {
-                sortedArr[valuesLocalArr++] = arrayNums[leftArrStart++];
+                sortedArr[leftLocalArr++] = arrayNums[leftArrStart++];
             }
         }
 
         //inserting other numbers
         while (leftArrStart <= middle)
         {
-            sortedArr[valuesLocalArr++] = arrayNums[leftArrStart++];
+            sortedArr[leftLocalArr++] = arrayNums[leftArrStart++];
         }
 
         while (middleArrStart <= end)
         {
-            sortedArr[valuesLocalArr++] = arrayNums[middleArrStart++];
+            sortedArr[leftLocalArr++] = arrayNums[middleArrStart++];
         }
 
         for (int i = start; i <= end; i++)
