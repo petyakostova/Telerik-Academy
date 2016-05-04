@@ -15,7 +15,7 @@ Homework: Arrays
 #### 7. [Selection sort](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Selection-Sort)
 #### 8. [Maximal sum](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Maximal-Sum)
 #### 9. [Frequent number](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Frequent-Number)
-#### 10. [Find sum in array]()
+#### 10. [Find sum in array](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Find-Sum-In-Array)
 #### 11. [Binary search]()
 #### 12. [Index of letters]()
 #### 13. [Merge sort]()
