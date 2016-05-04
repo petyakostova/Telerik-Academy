@@ -5,7 +5,8 @@
             On the next N lines the numbers of the array will be given
     Output: Print the length of the maximal increasing sequence and the maximal increasing sequence    */
 
-// Note: The increasing elements are consecutively placed. This solution is not for bgcoder!
+// Interpretation: The increasing elements are consecutively placed. 
+// This solution is not for bgcoder!
 
 using System;
 

@@ -5,7 +5,7 @@
     On the next N lines the numbers of the array will be given
     Output: Print the length of the maximal sequence                 */
 
-// Note: The equal elements are consecutively placed.
+// Interpretation: The equal elements are consecutively placed.
 
 using System;
 

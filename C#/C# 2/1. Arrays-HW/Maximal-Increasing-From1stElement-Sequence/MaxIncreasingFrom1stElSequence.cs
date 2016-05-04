@@ -5,7 +5,8 @@
             On the next N lines the numbers of the array will be given
     Output: Print the length of the maximal increasing sequence.        */
 
-// Note: The elements in the maximal sequence must be increasing (not equal) to the first element of the maximal sequence.
+/* Interpretation: The elements in the maximal sequence must be increasing (not equal) 
+                   to the first element of the maximal sequence. */
 
 using System;
 

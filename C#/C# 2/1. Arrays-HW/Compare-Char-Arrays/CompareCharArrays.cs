@@ -3,7 +3,8 @@
         Print < if the first array is lexicographically smaller
         Print > if the second array is lexicographically smaller
         Print = if the arrays are equal                                  */
-/* Notes: In lexicographic order the elements are compared one by one starting from the very left. 
+
+/* Note: In lexicographic order the elements are compared one by one starting from the very left. 
    If the elements are not the same, the array, whose element is smaller (comes earlier in the alphabet), comes first. 
    If the elements are equal, the next character is compared. 
    If the end of one of the arrays is reached, without finding different elements, the shorter array is the smaller 
