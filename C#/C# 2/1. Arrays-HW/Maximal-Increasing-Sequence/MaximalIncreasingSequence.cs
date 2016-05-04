@@ -6,7 +6,6 @@
     Output: Print the length of the maximal increasing sequence and the maximal increasing sequence    */
 
 // Interpretation: The increasing elements are consecutively placed. 
-// This solution is not for bgcoder!
 
 using System;
 
@@ -24,11 +23,11 @@ class MaximalIncreasingSequence
         
         int currentLength = 1;
         int maxLength = 0;
-        int endIndexBestLength = 0;
+        //int endIndexBestLength = 0;
 
         for (int i = 0; i < arrayNums.Length - 1; i++)
         {
-            if (arrayNums[i] <= arrayNums[i + 1])
+            if (arrayNums[i] < arrayNums[i + 1])
             {
                 currentLength++;
             }
@@ -37,7 +36,7 @@ class MaximalIncreasingSequence
                 if (currentLength > maxLength)
                 {
                     maxLength = currentLength;
-                    endIndexBestLength = i;
+                    //endIndexBestLength = i;
                 }
                 currentLength = 1;
             }
@@ -47,15 +46,15 @@ class MaximalIncreasingSequence
         if (currentLength > maxLength)
         {
             maxLength = currentLength;
-            endIndexBestLength = arrayNums.Length - 1;
+            //endIndexBestLength = arrayNums.Length - 1;
         }
 
         Console.WriteLine(maxLength);
 
-        for (int i = endIndexBestLength - maxLength + 1; i <= endIndexBestLength; i++)
-        {
-            Console.Write(i != endIndexBestLength ? arrayNums[i] + ", " : arrayNums[i] + "\n");
-        }
+        //for (int i = endIndexBestLength - maxLength + 1; i <= endIndexBestLength; i++)
+        //{
+        //    Console.Write(i != endIndexBestLength ? arrayNums[i] + ", " : arrayNums[i] + "\n");
+        //}
 
     }
 }

@@ -6,7 +6,8 @@
     Output: Print the length of the maximal increasing sequence.        */
 
 /* Interpretation: The elements in the maximal sequence must be increasing (not equal) 
-                   to the first element of the maximal sequence. */
+                   to the first element of the maximal sequence. 
+   This solution is not for bgcoder!                                 */
 
 using System;
 
