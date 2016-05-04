@@ -20,3 +20,6 @@ Write a program that finds the length of the **maximal increasing sequence** in 
 | Input                                         | Output |
 |:---------------------------------------------:|:------:|
 | 8<br>7<br>3<br>**2<br>3<br>4**<br>2<br>2<br>4 | 3      |
+
+## Submission
+- Submit your code [here](http://bgcoder.com/Contests/Compete/Index/315#4)
