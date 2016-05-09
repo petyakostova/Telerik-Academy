@@ -1,7 +1,20 @@
 ﻿/*  Problem 2. Maximal sum
-    Write a program that reads a rectangular matrix of size N x M 
-    and finds in it the square 3 x 3 that has maximal sum of its elements.
- */
+    Write a program that reads a rectangular matrix of size N x M and 
+    finds in it the square 3 x 3 that has maximal sum of its elements. Print that sum.
+    Input: 
+            On the first line you will receive the numbers N and M separated by a single space
+            On the next N lines there will be M numbers separated with spaces - the elements of the matrix
+    Output: Print the maximal sum of 3 x 3 square
+    Constraints: 3 <= N, M <= 1024. Numbers in the matrix will be in the interval [ -1000, 1000 ]
+    Sample tests:
+                    Input 	    Output          Input 	            Output
+                    3 3         41              5 5                 19
+                    4 3 5                       1 1 3 3 5
+                    2 6 4                       -6 -7 2 -3 -1
+                    8 2 7 	                    3 0 -4 5 9
+                                                7 -7 0 1 0
+                                                -7 -6 -4 -4 9 	                    */
+
 /*  Note: In the file "CheckMaximalSum.txt" there is ready input for easier (faster) testing:
           Input:                            Output:
                 0, 2, 4, 0, 9, 5            The best platform is:
@@ -42,6 +55,7 @@ class Program
         int bestSum = int.MinValue;
         int bestRow = 0;
         int bestCol = 0;
+
         for (int row = 0; row < matrix.GetLength(0) - 2; row++)
         {
             for (int col = 0; col < matrix.GetLength(1) - 2; col++)
