@@ -18,49 +18,50 @@ class RemoveMinElsIncreasingArray
     {
         // Input
         int n = int.Parse(Console.ReadLine());
-        var array = new int[n];
+        int[] array = new int[n];
         for (int i = 0; i < n; i++)
         {
             array[i] = int.Parse(Console.ReadLine());
         }
 
-        int maxSeqLength = 0;
-        var helperArray = new int[n]; // helper array storing sequence length for each element
+        int maxSubseqLength = 0;
+        int[] helperArray = new int[n]; // helper array storing sequence length for each element
 
-        // For each EndPoint access each subsequence in the array. Set an EndPoint 0 to Length     
+        // for each EndPoint access each subsequence in the array  
         for (int endPoint = 0; endPoint < array.Length; endPoint++)
         {
-            maxSeqLength = 0;
-            // For each start point then set a Start Point 0 to EndPoint                              
+            maxSubseqLength = 0;
+
+            // for each start point then set a StartPoint => 0 to EndPoint                              
             for (int startPoint = 0; startPoint < endPoint; startPoint++)
             {
-                // If current Start Point element is smaller than the at End Point they are members of the same sequence
-                if (array[endPoint] >= array[startPoint])
+                // if current StartPoint element is smaller than the at EndPoint they are members of the same sequence
+                if (array[startPoint] <= array[endPoint]
+                    && helperArray[startPoint] >= maxSubseqLength) 
+                    // if the length for the element before is larger than the current MaxSequenceLength
                 {
-                    if (helperArray[startPoint] > maxSeqLength)  // if the length for the element before is 
-                    {                                            // larger than the current MaxSequenceLength
-                        maxSeqLength = helperArray[startPoint];  // Max equals the length for the current 
-                    }                                            // element
-                }                                                // The Element at End Point Belogs to that
-            }                                                    // sequence
+                    // max equals the length for the current element
+                    maxSubseqLength = helperArray[startPoint];
+                }
+            }
 
             // Longest existing sequence
-            // the current EndPoint element belogs to plus the current element sequence of at least 1 elements
-            helperArray[endPoint] = maxSeqLength + 1;
+            helperArray[endPoint] = maxSubseqLength + 1;
         }
 
-        maxSeqLength = 0;
-        // Find the Max
+        // Find the max length of subsequence amongst all subsequence lengths
+        maxSubseqLength = 0;
         for (int i = 0; i < n; i++)
         {
             // Length stored in the helper array                      
-            if (helperArray[i] > maxSeqLength)
+            if (helperArray[i] > maxSubseqLength)
             {
-                maxSeqLength = helperArray[i];
+                maxSubseqLength = helperArray[i];
             }
         }
 
-        Console.WriteLine(n - maxSeqLength);
+        // Output
+        Console.WriteLine(n - maxSubseqLength);
 
     }
 }
