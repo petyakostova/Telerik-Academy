@@ -11,18 +11,10 @@
                     3 3         41              5 5                 19
                     4 3 5                       1 1 3 3 5
                     2 6 4                       -6 -7 2 -3 -1
-                    8 2 7 	                    3 0 -4 5 9
+                    8 2 7                       3 0 -4 5 9
                                                 7 -7 0 1 0
                                                 -7 -6 -4 -4 9 	                    */
 
-/*  Note: In the file "CheckMaximalSum.txt" there is ready input for easier (faster) testing:
-          Input:                            Output:
-                0, 2, 4, 0, 9, 5            The best platform is:
-                7, 1, 3, 3, 2, 1            1 3 3
-                1, 3, 9, 8, 5, 6            3 9 8
-                4, 6, 7, 9, 1, 0            6 7 9
-                                            The maximal sum is: 49    
- */
 using System;
 
 class Program
@@ -30,8 +22,9 @@ class Program
     static void Main()
     {
         // Read the matrix dimensions
-        int rows = int.Parse(Console.ReadLine());
-        int cols = int.Parse(Console.ReadLine());
+        string[] sizes = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+        int rows = int.Parse(sizes[0]);
+        int cols = int.Parse(sizes[1]);
 
         // Create (Allocate) the matrix
         int[,] matrix = new int[rows, cols];
@@ -39,15 +32,15 @@ class Program
         // Enter the matrix elements
         for (int row = 0; row < rows; row++)
         {
+            string[] inputRows = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+
+            int count = 0;
             for (int col = 0; col < cols; col++)
             {
-                Console.Write("matrix[{0},{1}] = ", row, col);
-                matrix[row, col] = int.Parse(Console.ReadLine()); ;
+                matrix[row, col] = int.Parse(inputRows[count]);
+                count++;
             }
         }
-
-        Console.WriteLine("\nThe matrix is as follows:");
-        PrintingMatrix(matrix);
 
         // Find the maximal sum platform of size 3 x 3
         int bestSum = int.MinValue;
@@ -71,29 +64,16 @@ class Program
             }
         }
 
-        // Print the result
-        Console.WriteLine("\nThe best platform is:");
-        Console.WriteLine("  {0} {1} {2}", 
-            matrix[bestRow, bestCol], matrix[bestRow, bestCol + 1], matrix[bestRow, bestCol + 2]);
-        Console.WriteLine("  {0} {1} {2}", 
-            matrix[bestRow + 1, bestCol], matrix[bestRow + 1, bestCol + 1], matrix[bestRow + 1, bestCol + 2]);
-        Console.WriteLine("  {0} {1} {2}", 
-            matrix[bestRow + 2, bestCol], matrix[bestRow + 2, bestCol + 1], matrix[bestRow + 2, bestCol + 2]);
-        Console.WriteLine("\nThe maximal sum is: {0}\n", bestSum);
-    }
+        // Print the best platform
+        //Console.WriteLine("  {0} {1} {2}", 
+        //    matrix[bestRow, bestCol], matrix[bestRow, bestCol + 1], matrix[bestRow, bestCol + 2]);
+        //Console.WriteLine("  {0} {1} {2}", 
+        //    matrix[bestRow + 1, bestCol], matrix[bestRow + 1, bestCol + 1], matrix[bestRow + 1, bestCol + 2]);
+        //Console.WriteLine("  {0} {1} {2}", 
+        //    matrix[bestRow + 2, bestCol], matrix[bestRow + 2, bestCol + 1], matrix[bestRow + 2, bestCol + 2]);
 
-    // Print the matrix on the console
-    private static void PrintingMatrix(int[,] matrix)
-    {
-
-        for (int row = 0; row < matrix.GetLength(0); row++)     // rows = matrix.GetLength(0)
-        {
-            for (int col = 0; col < matrix.GetLength(1); col++) // cols = matrix.GetLength(1)
-            {
-                Console.Write("{0,-2} ", matrix[row, col]);     // left aligned
-                //Console.Write("{0,2} ", matrix[row, col]);      // right aligned
-            }
-            Console.WriteLine();
-        }
+        // Output
+        Console.WriteLine(bestSum);
     }
+    
 }
