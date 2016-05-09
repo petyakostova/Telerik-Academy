@@ -21,7 +21,7 @@ Homework: Arrays
 #### 13. [Merge sort](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Merge-Sort)
 #### 14. [Quick sort](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Quick-Sort)
 #### 15. [Prime numbers](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Prime-Numbers)
-#### 16. Subset with sum S
+#### 16. [Subset with sum S](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Subset-With-Sum-S)
 #### 17. Subset K with sum S
 #### 18. [Remove elements from array](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Remove-Min-Elements-Increasing-Array)
 #### 18. * [Remove elements from array - Using Lots of memory](https://github.com/petyakostova/Telerik-Academy/blob/master/C%23/C%23%202/1.%20Arrays-HW/Remove-Min-Els-Increasing-Array-Memory/RemoveMinElsIncrArray.cs)
