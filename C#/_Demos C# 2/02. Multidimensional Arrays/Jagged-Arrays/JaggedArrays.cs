@@ -28,5 +28,13 @@ class JaggedArrays
             Console.WriteLine();
         }
 
+        Console.WriteLine();
+
+        string[] beers = { "Zagorka", "Ariana", "Kamenitza", "Amstel"};
+        Console.WriteLine(String.Join(", ", beers));
+
+        Console.WriteLine();
+
+        Console.WriteLine(String.Join(", \n", beers));
     }
 }
