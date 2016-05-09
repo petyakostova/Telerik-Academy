@@ -25,6 +25,6 @@ Homework: Arrays
 #### 17. [Subset K with sum S](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Subset-K-With-Sum-S)
 #### 18. [Remove elements from array](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Remove-Min-Elements-Increasing-Array)
 #### 18. * [Remove elements from array - Using Lots of memory](https://github.com/petyakostova/Telerik-Academy/blob/master/C%23/C%23%202/1.%20Arrays-HW/Remove-Min-Els-Increasing-Array-Memory/RemoveMinElsIncrArray.cs)
-#### 19. Permutations of set
+#### 19. [Permutations of set](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Permutations-Of-Set)
 #### 20. Variations of set
 #### 21. Combinations of set
