@@ -34,11 +34,9 @@ class Program
         {
             string[] inputRows = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
-            int count = 0;
-            for (int col = 0; col < cols; col++)
+            for (int col = 0, count = 0; col < cols; col++, count++)
             {
                 matrix[row, col] = int.Parse(inputRows[count]);
-                count++;
             }
         }
 
@@ -54,7 +52,7 @@ class Program
                 int sum = matrix[row, col] + matrix[row, col + 1] + matrix[row, col + 2] +
                           matrix[row + 1, col] + matrix[row + 1, col + 1] + matrix[row + 1, col + 2] +
                           matrix[row + 2, col] + matrix[row + 2, col + 1] + matrix[row + 2, col + 2];
-                
+
                 if (sum > bestSum)
                 {
                     bestSum = sum;
@@ -75,5 +73,5 @@ class Program
         // Output
         Console.WriteLine(bestSum);
     }
-    
+
 }
