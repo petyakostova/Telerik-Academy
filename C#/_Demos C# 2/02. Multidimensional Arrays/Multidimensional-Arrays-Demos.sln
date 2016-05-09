@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. MaxPlatform", "MaxPlatform\2. MaxPlatform.csproj", "{66EB1973-9542-495D-92FD-C3B39D68DC3B}"
 EndProject
@@ -16,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. JaggedArrays", "JaggedArrays\3. JaggedArrays.csproj", "{9B96C66A-48D1-4909-878C-864AEA5F4AB3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7. BinarySearch", "BinarySearch\7. BinarySearch.csproj", "{2D2909FC-7807-4B0E-AF06-211A04EE82FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jagged-Arrays", "Jagged-Arrays\Jagged-Arrays.csproj", "{7D6E7DBE-6E91-450F-BAF4-BD82CD91F932}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -97,6 +99,18 @@ Global
 		{2D2909FC-7807-4B0E-AF06-211A04EE82FD}.Release|Mixed Platforms.Build.0 = Release|x86
 		{2D2909FC-7807-4B0E-AF06-211A04EE82FD}.Release|x86.ActiveCfg = Release|x86
 		{2D2909FC-7807-4B0E-AF06-211A04EE82FD}.Release|x86.Build.0 = Release|x86
+		{7D6E7DBE-6E91-450F-BAF4-BD82CD91F932}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D6E7DBE-6E91-450F-BAF4-BD82CD91F932}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D6E7DBE-6E91-450F-BAF4-BD82CD91F932}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{7D6E7DBE-6E91-450F-BAF4-BD82CD91F932}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{7D6E7DBE-6E91-450F-BAF4-BD82CD91F932}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7D6E7DBE-6E91-450F-BAF4-BD82CD91F932}.Debug|x86.Build.0 = Debug|Any CPU
+		{7D6E7DBE-6E91-450F-BAF4-BD82CD91F932}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D6E7DBE-6E91-450F-BAF4-BD82CD91F932}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D6E7DBE-6E91-450F-BAF4-BD82CD91F932}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{7D6E7DBE-6E91-450F-BAF4-BD82CD91F932}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{7D6E7DBE-6E91-450F-BAF4-BD82CD91F932}.Release|x86.ActiveCfg = Release|Any CPU
+		{7D6E7DBE-6E91-450F-BAF4-BD82CD91F932}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
