@@ -1,30 +1,25 @@
 ﻿/*  Problem 3. Sequence in matrix
     We are given a matrix of strings of size N x M. 
-    Sequences in the matrix we define as sets of several neighbour elements located on the same line, column or diagonal.
-    Write a program that finds the longest sequence of equal strings in the matrix.
-    Example:
-                matrix 	            result 		        matrix 	        result
-            ha 	fifi 	ho 	hi                          s 	qq 	s
-            fo 	ha 	    hi 	xx      ha, ha, ha          pp 	pp 	s       s, s, s
-            xxx ho 	    ha 	xx                          pp 	qq 	s
- */
-/* Note: In the files "Example1SequenceNMatrix" and "Example2SequenceNMatrix" 
-   there are ready inputs for easier (faster) testing of the given examples.  
-*/
+    Sequences in the matrix we define as sets of several neighbour elements located on the same line, column or diagonal. 
+    Write a program that finds the longest sequence of equal strings in the matrix and prints its length.
+    Input: 
+            On the first line you will receive the numbers N and M separated by a single space
+            On the next N lines there will be M strings separated with spaces - the strings in the matrix
+    Output: Print the length of the longest sequence of equal equal strings in the matrix
+    Constraints: 3 <= N, M <= 128            */
 
 using System;
-using System.Linq;
 
-class SequenceNMatrix
+class SequenceInMatrix
 {
     static readonly int[,] directions = { { 0, 1 }, { 1, 1 }, { -1, 1 }, { 1, 0 } };
+
     static void Main()
     {
         // Read the matrix dimensions
-        Console.Write("Number of rows = ");
-        int rows = int.Parse(Console.ReadLine());
-        Console.Write("Number of columns = ");
-        int cols = int.Parse(Console.ReadLine());
+        string[] sizes = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+        int rows = int.Parse(sizes[0]);
+        int cols = int.Parse(sizes[1]);
 
         // Create (Allocate) the matrix
         string[,] matrix = new string[rows, cols];
@@ -32,27 +27,24 @@ class SequenceNMatrix
         // Enter the matrix elements
         for (int row = 0; row < rows; row++)
         {
-            for (int col = 0; col < cols; col++)
+            string[] inputRows = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+
+            for (int col = 0, count = 0; col < cols; col++, count++)
             {
-                Console.Write("matrix[{0},{1}] = ", row, col);
-                matrix[row, col] = Console.ReadLine();
+                matrix[row, col] = inputRows[count];
             }
         }
-
-        // Print the matrix on the console
-        Console.WriteLine("\nThe matrix is as follows:");
-        PrintingMatrix(matrix);
-
+        
         // Find the longest sequence of equal strings in the matrix
         int bestLength = 0;
         string bestElement = string.Empty;
         FindLongestSequence(matrix, ref bestElement, ref bestLength);
 
-        // Print the result 
-        Console.WriteLine("\nThe longest sequence of equal strings in the matrix is:");
-        Console.WriteLine(string.Join(", ", Enumerable.Repeat(bestElement, bestLength)));
-        Console.WriteLine();
+        // The longest sequence of equal strings in the matrix
+        //Console.WriteLine(string.Join(", ", Enumerable.Repeat(bestElement, bestLength)));
 
+        // Output
+        Console.WriteLine(bestLength);
     }
 
     static void FindLongestSequence(string[,] matrix, ref string bestElement, ref int bestLength)
@@ -93,20 +85,5 @@ class SequenceNMatrix
                currCol >= 0 && currCol < matrix.GetLongLength(1) &&
                matrix[currRow, currCol] == matrix[row, col];
     }
-
-    // Print the matrix on the console
-    private static void PrintingMatrix(string[,] matrix)
-    {
-
-        for (int row = 0; row < matrix.GetLength(0); row++)     // rows = matrix.GetLength(0)
-        {
-            for (int col = 0; col < matrix.GetLength(1); col++) // cols = matrix.GetLength(1)
-            {
-                Console.Write("{0,-5} ", matrix[row, col]);     // left aligned
-                //Console.Write("{0,5} ", matrix[row, col]);      // right aligned
-            }
-            Console.WriteLine();
-        }
-    }
-
+    
 }
