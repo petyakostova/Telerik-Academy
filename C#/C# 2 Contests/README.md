@@ -18,12 +18,12 @@
 |       Test Exam      |      Genome Decoder      |           Tic-Tac-Toe           |  Airplane Drinks  |          3D Lines         |         Guitar         |
 |      Sample Exam     |       C# Clean Code      |              Sudoku             |     Employees     |        3D Max Walk        |         Liquid         |
 
-#### *1 => Numeral Systems
+- **1** => **Numeral Systems**
 
-#### *2 => Arrays
+- **2** => **Arrays**
 
-#### *3 => Multidimensional Arrays
+- **3** => **Multidimensional Arrays**
 
-#### *4 => Strings
+- **4** => **Strings**
 
-#### *5 => 
+- **5** => 
