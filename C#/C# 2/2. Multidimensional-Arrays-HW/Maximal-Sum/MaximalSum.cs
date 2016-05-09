@@ -7,7 +7,7 @@
     Output: Print the maximal sum of 3 x 3 square
     Constraints: 3 <= N, M <= 1024. Numbers in the matrix will be in the interval [ -1000, 1000 ]
     Sample tests:
-                    Input 	    Output          Input 	            Output
+                    Input       Output          Input 	            Output
                     3 3         41              5 5                 19
                     4 3 5                       1 1 3 3 5
                     2 6 4                       -6 -7 2 -3 -1
@@ -30,9 +30,7 @@ class Program
     static void Main()
     {
         // Read the matrix dimensions
-        Console.Write("Number of rows = ");
         int rows = int.Parse(Console.ReadLine());
-        Console.Write("Number of columns = ");
         int cols = int.Parse(Console.ReadLine());
 
         // Create (Allocate) the matrix
