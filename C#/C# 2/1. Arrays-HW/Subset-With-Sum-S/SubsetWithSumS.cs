@@ -26,10 +26,10 @@ class SubsetWithSumS
         string[] inputElements = input.Split(new char[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
         // Fill an integer array from string array
-        int[] arrayNums = new int[inputElements.Length];
+        int[] array = new int[inputElements.Length];
         for (int i = 0; i < inputElements.Length; i++)
         {
-            arrayNums[i] = int.Parse(inputElements[i]);
+            array[i] = int.Parse(inputElements[i]);
         }
 
         // Input S
@@ -39,16 +39,16 @@ class SubsetWithSumS
         long curSum = 0;
         int count = 0;
 
-        for (int i = 1; i <= (int)Math.Pow(2, arrayNums.Length) - 1; i++)
+        for (int i = 1; i <= (int)Math.Pow(2, array.Length) - 1; i++)
         {
             curSum = 0;
-            string template = Convert.ToString(i, 2).PadLeft(arrayNums.Length, '0');
+            string template = Convert.ToString(i, 2).PadLeft(array.Length, '0');
 
             for (int j = 0; j < template.Length; j++)
             {
                 if (template[j].ToString() == "1")
                 {
-                    curSum += arrayNums[j];
+                    curSum += array[j];
                 }
             }
 
