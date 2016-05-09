@@ -5,7 +5,7 @@
     Output: Print the matrix. Numbers on a row must be separated by a single spacebar. Each row must be on a new line.
     Constraints: 1 <= N <= 128
     Sample tests
-    Input 	Output          Input 	Output          Input 	Output          Input 	Output
+    Input   Output          Input 	Output          Input 	Output          Input 	Output
     4       1 5 9 13        4       1 8	9 16        4       7 11 14 16      4       1 12 11 10
     a       2 6 10 14       b 	    2 7	10 15       c 	    4 8 12 15       d       2 13 16 9
             3 7 11 15               3 6 11 14               2 5 9 13                3 14 15 8
