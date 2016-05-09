@@ -5,6 +5,13 @@
    input array              	S 	    result
    2, 1, 2, 4, 3, 5, 2, 6 	    14 	    yes                             */
 
+/* Algorithm: Generate all possible subsets of the numbers by a for-loop from 0 to (Math.Pow(2, n)-1). 
+If we have a number p, take its binary representation (which consists of exactly N bits) 
+and sum the numbers that correspond to 1 in the binary representation of p (with a nested loop from 0 to N-1). 
+Thus all possible sums will be generated and if some of them is S, it can be printed. 
+This algorithm is slow (needs exponential time and cannot run for 100 or 1000 elements). 
+It also does not allow using the same array element twice in the sum.*/
+
 using System;
 
 class SubsetWithSumS
