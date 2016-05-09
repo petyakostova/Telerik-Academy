@@ -5,8 +5,8 @@ public class JaggedArrays
     static void Main()
     {
         int[] numbers = { 0, 1, 4, 113, 55, 3, 1, 2, 66, 557, 124, 2 };
-        int[] sizes = new int[3];   // размерите на колоните пазим в масив sizes
-        int[] offsets = new int[3]; // до кой индекс сме запълнили назъбения масив (т.е. кой е следващият, който можем да запълним) пазим в масива offsets
+        int[] sizes = new int[3];   // the sizes of the cols keep in array sizes
+        int[] offsets = new int[3]; // to which index is filled the jagged array (who is the next we can fill)
 
         // Calculate the sizes for each reminder (0, 1 and 2)
         foreach (var number in numbers)
@@ -15,8 +15,7 @@ public class JaggedArrays
             sizes[remainder]++;
         }
 
-        // Calculate the list of numbers for each reminder (0, 1 and 2)
-        
+        // Calculate the list of numbers for each reminder (0, 1 and 2)        
         var numberOfZeroRemainders = sizes[0];
         var numberOfOneRemainders = sizes[1];
         var numberOfTwoRemainders = sizes[2];
@@ -27,7 +26,7 @@ public class JaggedArrays
             new int[numberOfTwoRemainders] 
         };
 
-        // след като се създали назъбения масив с различните размености спрямо числата, трябва да ги обиколим и да запишем числата
+        // after creating the jagged array with different sizes, must iterate through numbers and white them
         foreach (var number in numbers)
         {
             int remainder = number % 3;
@@ -39,11 +38,12 @@ public class JaggedArrays
         // Print the result jagged array
         for (int row = 0; row < numbersByRemainder.GetLength(0); row++)
         {
-            foreach (var num in numbersByRemainder[row])    // за всяко число на текущия ред обхождаме с foreach
+            foreach (var num in numbersByRemainder[row])    // for each number on the current line
             {
                 Console.Write(num + " ");
             }
             Console.WriteLine();
         }
+
     }
 }
