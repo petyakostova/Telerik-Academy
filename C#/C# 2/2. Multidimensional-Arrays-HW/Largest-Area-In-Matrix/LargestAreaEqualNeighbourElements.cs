@@ -1,17 +1,20 @@
-﻿/*  Problem 7.* Largest area in matrix
+﻿/*  Problem 7. Largest area in matrix
     Write a program that finds the largest area of equal neighbour elements in a rectangular matrix and prints its size.
-    Example:
-    matrix 	                            result
-    1 	3 	2 	2 	2 	4
-    3 	3 	3 	2 	4 	4
-    4 	3 	1 	2 	3 	3
-    4 	3 	1 	3 	3 	1
-    4 	3 	3 	3 	1 	1               13
-    Hint: you can use the algorithm Depth-first search or Breadth-first search.
- */
+    Input: On the first line you will receive the numbers N and M separated by a single space
+    On the next N lines there will be M numbers separated with spaces - the elements of the matrix
+    Output: Print the size of the lasrgest area of equal neighbour elements
+    Constraints: 3 <= N, M <= 1024
+    Sample test:
+                    Input 	        Output
+                    5 6             13
+                    1 3 2 2 2 4
+                    3 3 3 2 4 4
+                    4 3 1 2 3 3
+                    4 3 1 3 3 1
+                    4 3 3 3 1 1 	
+   Hint: you can use the algorithm Depth-first search or Breadth-first search.  */
 
 using System;
-using System.Collections.Generic;
 
 class LargestAreaEqualNeighbourElements
 {
@@ -37,8 +40,8 @@ class LargestAreaEqualNeighbourElements
 
     private static void FindTheArea(int i, int j, int currelement)
     {
-
-        if ((currelement == 0) || (i < 0) || (i >= matrix.GetLength(0)) || (j < 0) || (j >= matrix.GetLength(1))) //returns if we are out of the matrix or the element is not the same
+        //returns if we are out of the matrix or the element is not the same
+        if ((currelement == 0) || (i < 0) || (i >= matrix.GetLength(0)) || (j < 0) || (j >= matrix.GetLength(1))) 
         {
             return;
         }
@@ -63,8 +66,7 @@ class LargestAreaEqualNeighbourElements
             FindTheArea(i, j - 1, currelement);
 
             matrix[i, j] = currelement;
-
         }
-
     }
+
 }
