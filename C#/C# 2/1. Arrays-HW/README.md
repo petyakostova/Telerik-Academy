@@ -26,5 +26,5 @@ Homework: Arrays
 #### 18. [Remove elements from array](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Remove-Min-Elements-Increasing-Array)
 #### 18. * [Remove elements from array - Using Lots of memory](https://github.com/petyakostova/Telerik-Academy/blob/master/C%23/C%23%202/1.%20Arrays-HW/Remove-Min-Els-Increasing-Array-Memory/RemoveMinElsIncrArray.cs)
 #### 19. [Permutations of set](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Permutations-Of-Set)
-#### 20. Variations of set
-#### 21. Combinations of set
+#### 20. [Variations of set](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Variations-Of-Set)
+#### 21. [Combinations of set](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW/Combinations-Of-Set)
