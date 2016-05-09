@@ -41,5 +41,6 @@ public class PascalTriangle
 
             Console.WriteLine();
         }
+
     }
 }

@@ -7,7 +7,7 @@ public class SortingArrays
     {
         int[] numbers = { 1, 2, 5, 10, 11 };
 
-        Array.Sort(numbers, new NumbersComparer()); // създ. нов обект NumbersComparer
+        Array.Sort(numbers, new NumbersComparer()); // create new object NumbersComparer
 
         Console.WriteLine("Numbers sorted by modul 5");
         foreach (int number in numbers)
@@ -17,7 +17,7 @@ public class SortingArrays
 
         Console.WriteLine();
 
-        Array.Sort(numbers, (x, y) => (y % 6).CompareTo(x % 6));    // изреждаме 2 параметъра, к.отиват в няк.функция
+        Array.Sort(numbers, (x, y) => (y % 6).CompareTo(x % 6));  
 
         Console.WriteLine("Numbers sorted descending:");
         foreach (int number in numbers)
@@ -28,14 +28,14 @@ public class SortingArrays
         Console.WriteLine();
 
         string[] students = { "Doncho Minkov", "Nikolay Kostov", "Ivaylo Kenov", "Evlogi Hristov" };
-        Array.Sort(students, new StudentsComparer());   // имаме си отделен клас за сравнение
+        Array.Sort(students, new StudentsComparer());   // we have individual class for comparison
         foreach (string student in students)
         {
             Console.WriteLine(student);
         }
     }
 
-    // клас, сравняващ числата според това как те се делят на 5 - остатъка им
+    // class for comparing the numbers according to how they are divided into 5 - their remainder
     private class NumbersComparer : IComparer<int>
     {
         public int Compare(int x, int y)
@@ -48,9 +48,13 @@ public class SortingArrays
     {
         public int Compare(string student1, string student2)
         {
-            var lastName1 = student1.Substring(student1.IndexOf(' ') + 1);  // намира първия интервал и взима останалата част от стринга
+            // find the first interval and take the rest part of the string
+            var lastName1 = student1.Substring(student1.IndexOf(' ') + 1); 
+             
             var lastName2 = student2.Substring(student2.IndexOf(' ') + 1);
+
             return lastName1.CompareTo(lastName2);
         }
     }
+
 }
