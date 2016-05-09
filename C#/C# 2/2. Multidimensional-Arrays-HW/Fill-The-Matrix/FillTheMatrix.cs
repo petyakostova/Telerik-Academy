@@ -5,11 +5,11 @@
     Output: Print the matrix. Numbers on a row must be separated by a single spacebar. Each row must be on a new line.
     Constraints: 1 <= N <= 128
     Sample tests
-    Input 	Output                  Input 	Output                  Input 	Output                  Input 	Output
-    4       1	5	9	13          4       1	8	9	16          4       7	11	14	16          4       1	12	11	10
-    a 	    2	6	10	14          b 	    2	7	10	15          c 	    4	8	12	15          d       2	13	16	9
-            3	7	11	15                  3	6	11	14                  2	5	9	13                  3	14	15	8
-            4	8	12	16                  4	5	12	13                  1	3	6	10                  4	5	6	7   */
+Input 	Output                  Input 	Output                  Input 	Output                  Input 	Output
+4       1	5	9	13          4       1	8	9	16          4       7	11	14	16          4       1	12	11	10
+a 	    2	6	10	14          b 	    2	7	10	15          c 	    4	8	12	15          d       2	13	16	9
+        3	7	11	15                  3	6	11	14                  2	5	9	13                  3	14	15	8
+        4	8	12	16                  4	5	12	13                  1	3	6	10                  4	5	6	7   */
 
 using System;
 
@@ -53,6 +53,7 @@ class FillTheMatrix
     private static void FillMatrixB(int[,] matrix)
     {
         bool isDirDown = true;
+
         for (int col = 0, row = 0, index = 1; col < matrix.GetLength(1); col++)
         {
             while (row >= 0 && row < matrix.GetLength(0))
@@ -85,6 +86,7 @@ class FillTheMatrix
     {
         string direction = "down";
         int row = -1, col = 0;
+
         for (int index = 1; index <= matrix.GetLength(0) * matrix.GetLength(1); index++)
         {
             if (direction == "down")
@@ -109,6 +111,7 @@ class FillTheMatrix
             }
         }
     }
+
     static bool IsTraversable(int[,] matrix, int row, int col)
     {
         return row >= 0 && row < matrix.GetLongLength(0) &&
@@ -129,7 +132,7 @@ class FillTheMatrix
                 else
                 {
                     Console.Write("{0}", matrix[row, col]);
-                }                
+                }
                 //Console.Write("{0,-2} ", matrix[row, col]);     // left aligned
                 //Console.Write("{0,2} ", matrix[row, col]);      // right aligned
             }
