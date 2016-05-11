@@ -18,10 +18,11 @@ using System;
 
 class LargestAreaEqualNeighbourElements
 {
-    static short answer = 0;
-    static short absolutemax = 0;
-    static short[,] matrix;
+    // bool array for optimization of recursive calls (not to call recursion if a given cell is visited)
     private static bool[,] visited;
+    private static short[,] matrix;
+    private static short maxCountEqualNeighbourElements = 0;
+    private static short currCountEqualNeighbourElements = 0;
 
     static void Main()
     {
@@ -54,49 +55,49 @@ class LargestAreaEqualNeighbourElements
             for (short j = 0; j < matrix.GetLength(1); j++)
             {
                 FindTheArea(i, j, matrix[i, j]);
-                answer = 0;
+
+                if (maxCountEqualNeighbourElements < currCountEqualNeighbourElements)
+                {
+                    maxCountEqualNeighbourElements = currCountEqualNeighbourElements;
+                }
+                currCountEqualNeighbourElements = 0;
             }
         }
 
         // Output
-        Console.WriteLine(absolutemax);
+        Console.WriteLine(maxCountEqualNeighbourElements);
     }
 
-    private static void FindTheArea(short row, short col, short currElement)
+    private static void FindTheArea(short row, short col, short currentElement)
     {
         //returns if we are out of the matrix or the element is not the same
-        if ((currElement == 0) || (row < 0) || (row >= matrix.GetLength(0)) || (col < 0) || (col >= matrix.GetLength(1)))
+        if ((row < 0) || (row >= matrix.GetLength(0))
+            || (col < 0) || (col >= matrix.GetLength(1))
+            || currentElement != matrix[row, col])
         {
             return;
         }
 
+        // optimization of recursive calls (not to call recursion if a given cell is visited)
         if (visited[row, col])
         {
             return;
         }
 
-        if (matrix[row, col] == currElement)
-        {
-            matrix[row, col] = 0;
+        //matrix[row, col] = 0;
 
-            // Temporary mark the current cell as visited to avoid cycles
-            visited[row, col] = true;
+        // Mark the current cell as visited
+        visited[row, col] = true;
 
-            answer++;
+        currCountEqualNeighbourElements++;
 
-            if (absolutemax < answer)
-            {
-                absolutemax = answer;
-            }
+        // Invoke recursion the explore all possible directions
+        FindTheArea((short)(row - 1), col, currentElement); // up
+        FindTheArea((short)(row + 1), col, currentElement); // down    
+        FindTheArea(row, (short)(col - 1), currentElement); // left        
+        FindTheArea(row, (short)(col + 1), currentElement); // right       
 
-            // Invoke recursion the explore all possible directions
-            FindTheArea((short)(row - 1), col, currElement); // up
-            FindTheArea((short)(row + 1), col, currElement); // down    
-            FindTheArea(row, (short)(col - 1), currElement); // left        
-            FindTheArea(row, (short)(col + 1), currElement); // right            
-
-            matrix[row, col] = currElement;
-        }
+        //matrix[row, col] = currentElement;
     }
 
 }
