@@ -17,13 +17,8 @@
             return this.matrix.GetLength(1);
         }
     }
-
-    public Matrix(int rows, int cols) //constructor
-    {
-        this.matrix = new int[rows, cols];
-    }
-
-    //indexer
+    
+    // indexer
     public int this[int row, int col]
     {
         get
@@ -36,24 +31,13 @@
         }
     }
 
-    // ToString()
-    public override string ToString()
+    // constructor
+    public Matrix(int rows, int cols) 
     {
-        string answer = null;
+        this.matrix = new int[rows, cols];
+    }    
 
-        for (int i = 0; i < this.Rows; i++)
-        {
-            for (int j = 0; j < this.Columns; j++)
-            {
-                answer = answer + this.matrix[i, j] + " ";
-            }
-
-            answer = answer + "\n";
-        }
-
-        return answer;
-    }
-
+    // adding
     public static Matrix Add(Matrix m1, Matrix m2) // without check for correct input data
     {
         Matrix result = new Matrix(m1.Rows, m1.Columns);
@@ -108,19 +92,40 @@
         return result;
     }
 
-    public static Matrix operator *(Matrix m1, Matrix m2)
-    {
-        return Matrix.Multiply(m1, m2);
-    }
-
+    // operator +
     public static Matrix operator +(Matrix m1, Matrix m2)
     {
         return Matrix.Add(m1, m2);
     }
 
+    // operator -
     public static Matrix operator -(Matrix m1, Matrix m2)
     {
         return Matrix.Substract(m1, m2);
+    }
+
+    // operator *
+    public static Matrix operator *(Matrix m1, Matrix m2)
+    {
+        return Matrix.Multiply(m1, m2);
+    }
+
+    // ToString()
+    public override string ToString()
+    {
+        string answer = null;
+
+        for (int i = 0; i < this.Rows; i++)
+        {
+            for (int j = 0; j < this.Columns; j++)
+            {
+                answer = answer + this.matrix[i, j] + " ";
+            }
+
+            answer = answer + "\n";
+        }
+
+        return answer;
     }
 
 }

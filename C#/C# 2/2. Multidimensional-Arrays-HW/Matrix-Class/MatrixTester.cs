@@ -9,7 +9,7 @@ class MatrixTester
 {
     static void Main()
     {
-        Matrix testMatrix1 = new Matrix(2, 3);
+        Matrix testMatrix1 = new Matrix(2, 3); // => constructor
         testMatrix1[0, 0] = 1;
         testMatrix1[0, 1] = 2;
         testMatrix1[0, 2] = 3;
@@ -18,7 +18,7 @@ class MatrixTester
         testMatrix1[1, 1] = 5;
         testMatrix1[1, 2] = 6;
 
-        Matrix testMatrix2 = new Matrix(3, 2);
+        Matrix testMatrix2 = new Matrix(3, 2); // => constructor
         testMatrix2[0, 0] = -1;
         testMatrix2[0, 1] = -4;
 
@@ -28,7 +28,7 @@ class MatrixTester
         testMatrix2[2, 0] = -3;
         testMatrix2[2, 1] = -6;
 
-        Matrix testMatrix3 = new Matrix(2, 3);
+        Matrix testMatrix3 = new Matrix(2, 3); // => constructor
         testMatrix3[0, 0] = 1;
         testMatrix3[0, 1] = 2;
         testMatrix3[0, 2] = 3;
