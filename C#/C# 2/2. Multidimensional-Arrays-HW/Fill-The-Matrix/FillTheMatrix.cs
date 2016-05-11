@@ -145,63 +145,79 @@ class FillTheMatrix
     //private static void SpiralFillMatrixD(int[,] matrix)
     //{
     //    string direction = "down";
-    //    int row = -1, col = 0;
+    //    int row = 0, col = 0;
 
     //    for (int index = 1; index <= matrix.GetLength(0) * matrix.GetLength(1); index++)
     //    {
     //        if (direction == "down")
     //        {
-    //            if (matrix[++row, col] == 0)
+    //            if (matrix[row, col] == 0)
     //            {
     //                matrix[row, col] = index;
     //            }
 
-    //            if (!InRangeAndUnfilled(matrix, row + 1, col)) // if is out of range or filled => change the direction
+    //            row++;
+
+    //            if (!InRangeAndUnfilled(matrix, row, col)) // if is out of range or filled => change the direction
     //            {
     //                direction = "right";
+    //                row--; // restore 
+    //                col++; // update for the right direction
     //            }
     //        }
     //        else if (direction == "right")
     //        {
-    //            if (matrix[row, ++col] == 0)
+    //            if (matrix[row, col] == 0)
     //            {
     //                matrix[row, col] = index;
     //            }
 
-    //            if (!InRangeAndUnfilled(matrix, row, col + 1)) // if is out of range or filled
+    //            col++;
+
+    //            if (!InRangeAndUnfilled(matrix, row, col)) // if is out of range or filled
     //            {
     //                direction = "up"; // change the direction
+    //                row--; // update for the up direction
+    //                col--; // restore 
     //            }
     //        }
     //        else if (direction == "up")
     //        {
-    //            if (matrix[--row, col] == 0)
+    //            if (matrix[row, col] == 0)
     //            {
     //                matrix[row, col] = index;
     //            }
 
-    //            if (!InRangeAndUnfilled(matrix, row - 1, col)) // if is out of range or filled
+    //            row--;
+
+    //            if (!InRangeAndUnfilled(matrix, row, col)) // if is out of range or filled
     //            {
     //                direction = "left"; // change the direction
+    //                row++; // restore 
+    //                col--; // update for the left direction
     //            }
     //        }
     //        else if (direction == "left")
     //        {
-    //            if (matrix[row, --col] == 0)
+    //            if (matrix[row, col] == 0)
     //            {
     //                matrix[row, col] = index;
     //            }
 
-    //            if (!InRangeAndUnfilled(matrix, row, col - 1)) // if is out of range or filled
+    //            col--;
+
+    //            if (!InRangeAndUnfilled(matrix, row, col)) // if is out of range or filled
     //            {
     //                direction = "down"; // change the direction
+    //                row++; // // update for the down direction
+    //                col++; // restore 
     //            }
     //        }
 
     //    }
     //}
 
-    static bool InRangeAndUnfilled(int[,] matrix, int row, int col) // needed for spiral filling the matrix D
+    static bool InRangeAndUnfilled(int[,] matrix, int row, int col) // needed for Spiral Filling the matrix D
     {
         return row >= 0 && row < matrix.GetLongLength(0) // in the range of rows
             && col >= 0 && col < matrix.GetLongLength(1) // in the range of cols
