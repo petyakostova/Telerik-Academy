@@ -23,10 +23,12 @@ class SortByStringLength
         string exchanger = null;
         int indexer = 0;
         int counter = 0;
+
         for (int i = 0; i < n; i++)
         {
             exchanger = array[i];
             counter = 0;
+
             for (int j = i; j < n; j++)
             {
                 if (array[j].Length > counter)
@@ -36,6 +38,7 @@ class SortByStringLength
                     exchanger = array[j];
                 }
             }
+
             array[indexer] = array[i];
             array[i] = exchanger;
         }
@@ -46,5 +49,6 @@ class SortByStringLength
         {
             Console.WriteLine(item);
         }
+
     }
 }
