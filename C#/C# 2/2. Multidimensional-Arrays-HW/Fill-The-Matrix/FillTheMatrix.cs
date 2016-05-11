@@ -91,31 +91,56 @@ class FillTheMatrix
         {
             if (direction == "down")
             {
-                if (matrix[++row, col] == 0) matrix[row, col] = index;
-                if (!IsTraversable(matrix, row + 1, col)) direction = "right";
+                if (matrix[++row, col] == 0)
+                {
+                    matrix[row, col] = index;
+                }
+                if (!IsUnfilled(matrix, row + 1, col))
+                {
+                    direction = "right";
+                }
             }
             else if (direction == "right")
             {
-                if (matrix[row, ++col] == 0) matrix[row, col] = index;
-                if (!IsTraversable(matrix, row, col + 1)) direction = "up";
+                if (matrix[row, ++col] == 0)
+                {
+                    matrix[row, col] = index;
+                }
+                if (!IsUnfilled(matrix, row, col + 1))
+                {
+                    direction = "up";
+                }
             }
             else if (direction == "up")
             {
-                if (matrix[--row, col] == 0) matrix[row, col] = index;
-                if (!IsTraversable(matrix, row - 1, col)) direction = "left";
+                if (matrix[--row, col] == 0)
+                {
+                    matrix[row, col] = index;
+                }
+                if (!IsUnfilled(matrix, row - 1, col))
+                {
+                    direction = "left";
+                }
             }
             else if (direction == "left")
             {
-                if (matrix[row, --col] == 0) matrix[row, col] = index;
-                if (!IsTraversable(matrix, row, col - 1)) direction = "down";
+                if (matrix[row, --col] == 0)
+                {
+                    matrix[row, col] = index;
+                }
+                if (!IsUnfilled(matrix, row, col - 1))
+                {
+                    direction = "down";
+                }
             }
         }
     }
 
-    static bool IsTraversable(int[,] matrix, int row, int col)
+    static bool IsUnfilled(int[,] matrix, int row, int col)
     {
-        return row >= 0 && row < matrix.GetLongLength(0) &&
-        col >= 0 && col < matrix.GetLongLength(1) && matrix[row, col] == 0;
+        return row >= 0 && row < matrix.GetLongLength(0) // in the range of rows
+            && col >= 0 && col < matrix.GetLongLength(1) // in the range of cols
+            && matrix[row, col] == 0; // current element is unfilled
     }
 
     // Print the matrix on the console
