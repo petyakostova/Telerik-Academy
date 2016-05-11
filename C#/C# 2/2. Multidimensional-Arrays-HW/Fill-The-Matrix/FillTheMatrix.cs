@@ -37,7 +37,7 @@ class FillTheMatrix
         PrintingMatrix(matrix);
     }
 
-    // A => Set (Fill) the matrix elements
+    // A => Vertical Set (Fill) the matrix elements
     private static void VerticalFillMatrixA(int[,] matrix)
     {
         for (int col = 0, index = 1; col < matrix.GetLength(1); col++)
@@ -49,7 +49,7 @@ class FillTheMatrix
         }
     }
 
-    // B => Set (Fill) the matrix elements
+    // B => Snake Set (Fill) the matrix elements
     private static void SnakeFillMatrixB(int[,] matrix)
     {
         bool isDirDown = true;
@@ -68,7 +68,7 @@ class FillTheMatrix
         }
     }
 
-    // C => Set (Fill) the matrix elements
+    // C => Diagonal Set (Fill) the matrix elements
     private static void DiagonalFillMatrixC(int[,] matrix)
     {
         for (int row = matrix.GetLength(0) - 1, index = 1; index <= matrix.GetLength(0) * matrix.GetLength(1); row--)
@@ -81,7 +81,7 @@ class FillTheMatrix
         }
     }
 
-    // D => Set (Fill) the matrix elements
+    // D => Spiral Set (Fill) the matrix elements - First Way
     private static void SpiralFillMatrixD(int[,] matrix)
     {
         string direction = "down";
@@ -141,7 +141,67 @@ class FillTheMatrix
         }
     }
 
-    static bool InRangeAndUnfilled(int[,] matrix, int row, int col)
+    // D => Spiral Set (Fill) the matrix elements - Second Way
+    //private static void SpiralFillMatrixD(int[,] matrix)
+    //{
+    //    string direction = "down";
+    //    int row = -1, col = 0;
+
+    //    for (int index = 1; index <= matrix.GetLength(0) * matrix.GetLength(1); index++)
+    //    {
+    //        if (direction == "down")
+    //        {
+    //            if (matrix[++row, col] == 0)
+    //            {
+    //                matrix[row, col] = index;
+    //            }
+
+    //            if (!InRangeAndUnfilled(matrix, row + 1, col)) // if is out of range or filled => change the direction
+    //            {
+    //                direction = "right";
+    //            }
+    //        }
+    //        else if (direction == "right")
+    //        {
+    //            if (matrix[row, ++col] == 0)
+    //            {
+    //                matrix[row, col] = index;
+    //            }
+
+    //            if (!InRangeAndUnfilled(matrix, row, col + 1)) // if is out of range or filled
+    //            {
+    //                direction = "up"; // change the direction
+    //            }
+    //        }
+    //        else if (direction == "up")
+    //        {
+    //            if (matrix[--row, col] == 0)
+    //            {
+    //                matrix[row, col] = index;
+    //            }
+
+    //            if (!InRangeAndUnfilled(matrix, row - 1, col)) // if is out of range or filled
+    //            {
+    //                direction = "left"; // change the direction
+    //            }
+    //        }
+    //        else if (direction == "left")
+    //        {
+    //            if (matrix[row, --col] == 0)
+    //            {
+    //                matrix[row, col] = index;
+    //            }
+
+    //            if (!InRangeAndUnfilled(matrix, row, col - 1)) // if is out of range or filled
+    //            {
+    //                direction = "down"; // change the direction
+    //            }
+    //        }
+
+    //    }
+    //}
+
+    static bool InRangeAndUnfilled(int[,] matrix, int row, int col) // needed for spiral filling the matrix D
     {
         return row >= 0 && row < matrix.GetLongLength(0) // in the range of rows
             && col >= 0 && col < matrix.GetLongLength(1) // in the range of cols
