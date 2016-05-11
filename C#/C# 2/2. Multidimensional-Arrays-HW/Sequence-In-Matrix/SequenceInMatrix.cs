@@ -34,7 +34,7 @@ class SequenceInMatrix
                 matrix[row, col] = inputRows[col];
             }
         }
-        
+
         // Find the longest sequence of equal strings in the matrix
         int bestLength = 0;
         string bestElement = string.Empty;
@@ -64,7 +64,7 @@ class SequenceInMatrix
                     int currCol = col + directions[direction, 1];
                     int currentLength = 1;
 
-                    while (IsTraversable(matrix, row, col, currRow, currCol))
+                    while (InRangeAndEqual(matrix, row, col, currRow, currCol))
                     {
                         currentLength++;
 
@@ -78,15 +78,16 @@ class SequenceInMatrix
                         currCol += directions[direction, 1];
                     }
                 }
+
             }
         }
     }
 
-    static bool IsTraversable(string[,] matrix, int row, int col, int currRow, int currCol)
+    static bool InRangeAndEqual(string[,] matrix, int row, int col, int currRow, int currCol)
     {
-        return currRow >= 0 && currRow < matrix.GetLongLength(0) &&
-               currCol >= 0 && currCol < matrix.GetLongLength(1) &&
-               matrix[currRow, currCol] == matrix[row, col];
+        return currRow >= 0 && currRow < matrix.GetLongLength(0) // in the range of rows
+            && currCol >= 0 && currCol < matrix.GetLongLength(1) // in the range of cols
+            && matrix[currRow, currCol] == matrix[row, col];
     }
-    
+
 }
