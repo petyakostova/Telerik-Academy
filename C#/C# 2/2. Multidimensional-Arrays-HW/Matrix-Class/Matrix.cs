@@ -24,7 +24,7 @@
     }
 
     //indexer
-    public int this[int row, int col] 
+    public int this[int row, int col]
     {
         get
         {
@@ -37,7 +37,7 @@
     }
 
     // ToString()
-    public override string ToString() 
+    public override string ToString()
     {
         string answer = null;
 
@@ -96,9 +96,9 @@
             {
                 int temp = 0;
 
-                for (int currentnumbers = 0; currentnumbers < m1.Columns; currentnumbers++)
+                for (int currentNumbers = 0; currentNumbers < m1.Columns; currentNumbers++)
                 {
-                    temp = temp + m1[row, currentnumbers] * m2[currentnumbers, col];
+                    temp += m1[row, currentNumbers] * m2[currentNumbers, col];
                 }
 
                 result[row, col] = temp;
@@ -108,8 +108,7 @@
         return result;
     }
 
-    // the static method Multiply remains public, so that both by the operator and by the method Multiply the activity can be used.
-    public static Matrix operator *(Matrix m1, Matrix m2) 
+    public static Matrix operator *(Matrix m1, Matrix m2)
     {
         return Matrix.Multiply(m1, m2);
     }

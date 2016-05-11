@@ -19,14 +19,14 @@ class MatrixTester
         testMatrix1[1, 2] = 6;
 
         Matrix testMatrix2 = new Matrix(3, 2);
-        testMatrix2[0, 0] = 7;
-        testMatrix2[0, 1] = 8;
+        testMatrix2[0, 0] = -1;
+        testMatrix2[0, 1] = -4;
 
-        testMatrix2[1, 0] = 9;
-        testMatrix2[1, 1] = 10;
+        testMatrix2[1, 0] = -2;
+        testMatrix2[1, 1] = -5;
 
-        testMatrix2[2, 0] = 11;
-        testMatrix2[2, 1] = 12;
+        testMatrix2[2, 0] = -3;
+        testMatrix2[2, 1] = -6;
 
         Matrix testMatrix3 = new Matrix(2, 3);
         testMatrix3[0, 0] = 1;
