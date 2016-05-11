@@ -60,6 +60,7 @@ class LargestAreaEqualNeighbourElements
                 {
                     maxCountEqualNeighbourElements = currCountEqualNeighbourElements;
                 }
+
                 currCountEqualNeighbourElements = 0;
             }
         }
@@ -84,20 +85,16 @@ class LargestAreaEqualNeighbourElements
             return;
         }
 
-        //matrix[row, col] = 0;
-
         // Mark the current cell as visited
         visited[row, col] = true;
 
         currCountEqualNeighbourElements++;
 
-        // Invoke recursion the explore all possible directions
+        // Invoke recursion to explore all possible directions
         FindTheArea((short)(row - 1), col, currentElement); // up
         FindTheArea((short)(row + 1), col, currentElement); // down    
         FindTheArea(row, (short)(col - 1), currentElement); // left        
-        FindTheArea(row, (short)(col + 1), currentElement); // right       
-
-        //matrix[row, col] = currentElement;
+        FindTheArea(row, (short)(col + 1), currentElement); // right    
     }
 
 }
