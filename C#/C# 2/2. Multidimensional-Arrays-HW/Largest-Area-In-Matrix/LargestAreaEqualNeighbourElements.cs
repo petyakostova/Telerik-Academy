@@ -21,6 +21,7 @@ class LargestAreaEqualNeighbourElements
     static short answer = 0;
     static short absolutemax = 0;
     static short[,] matrix;
+    private static bool[,] visited;
 
     static void Main()
     {
@@ -44,6 +45,9 @@ class LargestAreaEqualNeighbourElements
             }
         }
 
+        // the bool matrix
+        visited = new bool[matrix.GetLength(0), matrix.GetLength(1)];
+
         // Find the largest area of equal neighbour elements
         for (short i = 0; i < matrix.GetLength(0); i++)
         {
@@ -58,17 +62,25 @@ class LargestAreaEqualNeighbourElements
         Console.WriteLine(absolutemax);
     }
 
-    private static void FindTheArea(short i, short j, short currelement)
+    private static void FindTheArea(short row, short col, short currElement)
     {
         //returns if we are out of the matrix or the element is not the same
-        if ((currelement == 0) || (i < 0) || (i >= matrix.GetLength(0)) || (j < 0) || (j >= matrix.GetLength(1)))
+        if ((currElement == 0) || (row < 0) || (row >= matrix.GetLength(0)) || (col < 0) || (col >= matrix.GetLength(1)))
         {
             return;
         }
 
-        if (matrix[i, j] == currelement)
+        if (visited[row, col])
         {
-            matrix[i, j] = 0;
+            return;
+        }
+
+        if (matrix[row, col] == currElement)
+        {
+            matrix[row, col] = 0;
+
+            // Temporary mark the current cell as visited to avoid cycles
+            visited[row, col] = true;
 
             answer++;
 
@@ -77,15 +89,13 @@ class LargestAreaEqualNeighbourElements
                 absolutemax = answer;
             }
 
-            FindTheArea((short)(i + 1), j, currelement);
+            // Invoke recursion the explore all possible directions
+            FindTheArea((short)(row - 1), col, currElement); // up
+            FindTheArea((short)(row + 1), col, currElement); // down    
+            FindTheArea(row, (short)(col - 1), currElement); // left        
+            FindTheArea(row, (short)(col + 1), currElement); // right            
 
-            FindTheArea((short)(i - 1), j, currelement);
-
-            FindTheArea(i, (short)(j + 1), currelement);
-
-            FindTheArea(i, (short)(j - 1), currelement);
-
-            matrix[i, j] = currelement;
+            matrix[row, col] = currElement;
         }
     }
 
