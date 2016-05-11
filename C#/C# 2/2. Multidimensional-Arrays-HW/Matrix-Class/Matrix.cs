@@ -40,7 +40,7 @@
     // adding
     public static Matrix Add(Matrix m1, Matrix m2) // without check for correct input data
     {
-        Matrix result = new Matrix(m1.Rows, m1.Columns);
+        Matrix result = new Matrix(m1.Rows, m1.Columns); // => constructor
 
         for (int i = 0; i < m1.Rows; i++)
         {
@@ -53,10 +53,10 @@
         return result;
     }
 
-    // subtracting
+    // substracting
     public static Matrix Substract(Matrix m1, Matrix m2) // without check for correct input data
     {
-        Matrix result = new Matrix(m1.Rows, m1.Columns);
+        Matrix result = new Matrix(m1.Rows, m1.Columns); // => constructor
 
         for (int i = 0; i < m1.Rows; i++)
         {
@@ -72,7 +72,7 @@
     // multiplying
     public static Matrix Multiply(Matrix m1, Matrix m2) // without check for correct input data
     {
-        Matrix result = new Matrix(m1.Rows, m2.Columns);
+        Matrix result = new Matrix(m1.Rows, m2.Columns); // => constructor
 
         for (int row = 0; row < m1.Rows; row++)
         {

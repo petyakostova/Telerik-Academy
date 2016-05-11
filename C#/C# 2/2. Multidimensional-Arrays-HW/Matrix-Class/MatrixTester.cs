@@ -37,22 +37,22 @@ class MatrixTester
         testMatrix3[1, 1] = 5;
         testMatrix3[1, 2] = 6;
         
-        Matrix resultAdd = Matrix.Add(testMatrix1, testMatrix3);
-        var add = testMatrix1 + testMatrix3;
+        Matrix resultAdd = Matrix.Add(testMatrix1, testMatrix3); // => adding
+        var add = testMatrix1 + testMatrix3; // => operator +
 
-        Console.WriteLine(add);
-        Console.WriteLine(resultAdd);
+        Console.WriteLine(add); // => ToString()
+        Console.WriteLine(resultAdd); // => ToString()
 
-        Matrix resultSubstract = Matrix.Substract(testMatrix1, testMatrix3);
-        var substract = testMatrix1 - testMatrix3;
+        Matrix resultSubstract = Matrix.Substract(testMatrix1, testMatrix3); // => substracting
+        var substract = testMatrix1 - testMatrix3; // => operator -
 
-        Console.WriteLine(resultSubstract);
-        Console.WriteLine(substract);
+        Console.WriteLine(resultSubstract); // => ToString()
+        Console.WriteLine(substract); // => ToString()
 
-        Matrix resultMultiply = Matrix.Multiply(testMatrix1, testMatrix2);
-        var multiply = testMatrix1 * testMatrix2;
+        Matrix resultMultiply = Matrix.Multiply(testMatrix1, testMatrix2); // => multiplying
+        var multiply = testMatrix1 * testMatrix2; // => operator *
 
-        Console.WriteLine(resultMultiply);
-        Console.WriteLine(multiply);
+        Console.WriteLine(resultMultiply); // => ToString()
+        Console.WriteLine(multiply); // => ToString()
     }
 }
