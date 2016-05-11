@@ -28,17 +28,17 @@ class FillTheMatrix
 
         switch (character)
         {
-            case 'a': FillMatrixA(matrix); break;
-            case 'b': FillMatrixB(matrix); break;
-            case 'c': FillMatrixC(matrix); break;
-            case 'd': FillMatrixD(matrix); break;
+            case 'a': VerticalFillMatrixA(matrix); break;
+            case 'b': SnakeFillMatrixB(matrix); break;
+            case 'c': DiagonalFillMatrixC(matrix); break;
+            case 'd': SpiralFillMatrixD(matrix); break;
         }
 
         PrintingMatrix(matrix);
     }
 
     // A => Set (Fill) the matrix elements
-    private static void FillMatrixA(int[,] matrix)
+    private static void VerticalFillMatrixA(int[,] matrix)
     {
         for (int col = 0, index = 1; col < matrix.GetLength(1); col++)
         {
@@ -50,7 +50,7 @@ class FillTheMatrix
     }
 
     // B => Set (Fill) the matrix elements
-    private static void FillMatrixB(int[,] matrix)
+    private static void SnakeFillMatrixB(int[,] matrix)
     {
         bool isDirDown = true;
 
@@ -69,7 +69,7 @@ class FillTheMatrix
     }
 
     // C => Set (Fill) the matrix elements
-    private static void FillMatrixC(int[,] matrix)
+    private static void DiagonalFillMatrixC(int[,] matrix)
     {
         for (int row = matrix.GetLength(0) - 1, index = 1; index <= matrix.GetLength(0) * matrix.GetLength(1); row--)
         {
@@ -82,7 +82,7 @@ class FillTheMatrix
     }
 
     // D => Set (Fill) the matrix elements
-    private static void FillMatrixD(int[,] matrix)
+    private static void SpiralFillMatrixD(int[,] matrix)
     {
         string direction = "down";
         int row = -1, col = 0;
