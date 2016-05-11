@@ -12,7 +12,7 @@ using System;
 
 class SequenceInMatrix
 {
-    static readonly int[,] directions = { { 0, 1 }, { 1, 1 }, { -1, 1 }, { 1, 0 } };
+    static readonly int[,] changes = { { 0, 1 }, { 1, 1 }, { -1, 1 }, { 1, 0 } };
 
     static void Main()
     {
@@ -34,7 +34,7 @@ class SequenceInMatrix
                 matrix[row, col] = inputRows[col];
             }
         }
-
+        
         // Find the longest sequence of equal strings in the matrix
         int bestLength = 0;
         string bestElement = string.Empty;
@@ -58,10 +58,12 @@ class SequenceInMatrix
             {
                 int direction = -1;
 
+                // direction => 0 (right); 1 (down diagonal); 2(up diagonal); 3(down)
                 while (++direction < 4)
                 {
-                    int currRow = row + directions[direction, 0];
-                    int currCol = col + directions[direction, 1];
+                    int currRow = row + changes[direction, 0];
+                    int currCol = col + changes[direction, 1];
+
                     int currentLength = 1;
 
                     while (InRangeAndEqual(matrix, row, col, currRow, currCol))
@@ -74,8 +76,8 @@ class SequenceInMatrix
                             bestElement = matrix[row, col];
                         }
 
-                        currRow += directions[direction, 0];
-                        currCol += directions[direction, 1];
+                        currRow += changes[direction, 0];
+                        currCol += changes[direction, 1];
                     }
                 }
 
