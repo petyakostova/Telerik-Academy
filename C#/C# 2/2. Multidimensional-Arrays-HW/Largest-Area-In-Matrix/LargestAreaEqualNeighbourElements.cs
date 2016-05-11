@@ -14,44 +14,42 @@
                     4 3 3 3 1 1 	
    Hint: you can use the algorithm Depth-first search or Breadth-first search.  */
 
-// The solution is with jagged array => 20/100 in bgcoder; 1 wrong; 7 time limit
-
 using System;
-using System.Linq; // needed for Select() 
 
 class LargestAreaEqualNeighbourElements
 {
-    static int answer = 0;
-    static int absolutemax = 0;
-    static int[][] jaggedMatrix;
+    static short answer = 0;
+    static short absolutemax = 0;
+    static short[,] matrix;
 
     static void Main()
     {
         // Read the matrix dimensions
         string[] sizes = Console.ReadLine()
             .Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-        int rows = int.Parse(sizes[0]);
-        int cols = int.Parse(sizes[1]);
+        short rows = short.Parse(sizes[0]);
+        short cols = short.Parse(sizes[1]);
 
         // Create (Allocate) the matrix
-        jaggedMatrix = new int[rows][];
+        matrix = new short[rows, cols];
 
         // Enter the matrix elements
-        for (int row = 0; row < jaggedMatrix.GetLength(0); row++)
+        for (short row = 0; row < rows; row++)
         {
-            jaggedMatrix[row] = Console.ReadLine()
-                .Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
-                .Select(int.Parse)            // parsing each string from the input
-                                              //.Select(x => int.Parse(x))    //other way  
-                .ToArray();
+            string[] inputRows = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+
+            for (short col = 0; col < cols; col++)
+            {
+                matrix[row, col] = short.Parse(inputRows[col]);
+            }
         }
 
         // Find the largest area of equal neighbour elements
-        for (int row = 0; row < jaggedMatrix.Length; row++)
+        for (short i = 0; i < matrix.GetLength(0); i++)
         {
-            for (int col = 0; col < jaggedMatrix[row].Length; col++)
+            for (short j = 0; j < matrix.GetLength(1); j++)
             {
-                FindTheArea(row, col, jaggedMatrix[row][col]);
+                FindTheArea(i, j, matrix[i, j]);
                 answer = 0;
             }
         }
@@ -60,19 +58,17 @@ class LargestAreaEqualNeighbourElements
         Console.WriteLine(absolutemax);
     }
 
-    private static void FindTheArea(int i, int j, int currElement)
+    private static void FindTheArea(short i, short j, short currelement)
     {
         //returns if we are out of the matrix or the element is not the same
-        if ((currElement == 0) 
-            || (i < 0) || (i >= jaggedMatrix.Length) 
-            || (j < 0) || (j >= jaggedMatrix[i].Length))
+        if ((currelement == 0) || (i < 0) || (i >= matrix.GetLength(0)) || (j < 0) || (j >= matrix.GetLength(1)))
         {
             return;
         }
 
-        if (jaggedMatrix[i][j] == currElement)
+        if (matrix[i, j] == currelement)
         {
-            jaggedMatrix[i][j] = 0;
+            matrix[i, j] = 0;
 
             answer++;
 
@@ -81,15 +77,15 @@ class LargestAreaEqualNeighbourElements
                 absolutemax = answer;
             }
 
-            FindTheArea(i + 1, j, currElement);
+            FindTheArea((short)(i + 1), j, currelement);
 
-            FindTheArea(i - 1, j, currElement);
+            FindTheArea((short)(i - 1), j, currelement);
 
-            FindTheArea(i, j + 1, currElement);
+            FindTheArea(i, (short)(j + 1), currelement);
 
-            FindTheArea(i, j - 1, currElement);
+            FindTheArea(i, (short)(j - 1), currelement);
 
-            jaggedMatrix[i][j] = currElement;
+            matrix[i, j] = currelement;
         }
     }
 
