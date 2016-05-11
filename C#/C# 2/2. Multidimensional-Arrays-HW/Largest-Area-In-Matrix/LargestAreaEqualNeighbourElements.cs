@@ -14,6 +14,8 @@
                     4 3 3 3 1 1 	
    Hint: you can use the algorithm Depth-first search or Breadth-first search.  */
 
+// The solution is with jagged array => 20/100 in bgcoder; 1 wrong; 7 time limit
+
 using System;
 using System.Linq; // needed for Select() 
 
@@ -45,10 +47,9 @@ class LargestAreaEqualNeighbourElements
         }
 
         // Find the largest area of equal neighbour elements
-        for (int row = 0; row < jaggedMatrix.GetLength(0); row++)
+        for (int row = 0; row < jaggedMatrix.Length; row++)
         {
-            // TODO fix Exception
-            for (int col = 0; col < jaggedMatrix.GetLength(1); col++)
+            for (int col = 0; col < jaggedMatrix[row].Length; col++)
             {
                 FindTheArea(row, col, jaggedMatrix[row][col]);
                 answer = 0;
@@ -62,7 +63,9 @@ class LargestAreaEqualNeighbourElements
     private static void FindTheArea(int i, int j, int currElement)
     {
         //returns if we are out of the matrix or the element is not the same
-        if ((currElement == 0) || (i < 0) || (i >= jaggedMatrix.GetLength(0)) || (j < 0) || (j >= jaggedMatrix.GetLength(1)))
+        if ((currElement == 0) 
+            || (i < 0) || (i >= jaggedMatrix.Length) 
+            || (j < 0) || (j >= jaggedMatrix[i].Length))
         {
             return;
         }
