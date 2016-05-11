@@ -36,7 +36,7 @@
         }
     }
 
-    //ToString()
+    // ToString()
     public override string ToString() 
     {
         string answer = null;
@@ -47,14 +47,17 @@
             {
                 answer = answer + this.matrix[i, j] + " ";
             }
+
             answer = answer + "\n";
         }
+
         return answer;
     }
 
     public static Matrix Add(Matrix m1, Matrix m2) // without check for correct input data
     {
         Matrix result = new Matrix(m1.Rows, m1.Columns);
+
         for (int i = 0; i < m1.Rows; i++)
         {
             for (int j = 0; j < m1.Columns; j++)
@@ -62,6 +65,7 @@
                 result[i, j] = m1[i, j] + m2[i, j];
             }
         }
+
         return result;
     }
 
@@ -69,6 +73,7 @@
     public static Matrix Substract(Matrix m1, Matrix m2) // without check for correct input data
     {
         Matrix result = new Matrix(m1.Rows, m1.Columns);
+
         for (int i = 0; i < m1.Rows; i++)
         {
             for (int j = 0; j < m1.Columns; j++)
@@ -76,6 +81,7 @@
                 result[i, j] = m1[i, j] - m2[i, j];
             }
         }
+
         return result;
     }
 
@@ -89,10 +95,12 @@
             for (int col = 0; col < m2.Columns; col++)
             {
                 int temp = 0;
+
                 for (int currentnumbers = 0; currentnumbers < m1.Columns; currentnumbers++)
                 {
                     temp = temp + m1[row, currentnumbers] * m2[currentnumbers, col];
                 }
+
                 result[row, col] = temp;
             }
         }
@@ -115,4 +123,5 @@
     {
         return Matrix.Substract(m1, m2);
     }
+
 }
