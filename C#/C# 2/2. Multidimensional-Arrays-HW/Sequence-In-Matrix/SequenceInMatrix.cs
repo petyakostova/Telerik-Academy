@@ -29,9 +29,9 @@ class SequenceInMatrix
         {
             string[] inputRows = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
-            for (int col = 0, count = 0; col < cols; col++, count++)
+            for (int col = 0; col < cols; col++)
             {
-                matrix[row, col] = inputRows[count];
+                matrix[row, col] = inputRows[col];
             }
         }
         
@@ -47,6 +47,9 @@ class SequenceInMatrix
         Console.WriteLine(bestLength);
     }
 
+    /*A variable of a reference type does not contain its data directly; it contains a reference to its data. 
+    When you pass a reference-type parameter by value, 
+    it is possible to change the data pointed to by the reference, such as the value of a class member. */
     static void FindLongestSequence(string[,] matrix, ref string bestElement, ref int bestLength)
     {
         for (int row = 0; row < matrix.GetLongLength(0); row++)
