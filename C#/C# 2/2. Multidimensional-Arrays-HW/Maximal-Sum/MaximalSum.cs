@@ -34,9 +34,9 @@ class Program
         {
             string[] inputRows = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
-            for (int col = 0, count = 0; col < cols; col++, count++)
+            for (int col = 0; col < cols; col++)
             {
-                matrix[row, col] = int.Parse(inputRows[count]);
+                matrix[row, col] = int.Parse(inputRows[col]);
             }
         }
 
