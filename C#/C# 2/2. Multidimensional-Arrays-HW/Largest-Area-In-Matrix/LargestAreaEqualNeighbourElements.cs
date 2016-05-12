@@ -1,6 +1,4 @@
-﻿// 80/100 in bgcoder + time limit
-
-/*  Problem 7. Largest area in matrix
+﻿/*  Problem 7. Largest area in matrix
     Write a program that finds the largest area of equal neighbour elements in a rectangular matrix and prints its size.
     Input: On the first line you will receive the numbers N and M separated by a single space
     On the next N lines there will be M numbers separated with spaces - the elements of the matrix
