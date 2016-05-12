@@ -11,11 +11,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Sort-By-String-Length",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Matrix-Class", "Matrix-Class\06. Matrix-Class.csproj", "{486D337E-584A-4462-87C6-4C6724B26608}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Largest-Area-In-Matrix", "Largest-Area-In-Matrix\07. Largest-Area-In-Matrix.csproj", "{77C0166A-32F4-43BA-ABA5-263EC121117C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.1. Largest-Area-In-Matrix", "Largest-Area-In-Matrix\07.1. Largest-Area-In-Matrix.csproj", "{77C0166A-32F4-43BA-ABA5-263EC121117C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Fill-The-Matrix", "Fill-The-Matrix\01. Fill-The-Matrix.csproj", "{B43676BE-C1FA-4B2B-B048-6D776625B739}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Sequence-In-Matrix", "Sequence-In-Matrix\03. Sequence-In-Matrix.csproj", "{B7CC17EA-B6DC-4498-B667-10DD91C93351}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.2. Largest-Area-In-Matrix-JaggedArray", "Largest-Area-In-Matrix-JaggedArray\07.2. Largest-Area-In-Matrix-JaggedArray.csproj", "{BB7BE19F-6A7E-4353-989E-975CDEC30CE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.3. Largest-Area-In-Matrix-Jagged", "Largest-Area-In-Matrix-Jagged\07.3. Largest-Area-In-Matrix-Jagged.csproj", "{EF409FD2-64A9-4F60-9E90-AD89C0F24308}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{B7CC17EA-B6DC-4498-B667-10DD91C93351}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7CC17EA-B6DC-4498-B667-10DD91C93351}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7CC17EA-B6DC-4498-B667-10DD91C93351}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB7BE19F-6A7E-4353-989E-975CDEC30CE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB7BE19F-6A7E-4353-989E-975CDEC30CE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB7BE19F-6A7E-4353-989E-975CDEC30CE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB7BE19F-6A7E-4353-989E-975CDEC30CE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF409FD2-64A9-4F60-9E90-AD89C0F24308}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF409FD2-64A9-4F60-9E90-AD89C0F24308}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF409FD2-64A9-4F60-9E90-AD89C0F24308}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF409FD2-64A9-4F60-9E90-AD89C0F24308}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

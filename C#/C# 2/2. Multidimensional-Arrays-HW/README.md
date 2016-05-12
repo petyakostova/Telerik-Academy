@@ -9,4 +9,6 @@ Homework: Multidimensional Arrays
 #### 4. [Binary search](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/2.%20Multidimensional-Arrays-HW/Binary-Search)
 #### 5. [Sort by string length](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/2.%20Multidimensional-Arrays-HW/Sort-By-String-Length)
 #### 6. [Matrix class](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/2.%20Multidimensional-Arrays-HW/Matrix-Class)
-#### 7. [Largest area in matrix](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/2.%20Multidimensional-Arrays-HW/Largest-Area-In-Matrix)
+#### 7.1. [Largest area in matrix](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/2.%20Multidimensional-Arrays-HW/Largest-Area-In-Matrix)
+#### 7.2. [Largest area in matrix Using Jagged Array](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/2.%20Multidimensional-Arrays-HW/Largest-Area-In-Matrix-JaggedArray)
+#### 7.3. [Largest area in matrix Using BitArray and Jagged Array](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/2.%20Multidimensional-Arrays-HW/Largest-Area-In-Matrix-Jagged)
