@@ -25,36 +25,38 @@ class LargestAreaEqualNeighbourElements
     private static short[,] matrix;
     private static short maxCountEqualNeighbourElements = 0;
     private static short currCountEqualNeighbourElements = 0;
+    private static short rows; // matrix.GetLength(0) is slow 
+    private static short cols; // matrix.GetLength(1) is slow
 
     static void Main()
     {
         // Read the matrix dimensions
         string[] sizes = Console.ReadLine()
             .Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-        short rows = short.Parse(sizes[0]);
-        short cols = short.Parse(sizes[1]);
+        rows = short.Parse(sizes[0]);
+        cols = short.Parse(sizes[1]);
 
         // Create (Allocate) the matrix
         matrix = new short[rows, cols];
 
         // Enter the matrix elements
-        for (short row = 0; row < rows; row++)
+        for (short row = 0; row < rows; row++) // rows = matrix.GetLength(0); matrix.GetLength(0) is slow   
         {
             string[] inputRows = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
-            for (short col = 0; col < cols; col++)
+            for (short col = 0; col < cols; col++) //cols = matrix.GetLength(1); matrix.GetLength(1) is slow
             {
                 matrix[row, col] = short.Parse(inputRows[col]);
             }
         }
 
         // the bool matrix
-        visited = new bool[matrix.GetLength(0), matrix.GetLength(1)];
+        visited = new bool[rows, cols];
 
         // Find the largest area of equal neighbour elements
-        for (short i = 0; i < matrix.GetLength(0); i++)
+        for (short i = 0; i < rows; i++)
         {
-            for (short j = 0; j < matrix.GetLength(1); j++)
+            for (short j = 0; j < cols; j++)
             {
                 FindTheArea(i, j, matrix[i, j]);
 
@@ -74,8 +76,8 @@ class LargestAreaEqualNeighbourElements
     private static void FindTheArea(short row, short col, short currentElement)
     {
         //returns if we are out of the matrix or the element is not the same
-        if ((row < 0) || (row >= matrix.GetLength(0))
-            || (col < 0) || (col >= matrix.GetLength(1))
+        if ((row < 0) || (row >= rows)
+            || (col < 0) || (col >= cols)
             || currentElement != matrix[row, col])
         {
             return;
