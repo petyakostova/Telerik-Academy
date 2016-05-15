@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    font-family: 'Calibri';
+    font-size: 12px;
+    font-weight: normal;
+    background-color: #FFFFFF;
+}
+
+table img {    
+    vertical-align: middle;
+    width: 30px;
+}
+
+td, th {
+    border: 1px groove;
+    width: 20%;
+    padding-left: 2%;
+}
+
+th {    
+    background-color: #00BC2B;
+    color: white;
+    font-weight: normal;
+    font-family: "Arial Narrow";
+    font-size: 14px;
+    padding: 1%;
+    text-align: left;    
+}
+
+td {
+    line-height: 20px;
+}
+
+tr:nth-child(even) {
+    background-color: #EEECD5;
+}
