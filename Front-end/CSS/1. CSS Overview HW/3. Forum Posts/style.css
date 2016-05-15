@@ -7,25 +7,21 @@ body {
 
 h1{
     color: #FAFAD2;
+    font-size: 26px;
+    text-align: left;
+}
+
+#main{
+    font-size: 36px;
+    text-align: center;
 }
 
 nav > ul > li > a, nav > ul > li {
     padding: 1px;
     margin: 4px;
     font-weight: 900;
+    font-size: 20px;
     text-decoration: none;
-}
-
-nav > ul > li:last-child {
-    text-decoration: underline;
-}
-
-article > footer {
-    font-size: 12px;
-}
-
-p {
-    text-align: justify;
 }
 
 ul {
@@ -38,4 +34,16 @@ a {
 
 .current {
     background-color: #D3D3D3;
+}
+
+nav > ul > li:last-child {
+    text-decoration: underline;
+}
+
+article > footer {
+    font-size: 12px;
+}
+
+p {
+    text-align: justify;
 }
