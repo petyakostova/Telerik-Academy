@@ -63,7 +63,7 @@ p.calculator {
 #minimizeButton {
     background-image: url("../images/minimize.png");
     width: 27px;
-    height: 18px;    
+    height: 18px;
     vertical-align: top;
 }
 
@@ -129,6 +129,10 @@ ul li {
 
 li:first-letter {
     text-decoration: underline;
+}
+
+li:hover {
+    background-color: #D5E7F8;
 }
 
 #main {
