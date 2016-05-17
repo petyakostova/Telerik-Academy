@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 95%;
+}
+
+div {
+    background-color: #000000;
+    border: 1px solid #FF0000;
+    border-radius: 60px;    
+    padding-right: 2%;
+}
