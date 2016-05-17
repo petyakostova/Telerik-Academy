@@ -62,30 +62,39 @@ p.calculator {
 
 #minimizeButton {
     background-image: url("../images/minimize.png");
-    width: 28px;
-    height: 22px;
+    width: 27px;
+    height: 18px;    
+    vertical-align: top;
 }
 
 #minimizeButton:hover {
     background-image: url("../images/minimize-hover.png");
+    width: 27px;
+    height: 18px;
+    vertical-align: top;
 }
 
 #maximizeButton {
     background-image: url("../images/maximize.png");
-    width: 26px;
-    height: 22px;
+    width: 27px;
+    height: 18px;
     margin-left: -4px;
+    vertical-align: top;
 }
 
 #closeButton {
     background-image: url("../images/close.png");
     width: 44px;
-    height: 22px;
+    height: 18px;
     margin-left: -4px;
+    vertical-align: top;
 }
 
 #closeButton:hover {
     background-image: url("../images/close-hover.png");
+    width: 44px;
+    height: 18px;
+    vertical-align: top;
 }
 
 #menu {
