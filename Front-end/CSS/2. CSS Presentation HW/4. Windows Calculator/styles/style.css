@@ -39,7 +39,7 @@ p.calculator:before {
     vertical-align: top;
 }
 
-p.calculator {    
+p.calculator {
     margin-top: -7px;
     padding-bottom: 4px;
     padding-left: 3px;
@@ -50,7 +50,7 @@ p.calculator {
 
 #options {
     margin-left: 306px;
-    width: 101px;
+    width: 98px;
     height: 18px;
     border: 1px solid #525c66;
     border-top: none;
@@ -58,7 +58,34 @@ p.calculator {
     border-bottom-right-radius: 5px;
     margin-top: -12px;
     margin-bottom: 9px;
-    background-image: url(images/win.png);
+}
+
+#minimizeButton {
+    background-image: url("../images/minimize.png");
+    width: 28px;
+    height: 22px;
+}
+
+#minimizeButton:hover {
+    background-image: url("../images/minimize-hover.png");
+}
+
+#maximizeButton {
+    background-image: url("../images/maximize.png");
+    width: 26px;
+    height: 22px;
+    margin-left: -4px;
+}
+
+#closeButton {
+    background-image: url("../images/close.png");
+    width: 44px;
+    height: 22px;
+    margin-left: -4px;
+}
+
+#closeButton:hover {
+    background-image: url("../images/close-hover.png");
 }
 
 #menu {
@@ -166,7 +193,7 @@ td {
 }
 
 #small {
-    padding: 2px 0px 1px 4px;    
+    padding: 2px 0px 1px 4px;
     font-family: Consolas;
 }
 
@@ -198,7 +225,7 @@ p.input {
     margin-bottom: -11px;
 }
 
-input {    
+input {
     float: left;
     display: inline-block;
     margin: 2px 1px 1px 2px;
