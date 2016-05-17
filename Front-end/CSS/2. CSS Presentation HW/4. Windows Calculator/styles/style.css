@@ -36,15 +36,15 @@ body {
 p.calculator:before {
     content: url("../images/calculator-icon.jpg");
     margin-right: 5px;
-    vertical-align: top;
+    float: left;
 }
 
 p.calculator {
     margin-top: -7px;
-    padding-bottom: 4px;
+    padding-bottom: 1px;
     padding-left: 3px;
     text-shadow: 0px 0px 10px #FFFFFF;
-    display: inline-block;
+    /*display: inline-block;*/
     float: left;
 }
 
