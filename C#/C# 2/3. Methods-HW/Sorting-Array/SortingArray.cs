@@ -1,72 +1,105 @@
-﻿/*  Problem 9. Sorting array
-    Write a method that return the maximal element in a portion of array of integers starting at given index.
-    Using it write another method that sorts an array in ascending / descending order.
- */
+﻿/*  9. Sorting array
+    Write a method that returns the maximal element in a portion of array of integers starting at given index.
+    Using it write another method that sorts an array in ascending / descending order. 
+    Write a program that sorts a given array.
+    Input:
+            On the first line you will receive the number N - the size of the array
+            On the second line you will receive N numbers separated by spaces - the array
+    Output: Print the sorted array. Elements must be separated by spaces
+    Constraints: 1 <= N <= 1024
+    Sample tests:
+    Input 	                            Output
+    6
+    3 4 1 5 2 6 	                    1 2 3 4 5 6
+
+    10
+    36 10 1 34 28 38 31 27 30 20 	    1 10 20 27 28 30 31 34 36 38                    */
 
 using System;
+using System.Linq;
 
 class MaxElementInAPortionOfArray
 {
     static void Main()
     {
-        Console.Write("Enter array length: ");
+        // Input
         int length = int.Parse(Console.ReadLine());
-
         int[] array = new int[length];
-        ArrayInput(array);
+        array = ArrayInput(array);
+        //ArrayInputWithLength(length, array); // other way for parsing the array
 
-        Console.WriteLine("Enter a position (index), from which to start the search [from 0 to {0}]: ", length - 1);
-        int position = int.Parse(Console.ReadLine());
-
-        int maxPosition = 0;
-        int maxElement = MaxElement(position, array, ref maxPosition, array.Length);//the last var is for the other tasks
-        Console.WriteLine("The maximum element is {0} at position {1}. ", maxElement, maxPosition);
+        // Max Position
+        int position = 0; // the position, from which to start the search
+        int maxPosition = 0; // the position of the max element
+        /* static int MaxElementInArray(int[] array, int startPosition, int finishPosition, ref int maxPos)
+           the last var is for the other tasks */
+        int maxElement = MaxElementInArray(array, position, array.Length, ref maxPosition);
 
         int[] arrayInputAscending = new int[length];
         int[] arrayInputDescending = new int[length];
 
+        // public static void Copy(Array sourceArray, Array destinationArray, int length);
         Array.Copy(array, arrayInputAscending, length);
         Array.Copy(array, arrayInputDescending, length);
 
         AscendingSorter(arrayInputAscending);
         DescendingSorter(arrayInputDescending);
 
-        Console.WriteLine("The array is:");
-        PrintArray(array);
-        Console.WriteLine();
+        //PrintArray(array); // the initial array
 
-        Console.WriteLine("The Sorted array in ascending order is:");
+        // The Sorted array in ascending order
         PrintArray(arrayInputAscending);
-        Console.WriteLine();
 
-        Console.WriteLine("The Sorted array in descending order is:");
-        PrintArray(arrayInputDescending);
-        Console.WriteLine();
+        //Console.WriteLine();
+
+        // The Sorted array in descending order
+        //PrintArray(arrayInputDescending);
+
+        //Console.WriteLine();
     }
 
-    static void ArrayInput(int[] array)
+    // I way: parsing the input in array
+    static int[] ArrayInput(int[] array)
     {
-        for (int i = 0; i < array.Length; i++)
-        {
-            Console.Write("element[{0}] = ", i);
-            array[i] = int.Parse(Console.ReadLine());
-        }
+        return array = Console.ReadLine()
+            .Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
+            .Select(x => int.Parse(x))
+            .ToArray();
     }
+
+    // II way: parsing the input in array using length
+    //static void ArrayInputWithLength(int length, int[] array)
+    //{
+    //    string[] numbersAsText = Console.ReadLine()
+    //        .Split(new char[] { ' ', ',', '.' }, StringSplitOptions.RemoveEmptyEntries);
+
+    //    for (int i = 0; i < length; i++)
+    //    {
+    //        array[i] = int.Parse(numbersAsText[i]);
+    //    }
+    //}
 
     static void PrintArray(int[] array)
     {
         for (int i = 0; i < array.Length; i++)
         {
-            Console.Write(array[i] + " ");
+            if (i != array.Length - 1)
+            {
+                Console.Write(array[i] + " ");
+            }
+            else
+            {
+                Console.Write(array[i]);
+            }
+
         }
-        Console.WriteLine();
     }
 
-    static int MaxElement(int startPosition, int[] array, ref int maxPos, int finishPosition)
+    static int MaxElementInArray(int[] array, int startPosition, int finishPosition, ref int maxPos)
     {
         int maxEl = array[startPosition];
         maxPos = startPosition;
-        
+
         for (int i = startPosition; i < finishPosition; i++)
         {
             if (maxEl < array[i])
@@ -75,6 +108,7 @@ class MaxElementInAPortionOfArray
                 maxPos = i;
             }
         }
+
         return maxEl;
     }
 
@@ -85,7 +119,7 @@ class MaxElementInAPortionOfArray
 
         for (int i = 0; i < array.Length; i++)
         {
-            max = MaxElement(0, array, ref maxPosition, array.Length - i);
+            max = MaxElementInArray(array, 0, array.Length - i, ref maxPosition);
             array[maxPosition] = array[array.Length - 1 - i];
             array[array.Length - 1 - i] = max;
         }
@@ -99,7 +133,7 @@ class MaxElementInAPortionOfArray
         int[] SortedArray = new int[array.Length];
         for (int i = 0; i < array.Length; i++)
         {
-            max = MaxElement(i, array, ref maxPosition, array.Length);
+            max = MaxElementInArray(array, i, array.Length, ref maxPosition);
             array[maxPosition] = array[i];
             array[i] = max;
         }
