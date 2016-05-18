@@ -1,14 +1,13 @@
-﻿/*  Problem 7. Reverse number
-    Write a method that reverses the digits of given decimal number.
+﻿/*  7. Reverse number
+    Write a method that reverses the digits of a given decimal number.
     Example:
                 input 	    output
                 256 	    652
-                123.45 	    54.321
- */
+                123.45 	    54.321              */
 
 using System;
 using System.Threading;
-using System.Globalization; 
+using System.Globalization;
 
 class DigitsReverse
 {
@@ -16,13 +15,7 @@ class DigitsReverse
     {
         Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
 
-        Console.Write("Enter a decimal number: ");
-        double number;  // the type is double because of the second example
-        while (!double.TryParse(Console.ReadLine(), out number))
-        {            
-            Console.WriteLine("Invalid number.");
-            Console.Write("Please enter a correct decimal number: ");        
-        }
+        double number = double.Parse(Console.ReadLine());
 
         Console.WriteLine(DigitsReverser(number));
     }
@@ -31,14 +24,21 @@ class DigitsReverse
     {
         string input = number.ToString();
 
-        string output = null;
+        string reversedNum = null;
 
-        for (int i = 0; i < input.Length; i++)
+        // first way
+        for (int i = input.Length - 1; i >= 0; i--)
         {
-            output = output + input[input.Length - 1 - i];
+            reversedNum += input[i];
         }
 
-        return double.Parse(output);
+        // other way
+        //for (int i = 0; i < input.Length; i++)
+        //{
+        //    reversedNum += input[input.Length - 1 - i];
+        //}
+
+        return double.Parse(reversedNum);
     }
 
 }
