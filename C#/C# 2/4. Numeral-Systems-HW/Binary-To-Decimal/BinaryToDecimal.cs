@@ -18,7 +18,7 @@ class BinaryToDecimal
         Console.WriteLine(BinaryToDecimalNumber(binaryNumber));
     }
 
-    static long BinaryToDecimalNumber(string binNumber)
+    private static long BinaryToDecimalNumber(string binNumber)
     {
         long decimalNumber = 0;
 

@@ -22,7 +22,7 @@ class DecimalToHexadecimal
         Console.WriteLine(DecimalToHex(decimalNumber));
     }
 
-    static string DecimalToHex(long decNumber)
+    private static string DecimalToHex(long decNumber)
     {
         if (decNumber == 0)
         {

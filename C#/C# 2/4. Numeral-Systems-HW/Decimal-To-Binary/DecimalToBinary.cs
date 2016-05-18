@@ -18,7 +18,7 @@ class DecimalToBinary
         Console.WriteLine(DecimalToBinaryNumber(decimalNumber));        
     }
 
-    static string DecimalToBinaryNumber(long decNumber)
+    private static string DecimalToBinaryNumber(long decNumber)
     {
         if (decNumber == 0)
         {

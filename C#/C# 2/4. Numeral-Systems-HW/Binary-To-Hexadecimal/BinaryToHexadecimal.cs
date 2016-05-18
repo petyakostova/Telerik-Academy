@@ -1,12 +1,15 @@
-﻿/*  Problem 6. Binary to hexadecimal
+﻿/*  6. Binary to hexadecimal
     Write a program to convert binary numbers to hexadecimal numbers (directly).
- */
-/*  Notes: Examples for faster testing:
-                    binary                                         hexadecimal
-                    11111110                                       FE 	            
-                    0001101011100011                               1AE3 	        
-                    0100111011010101001010001100101110110100       4ED528CBB4      
- */
+    Input: On the only line you will receive a decimal number - N. There will not be leading zeros
+    Output: Print the its binary representation on a single line.
+            There should not be leading zeros. Use uppercase letters
+    Constraints: 1 <= N <= 1018 = 110111100000101101101011001110100111011001000000000000000000(2)
+    Sample tests:
+                    Input                                           Output
+                    10011 	                                        13
+                    11111110                                        FE 	            
+                    0001101011100011                                1AE3 	        
+                    0100111011010101001010001100101110110100        4ED528CBB4      */
 
 using System;
 using System.Text;
@@ -15,60 +18,66 @@ class BinaryToHexadecimal
 {
     static void Main()
     {
-        Console.Write("Enter a binary number (consisted of 0 and 1): ");
         string binaryNumber = Console.ReadLine();
-        StringBuilder binary = new StringBuilder(binaryNumber);
+
+        Console.WriteLine(BinaryToHex(binaryNumber));
+    }
+
+    private static string BinaryToHex(string binNumber)
+    {
+        StringBuilder binaryNum = new StringBuilder(binNumber);
 
         bool isNegative = false;
-        if (binary[0] == '-')
+
+        if (binaryNum[0] == '-')
         {
             isNegative = true;
-            binary.Remove(0, 1);
+            binaryNum.Remove(0, 1);
         }
 
-        for (int i = 0, length = binary.Length; i < (4 - length % 4) % 4; i++) //padding leading zeros
+        // Padding leading zeros
+        for (int i = 0, length = binaryNum.Length; i < (4 - length % 4) % 4; i++) 
         {
-            binary.Insert(0, '0');
+            binaryNum.Insert(0, '0');
         }
 
-        StringBuilder hexaNumber = new StringBuilder();
+        StringBuilder hexNumber = new StringBuilder();
+
         StringBuilder word = new StringBuilder("0000");
 
-        for (int i = 0; i < binary.Length; i += 4)
+        for (int fours = 0; fours < binaryNum.Length; fours += 4)
         {
-            for (int j = i; j < i + 4; j++)
+            for (int pos = fours; pos < fours + 4; pos++)
             {
-                word[j % 4] = binary[j];
+                word[pos % 4] = binaryNum[pos];
             }
 
             switch (word.ToString())
             {
-                case "0000": hexaNumber.Append('0'); break;
-                case "0001": hexaNumber.Append('1'); break;
-                case "0010": hexaNumber.Append('2'); break;
-                case "0011": hexaNumber.Append('3'); break;
-                case "0100": hexaNumber.Append('4'); break;
-                case "0101": hexaNumber.Append('5'); break;
-                case "0110": hexaNumber.Append('6'); break;
-                case "0111": hexaNumber.Append('7'); break;
-                case "1000": hexaNumber.Append('8'); break;
-                case "1001": hexaNumber.Append('9'); break;
-                case "1010": hexaNumber.Append('A'); break;
-                case "1011": hexaNumber.Append('B'); break;
-                case "1100": hexaNumber.Append('C'); break;
-                case "1101": hexaNumber.Append('D'); break;
-                case "1110": hexaNumber.Append('E'); break;
-                case "1111": hexaNumber.Append('F'); break;
-                default: Console.WriteLine("Invalid number"); break;
+                case "0000": hexNumber.Append('0'); break;
+                case "0001": hexNumber.Append('1'); break;
+                case "0010": hexNumber.Append('2'); break;
+                case "0011": hexNumber.Append('3'); break;
+                case "0100": hexNumber.Append('4'); break;
+                case "0101": hexNumber.Append('5'); break;
+                case "0110": hexNumber.Append('6'); break;
+                case "0111": hexNumber.Append('7'); break;
+                case "1000": hexNumber.Append('8'); break;
+                case "1001": hexNumber.Append('9'); break;
+                case "1010": hexNumber.Append('A'); break;
+                case "1011": hexNumber.Append('B'); break;
+                case "1100": hexNumber.Append('C'); break;
+                case "1101": hexNumber.Append('D'); break;
+                case "1110": hexNumber.Append('E'); break;
+                case "1111": hexNumber.Append('F'); break;
             }
         }
 
         if (isNegative)
         {
-            hexaNumber.Insert(0, '-');
+            hexNumber.Insert(0, '-');
         }
 
-        Console.WriteLine(hexaNumber.ToString());
-
+        return hexNumber.ToString();
     }
 }
