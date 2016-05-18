@@ -36,7 +36,8 @@ class BinaryToHexadecimal
         }
 
         // Padding leading zeros
-        for (int i = 0, length = binaryNum.Length; i < (4 - length % 4) % 4; i++) 
+        int length = binaryNum.Length;
+        for (int i = 0; i < (4 - length % 4) % 4; i++) 
         {
             binaryNum.Insert(0, '0');
         }
