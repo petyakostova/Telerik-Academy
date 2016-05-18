@@ -19,30 +19,16 @@ class OneSystemToAnyOther
 {
     static void Main()
     {
-        int baseX;
-        Console.Write("Enter the base (of the numeral system)\n of the number You want to convert in the range [2.. 16]: ");
-        // parsing and input check (validating the user data)
-        while (!int.TryParse(Console.ReadLine(), out baseX) || baseX < 2 || baseX > 16)   
-        {
-            Console.WriteLine("Invalid base!");
-            Console.Write("Enter a base in the range [2.. 16]: ");
-        }
-        Console.Write("\nEnter a number [base {0}]: ", baseX);
-        string number = StringParse();
+        // number(baseX) => baseY
+        int baseX = int.Parse(Console.ReadLine());
+        string numberX = StringParse();
+        int baseY = int.Parse(Console.ReadLine());     
 
-        int baseY;
-        Console.Write("\nEnter to which base You want to convert the number {0}: ", number);
-        while (!int.TryParse(Console.ReadLine(), out baseY) || baseX < 2 || baseX > 16)
-        {
-            Console.WriteLine("Invalid base!");
-            Console.Write("Enter a base in the range [2.. 16]: ");
-        }        
+        string result = ConvertFromDecimalToBaseY(ConvertToDecimal(numberX.ToArray(), baseX), baseY);
 
-        string result = ConvertFromDecimalToBaseY(ConvertToDecimal(number.ToArray(), baseX), baseY);
-
-        if (IsValidInput(number, result, baseX, baseY))
+        if (IsValidInput(numberX, result, baseX, baseY))
         {
-            Console.Write("\n{0} [base {1}] converted to [base {2}] => {3}\n\n", number, baseX, baseY, result);
+            Console.Write(result);
         }
         else
         {
@@ -78,12 +64,15 @@ class OneSystemToAnyOther
     static string StringParse()
     {
         string number = Console.ReadLine();
+
         // Check for incorrect number
         if (number.Any(t => t < 'A' && t > 'Z' && t < 'a' && t > 'z' && t < '0' && t > '9'))
         {
             throw new ArgumentException();
         }
+
         number = MakeAllLettersLarge(number);
+
         return number;
     }
 
