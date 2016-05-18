@@ -23,16 +23,20 @@ class ShortToBinaryConvertion
         Console.WriteLine(ShortToBinary(shortNumber));
     }
 
-    private static string ShortToBinary(int number)
+    private static string ShortToBinary(short number)
     {
         string binaryNumber = string.Empty;
 
-        for (int i = 15; i >= 0; i--)
-        {
-            binaryNumber = ((number % 2) & 1) + binaryNumber;
-            number >>= 1;
-            //if (i % 4 == 0 && i != 0) binaryNumber = " " + binaryNumber;  // for better print
-        }
+        // first way
+        binaryNumber = Convert.ToString(number, 2).PadLeft(16, '0');
+
+        // other way using Bitwise operations
+        //for (int i = 15; i >= 0; i--)
+        //{
+        //    binaryNumber = ((number % 2) & 1) + binaryNumber;
+        //    number >>= 1;
+        //    //if (i % 4 == 0 && i != 0) binaryNumber = " " + binaryNumber;  // for better print
+        //}
 
         return binaryNumber;
     }
