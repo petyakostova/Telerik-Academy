@@ -1,32 +1,37 @@
-﻿/*  Problem 2. Binary to decimal
-    Write a program to convert binary numbers to their decimal representation.
- */
-/*  Notes: Examples for faster testing:
-                        binary 	                        decimal
-                        0 	                            0
-                        11 	                            3
-                        1010101010101011 	            43691
-                        1110000110000101100101000000 	236476736   
- */
+﻿/*  2. Binary to decimal
+    Write a program that converts a binary number N to its decimal representation.
+    Input: On the only line you will receive a binary number - N. There will not be leading zeros
+    Output: Print the decimal representation of N on a single line. There should not be leading zeros
+    Constraints: 1 <= N <= 1018 = 110111100000101101101011001110100111011001000000000000000000(2)
+    Sample tests:
+                    Input 	    Output
+                    10011 	    19                          */
 using System;
 
 class BinaryToDecimal
 {
     static void Main()
     {
-        Console.Write("Enter a binary number (consisted of 0 and 1): ");
         string binaryNumber = Console.ReadLine();
 
+        Console.WriteLine(BinaryToDecimalNumber(binaryNumber));
+    }
+
+    static long BinaryToDecimalNumber(string binNumber)
+    {
         long decimalNumber = 0;
-        for (int i = 0; i < binaryNumber.Length; i++)
+
+        for (int position = 0; position < binNumber.Length; position++)
         {
-            if (binaryNumber[binaryNumber.Length - i - 1] == '0')
+            if (binNumber[binNumber.Length - position - 1] == '0')
             {
-                continue;   // bypasses the iteration of the inner-most loop and jumps to the update expression in for loop
+                // bypasses the iteration of the inner-most loop and jumps to the update expression in for loop
+                continue;   
             }
-            decimalNumber += (long)Math.Pow(2, i);
+
+            decimalNumber += (long)Math.Pow(2, position);
         }
 
-        Console.WriteLine(decimalNumber);
+        return decimalNumber;
     }
 }

@@ -16,7 +16,7 @@ Homework: Methods
 #### 10. [N Factorial](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/3.%20Methods-HW/N-Factorial)
 #### 11. [Adding polynomials](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/3.%20Methods-HW/Adding-Polynomials)
 #### 12. [Subtracting/ multiplicating polynomials](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/3.%20Methods-HW/Subtracting-And-Multiplicating-Polynomials)
-#### * . [Operations with polynomials (11. + 12.)](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/3.%20Methods-HW/Operations-With-Polynomials) 
+#### *** [Operations with polynomials (11. + 12.)](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/3.%20Methods-HW/Operations-With-Polynomials) 
 #### 13. [Solve tasks](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/3.%20Methods-HW/Solve-Tasks)
 #### 14. [Integer calculations](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/3.%20Methods-HW/Integer-Calculations)
 #### 15. [Number calculations](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/3.%20Methods-HW/Number-Calculations)

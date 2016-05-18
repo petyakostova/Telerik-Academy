@@ -1,41 +1,40 @@
-﻿/*  Problem 1. Decimal to binary
-    Write a program to convert decimal numbers to their binary representation.
- */
-/*  Notes: Examples for faster testing:
-                        decimal 	binary
-                        0 	        0
-                        3 	        11
-                        43691 	    1010101010101011
-                        236476736 	1110000110000101100101000000  
- */
+﻿/*  1. Decimal to binary
+    Write a program that converts a decimal number N to its binary representation.
+    Input: On the only line you will receive a decimal number - N. There will not be leading zeros.
+    Output: Print the binary representation of N on a single line. There should not be leading zeros.
+    Constraints: 1 <= N <= 1018
+    Sample tests
+                    Input(decimal) 	    Output(binary)
+                    19 	                10011                */
 using System;
 
 class DecimalToBinary
 {
     static void Main()
     {
-        long decimalNumber;
-        Console.Write("Enter an integer number: ");
-        while (!long.TryParse(Console.ReadLine(), out decimalNumber))   // parsing and input check (validating the user data)
-        {
-            Console.WriteLine("Invalid input!");
-            Console.Write("Enter an integer number: ");
-        }
+        long decimalNumber = long.Parse(Console.ReadLine());
 
-        if (decimalNumber == 0)
+        Console.WriteLine(DecimalToBinaryNumber(decimalNumber));        
+    }
+
+    static string DecimalToBinaryNumber(long decNumber)
+    {
+        if (decNumber == 0)
         {
-            Console.WriteLine(0);
+            return "0";
         }
         else
         {
-            string binaryNumber = "";                   // other way: string binaryNumber = null;         
-            while (decimalNumber > 0)
+            string binaryNumber = string.Empty; // other way: string binaryNumber = "";
+
+            while (decNumber > 0)
             {
-                int remainder = (int)decimalNumber % 2;
-                binaryNumber = remainder + binaryNumber;
-                decimalNumber /= 2;
+                binaryNumber = (decNumber % 2) + binaryNumber;
+                decNumber /= 2;
             }
-            Console.WriteLine(binaryNumber);
+
+            return binaryNumber;            
         }
     }
+
 }
