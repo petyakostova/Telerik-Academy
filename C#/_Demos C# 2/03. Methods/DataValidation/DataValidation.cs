@@ -13,6 +13,7 @@ class DataValidation
 		int minutes = int.Parse(Console.ReadLine());
 
 		bool isValidTime = ValidateHours(hours) && ValidateMinutes(minutes);
+
 		if (isValidTime)
 		{
 			Console.WriteLine("The time is {0}:{1} now.", hours, minutes);

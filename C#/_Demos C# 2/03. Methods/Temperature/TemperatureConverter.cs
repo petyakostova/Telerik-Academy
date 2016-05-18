@@ -11,8 +11,8 @@ class TemperatureConverter
 	static void Main()
 	{
 		Console.WriteLine("Enter your body temperature in Fahrenheit degrees: ");
-		double temperature = Double.Parse(Console.ReadLine());
-
+		double temperature = double.Parse(Console.ReadLine());
+        
 		temperature = FahrenheitToCelsius(temperature);
 
 		Console.WriteLine("Your body temperature in Celsius degrees is {0}.", temperature);
