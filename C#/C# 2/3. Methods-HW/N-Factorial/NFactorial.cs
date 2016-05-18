@@ -1,55 +1,77 @@
-﻿/*  Problem 10. N Factorial
-    Write a program to calculate n! for each n in the range [1..100].
-    Hint: Implement first a method that multiplies a number represented as array of digits by given integer number.
- */
+﻿/*  10. N Factorial
+    Write a method that multiplies a number represented as an array of digits by a given integer number. 
+    Write a program to calculate N!.
+    Input: On the first line you will receive the number N
+    Output: Print N!
+    Constraints: 0 <= N <= 100
+    Sample tests:
+                    Input 	Output
+                    5 	    120                 */
 
 using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Linq; // needed fot Select()
 
 class NFactorial
 {
     static void Main()
     {
-        Console.Write("Enter a number N in the range [1..100]: ");
-        int number = int.Parse(Console.ReadLine());
+        // Input
+        int n = int.Parse(Console.ReadLine());
 
-        List<int> factorial = CalculateFactorial(number);
+        // Calculating the factorial
+        List<int> factorial = CalculateFactorial(n);
 
-        Console.WriteLine("\n{0}! = {1}\n", number, string.Join("", factorial));
+        // Output
+        Console.WriteLine(string.Join("", factorial));
     }
 
-    static List<int> CalculateFactorial(int n)
+    static List<int> CalculateFactorial(int number)
     {
         int[] a = { 1 };
-        int left = 0;
-        for (int i = 2; i <= n; i++, left = 0)
+
+        for (int currNum = 2; currNum <= number; currNum++)
         {
-            int[] b = i.ToString().Select(ch => ch - '0').ToArray();    // Select => using System.Linq;
-            int[] c = new int[a.Length + b.Length];
-            for (int k = a.Length - 1; k >= 0; k--)
+            int left = 0;
+
+            int[] digitsArrayCurrNum = currNum.ToString().Select(ch => ch - '0').ToArray();
+
+            int[] c = new int[a.Length + digitsArrayCurrNum.Length];
+
+            for (int i = a.Length - 1; i >= 0; i--)
             {
-                for (int j = b.Length - 1; j >= 0; j--)
+                for (int j = digitsArrayCurrNum.Length - 1; j >= 0; j--)
                 {
-                    c[a.Length - k + b.Length - j - 2] += a[k] * b[j];
+                    c[a.Length - i + digitsArrayCurrNum.Length - j - 2] += a[i] * digitsArrayCurrNum[j];
                 }
             }
-            for (int j = 0; j < c.Length; j++)
+
+            for (int i = 0; i < c.Length; i++)
             {
-                var digits = c[j] + left;
-                c[j] = digits % 10;
+                var digits = c[i] + left;
+                c[i] = digits % 10;
                 left = digits / 10;
             }
+
             a = c;
+
             Array.Reverse(c);
         }
+
         int start = 0;
-        while (a[start] == 0) start++;
+
+        while (a[start] == 0)
+        {
+            start++;
+        }
+
         List<int> result = new List<int>();
+
         for (int i = start; i < a.Length; i++)
         {
             result.Add(a[i]);
         }
+
         return result;
     }
 }
