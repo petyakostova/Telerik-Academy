@@ -15,12 +15,12 @@ class DigitsReverse
     {
         Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
 
-        double number = double.Parse(Console.ReadLine());
+        decimal number = decimal.Parse(Console.ReadLine());
 
         Console.WriteLine(DigitsReverser(number));
     }
 
-    static double DigitsReverser(double number)
+    static decimal DigitsReverser(decimal number)
     {
         string input = number.ToString();
 
@@ -38,7 +38,7 @@ class DigitsReverse
         //    reversedNum += input[input.Length - 1 - i];
         //}
 
-        return double.Parse(reversedNum);
+        return decimal.Parse(reversedNum);
     }
 
 }
