@@ -1,26 +1,33 @@
-﻿/*  Problem 5. Hexadecimal to binary
+﻿/*  5. Hexadecimal to binary
     Write a program to convert hexadecimal numbers to binary numbers (directly).
- */
-/*  Notes: Examples for faster testing:
-                        hexadecimal 	binary
-                        FE 	            11111110
-                        1AE3 	        0001101011100011
-                        4ED528CBB4      0100111011010101001010001100101110110100
- */
+    Input: On the only line you will receive a decimal number - N
+           There will not be leading zeros. Letters will be uppercase
+    Output: Print the its binary representation on a single line. There should not be leading zeros
+    Constraints: 1 <= N <= 1018 = DE0B6B3A7640000(16)
+    Sample tests:
+                    Input 	        Output
+                    13 	            10011
+                    FE 	            11111110
+                    1AE3 	        0001101011100011
+                    4ED528CBB4      0100111011010101001010001100101110110100            */
 
 using System;
-using System.Text;
+using System.Text; // needed for StringBuilder
 
 class HexadecimalToBinary
 {
     static void Main()
     {
-        Console.Write("Enter a hexadecimal number: ");
-        string hexaNumber = Console.ReadLine();
+        string hexadecimalNumber = Console.ReadLine();
 
+        Console.WriteLine(HexToBinary(hexadecimalNumber));
+    }
+
+    private static string HexToBinary(string hexNumber)
+    {
         StringBuilder binaryNumber = new StringBuilder();
 
-        foreach (char hexDigit in hexaNumber)
+        foreach (char hexDigit in hexNumber)
         {
             switch (hexDigit)
             {
@@ -40,9 +47,27 @@ class HexadecimalToBinary
                 case 'D': binaryNumber.Append("1101"); break;
                 case 'E': binaryNumber.Append("1110"); break;
                 case 'F': binaryNumber.Append("1111"); break;
-                default: Console.WriteLine("Invalid hexadecimal number!"); break;
             }
         }
-        Console.WriteLine(binaryNumber);
+
+        // Count leading zeroes
+        int counterLeadingZeroes = 0;
+
+        for (int index = 0; index < binaryNumber.Length; index++)
+        {
+            if (binaryNumber[index] != '0')
+            {
+                break;
+            }
+
+            counterLeadingZeroes++;            
+        }
+
+        /* Remove the specified range of characters from this instance
+           public StringBuilder Remove(int startIndex, int length); */
+        binaryNumber.Remove(0, counterLeadingZeroes);
+
+        return binaryNumber.ToString();
     }
+
 }
