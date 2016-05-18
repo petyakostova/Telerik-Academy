@@ -6,6 +6,7 @@
     Sample tests
                     Input(decimal) 	    Output(binary)
                     19 	                10011                */
+
 using System;
 
 class DecimalToBinary

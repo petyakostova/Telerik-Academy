@@ -6,6 +6,7 @@
     Sample tests:
                     Input 	    Output
                     10011 	    19                          */
+
 using System;
 
 class BinaryToDecimal

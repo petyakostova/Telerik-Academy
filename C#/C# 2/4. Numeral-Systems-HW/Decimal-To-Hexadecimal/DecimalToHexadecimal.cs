@@ -1,37 +1,44 @@
-﻿/*  Problem 3. Decimal to hexadecimal
-    Write a program to convert decimal numbers to their hexadecimal representation.
- */
-/*  Notes: Examples for faster testing:
-                        decimal 	    hexadecimal
-                        254 	        FE
-                        6883 	        1AE3
-                        338583669684 	4ED528CBB4   
- */
+﻿/*  3. Decimal to hexadecimal
+    Write a program that converts a decimal number N to its hexadecimal representation.
+    Input: On the only line you will receive a decimal number - N. There will not be leading zeros
+    Output: Print the hexadecimal representation of N on a single line. There should not be leading zeros.
+            Use uppercase letters.
+    Constraints: 1 <= N <= 1018
+    Sample tests:
+                    Input 	        Output
+                    19 	            13                
+                    254 	        FE
+                    6883 	        1AE3
+                    338583669684 	4ED528CBB4              */
+
 using System;
 
 class DecimalToHexadecimal
 {
     static void Main()
     {
-        long decimalNumber;
-        Console.Write("Enter an integer number: ");
-        while (!long.TryParse(Console.ReadLine(), out decimalNumber))       // parsing and input check (validating the user data)
-        {
-            Console.WriteLine("Invalid input!");
-            Console.Write("Enter an integer number: ");
-        }
+        long decimalNumber = long.Parse(Console.ReadLine());
 
-        if (decimalNumber == 0)
+        Console.WriteLine(DecimalToHex(decimalNumber));
+    }
+
+    static string DecimalToHex(long decNumber)
+    {
+        if (decNumber == 0)
         {
-            Console.WriteLine(0);
+            return "0";
         }
         else
         {
-            string hexaNumber = "";                             // other way: string hexaNumber = null;         
-            while (decimalNumber > 0)
+            string hexadecimalNumber = string.Empty; // other way: string hexaNumber = "";   
+                  
+            while (decNumber > 0)
             {
-                long checkRemainder = (long)decimalNumber % 16; // must be long; when this type is int the result is wrong
-                string remainder = "";
+                // must be long; when this type is int the result is wrong
+                long checkRemainder = (long)decNumber % 16; 
+
+                string remainder = string.Empty;
+
                 switch (checkRemainder)
                 {
                     case 10: remainder = "A"; break;
@@ -42,10 +49,13 @@ class DecimalToHexadecimal
                     case 15: remainder = "F"; break;
                     default: remainder = checkRemainder.ToString(); break;
                 }
-                hexaNumber = remainder + hexaNumber;
-                decimalNumber /= 16;
+
+                hexadecimalNumber = remainder + hexadecimalNumber;
+                decNumber /= 16;
             }
-            Console.WriteLine(hexaNumber);
+
+            return hexadecimalNumber;
         }
     }
+
 }
