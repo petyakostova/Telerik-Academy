@@ -11,6 +11,7 @@ Homework: Methods
 #### 6. [First larger than neighbours]
 #### 7. [Reverse number]
 #### 8. [Number as array]
+#### 8. [Number as array - Without spaces between the digits and in normal order of digits => Sum two Numbers]
 #### 9. [Sorting array]
 #### 10. [N Factorial]
 #### 11. [Adding polynomials]

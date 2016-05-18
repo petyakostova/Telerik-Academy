@@ -27,60 +27,85 @@ class NumbersAsArraysSum
 {
     static void Main()
     {
-        Console.Write("Enter the first positive positive number: ");
-        string firstNum = Console.ReadLine();
-        Console.Write("Enter the second positive positive number: ");
-        string secondNum = Console.ReadLine();
+        // Input
+        int[] sizes = Console.ReadLine()
+            .Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
+            .Select(int.Parse)
+            .ToArray();
 
-        if (IsCorrectNumber(firstNum) && IsCorrectNumber(secondNum))
+        string firstNumDigits = Console.ReadLine()
+            .Replace(" ", string.Empty); // removing the whitespaces
+        string secondNumDigits = Console.ReadLine()
+            .Replace(" ", string.Empty); // removing the whitespaces
+
+        // Set parameters for the method
+        int biggerSize = Math.Max(sizes[0], sizes[1]);
+        int smallerSize = Math.Min(sizes[0], sizes[1]);
+
+        string biggerNumDigits;
+        string smallerNumDigits;
+
+        if (biggerSize == sizes[0])
         {
-            List<int> result = AccumulateTwoNumbers(firstNum, secondNum);
-            Console.WriteLine("Sum:");
-            PrintResult(result);
+            biggerNumDigits = firstNumDigits;
+            smallerNumDigits = secondNumDigits;
         }
         else
         {
-            Console.WriteLine("\nYou have entered invalid number(s).\n");
+            biggerNumDigits = secondNumDigits;
+            smallerNumDigits = firstNumDigits;
         }
+
+        // Аccumulating the digits
+        AddingTwoNumbersDigits(smallerNumDigits, biggerNumDigits, smallerSize, biggerSize);
     }
 
-    static bool IsCorrectNumber(string number)
+    private static void AddingTwoNumbersDigits(string smallerNumDigits, string biggerNumDigits,
+        int smallerSize, int biggerSize)
     {
-        return number.All(t => t >= '0' && t <= '9');
-    }
+        List<int> sumNumsDigits = new List<int>();
 
-    static List<int> AccumulateTwoNumbers(string firstNum, string secondNum)
-    {
-        // Convert string to int[] according to the assignment to represent numbers as array of digits
-        var firstArray = firstNum.Select(ch => ch - '0').ToArray();
-        var secondArray = secondNum.Select(ch => ch - '0').ToArray();
+        int remainder = 0;
 
-        Array.Reverse(firstArray);
-        Array.Reverse(secondArray);
-
-        List<int> result = new List<int>(Math.Max(firstArray.Length, secondArray.Length));
-
-        int left = 0;
-
-        for (int i = 0; i < result.Capacity; i++)
+        for (int i = 0; i < smallerSize; i++)
         {
-            int num = (i < firstArray.Length ? firstArray[i] : 0) + (i < secondArray.Length ? secondArray[i] : 0) + left;            
-            result.Add(num % 10);
-            left = num / 10;
+            int result = (int)smallerNumDigits[i] - '0' + (int)biggerNumDigits[i] - '0' + remainder;
+
+            if (result < 10)
+            {
+                sumNumsDigits.Add(result);
+                remainder = 0;
+            }
+            else
+            {
+                sumNumsDigits.Add(result % 10);
+                remainder = result / 10;
+            }
         }
 
-        if (left > 0) result.Add(left);
-
-        return result;
-    }
-
-    static void PrintResult(List<int> result)
-    {
-        for (int i = result.Count - 1; i >= 0; i--)
+        for (int i = smallerSize; i < biggerSize; i++)
         {
-            Console.Write(result[i]);
+            int result = (int)biggerNumDigits[i] - '0' + remainder;
+
+            if (result < 10)
+            {
+                sumNumsDigits.Add(result);
+                remainder = 0;
+            }
+            else
+            {
+                sumNumsDigits.Add(result % 10);
+                remainder = result / 10;
+            }
         }
-        Console.WriteLine("\n");
+
+        if (remainder > 0)
+        {
+            sumNumsDigits.Add(remainder);
+        }
+
+        // Output
+        Console.WriteLine(String.Join(" ", sumNumsDigits));
     }
 
 }
