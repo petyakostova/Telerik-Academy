@@ -1,7 +1,12 @@
-﻿/*  Problem 4. Appearance count
-    Write a method that counts how many times given number appears in given array.
-    Write a test program to check if the method is workings correctly.
- */
+﻿/*  4. Appearance count
+    Write a method that counts how many times given number appears in a given array. 
+    Write a test program to check if the method is working correctly.
+    Input:
+    On the first line you will receive a number N - the size of the array
+    On the second line you will receive N numbers separated by spaces - the numbers in the array
+    On the third line you will receive a number X
+    Output: Print how many times the number X appears in the array
+    Constraints: 1 <= N <= 1024 */
 
 using System;
 
@@ -9,32 +14,33 @@ class HowManyTimesNumberInArray
 {
     static void Main()
     {
-        Console.Write("Enter an integer number: ");
-        int numberToCount = int.Parse(Console.ReadLine());
-
         int[] arrayInput = ArrayReader();
+
+        int numberToCount = int.Parse(Console.ReadLine());
 
         int counter = Counter(numberToCount, arrayInput);
 
-        Console.WriteLine("Times of appearing: {0}", counter);
+        Console.WriteLine(counter);
 
     }
 
     static int[] ArrayReader()
     {
-        Console.Write("Enter array length: ");
         int arrayLength = int.Parse(Console.ReadLine());
 
-        int[] arrayInput = new int[arrayLength];
+        string[] numbersAsText = Console.ReadLine()
+            .Split(new char[] { ' ', ',', '.' }, StringSplitOptions.RemoveEmptyEntries);
 
+        int[] arrayInput = new int[arrayLength];       
+         
         for (int i = 0; i < arrayLength; i++)
         {
-            Console.Write("element[{0}] = ", i);
-            arrayInput[i] = int.Parse(Console.ReadLine());              
-        }
+            arrayInput[i] = int.Parse(numbersAsText[i]);
+        }        
+        
         return arrayInput;
     }
-    
+
     static int Counter(int number, params int[] array)
     {
         int counter = 0;
@@ -49,5 +55,5 @@ class HowManyTimesNumberInArray
 
         return counter;
     }
-    
+
 }

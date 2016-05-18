@@ -1,10 +1,6 @@
-﻿/*  Problem 3. English digit
-    Write a method that returns the last digit of given integer as an English word.
-    Examples:
-                input 	output
-                512 	two
-                1024 	four
-                12309 	nine
+﻿/*  3. English digit
+    Write a method that returns the last digit of given integer as an English word. 
+    Write a program that reads a number and prints the result of the method.
  */
 
 using System;
@@ -13,7 +9,6 @@ class EnglishDigit
 {
     static void Main()
     {
-        Console.Write("Enter an integer number: ");
         int inputNum = int.Parse(Console.ReadLine());
 
         Console.WriteLine(GetDigit(inputNum));
@@ -27,25 +22,24 @@ class EnglishDigit
 
         switch (inputAsString[inputAsString.Length - 1])
         {
-            case '0': digitAsWord = "Zero"; break;
-            case '1': digitAsWord = "One"; break;
-            case '2': digitAsWord = "Two"; break;
-            case '3': digitAsWord = "Three"; break;
-            case '4': digitAsWord = "Four"; break;
-            case '5': digitAsWord = "Five"; break;
-            case '6': digitAsWord = "Six"; break;
-            case '7': digitAsWord = "Seven"; break;
-            case '8': digitAsWord = "Eight"; break;
-            case '9': digitAsWord = "Nine"; break;
+            case '0': digitAsWord = "zero"; break;
+            case '1': digitAsWord = "one"; break;
+            case '2': digitAsWord = "two"; break;
+            case '3': digitAsWord = "three"; break;
+            case '4': digitAsWord = "four"; break;
+            case '5': digitAsWord = "five"; break;
+            case '6': digitAsWord = "six"; break;
+            case '7': digitAsWord = "seven"; break;
+            case '8': digitAsWord = "eight"; break;
+            case '9': digitAsWord = "nine"; break;
         }
+
         return digitAsWord;
     }
 
-
-    //// other way
+    // other way
     //static void Main()
     //{
-    //    Console.Write("Enter an integer number: ");
     //    int inputNum = int.Parse(Console.ReadLine());
 
     //    Console.WriteLine((Digit)(inputNum % 10));
@@ -53,16 +47,16 @@ class EnglishDigit
 
     //public enum Digit
     //{
-    //    Zero = 0,
-    //    One = 1,
-    //    Two = 2,
-    //    Three = 3,
-    //    Four = 4,
-    //    Five = 5,
-    //    Six = 6,
-    //    Seven = 7,
-    //    Eight = 8,
-    //    Nine = 9
+    //    zero = 0,
+    //    one = 1,
+    //    two = 2,
+    //    three = 3,
+    //    four = 4,
+    //    five = 5,
+    //    six = 6,
+    //    seven = 7,
+    //    eight = 8,
+    //    nine = 9
     //}
 
 }
