@@ -20,9 +20,9 @@ class OneSystemToAnyOther
     static void Main()
     {
         // number(baseX) => baseY
-        int baseX = int.Parse(Console.ReadLine());
+        long baseX = long.Parse(Console.ReadLine());
         string numberX = StringParse();
-        int baseY = int.Parse(Console.ReadLine());     
+        long baseY = long.Parse(Console.ReadLine());     
 
         string result = ConvertFromDecimalToBaseY(ConvertToDecimal(numberX.ToArray(), baseX), baseY);
 
@@ -38,21 +38,21 @@ class OneSystemToAnyOther
 
     #region Conversion
     // Convert number [base X] to number [base 10]
-    static int ConvertToDecimal(char[] number, int baseX)
+    static long ConvertToDecimal(char[] number, long baseX)
     {
-        int result = 0;
-        for (int i = number.Length - 1, pow = 1; i >= 0; i--, pow *= baseX)
+        long result = 0;
+        for (long i = number.Length - 1, pow = 1; i >= 0; i--, pow *= baseX)
             result += (number[i] >= 'A') ? (number[i] - 'A' + 10) * pow : (number[i] - '0') * pow;
         return result;
     }
 
     // Convert number [base 10] to number [base Y]
-    static string ConvertFromDecimalToBaseY(int number, int baseY)
+    static string ConvertFromDecimalToBaseY(long number, long baseY)
     {
         string result = string.Empty;
         while (number > 0)
         {
-            int remainder = number % baseY;
+            long remainder = number % baseY;
             result = remainder >= 10 ? (char)('A' + remainder - 10) + result : remainder + result;
             number /= baseY;
         }
@@ -90,7 +90,7 @@ class OneSystemToAnyOther
     }
 
     // Convert the result from BaseY to baseX and compare the new result with the old result (baseX to baseY)
-    static bool IsValidInput(string number, string result, int baseX, int baseY)
+    static bool IsValidInput(string number, string result, long baseX, long baseY)
     {
         return String.CompareOrdinal(ConvertFromDecimalToBaseY(ConvertToDecimal(result.ToArray(), baseY), baseX), number) == 0;
     }
