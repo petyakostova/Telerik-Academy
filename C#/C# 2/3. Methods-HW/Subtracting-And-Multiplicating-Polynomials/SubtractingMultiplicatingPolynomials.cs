@@ -7,6 +7,6 @@ class SubtractingMultiplicatingPolynomials
 {
     static void Main()
     {
-
+        //TODO
     }
 }
