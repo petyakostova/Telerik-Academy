@@ -1,7 +1,16 @@
-﻿/*  Problem 1. Leap year
+﻿/*  1. Leap year
     Write a program that reads a year from the console and checks whether it is a leap one.
-    Use System.DateTime.
- */
+    Hint: Use   System.DateTime.
+    Input: On the only line you will receive a number - the year. 
+    Output: Print "Leap" or "Common" on a single line depending on the year
+    Sample tests:
+                    Input 	Output
+                    2016 	Leap
+                    1996 	Leap
+                    1900 	Common
+                    2000 	Leap
+                    681 	Common
+                    3400 	Common                  */
 
 using System;
 
@@ -9,16 +18,19 @@ class LeapYear
 {
     static void Main()
     {
-        Console.Write("Enter a year: ");
         int year = int.Parse(Console.ReadLine());
 
+        /*  Return an indication whether the specified year is a leap year
+            public static bool IsLeapYear(int year);                       */
         bool isLeap = DateTime.IsLeapYear(year);
-
-        Console.Write("The year {0} is ", year);
+        
         if (!isLeap)
         {
-            Console.Write("NOT ");
+            Console.WriteLine("Common");
         }
-        Console.WriteLine("a leap year.");
+        else
+        {
+            Console.WriteLine("Leap");
+        }
     }
 }
