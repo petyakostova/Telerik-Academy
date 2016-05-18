@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Subtracting-Polynomials")]
+[assembly: AssemblyTitle("Subtracting-And-Multiplicating-Polynomials")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Subtracting-Polynomials")]
+[assembly: AssemblyProduct("Subtracting-And-Multiplicating-Polynomials")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("3008c37d-d3e5-4195-93b8-56f8de93766d")]
+[assembly: Guid("c9e9d3d2-d38d-4033-91ac-65ae16709521")]
 
 // Version information for an assembly consists of the following four values:
 //

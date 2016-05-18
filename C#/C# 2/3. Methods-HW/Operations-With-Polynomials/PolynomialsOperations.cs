@@ -1,5 +1,4 @@
-﻿using Operations_With_Polynomials;
-/*  Problem 11. Adding polynomials
+﻿/*  Problem 11. Adding polynomials
     Write a method that adds two polynomials.
     Represent them as arrays of their coefficients.
     Example:
@@ -10,6 +9,8 @@
     Problem 12. Subtracting polynomials
     Extend the previous program to support also subtraction and multiplication of polynomials.
  */
+
+using Operations_With_Polynomials;
 
 namespace Operations_With_Polynomials
 {

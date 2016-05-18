@@ -15,7 +15,8 @@ Homework: Methods
 #### 9. [Sorting array]()
 #### 10. [N Factorial]
 #### 11. [Adding polynomials]
-#### 12. [Subtracting polynomials]
+#### 12. [Subtracting/ multiplicating polynomials]
+#### * . [Operations with polynomials (11. + 12.)] 
 #### 13. [Solve tasks]
 #### 14. [Integer calculations]
 #### 15. [Number calculations]
