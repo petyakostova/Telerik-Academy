@@ -14,6 +14,15 @@
 ---
 
 ####2. CSharp Advanced (C# 2)
+##### <img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/> Slides / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/_Demos%20C%23%202) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15"> Homeworks](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Contests](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202%20Contests)
+* [Arrays Homework](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/1.%20Arrays-HW)
+* [Multidimensional Arrays Homework](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/2.%20Multidimensional-Arrays-HW)
+* [Methods Homework](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/3.%20Methods-HW)
+* [Numeral Systems Homework](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/4.%20Numeral-Systems-HW)
+* [Using Classes and Objects Homework](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/5.%20Using-Classes-And-Objects-HW)
+* [Strings and Text Processing Homework]
+* [Exception Handling Homework]
+* [Text Files Homework]
 
 ---
 
