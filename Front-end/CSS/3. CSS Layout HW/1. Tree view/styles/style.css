@@ -1,8 +1,15 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #FFFFFF;
+    background-color: #222222;
     font-size: 22px;
+}
+
+div{
+    background-color: #FFFFFF;
+    width: 230px;
+    height: 300px;
+    margin: 300px 300px;
 }
 
 a {

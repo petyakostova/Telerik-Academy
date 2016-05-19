@@ -1,11 +1,11 @@
 body {
-    font-family: Calibri;
     padding: 0;
     margin: 0;
 }
 
 #container {
-    width: 660px;
+    width: 735px;
+    margin: 200px 200px;
 }
 
 .login {
@@ -32,12 +32,12 @@ form {
 p {
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 20px;
     color: #a8a8a8;
 }
 
 p.bigWhite {
-    font-size: 22px;
+    font-size: 30px;
     color: white;
     font-weight: bold;
     padding-left: 65px;
@@ -48,7 +48,7 @@ input[type="text"] {
     margin-left: 20px;
     padding-left: 10px;
     width: 140px;
-    vertical-align: top;
+    vertical-align: center;
 }
 
 input[type="submit"] {
@@ -95,7 +95,7 @@ input[type="image"] {
 
 h1 {
     color: #f2d016;
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 100;
     margin-top: 0px;
     margin-bottom: 10px;
