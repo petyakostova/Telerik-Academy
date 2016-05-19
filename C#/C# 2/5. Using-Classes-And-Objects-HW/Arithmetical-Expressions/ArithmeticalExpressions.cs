@@ -22,19 +22,28 @@ using System.Threading;
 
 class MathExpressions
 {
-    static void Main(string[] args)
+    public static List<string> operators = new List<string>() { "+", "-", "*", "/" };
+    public static List<string> functions = new List<string>() { "ln", "pow", "sqrt" };
+    public static List<char> specialChars = new List<char>() { '+', '-', '*', '/',  '(', ')', ',' };
+
+    static void Main()
     {
         Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
-        string input = Console.ReadLine().Trim().Replace(" ", string.Empty);
-        var tokens = ExtractTokens(input); //getting all of the tokens from the initial input
-        var reversedPolishNotation = ConvertToRPN(tokens); //converting tokens to RPN using Shunting-yard algorithm
-        Console.WriteLine(CalculateRPN(reversedPolishNotation)); //calculating the result using the algorithm for RPN
+
+        string input = Console.ReadLine()
+            .Trim()
+            .Replace(" ", string.Empty);
+
+        //getting all of the symbols from the initial input
+        var symbols = ExtractSymbols(input);
+
+        //converting symbols to RPN using Shunting-yard algorithm
+        var reversedPolishNotation = ConvertToRPN(symbols);
+
+        //calculating the result using the algorithm for RPN
+        Console.WriteLine("~{0:0.##}", CalculateRPN(reversedPolishNotation)); 
     }
-
-    public static List<char> specialChars = new List<char>() { '+', '-', '/', '*', '(', ')', ',' };
-    public static List<string> functions = new List<string>() { "ln", "pow", "sqrt" };
-    public static List<string> operators = new List<string>() { "+", "-", "*", "/" };
-
+    
     public static int Precedence(string command)
     {
         if (command == "+" || command == "-")
@@ -47,9 +56,10 @@ class MathExpressions
         }
     }
 
-    static List<string> ExtractTokens(string input)
+    static List<string> ExtractSymbols(string input)
     {
         List<string> result = new List<string>();
+
         var number = new StringBuilder();
 
         for (int i = 0; i < input.Length; i++)
@@ -101,25 +111,25 @@ class MathExpressions
         return result;
     }
 
-    public static Queue<string> ConvertToRPN(List<string> tokens)
+    public static Queue<string> ConvertToRPN(List<string> symbols)
     {
         Stack<string> stack = new Stack<string>();
         Queue<string> queue = new Queue<string>();
 
-        for (int i = 0; i < tokens.Count; i++)
+        for (int i = 0; i < symbols.Count; i++)
         {
-            var currentToken = tokens[i];
+            var currentSymbol = symbols[i];
             double currentNumber;
 
-            if (double.TryParse(currentToken, out currentNumber))
+            if (double.TryParse(currentSymbol, out currentNumber))
             {
-                queue.Enqueue(currentToken);
+                queue.Enqueue(currentSymbol);
             }
-            else if (functions.Contains(currentToken))
+            else if (functions.Contains(currentSymbol))
             {
-                stack.Push(currentToken);
+                stack.Push(currentSymbol);
             }
-            else if (currentToken == ",")
+            else if (currentSymbol == ",")
             {
                 if (!stack.Contains("("))
                 {
@@ -130,19 +140,22 @@ class MathExpressions
                     queue.Enqueue(stack.Pop());
                 }
             }
-            else if (operators.Contains(currentToken))
+            else if (operators.Contains(currentSymbol))
             {
-                while (stack.Count != 0 && operators.Contains(stack.Peek()) && Precedence(currentToken) <= Precedence(stack.Peek()))
+                while (stack.Count != 0 
+                    && operators.Contains(stack.Peek()) 
+                    && Precedence(currentSymbol) <= Precedence(stack.Peek()))
                 {
                     queue.Enqueue(stack.Pop());
                 }
-                stack.Push(currentToken);
+
+                stack.Push(currentSymbol);
             }
-            else if (currentToken == "(")
+            else if (currentSymbol == "(")
             {
-                stack.Push(currentToken);
+                stack.Push(currentSymbol);
             }
-            else if (currentToken == ")")
+            else if (currentSymbol == ")")
             {
                 if (!stack.Contains("("))
                 {
@@ -160,6 +173,7 @@ class MathExpressions
                 }
             }
         }
+
         while (stack.Count > 0)
         {
             if (stack.Peek() == "(" || stack.Peek() == ")")
@@ -180,14 +194,15 @@ class MathExpressions
         while (queue.Count != 0)
         {
             double number;
-            string currentToken = queue.Dequeue();
-            if (double.TryParse(currentToken, out number))
+            string currentSymbol = queue.Dequeue();
+
+            if (double.TryParse(currentSymbol, out number))
             {
                 stack.Push(number);
             }
             else
             {
-                if (currentToken == "+")
+                if (currentSymbol == "+")
                 {
                     if (stack.Count < 2)
                     {
@@ -202,7 +217,7 @@ class MathExpressions
                         stack.Push(result);
                     }
                 }
-                else if (currentToken == "-")
+                else if (currentSymbol == "-")
                 {
                     if (stack.Count < 2)
                     {
@@ -217,7 +232,7 @@ class MathExpressions
                         stack.Push(result);
                     }
                 }
-                else if (currentToken == "*")
+                else if (currentSymbol == "*")
                 {
                     if (stack.Count < 2)
                     {
@@ -232,7 +247,7 @@ class MathExpressions
                         stack.Push(result);
                     }
                 }
-                else if (currentToken == "/")
+                else if (currentSymbol == "/")
                 {
                     if (stack.Count < 2)
                     {
@@ -247,7 +262,7 @@ class MathExpressions
                         stack.Push(result);
                     }
                 }
-                else if (currentToken == "pow")
+                else if (currentSymbol == "pow")
                 {
                     if (stack.Count < 2)
                     {
@@ -262,7 +277,7 @@ class MathExpressions
                         stack.Push(result);
                     }
                 }
-                else if (currentToken == "sqrt")
+                else if (currentSymbol == "sqrt")
                 {
                     if (stack.Count < 1)
                     {
@@ -276,7 +291,7 @@ class MathExpressions
                         stack.Push(result);
                     }
                 }
-                else if (currentToken == "ln")
+                else if (currentSymbol == "ln")
                 {
                     if (stack.Count < 1)
                     {
@@ -293,6 +308,7 @@ class MathExpressions
             }
 
         }
+
         if (stack.Count == 1)
         {
             finalResult = stack.Pop();
