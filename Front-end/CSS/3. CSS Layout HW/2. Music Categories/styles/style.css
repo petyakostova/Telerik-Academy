@@ -6,10 +6,11 @@ body{
 
 body #wrap {
     background-color: #EFEEEC;
-    width: 420px;
+    width: 440px;
     height: 600px;
-    margin: 10px;
-    padding: 20px 10px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px 5px;
 }
 
 body #wrap header {
@@ -24,6 +25,7 @@ body #wrap section article {
     border: 1px solid #999999;
     padding: 20px;
     padding-right: 0;
+    font-size: 15px;
 }
 
 body #wrap section article image {
@@ -48,7 +50,7 @@ body #wrap section article button.listen {
     width: 85px;
     height: 25px;
     color: #FFFFFF;
-    margin-left: -160px;
+    margin-left: -120px;
 }
 
 body #wrap section article button.add {

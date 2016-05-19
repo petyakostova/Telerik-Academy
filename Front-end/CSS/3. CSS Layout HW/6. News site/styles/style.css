@@ -11,6 +11,7 @@ body {
 #container {
     background-color: #1e3741;
     margin: auto;
+    margin-top: 50px;
     width: 765px;
     border: 1px solid #357484;
     border-radius: 5px;
