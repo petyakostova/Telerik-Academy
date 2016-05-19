@@ -1,0 +1,100 @@
+body, div, h1, p, ul, li, video, header {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+body {
+    background-color: #1b1b1b;
+}
+
+#container {
+    background-color: #1e3741;
+    margin: auto;
+    width: 765px;
+    border: 1px solid #357484;
+    border-radius: 5px;
+}
+
+.news {
+    display: inline-block;
+    float: left;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    display: block;
+    width: 290px;
+    background-color: #00968c;
+    padding: 10px;
+}
+
+header a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+article {
+    display: block;
+    width: 290px;
+    padding: 10px;
+}
+
+article:not(last-of-type) {
+    border-bottom: 1px solid #2e444e;
+}
+
+article a {
+    text-decoration: none;
+    color: #768d96;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    background-color: #4b5f67;
+    padding: 10px;
+    margin-left: -1px;
+    margin-right: -1px;
+}
+
+nav ul li.current {
+    background-color: #1e3741;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #768d96;
+    font-size: 0.9em;
+}
+
+nav ul li.current a {
+    color: #FFFFFF;
+}
+
+iframe {
+    width: 420px;
+    height: 315px;
+    border: 0;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+}
