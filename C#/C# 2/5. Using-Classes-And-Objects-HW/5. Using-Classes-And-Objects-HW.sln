@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Random-Numbers", "Rando
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Day-Of-Week", "Day-Of-Week\03. Day-Of-Week.csproj", "{678DBE9D-0592-4763-BDF4-2F030F0AB002}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triangle-Surface", "Triangle-Surface\Triangle-Surface.csproj", "{1B89A33B-D938-40C6-A035-E621BF6D6FCB}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Workdays", "Workdays\07. Workdays.csproj", "{55BF6D7D-BA8E-4CB5-A307-24593701C8BE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. Sum-Integers", "Sum-Integers\08. Sum-Integers.csproj", "{BCD89327-3270-4402-9650-DFBAC9F7868E}"
@@ -41,10 +39,6 @@ Global
 		{678DBE9D-0592-4763-BDF4-2F030F0AB002}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{678DBE9D-0592-4763-BDF4-2F030F0AB002}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{678DBE9D-0592-4763-BDF4-2F030F0AB002}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1B89A33B-D938-40C6-A035-E621BF6D6FCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1B89A33B-D938-40C6-A035-E621BF6D6FCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1B89A33B-D938-40C6-A035-E621BF6D6FCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1B89A33B-D938-40C6-A035-E621BF6D6FCB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{55BF6D7D-BA8E-4CB5-A307-24593701C8BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{55BF6D7D-BA8E-4CB5-A307-24593701C8BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55BF6D7D-BA8E-4CB5-A307-24593701C8BE}.Release|Any CPU.ActiveCfg = Release|Any CPU

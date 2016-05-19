@@ -15,48 +15,29 @@
     Hint: Use the classical Shunting-yard algorithm and Reverse Polish notation. */
 
 using System;
-using System.Threading;
+using System.Collections.Generic;
 using System.Globalization;
-using System.Collections;
+using System.Text;
+using System.Threading;
 
-class ArithmeticalExpressions
-{    
-    static readonly string[] numbers = { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ".", "~" };
-    static readonly string[] operators = { "+", "-", "*", "/" };
-
-    static bool IsNumber(string character)
+class MathExpressions
+{
+    static void Main(string[] args)
     {
-        bool charIsNumber = false;
-
-        for (int i = 0; i < numbers.Length; i++)
-        {
-            if (numbers[i] == character)
-            {
-                charIsNumber = true;
-            }
-        }
-
-        return charIsNumber;
+        Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
+        string input = Console.ReadLine().Trim().Replace(" ", string.Empty);
+        var tokens = ExtractTokens(input); //getting all of the tokens from the initial input
+        var reversedPolishNotation = ConvertToRPN(tokens); //converting tokens to RPN using Shunting-yard algorithm
+        Console.WriteLine(CalculateRPN(reversedPolishNotation)); //calculating the result using the algorithm for RPN
     }
 
-    static bool IsOperator(string character)
+    public static List<char> specialChars = new List<char>() { '+', '-', '/', '*', '(', ')', ',' };
+    public static List<string> functions = new List<string>() { "ln", "pow", "sqrt" };
+    public static List<string> operators = new List<string>() { "+", "-", "*", "/" };
+
+    public static int Precedence(string command)
     {
-        bool charIsOperator = false;
-
-        for (int i = 0; i < operators.Length; i++)
-        {
-            if (operators[i] == character)
-            {
-                charIsOperator = true;
-            }
-        }
-
-        return charIsOperator;
-    }
-
-    static int Precedence(string operatorChar)
-    {
-        if (operatorChar == "+" || operatorChar == "-")
+        if (command == "+" || command == "-")
         {
             return 1;
         }
@@ -66,427 +47,261 @@ class ArithmeticalExpressions
         }
     }
 
-    static decimal ConvertToDecimal(string input)
+    static List<string> ExtractTokens(string input)
     {
-        string output = string.Empty;
+        List<string> result = new List<string>();
+        var number = new StringBuilder();
+
         for (int i = 0; i < input.Length; i++)
         {
-            if (input[i] == '~')
+            if (input[i] == '-' && (i == 0 || input[i - 1] == ',' || input[i - 1] == '('))
             {
-                output += "-";
+                number.Append('-');
             }
-            else
+            else if (char.IsDigit(input[i]) || input[i] == '.')
             {
-                output += input[i];
+                number.Append(input[i]);
             }
-        }
-
-        decimal result = decimal.Parse(output);
-        return result;
-    }
-
-    static string AddPar(string input)
-    {
-        string[] separatedString = input.Split(' ');
-        string result = string.Empty;
-        bool isFunction = false;
-        int leftCount = 0;
-        int rightCount = 0;
-
-        for (int i = 0; i < separatedString.Length; i++)
-        {
-            if (separatedString[i] == "ln" || separatedString[i] == "sqrt" || separatedString[i] == "pow")
+            else if (!char.IsDigit(input[i]) && input[i] != '.' && number.Length != 0)
             {
-                isFunction = true;
-                result += " ( ";
+                result.Add(number.ToString());
+                number.Clear();
+                i--;
             }
-            if (isFunction && separatedString[i] == "(")
+            else if (specialChars.Contains(input[i]))
             {
-                leftCount++;
+                result.Add(input[i].ToString());
             }
-            if (isFunction && separatedString[i] == ")")
+            else if (i < input.Length - 1 && input.Substring(i, 2).ToLower() == "ln")
             {
-                rightCount++;
+                result.Add("ln");
+                i++;
             }
-
-            result += separatedString[i] + " ";
-
-            if (isFunction && rightCount == leftCount && leftCount != 0)
+            else if (i < input.Length - 2 && input.Substring(i, 3).ToLower() == "pow")
             {
-                isFunction = false;
-                leftCount = 0;
-                rightCount = 0;
-                result += " ) ";
-            }
-        }
-
-        return result;
-    }
-
-    static void Main()
-    {
-        Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
-        
-        Stack operators = new Stack();
-        Queue output = new Queue();
-
-        Console.Write("Input: ");
-        string input = Console.ReadLine();
-        input += "    ";
-
-        string convertedInput = input[0].ToString();
-        string previousChar = " ";
-        string currentChar = " ";
-
-        if (IsNumber(input[0].ToString()))
-        {
-            previousChar = "number";
-        }
-
-        if (IsOperator(input[0].ToString()))
-        {
-            previousChar = "operator";
-        }
-
-        for (int i = 1; i < input.Length - 4; i++)
-        {
-            if (input[i].ToString() == ",")
-            {
-                currentChar = "comma";
-            }
-
-            if (IsNumber(input[i].ToString()))
-            {
-                currentChar = "number";
-            }
-
-            if (IsOperator(input[i].ToString()))
-            {
-                currentChar = "operator";
-            }
-
-            if (input[i].ToString() == "(" || input[i].ToString() == ")")
-            {
-                currentChar = " ";
-                convertedInput += " ";
-            }
-
-            if (input[i].ToString() == " ")
-            {
-                currentChar = " ";
-            }
-
-            if (input[i].ToString() + input[i + 1].ToString() == "ln")
-            {
-                currentChar = "function";
-                convertedInput += " ln ";
+                result.Add("pow");
                 i += 2;
             }
-
-            if (input[i].ToString() + input[i + 1].ToString() + input[i + 2].ToString() + input[i + 3].ToString() == "sqrt")
+            else if (i < input.Length - 3 && input.Substring(i, 4).ToLower() == "sqrt")
             {
-                currentChar = "function";
-                convertedInput += " sqrt ";
-                i += 4;
-            }
-
-            if (input[i].ToString() + input[i + 1].ToString() + input[i + 2].ToString() + input[i + 3].ToString() == "sqrt")
-            {
-                currentChar = "function";
-                convertedInput += " sqrt ";
-                i += 4;
-            }
-
-            if (input[i].ToString() + input[i + 1].ToString() + input[i + 2].ToString() == "pow")
-            {
-                currentChar = "function";
-                convertedInput += " pow ";
+                result.Add("sqrt");
                 i += 3;
             }
-
-            if (currentChar == previousChar)
+            else
             {
-                convertedInput += input[i];
+                throw new ArgumentException("Invalid expression!");
             }
-            else if (input[i].ToString() == " ")
+        }
+
+        if (number.Length != 0)
+        {
+            result.Add(number.ToString());
+        }
+
+        return result;
+    }
+
+    public static Queue<string> ConvertToRPN(List<string> tokens)
+    {
+        Stack<string> stack = new Stack<string>();
+        Queue<string> queue = new Queue<string>();
+
+        for (int i = 0; i < tokens.Count; i++)
+        {
+            var currentToken = tokens[i];
+            double currentNumber;
+
+            if (double.TryParse(currentToken, out currentNumber))
             {
-                currentChar = " ";
-                convertedInput += " " + input[i];
+                queue.Enqueue(currentToken);
+            }
+            else if (functions.Contains(currentToken))
+            {
+                stack.Push(currentToken);
+            }
+            else if (currentToken == ",")
+            {
+                if (!stack.Contains("("))
+                {
+                    throw new ArgumentException("Invalid expression!");
+                }
+                while (stack.Peek() != "(")
+                {
+                    queue.Enqueue(stack.Pop());
+                }
+            }
+            else if (operators.Contains(currentToken))
+            {
+                while (stack.Count != 0 && operators.Contains(stack.Peek()) && Precedence(currentToken) <= Precedence(stack.Peek()))
+                {
+                    queue.Enqueue(stack.Pop());
+                }
+                stack.Push(currentToken);
+            }
+            else if (currentToken == "(")
+            {
+                stack.Push(currentToken);
+            }
+            else if (currentToken == ")")
+            {
+                if (!stack.Contains("("))
+                {
+                    throw new ArgumentException("Invalid expression!");
+                }
+                while (stack.Peek() != "(")
+                {
+                    queue.Enqueue(stack.Pop());
+                }
+                stack.Pop();
+
+                if (stack.Count != 0 && functions.Contains(stack.Peek()))
+                {
+                    queue.Enqueue(stack.Pop());
+                }
+            }
+        }
+        while (stack.Count > 0)
+        {
+            if (stack.Peek() == "(" || stack.Peek() == ")")
+            {
+                throw new ArgumentException("Invalid expression!");
+            }
+            queue.Enqueue(stack.Pop());
+        }
+
+        return queue;
+    }
+
+    public static double CalculateRPN(Queue<string> queue)
+    {
+        Stack<double> stack = new Stack<double>();
+        double finalResult;
+
+        while (queue.Count != 0)
+        {
+            double number;
+            string currentToken = queue.Dequeue();
+            if (double.TryParse(currentToken, out number))
+            {
+                stack.Push(number);
             }
             else
             {
-                convertedInput += " " + input[i];
+                if (currentToken == "+")
+                {
+                    if (stack.Count < 2)
+                    {
+                        throw new ArgumentException("Not enough numbers in the stack");
+                    }
+                    else
+                    {
+                        double firstNumber = stack.Pop();
+                        double secondNumber = stack.Pop();
+                        double result = firstNumber + secondNumber;
+
+                        stack.Push(result);
+                    }
+                }
+                else if (currentToken == "-")
+                {
+                    if (stack.Count < 2)
+                    {
+                        throw new ArgumentException("Not enough numbers in the stack");
+                    }
+                    else
+                    {
+                        double firstNumber = stack.Pop();
+                        double secondNumber = stack.Pop();
+                        double result = secondNumber - firstNumber;
+
+                        stack.Push(result);
+                    }
+                }
+                else if (currentToken == "*")
+                {
+                    if (stack.Count < 2)
+                    {
+                        throw new ArgumentException("Not enough numbers in the stack");
+                    }
+                    else
+                    {
+                        double firstNumber = stack.Pop();
+                        double secondNumber = stack.Pop();
+                        double result = secondNumber * firstNumber;
+
+                        stack.Push(result);
+                    }
+                }
+                else if (currentToken == "/")
+                {
+                    if (stack.Count < 2)
+                    {
+                        throw new ArgumentException("Not enough numbers in the stack");
+                    }
+                    else
+                    {
+                        double firstNumber = stack.Pop();
+                        double secondNumber = stack.Pop();
+                        double result = secondNumber / firstNumber;
+
+                        stack.Push(result);
+                    }
+                }
+                else if (currentToken == "pow")
+                {
+                    if (stack.Count < 2)
+                    {
+                        throw new ArgumentException("Not enough numbers in the stack");
+                    }
+                    else
+                    {
+                        double firstNumber = stack.Pop();
+                        double secondNumber = stack.Pop();
+                        double result = Math.Pow(secondNumber, firstNumber);
+
+                        stack.Push(result);
+                    }
+                }
+                else if (currentToken == "sqrt")
+                {
+                    if (stack.Count < 1)
+                    {
+                        throw new ArgumentException("Not enough numbers in the stack");
+                    }
+                    else
+                    {
+                        double currentNumber = stack.Pop();
+                        double result = Math.Sqrt(currentNumber);
+
+                        stack.Push(result);
+                    }
+                }
+                else if (currentToken == "ln")
+                {
+                    if (stack.Count < 1)
+                    {
+                        throw new ArgumentException("Not enough numbers in the stack");
+                    }
+                    else
+                    {
+                        double currentNumber = stack.Pop();
+                        double result = Math.Log(currentNumber);
+
+                        stack.Push(result);
+                    }
+                }
             }
 
-            previousChar = currentChar;
         }
-
-        convertedInput = AddPar(convertedInput);
-        //Console.WriteLine(convertedInput);
-
-        //separate the input into tokens
-        string[] separatedInput = convertedInput.Split(' ');
-        object current;
-
-        //convert to RPN
-        for (int i = 0; i < separatedInput.Length; i++)
+        if (stack.Count == 1)
         {
-            if (separatedInput[i] == string.Empty)
-            {
-                continue;
-            }
-            else if (IsNumber(separatedInput[i].Substring(0, 1))) //add number to output
-            {
-                output.Enqueue(separatedInput[i]);
-            }
-            else if (separatedInput[i] == "ln" || separatedInput[i] == "sqrt" || separatedInput[i] == "pow") //add function to stack
-            {
-                operators.Push(separatedInput[i]);
-            }
-            else if (separatedInput[i] == ",")
-            {
-                if (operators.Contains("(") && operators.Count != 0)
-                {
-                    while (operators.Peek() != "(")
-                    {
-                        current = operators.Pop();
-                        output.Enqueue(current);
-                        //i++;
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("Separator ',' was misplaced or parentheses () were mismatched");
-                    return;
-                }
-            }
-            else if (IsOperator(separatedInput[i].Substring(0, 1)))
-            {
-                if (operators.Count != 0)
-                {
-                    string currentOperator = operators.Peek().ToString();
-                    int firstOperatorPrecedence = Precedence(separatedInput[i]);
-                    int secondOperatorPrecedence = Precedence(operators.Peek().ToString());
-                    bool isTrue = (IsOperator(currentOperator)) && (firstOperatorPrecedence <= secondOperatorPrecedence);
-                    while (isTrue && operators.Count != 0)
-                    {
-                        current = operators.Pop();
-                        output.Enqueue(current);
-                        if (operators.Count == 0)
-                        {
-                            break;
-                        }
-                        //i++;
-                        currentOperator = operators.Peek().ToString();
-                        firstOperatorPrecedence = Precedence(separatedInput[i]);
-                        secondOperatorPrecedence = Precedence(operators.Peek().ToString());
-                        isTrue = (IsOperator(currentOperator)) && (firstOperatorPrecedence <= secondOperatorPrecedence);
-                    }
-                }
-                operators.Push(separatedInput[i]);
-            }
-            else if (separatedInput[i] == "(")
-            {
-                operators.Push("(");
-            }
-            else if (separatedInput[i] == ")")
-            {
-                if (operators.Contains("(") && operators.Count != 0)
-                {
-                    while (operators.Peek() != "(")
-                    {
-                        current = operators.Pop();
-                        output.Enqueue(current);
-                        //i++;
-                    }
-                    if (operators.Count != 0)
-                    {
-                        current = operators.Pop();
-                    }
-
-                    if (operators.Count != 0)
-                    {
-                        while (operators.Peek() == "ln" || operators.Peek() == "sqrt" || operators.Peek() == "pow")
-                        {
-                            current = operators.Pop();
-                            output.Enqueue(current);
-                            //i++;
-                        }
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("Parentheses () were mismatched.");
-                    return;
-                }
-            }
-            else
-            {
-                Console.WriteLine("Invalid input!");
-                return;
-            }
+            finalResult = stack.Pop();
         }
-
-        while (operators.Count != 0)
+        else
         {
-            if (operators.Peek() == "(" || operators.Peek() == ")")
-            {
-                Console.WriteLine("Parentheses () were mismatched.");
-                return;
-            }
-            else
-            {
-                current = operators.Pop();
-                output.Enqueue(current);
-            }
+            throw new ArgumentException("Invalid Expression");
         }
 
-        //print RPN
-        string RPV = string.Empty;
-        while (output.Count != 0)
-        {
-            RPV += (output.Dequeue() + " ");
-        }
-
-        //Console.WriteLine(RPV);
-
-        string[] separatedRPV = RPV.Split(' ');
-
-        Stack calculations = new Stack();
-
-        for (int i = 0; i < separatedRPV.Length; i++)
-        {
-            if (separatedRPV[i] == string.Empty)
-            {
-                continue;
-            }
-            if (IsNumber(separatedRPV[i].Substring(0, 1)) || separatedRPV[i].Substring(0, 1) == ".")
-            {
-                calculations.Push(separatedRPV[i]);
-            }
-            if (IsOperator(separatedRPV[i]))
-            {
-                decimal firstNumber = 0;
-                decimal secondNumber = 0;
-                try
-                {
-                    firstNumber = ConvertToDecimal(calculations.Pop().ToString());
-                    secondNumber = ConvertToDecimal(calculations.Pop().ToString());
-                }
-                catch (OverflowException)
-                {
-                    Console.WriteLine("Result is too big to fit in decimal, try with smaller numbers!");
-                    return;
-                }
-                decimal result = 0;
-                if (separatedRPV[i] == "+")
-                {
-                    try
-                    {
-                        result = firstNumber + secondNumber;
-                    }
-                    catch (OverflowException)
-                    {
-                        Console.WriteLine("Result is too big to fit in decimal, try with smaller numbers!");
-                        return;
-                    }
-                }
-                if (separatedRPV[i] == "-")
-                {
-                    try
-                    {
-                        result = secondNumber - firstNumber;
-                    }
-                    catch (OverflowException)
-                    {
-                        Console.WriteLine("Result is too big to fit in decimal, try with smaller numbers!");
-                        return;
-                    }
-                }
-                if (separatedRPV[i] == "*")
-                {
-                    try
-                    {
-                        result = firstNumber * secondNumber;
-                    }
-                    catch (OverflowException)
-                    {
-                        Console.WriteLine("Result is too big to fit in decimal, try with smaller numbers!");
-                        return;
-                    }
-                }
-                if (separatedRPV[i] == "/")
-                {
-                    try
-                    {
-                        result = secondNumber / firstNumber;
-                    }
-                    catch (OverflowException)
-                    {
-                        Console.WriteLine("Result is too big to fit in decimal, try with smaller numbers!");
-                        return;
-                    }
-                }
-                calculations.Push(result.ToString());
-            }
-            if (separatedRPV[i] == "ln")
-            {
-                try
-                {
-                    decimal result = 0;
-                    decimal number = ConvertToDecimal(calculations.Pop().ToString());
-                    result = (decimal)Math.Log((double)number);
-                    calculations.Push(result);
-                }
-                catch (OverflowException)
-                {
-                    Console.WriteLine("Result is too big to fit in decimal, try with smaller numbers!");
-                    return;
-                }
-            }
-            if (separatedRPV[i] == "sqrt")
-            {
-                try
-                {
-                    decimal result = 0;
-                    decimal number = ConvertToDecimal(calculations.Pop().ToString());
-                    result = (decimal)Math.Sqrt((double)number);
-                    calculations.Push(result);
-                }
-                catch (OverflowException)
-                {
-                    Console.WriteLine("Result is too big to fit in decimal, try with smaller numbers!");
-                    return;
-                }
-            }
-            if (separatedRPV[i] == "pow")
-            {
-                try
-                {
-                    decimal firstNumber = ConvertToDecimal(calculations.Pop().ToString());
-                    decimal secondNumber = ConvertToDecimal(calculations.Pop().ToString());
-                    decimal result = 0;
-                    result = (decimal)Math.Pow((double)secondNumber, (double)firstNumber);
-                    calculations.Push(result);
-                }
-                catch (OverflowException)
-                {
-                    Console.WriteLine("Result is too big to fit in decimal, try with smaller numbers!");
-                    return;
-                }
-            }
-        }
-
-        try
-        {
-            Console.Write("\n\rResult: ");
-            Console.WriteLine(calculations.Pop());
-            Console.WriteLine();
-        }
-        catch (InvalidOperationException)
-        {
-            Console.WriteLine("Invalid input!");
-            Console.WriteLine();
-        }
+        return finalResult;
     }
 }
