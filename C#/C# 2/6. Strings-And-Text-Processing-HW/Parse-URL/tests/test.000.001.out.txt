@@ -1,0 +1,3 @@
+[protocol] = http
+[server] = telerikacademy.com
+[resource] = /Courses/Courses/Details/212

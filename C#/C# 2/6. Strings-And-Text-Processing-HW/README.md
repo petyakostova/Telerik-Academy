@@ -1,0 +1,30 @@
+Homework: Processing
+====================
+
+### Problem List
+
+#### 1. [Strings in C#]
+#### 2. [Reverse string]
+#### 3. [Correct brackets]
+#### 4. [Sub-string in text]
+#### 5. [Parse tags]
+#### 6. [String length]
+#### 7. [Encode/decode]
+#### 8. [Extract sentences]
+#### 9. [Forbidden words]
+#### 10. [Unicode characters]
+#### 11. [Format number]
+#### 12. [Parse URL]
+#### 13. [Reverse sentence]
+#### 14. [Word dictionary]
+#### 15. [Replace tags]
+#### 16. [Date difference]
+#### 17. [Date in Bulgarian]
+#### 18. [Extract e-mails]
+#### 19. [Dates from text in Canada]
+#### 20. [Palindromes]
+#### 21. [Letters count]
+#### 22. [Words count]
+#### 23. [Series of letters]
+#### 24. [Order words]
+#### 25. [Extract text from HTML]
