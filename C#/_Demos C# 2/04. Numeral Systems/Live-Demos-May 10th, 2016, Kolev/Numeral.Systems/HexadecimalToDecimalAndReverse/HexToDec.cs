@@ -3,7 +3,7 @@
     using System;
     using System.Text;
 
-    class Program
+    class HexToDec
     {
         public const string HexadecimalAlphabet = "0123456789ABCDEF";
 
@@ -100,5 +100,6 @@
 
             return builder.ToString();
         }
+
     }
 }

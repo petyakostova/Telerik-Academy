@@ -2,7 +2,7 @@
 {
     using System;
 
-    class Startup
+    class BinAndDec
     {
         // slides:
         // https://rawgit.com/TelerikAcademy/CSharp-Part-2/master/Topics/04.%20Numeral-Systems/slides/index.html#/2/4
@@ -43,19 +43,22 @@
 
         static void Main()
         {
+            // binary to decimal
             var binaries = new string[] { "1111", "10101", "11", "10001" };
-            
+
             foreach (var bin in binaries)
             {
                 Console.WriteLine(BinaryToDecimal(bin));
             }
 
-            //var decimals = new int[] { 15, 21, 3, 17 };
+            // decimal to binary
+            var decimals = new int[] { 15, 21, 3, 17 };
 
-            //foreach (var dec in decimals)
-            //{
-            //    Console.WriteLine(DecimalToBinary(dec));
-            //}
+            foreach (var dec in decimals)
+            {
+                Console.WriteLine(DecimalToBinary(dec));
+            }
         }
+
     }
 }

@@ -3,7 +3,7 @@
     using System;
     using System.Collections.Generic;
 
-    class Program
+    class HexToBin
     {
         static Dictionary<char, string> HexBin = new Dictionary<char, string>()
         {
@@ -42,10 +42,12 @@
         {
             var hexes = new string[] { "ABCD", "A", "BC", "187A", "AC", "1C", "CC4", "BB", "13" };
 
+            // hexadecimal to binary
             foreach (var hex in hexes)
             {
                 Console.WriteLine("{0,16}", HexToBinary(hex));
             }
         }
+
     }
 }

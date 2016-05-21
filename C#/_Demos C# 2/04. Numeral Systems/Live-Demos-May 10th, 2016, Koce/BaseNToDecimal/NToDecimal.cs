@@ -3,7 +3,7 @@
     using System;
     using System.Collections.Generic;
 
-    class Startup
+    class NToDecimal
     {
         static int BaseNToDecimal(string nValue, int radix, Dictionary<char, int> digitsToValues)
         {
@@ -42,4 +42,5 @@
             Console.WriteLine(decimalValue);
         }
     }
+
 }

@@ -2,7 +2,7 @@
 {
     using System;
 
-    class Program
+    class DecToHex
     {
         const string HexDigits = "0123456789ABCDEF";
 
@@ -36,14 +36,16 @@
         {
             var inputNumber = int.Parse(Console.ReadLine());
 
+            // decimal to hexadecimal
             var hexValue = DecimalToHex(inputNumber);
-
             Console.WriteLine(hexValue);
 
-            //foreach (var digit in HexDigits)
-            //{
-            //    Console.WriteLine(HexDigitToDecimalValue(digit));
-            //}
+            // hexademical to decimal
+            foreach (var digit in HexDigits)
+            {
+                Console.WriteLine(HexDigitToDecimalValue(digit));
+            }
         }
+
     }
 }

@@ -12,7 +12,7 @@
             // Testing with NaiveBenchmark method
             var cycles = 10000000;
             var totalExecutionTimeNaive = NaiveBenchmark(cycles, DecimalToHexadecimal);
-            var averageExecutionTimePerCycleNaive = 
+            var averageExecutionTimePerCycleNaive =
                 (decimal)(totalExecutionTimeNaive.TotalMilliseconds) / cycles;
             Console.WriteLine(
                 $"(Naive)Total execution time for {cycles} cycles: {totalExecutionTimeNaive.TotalMilliseconds} ms.");
@@ -124,5 +124,6 @@
         {
             return "0x" + Convert.ToString(number, 16);
         }
+
     }
 }

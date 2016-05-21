@@ -1,14 +1,10 @@
 ﻿namespace BinaryToDecimalAndReverse
 {
     using System;
-    using System.Collections.Generic;
     using System.Diagnostics;
-    using System.Linq;
-    using System.Runtime.CompilerServices;
     using System.Text;
-    using System.Threading.Tasks;
 
-    public class Program
+    public class BinToDec
     {
         public static StringBuilder builder = new StringBuilder();
 
@@ -72,9 +68,10 @@
 
             for (int i = 0; i < binaryNumber.Length; i++)
             {
-                if(binaryNumber[i] != '0')
+                if (binaryNumber[i] != '0')
                 {
                     position = binaryNumber.Length - i - 1;
+
                     numberInDecimal += (int)Math.Pow(fromBase, position);
                 }
             }
@@ -107,5 +104,6 @@
 
             return stopwatch.Elapsed;
         }
+
     }
 }

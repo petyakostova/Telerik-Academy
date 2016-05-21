@@ -2,11 +2,9 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.Linq;
     using System.Text;
-    using System.Threading.Tasks;
 
-    public class Program
+    public class BinToHex
     {
         public static Dictionary<char, string> HexBinaryTable = new Dictionary<char, string>()
         {
@@ -112,5 +110,6 @@
 
             return numberInHex;
         }
+
     }
 }
