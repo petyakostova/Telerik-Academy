@@ -7,6 +7,7 @@ class ExtractingSubstrings
     {
         string extension = "";
         int dotIndex = fileName.LastIndexOf('.');
+
         if (dotIndex != -1)
         {
             extension = fileName.Substring(dotIndex + 1);
@@ -18,6 +19,7 @@ class ExtractingSubstrings
     {
         char dirSlash = Path.DirectorySeparatorChar;
         int slashIndex = path.LastIndexOf(dirSlash);
+
         string fileName = path.Substring(slashIndex + 1);
         return fileName;
     }
@@ -26,6 +28,7 @@ class ExtractingSubstrings
     {
         char dirSlash = Path.DirectorySeparatorChar;    // Path.DirectorySeparatorChar = 92 '\\' (\)
         int slashIndex = fullFileName.LastIndexOf(dirSlash);
+
         string path = "";
         if (slashIndex != -1)
         {

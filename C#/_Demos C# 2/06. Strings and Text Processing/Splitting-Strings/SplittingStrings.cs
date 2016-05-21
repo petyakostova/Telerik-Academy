@@ -6,8 +6,8 @@ class SplittingStrings
     {
         string listOfBeers = "Amstel, Zagorka, Tuborg, Becks.";
         string[] beers = listOfBeers.Split(' ', ',', '.');
-        //string[] beers = listOfBeers.Split(new char[] {' ', ',', '.'}, 
-        //    StringSplitOptions.RemoveEmptyEntries);
+        //string[] beers = listOfBeers.Split(new char[] {' ', ',', '.'}, StringSplitOptions.RemoveEmptyEntries);
+
         Console.WriteLine("Available beers are:");
         foreach (string beer in beers)
         {

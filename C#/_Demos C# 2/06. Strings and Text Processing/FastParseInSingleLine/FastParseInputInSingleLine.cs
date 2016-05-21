@@ -1,22 +1,21 @@
 ﻿using System;
-using System.Linq;
+using System.Linq; // needed for Select()
 
 class FastParseInputInSingleLine
 {
     static void Main()
     {
-        // 0 1 2 3 4 5 - даден вход => искаме да прехвърлим числата директно в масив, т.е. съкратено да ги parse-нем
+        // 0 1 2 3 4 5 - input => put the numbers direct to array, fast parsing
 
         int[] numbers = Console.ReadLine()
-            .Split(new char [] {' '}, 
-                StringSplitOptions.RemoveEmptyEntries)
-            .Select(int.Parse)  // искаме да го parse-нем; за Select() ни трябва using System.Linq; за всеки стринг, к. получиш => parse                               
-            .ToArray(); // направи го на масив
+            .Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
+            //we need using System.Linq for Select()
+            .Select(int.Parse)  // for each string you get => parse                             
+            .ToArray(); // make it to array
 
         //other way
         int[] otherNumbers = Console.ReadLine()
-            .Split(new char[] { ' ' },
-                StringSplitOptions.RemoveEmptyEntries)
+            .Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
             .Select(x => int.Parse(x))
             .ToArray();
 

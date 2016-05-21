@@ -17,6 +17,7 @@ class FirstExample
         {
             Console.Write(ch);
         }
+
         Console.WriteLine();
     }
 }

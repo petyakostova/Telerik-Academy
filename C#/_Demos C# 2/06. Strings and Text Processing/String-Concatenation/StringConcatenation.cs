@@ -12,9 +12,9 @@ class StringConcatenation
 
         int age = 25;
 
-        string nameAndAge =
-            "Name: " + fullName +               // Name: Svetlin Nakov
-            "\nAge: " + age;                    // Age: 25
+        string nameAndAge = "Name: " + fullName // Name: Svetlin Nakov
+            + "\nAge: " + age;                  // Age: 25
+
         Console.WriteLine(nameAndAge);
-    }           
+    }
 }

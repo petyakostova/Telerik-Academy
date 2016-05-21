@@ -39,9 +39,8 @@ class SearchingSubstring
         Console.WriteLine();
 
         int foundIvo = text.LastIndexOf("ivo");
-        Console.WriteLine(foundIvo);
+        Console.WriteLine(foundIvo); // 30
 
-        Console.WriteLine("text[length] = {0}", text.Length);
-
+        Console.WriteLine("text[length] = {0}", text.Length); // 33
     }
 }

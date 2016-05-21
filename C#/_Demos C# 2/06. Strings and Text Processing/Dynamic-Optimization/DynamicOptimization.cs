@@ -1,4 +1,4 @@
-﻿// Динамично оптимиране - методология на решаването на задачи
+﻿// DynamicOptimization - methodology of solving problems
 
 using System;
 
@@ -18,7 +18,7 @@ class DynamicOptimization
             }
         }
 
-        Console.WriteLine(minNumber);
+        Console.WriteLine(minNumber); //1
 
         string[] texts = { "6", "2", "4", "5", "1", "7", "8" };
 
@@ -32,7 +32,7 @@ class DynamicOptimization
             }
         }
 
-        Console.WriteLine(minText);
+        Console.WriteLine(minText); //1
 
     }
 }

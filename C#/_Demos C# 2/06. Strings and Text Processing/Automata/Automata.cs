@@ -9,7 +9,7 @@ class Automata
 {
     static void Main()
     {
-        string str = "ab<cd>e";
+        string str = "ab<tt>c def<tag>jhi";
 
         StringBuilder sb = new StringBuilder(); // for adding the text
 
@@ -39,11 +39,11 @@ class Automata
                 }
                 else
                 {
-                    continue;   // преминава на следващия символ
+                    continue; // goes to the next symbol
                 }
             }
         }
-        Console.WriteLine(sb.ToString());
 
+        Console.WriteLine(sb.ToString()); //abc defjhi
     }
 }

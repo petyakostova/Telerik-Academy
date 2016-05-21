@@ -18,8 +18,8 @@ class ParsingNumbersDates
 		f = float.Parse(numStr, new CultureInfo("bg-BG"));
 		Console.WriteLine(f); // 3.14
 
-		string dateStr = "05.01.2015";
+		string dateStr = "21.05.2016";
 		DateTime date = DateTime.ParseExact(dateStr, "dd.MM.yyyy", CultureInfo.InvariantCulture);
-        Console.WriteLine(date);    // 01/05/2015 00:00:00
-	}
+        Console.WriteLine(date);    // 05/21/2016 00:00:00
+    }
 }
