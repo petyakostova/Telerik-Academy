@@ -5,6 +5,7 @@ class TemperatureConverter
 	static double FahrenheitToCelsius(double degrees)
 	{
 		double celsius = (degrees - 32) * 5 / 9;
+
 		return celsius;
 	}
 

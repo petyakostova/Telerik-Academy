@@ -9,13 +9,16 @@ class Months
             "January", "February", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December"
         };
+
         string monthName = monthNames[month - 1];
+
         Console.Write(monthName);
     }
 
     static void SayPeriod(int startMonth, int endMonth)
     {
         int period = endMonth - startMonth;
+
         if (period < 0)
         {
             period = period + 12;
@@ -25,8 +28,10 @@ class Months
 
         Console.Write("There are {0} months from ", period);
         SayMonth(startMonth);
+
         Console.Write(" to ");
         SayMonth(endMonth);
+
         Console.WriteLine(".");
     }
 

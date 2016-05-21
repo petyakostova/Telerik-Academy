@@ -22,7 +22,9 @@ class MethodsParameters
     {
         float max = number1;
         if (number2 > number1)
+        {
             max = number2;
+        }
         Console.WriteLine("Maximal number: {0}", max);
     }
 
