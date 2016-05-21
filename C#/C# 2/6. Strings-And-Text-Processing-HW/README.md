@@ -5,7 +5,8 @@ Homework: Processing
 
 #### 1. [Strings in C#]
 #### 2. [Reverse string]
-#### 3. [Correct brackets]
+#### 3.1. [Correct brackets]
+#### 3.2. [Correct brackets - Using Stack data structure]
 #### 4. [Sub-string in text]
 #### 5. [Parse tags]
 #### 6. [String length]

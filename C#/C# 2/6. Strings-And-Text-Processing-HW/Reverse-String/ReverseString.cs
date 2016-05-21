@@ -1,13 +1,15 @@
-﻿/*  Problem 2. Reverse string
-    Write a program that reads a string, reverses it and prints the result at the console.
-    Example:
-                input 	output
-                sample 	elpmas
+﻿/*  2. Reverse string    
+    Write a program that reads a string, reverses it and prints the result on the console.
+    Constraints: 1 <= size of string <= 10000
+    Sample tests:
+                    Input 	        Output
+                    sample 	        elpmas
+                    somestring 	    gnirtsemos
  */
 
 using System;
 using System.Text;
-using System.Linq;
+using System.Linq; // needed Reverse()
 
 class ReverseString
 {
@@ -30,7 +32,7 @@ class ReverseString
 
         Console.WriteLine(reversed); 
         
-        //// other way
+        // other way
         //Console.WriteLine(new string(str.ToCharArray().Reverse().ToArray()));   // using System.Linq;
     }
 }

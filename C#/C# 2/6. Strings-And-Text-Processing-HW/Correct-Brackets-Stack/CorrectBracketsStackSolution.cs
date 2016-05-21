@@ -1,7 +1,12 @@
-﻿/*  Problem 3. Correct brackets - Solution with Stack data structure
-    Write a program to check if in a given expression the brackets are put correctly.
-    Example of correct expression: ((a+b)/5-d). 
-    Example of incorrect expression: )(a+b)).
+﻿/*  3. Correct brackets - Solution with Stack data structure
+    Write a program to check if in a given expression the ( and ) brackets are put correctly.
+    Input: On the only line you will receive an expression
+    Output: Print Correct if the brackets are correct. Incorrect otherwise
+    Constraints: 1 <= length of expression <= 10000
+    Sample tests:
+                    Input 	        Output
+                    ((a+b)/5-d) 	Correct
+                    )(a+b)) 	    Incorrect
  */
 
 using System;
@@ -32,7 +37,8 @@ class CorrectBracketsStackSolution
                 if (stack.Count == 0)   // returns the count of elements in the stack
                 {
                     correctBrackets = false;
-                    break;
+                    Console.WriteLine("Incorrect");
+                    return;
                 }
                 stack.Pop();    // returns the highest element and removes it from the stack
             }
@@ -41,8 +47,12 @@ class CorrectBracketsStackSolution
         if (stack.Count != 0)
         {
             correctBrackets = false;
+            Console.WriteLine("Incorrect");
         }
 
-        Console.WriteLine("Are the brackets correct?\n" + correctBrackets);
+        if (correctBrackets)
+        {
+            Console.WriteLine("Correct");
+        }
     }
 }
