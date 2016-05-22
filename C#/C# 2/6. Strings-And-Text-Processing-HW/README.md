@@ -10,8 +10,8 @@ Homework: Processing
 #### 4. [Sub-string in text](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Substring-In-Text)
 #### 5. [Parse tags](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Parse-Tags)
 #### 6. [String length](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/String-Length)
-#### 7. [Encode/decode]
-#### 8. [Extract sentences]
+#### 7. [Encode/decode](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Encode-Decode)
+#### 8. [Extract sentences](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Extract-Sentences)
 #### 9. [Forbidden words]
 #### 10. [Unicode characters]
 #### 11. [Format number]
