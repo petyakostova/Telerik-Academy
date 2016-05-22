@@ -13,7 +13,7 @@ Homework: Processing
 #### 7. [Encode/decode](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Encode-Decode)
 #### 8. [Extract sentences 60/100](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Extract-Sentences)
 #### 9. [Forbidden words](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Forbidden-Words)
-#### 10. [Unicode characters]
+#### 10. [Unicode characters 60/100](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Unicode-Characters)
 #### 11. [Format number]
 #### 12. [Parse URL]
 #### 13. [Reverse sentence]
