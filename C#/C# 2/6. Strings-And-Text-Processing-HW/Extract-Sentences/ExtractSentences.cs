@@ -19,28 +19,23 @@ class ExtractSentences
 {
     static void Main()
     {
-        string word = Console.ReadLine();
+        string wordSearch = Console.ReadLine().ToLower();
         string text = Console.ReadLine();
 
-        string[] sentences = text.Split(new char[] { '.' }, StringSplitOptions.RemoveEmptyEntries);
+        string[] sentences = text.Split(new char[] { '.', '!', '?' }, StringSplitOptions.RemoveEmptyEntries);
 
         foreach (string sentence in sentences)
         {
-            //string checkingSentence = sentence;
+            string[] words = sentence
+                .Split(new char[] { ' ', ',', ';', ':', '-' }, StringSplitOptions.RemoveEmptyEntries);
 
-            int index = sentence.IndexOf(word);
-
-            if (index > -1)
+            foreach (var word in words)
             {
-                if (index + word.Length <= sentence.Length - 1)
+                if (word.Trim().ToLower() == wordSearch)
                 {
-                    if (Char.IsLetter(sentence[index + word.Length]))
-                    {
-                        continue;
-                    }
+                    Console.Write(sentence + ".");
+                    break;
                 }
-
-                Console.Write(sentence + ".");
             }
         }
 
