@@ -30,7 +30,8 @@ class ExtractSentences
         foreach (string sentence in sentences)
         {
             string[] words = sentence
-                .Split(new string[] { " ", ",", ";", ":", "-", "\"", "(", ")" }, StringSplitOptions.RemoveEmptyEntries);
+                .Split(new string[] { " ", ",", ";", ":", "-", "\"", "(", ")", "/", "\\", "[", "]", "<", ">" }, 
+                StringSplitOptions.RemoveEmptyEntries);
 
             foreach (var word in words)
             {
