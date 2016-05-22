@@ -1,8 +1,8 @@
-﻿/*  Problem 7. Encode/decode
+﻿/*  7. Encode/decode
     Write a program that encodes and decodes a string using given encryption key (cipher).
     The key consists of a sequence of characters.
     The encoding/decoding is done by performing XOR (exclusive or) operation 
-    over the first letter of the string with the first of the key, the second – with the second, etc.
+    over the first letter of the string with the first of the key, the second – with the second, etc. 
     When the last key character is reached, the next is the first.
  */
 /* Note: Example for faster testing:
@@ -20,32 +20,33 @@ class EncodeDecode
     static void Main()
     {
         // for faster testing:
-        string text = "Test";
-        string key = "ab";
+        //string text = "Test";
+        //string key = "ab";
 
-        //// the real input
-        //Console.Write("Enter a string:");
-        //string text = Console.ReadLine();
-        //Console.Write("Enter an encryption key (cipher):");
-        //string key = Console.ReadLine();
+        // the real input
+        Console.Write("Enter a string:");
+        string text = Console.ReadLine();
+        Console.Write("Enter an encryption key (cipher):");
+        string key = Console.ReadLine();
 
         StringBuilder encryption = EnDeCryption(text, key);
 
-        Console.WriteLine("\nThe result of encryption is:");
+        Console.WriteLine("The result of encryption is:");
         Console.WriteLine(encryption);              // print the result of encryption
 
-        Console.WriteLine("The result of encryption as a series of Unicode escape characters \\xxxx is:");
+        Console.WriteLine("The result of encryption as a series of Unicode escape characters is:");
         foreach (var ch in encryption.ToString())   
         {
-            Console.Write("\\u{0:x4}", (int)ch);    // print the result of encryption as a series of Unicode escape characters \xxxx
+            // print the result of encryption as a series of Unicode escape characters \xxxx
+            Console.Write("\\u{0:x4}", (int)ch);    
         }        
         
         string encryptText = encryption.ToString();
 
         StringBuilder decryption = EnDeCryption(encryptText, key);
 
-        Console.WriteLine("\n\nThe result of decryption is:");
-        Console.WriteLine("{0}\n", decryption); 
+        Console.WriteLine("\nThe result of decryption is:");
+        Console.WriteLine("{0}", decryption); 
     }
 
     private static StringBuilder EnDeCryption(string message, string cipher)
@@ -56,6 +57,7 @@ class EncodeDecode
         {
             enDeCrypt.Append((char)(message[i] ^ cipher[i % cipher.Length]));
         }
+
         return enDeCrypt;
     }
 }
