@@ -3,13 +3,13 @@ Homework: Processing
 
 ### Problem List
 
-#### 1. [Strings in C#]
-#### 2. [Reverse string]
-#### 3.1. [Correct brackets]
-#### 3.2. [Correct brackets - Using Stack data structure]
-#### 4. [Sub-string in text]
-#### 5. [Parse tags]
-#### 6. [String length]
+#### 1. [Strings in C#](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Strings-In-CSharp)
+#### 2. [Reverse string](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Reverse-String)
+#### 3.1. [Correct brackets](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Correct-Brackets)
+#### 3.2. [Correct brackets - Using Stack data structure](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Correct-Brackets-Stack)
+#### 4. [Sub-string in text](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Substring-In-Text)
+#### 5. [Parse tags](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Parse-Tags)
+#### 6. [String length](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/String-Length)
 #### 7. [Encode/decode]
 #### 8. [Extract sentences]
 #### 9. [Forbidden words]

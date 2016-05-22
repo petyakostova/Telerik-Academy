@@ -1,7 +1,13 @@
-﻿/*  Problem 6. String length
+﻿/*  6. String length
     Write a program that reads from the console a string of maximum 20 characters. 
     If the length of the string is less than 20, the rest of the characters should be filled with *.
-    Print the result string into the console.
+    Input: On the only line you will receive a string
+    Output: Output a string with length 20
+    Constraints: The length of the given string will be <= 20
+    Sample tests:
+    Input 	                    Output
+    hello 	                    hello***************
+    -=StringOfLength20=- 	    -=StringOfLength20=-
  */
 
 using System;
@@ -11,23 +17,16 @@ class StringLength
 {
     static void Main()
     {
-        Console.WriteLine("Enter a string of maximum 20 characters:");
-        string str = Console.ReadLine();
-        while (str.Length > 20)
-        {
-            Console.WriteLine("Incorrect string!");
-            Console.WriteLine("Enter a string of maximum 20 characters:");
-            str = Console.ReadLine();
-        }
+        string str = Console.ReadLine().Replace("\\", string.Empty);
+        //string str = Console.ReadLine().Replace(@"\", string.Empty);
 
         // first way
+        /* Returns a new string that left-aligns the characters in this string
+           by padding them on the right with a specified Unicode character, for a specified total length. */
         str = str.PadRight(20, '*');
-        Console.WriteLine(str);  /* Returns a new string that left-aligns the characters in this string
-                                                    * by padding them on the right with a specified Unicode character, 
-                                                    * for a specified total length. */
+        Console.WriteLine(str);
 
         // second way
-
         //StringBuilder sb = new StringBuilder();
 
         //for (int i = 0; i < str.Length; i++)    // copy the str in sb
