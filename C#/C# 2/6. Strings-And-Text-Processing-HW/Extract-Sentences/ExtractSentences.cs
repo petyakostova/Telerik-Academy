@@ -13,21 +13,24 @@
     We are living in a yellow submarine. We will move out of it in 5 days.
  */
 
+// 60/100 in bgcoder
+
 using System;
 
 class ExtractSentences
 {
     static void Main()
     {
-        string wordSearch = Console.ReadLine().ToLower();
+        string wordSearch = Console.ReadLine().Trim().ToLower();
         string text = Console.ReadLine();
 
-        string[] sentences = text.Split(new char[] { '.', '!', '?' }, StringSplitOptions.RemoveEmptyEntries);
+        string[] sentences = text
+            .Split(new string[] { ".", "!", "?", "..." }, StringSplitOptions.RemoveEmptyEntries);
 
         foreach (string sentence in sentences)
         {
             string[] words = sentence
-                .Split(new char[] { ' ', ',', ';', ':', '-' }, StringSplitOptions.RemoveEmptyEntries);
+                .Split(new string[] { " ", ",", ";", ":", "-", "\"", "(", ")" }, StringSplitOptions.RemoveEmptyEntries);
 
             foreach (var word in words)
             {
