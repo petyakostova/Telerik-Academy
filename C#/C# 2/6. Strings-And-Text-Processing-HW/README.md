@@ -19,8 +19,8 @@ Homework: Processing
 #### 13. [Reverse sentence](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Reverse-Sentence)
 #### 14. [Word dictionary](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Word-Dictionary)
 #### 15. [Replace tags 0/100](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Replace-Tags)
-#### 16. [Date difference]
-#### 17. [Date in Bulgarian]
+#### 16. [Date difference](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Date-Difference)
+#### 17. [Date in Bulgarian](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Date-In-Bulgarian)
 #### 18. [Extract e-mails]
 #### 19. [Dates from text in Canada]
 #### 20. [Palindromes]
