@@ -17,7 +17,7 @@ Homework: Processing
 #### 11. [Format number](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Format-Number)
 #### 12. [Parse URL](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Parse-URL)
 #### 13. [Reverse sentence](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Reverse-Sentence)
-#### 14. [Word dictionary]
+#### 14. [Word dictionary](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Word-Dictionary)
 #### 15. [Replace tags]
 #### 16. [Date difference]
 #### 17. [Date in Bulgarian]
