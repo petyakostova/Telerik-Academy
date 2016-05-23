@@ -1,9 +1,11 @@
-﻿/*  Problem 23. Series of letters
+﻿/*  23. Series of letters
     Write a program that reads a string from the console and 
     replaces all series of consecutive identical letters with a single one.
-    Example:
-    input 	                    output
-    aaaaabbbbbcdddeeeedssaa 	abcdedsa
+    Input: On the only input line you will receive a string
+    Output: Print the string without consecutive identical letters
+    Sample tests: 
+                        Input 	                    Output
+                        aaaaabbbbbcdddeeeedssaa 	abcdedsa
  */
 
 using System;
@@ -13,10 +15,7 @@ class SeriesOfLetters
 {
     static void Main()
     {
-        //// the real input
-        //string str = Console.ReadLine();        
-        // input for farster testing
-        string str = "aaaaabbbbbcdddeeeedssaa";
+        string str = Console.ReadLine();       
 
         StringBuilder answer = new StringBuilder();
 

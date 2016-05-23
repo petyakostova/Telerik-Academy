@@ -26,6 +26,6 @@ Homework: Processing
 #### 20. [Palindromes]
 #### 21. [Letters count]
 #### 22. [Words count]
-#### 23. [Series of letters]
+#### 23. [Series of letters](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Series-Of-Letters)
 #### 24. [Order words]
 #### 25. [Extract text from HTML]
