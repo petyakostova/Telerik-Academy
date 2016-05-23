@@ -18,48 +18,48 @@ class ReplaceTags
 {
     static void Main()
     {
-        // first way
-        //string hTMLDoc = Console.ReadLine();
+        // first way => 10 runtime errors => 0/100
+        string hTMLDoc = Console.ReadLine();
 
-        //StringBuilder tagReplaced = new StringBuilder();
+        StringBuilder tagReplaced = new StringBuilder();
 
-        //string[] messages = hTMLDoc
-        //    .Split(new string[] { "<a href", "</a>" }, StringSplitOptions.None);
-        //// The return value includes array elements that contain an empty string
+        string[] messages = hTMLDoc
+            .Split(new string[] { "<a href", "</a>" }, StringSplitOptions.None);
+        // The return value includes array elements that contain an empty string
 
-        //foreach (var item in messages)
-        //{
-        //    int indexOfLink = item.IndexOf("=\"");
+        foreach (var item in messages)
+        {
+            int indexOfLink = item.IndexOf("=\"");
 
-        //    if (indexOfLink >= 0)
-        //    {
-        //        int endIndex = item.IndexOf("\">");
-        //        tagReplaced.Append("[URL=");
-        //        tagReplaced.Append(item.Substring(indexOfLink + 2, endIndex - indexOfLink - 2));
-        //        tagReplaced.Append("]");
-        //        tagReplaced.Append(item.Substring(endIndex + 2, item.Length - endIndex - 2));
-        //        tagReplaced.Append("[/URL]");
-        //    }
-        //    else
-        //    {
-        //        tagReplaced.Append(item);
-        //    }
-        //}
+            if (indexOfLink >= 0)
+            {
+                int endIndex = item.IndexOf("\">");
+                tagReplaced.Append("[");
+                tagReplaced.Append(item.Substring(endIndex + 2, item.Length - endIndex - 2));
+                tagReplaced.Append("](");
+                tagReplaced.Append(item.Substring(indexOfLink + 2, endIndex - indexOfLink - 2));
+                tagReplaced.Append(")");
+            }
+            else
+            {
+                tagReplaced.Append(item);
+            }
+        }
 
-        //if (tagReplaced.Length == 0)
-        //{
-        //    Console.WriteLine(hTMLDoc);
-        //}
-        //else
-        //{
-        //    Console.WriteLine(tagReplaced.ToString());
-        //}
+        if (tagReplaced.Length == 0)
+        {
+            Console.WriteLine(hTMLDoc);
+        }
+        else
+        {
+            Console.WriteLine(tagReplaced.ToString());
+        }
 
-        //other way
-        string hTML = Console.ReadLine();
-        string pattern = @"<a href=""(.*?)"">(.*?)</a>";
-        string replacement = @"[URL=$1]$2[/URL]";
-        Console.WriteLine(Regex.Replace(hTML, pattern, replacement)); // Uses more Memory
-        
+        ////other way => 2 Memory Limits => 0/100
+        //string hTML = Console.ReadLine();
+        //string pattern = @"<a href=""(.*?)"">(.*?)</a>";
+        //string replacement = @"[$2]($1)";
+        //Console.WriteLine(Regex.Replace(hTML, pattern, replacement)); 
+
     }
 }
