@@ -56,9 +56,10 @@ class ReplaceTags
         //}
 
         //other way
-        //string hTML = Console.ReadLine();
-        //Console.WriteLine(Regex.Replace(hTML, @"<a href=""(.*?)"">(.*?)</a>", @"[URL=$1]$2[/URL]")); 
-        //// Uses more Memory
-
+        string hTML = Console.ReadLine();
+        string pattern = @"<a href=""(.*?)"">(.*?)</a>";
+        string replacement = @"[URL=$1]$2[/URL]";
+        Console.WriteLine(Regex.Replace(hTML, pattern, replacement)); // Uses more Memory
+        
     }
 }
