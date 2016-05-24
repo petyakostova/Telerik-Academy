@@ -25,7 +25,7 @@ Homework: Processing
 #### 19. [Dates from text in Canada](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Dates-From-Text-In-Canada)
 #### 20. [Palindromes](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Palindromes)
 #### 21. [Letters count](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Letters-Count)
-#### 22. [Words count]
+#### 22. [Words count](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Words-Count)
 #### 23. [Series of letters](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Series-Of-Letters)
 #### 24. [Order words]
 #### 25. [Extract text from HTML]
