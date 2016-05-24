@@ -27,5 +27,6 @@ Homework: Processing
 #### 21. [Letters count](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Letters-Count)
 #### 22. [Words count](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Words-Count)
 #### 23. [Series of letters](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Series-Of-Letters)
-#### 24. [Order words]
-#### 25. [Extract text from HTML]
+#### 24. [Order words](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Order-Words)
+#### 25. [Extract text from HTML - using StringBuilder()](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/Extract-Text-From-HTML)
+#### 25. [Extract text from HTML - using Regex](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW/ExtractTextFromHTML-Regex)

@@ -1,4 +1,4 @@
-﻿/*  Problem 25. Extract text from HTML
+﻿/*  Problem 25. Extract text from HTML - using StringBuilder()
     Write a program that extracts from given HTML file its title (if available), and its body text without the HTML tags.
     Example input:
         <html>
@@ -12,9 +12,9 @@
         Title: News
         Text: Telerik Academy aims to provide free real-world practical training for young people who want to turn into skillful .NET software engineers.
  */
-// unfinished
 
 using System;
+using System.Linq;
 using System.Text; // needed for Stringbuilder
 
 class ExtractTextFromHTML
@@ -35,16 +35,38 @@ class ExtractTextFromHTML
         {
             if (hTML[i] == '<')
             {
+                answer.Append(" ");
+
                 while (hTML[i] != '>')
                 {
                     i++;
                 }
+
                 continue;
             }
+
             answer.Append(hTML[i]);
         }
+        
+        string[] output = answer.ToString()
+            .Split(new string[] { " ", "\r\n" }, StringSplitOptions.RemoveEmptyEntries)
+            .ToArray();
 
-        Console.WriteLine(answer.ToString().Trim());
+        Console.WriteLine("Title: {0}", output[0]);
+
+        Console.Write("Text: ");
+        for (int i = 1; i < output.Length; i++)
+        {
+            if (i!=output.Length-1)
+            {
+                Console.Write(output[i] + " ");
+            }
+            else
+            {
+                Console.Write(output[i]);
+            }
+        }
+
         Console.WriteLine();
 
     }
