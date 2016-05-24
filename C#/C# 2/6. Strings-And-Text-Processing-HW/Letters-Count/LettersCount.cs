@@ -1,17 +1,16 @@
-﻿/*  Problem 21. Letters count
+﻿/*  21. Letters count
     Write a program that reads a string from the console and 
-    prints all different letters in the string along with information how many times each letter is found.
+    prints all different letters in the string along with information how many times each letter is found. 
  */
 
 using System;
-using System.Collections.Generic;   // needed for Dictionary
-using System.Linq;  // needed for OrderBy and OrderByDescending
+using System.Collections.Generic; // needed for Dictionary
+using System.Linq; // needed for OrderBy and OrderByDescending
 
 class LettersCount
 {
     static void Main()
     {
-        //// the real input
         //string str = Console.ReadLine();
         // input for faster testing
         string str = "aaa bbb BBBB AAAAA bbb 0123456";
