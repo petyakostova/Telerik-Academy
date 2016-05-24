@@ -10,7 +10,8 @@ body #wrap {
     height: 600px;
     margin: auto;
     margin-top: 50px;
-    padding: 20px 5px;
+    padding: 20px 5px;           
+    border-radius: 15px;
 }
 
 body #wrap header {
