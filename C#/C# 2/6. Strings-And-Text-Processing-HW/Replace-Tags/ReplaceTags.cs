@@ -23,26 +23,26 @@ class ReplaceTags
 
         StringBuilder tagReplaced = new StringBuilder();
 
-        string[] messages = hTMLDoc
+        string[] text = hTMLDoc
             .Split(new string[] { "<a href", "</a>" }, StringSplitOptions.None);
         // The return value includes array elements that contain an empty string
 
-        foreach (var item in messages)
+        foreach (var word in text)
         {
-            int indexOfLink = item.IndexOf("=\"");
+            int indexOfLink = word.IndexOf("=\"");
 
             if (indexOfLink >= 0)
             {
-                int endIndex = item.IndexOf("\">");
+                int endIndex = word.IndexOf("\">");
                 tagReplaced.Append("[");
-                tagReplaced.Append(item.Substring(endIndex + 2, item.Length - endIndex - 2));
+                tagReplaced.Append(word.Substring(endIndex + 2, word.Length - endIndex - 2));
                 tagReplaced.Append("](");
-                tagReplaced.Append(item.Substring(indexOfLink + 2, endIndex - indexOfLink - 2));
+                tagReplaced.Append(word.Substring(indexOfLink + 2, endIndex - indexOfLink - 2));
                 tagReplaced.Append(")");
             }
             else
             {
-                tagReplaced.Append(item);
+                tagReplaced.Append(word);
             }
         }
 
@@ -55,11 +55,11 @@ class ReplaceTags
             Console.WriteLine(tagReplaced.ToString());
         }
 
-        ////other way => 2 Memory Limits => 0/100
+        //other way => 2 Memory Limits => 0/100
         //string hTML = Console.ReadLine();
         //string pattern = @"<a href=""(.*?)"">(.*?)</a>";
         //string replacement = @"[$2]($1)";
-        //Console.WriteLine(Regex.Replace(hTML, pattern, replacement)); 
+        //Console.WriteLine(Regex.Replace(hTML, pattern, replacement));
 
     }
 }
