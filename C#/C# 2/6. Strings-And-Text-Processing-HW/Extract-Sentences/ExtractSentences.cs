@@ -13,7 +13,7 @@
     We are living in a yellow submarine. We will move out of it in 5 days.
  */
 
-// 30/100 in bgcoder
+// 80/100 in bgcoder
 
 using System;
 using System.Linq; // needed for Where()
@@ -22,11 +22,11 @@ class ExtractSentences
 {
     static void Main()
     {
-        string wordSearch = Console.ReadLine();
+        string wordSearch = Console.ReadLine().Trim();
         string text = Console.ReadLine();
 
         string[] sentences = text
-            .Split(new string[] { ".", "!", "?", "..." }, StringSplitOptions.RemoveEmptyEntries);
+            .Split(new string[] { "." }, StringSplitOptions.RemoveEmptyEntries);
         char[] separators = GetNonLetterSymbols(text);
 
         foreach (string sentence in sentences)
@@ -36,9 +36,9 @@ class ExtractSentences
 
             foreach (var word in words)
             {
-                if (word == wordSearch)
+                if (word.Trim() == wordSearch)
                 {
-                    Console.Write(sentence + ".");
+                    Console.Write(sentence.Trim() + ". ");
                     break;
                 }
             }
