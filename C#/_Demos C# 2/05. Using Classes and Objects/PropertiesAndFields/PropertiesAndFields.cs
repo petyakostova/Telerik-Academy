@@ -9,6 +9,7 @@ class PropertiesAndFields
         int day = christmas.Day;
         int month = christmas.Month;
         int year = christmas.Year;
+
         Console.WriteLine(
             "Christmas day: {0}, month: {1}, year: {2}", day, month, year); //Christmas day: 25, month: 12, year: 2011
 

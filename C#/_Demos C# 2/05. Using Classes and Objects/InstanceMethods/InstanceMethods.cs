@@ -13,7 +13,7 @@ class InstanceMethods
         DateTime now = DateTime.Now;    
         DateTime later = now.AddHours(8);   
 
-        Console.WriteLine("Now: {0}", now);// Now: 24.2.2015 ã. 16:15:08 ÷.
-        Console.WriteLine("8 hours later: {0}", later);// 8 hours later: 25.2.2015 ã. 00:15:08 ÷.
+        Console.WriteLine("Now: {0}", now);// Now: 25.5.2016 ã. 3:35:19
+        Console.WriteLine("8 hours later: {0}", later);// 8 hours later: 25.5.2016 ã. 11:35:19
     }
 }

@@ -21,7 +21,7 @@ class StudentClass
 
 class Student
 {
-    // public е, за да може да се достъпва от друг клас
+    // public => can be accessed from another class
     public string FirstName;
 
     public string LastName;

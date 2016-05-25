@@ -4,7 +4,7 @@ using System.Text;
 class PasswordGenerator
 {
     static Random rndGenerator = new Random();
-    
+
     static void InsertRandomSymbols(int count, StringBuilder password, string symbols)
     {
         for (int i = 0; i < count; i++)
@@ -34,13 +34,13 @@ class PasswordGenerator
 
         InsertRandomSymbols(rndGenerator.Next(0, 7), password, capitalLetters + lowerLetters + digits + specialSymbols);
 
-        //// without method()
+        // without method()
         //for (int i = 0; i < 2; i++)
         //{
         //    char symbol = capitalLetters[rndGenerator.Next(0, capitalLetters.Length)];
-        //    // .Append ги залепя последователно, затова ще използваме Insert
+        //    // .Append() put them consistently, thats why we use Insert()
         //    int randomPosition = rndGenerator.Next(0, password.Length);
-        //    password.Insert(randomPosition, symbol); // вкарва на random позиция символа
+        //    password.Insert(randomPosition, symbol); // inserts the symbol at random position
         //}
 
         //for (int i = 0; i < 2; i++)
