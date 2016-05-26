@@ -11,7 +11,7 @@
             Print 1 < a1 < ... < a10 < 100
             Or Exception if the above inequality is not true
     Sample tests:
-    Input: 	    Output:                                                     Input:      Output:
+    Input:      Output:                                                     Input:      Output:
     5           1 < 5 < 7 < 15 < 29 < 46 < 47 < 60 < 70 < 89 < 98 < 100     87          Exception
     7                                                                       10
     15                                                                      29

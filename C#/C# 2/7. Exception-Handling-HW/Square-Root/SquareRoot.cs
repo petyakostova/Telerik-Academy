@@ -9,11 +9,11 @@
                     Input 	        Output
                     number 	        Invalid number
                                     Good bye
-                    4 	            2.000
+                    4               2.000
                                     Good bye
                     -3.14 	        Invalid number
                                     Good bye
-                    17 	            4.123
+                    17              4.123
                                     Good bye
  */
 
