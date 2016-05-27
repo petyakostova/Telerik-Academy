@@ -5,6 +5,7 @@ class TryFinallyExample
     static void PerformTryFinally()
     {
         Console.WriteLine("Code executed before try-finally.");
+
         try
         {
             Console.Write("Enter a number: ");
@@ -21,6 +22,7 @@ class TryFinallyExample
         {
             Console.WriteLine("This cleanup code is always executed.");
         }
+
         Console.WriteLine("This code is after the try-finally block.");
     }
 
@@ -28,4 +30,5 @@ class TryFinallyExample
     {
         PerformTryFinally();
     }
+
 }

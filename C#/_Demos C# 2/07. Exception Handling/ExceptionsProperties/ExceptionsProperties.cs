@@ -21,4 +21,5 @@ class ExceptionsProperties
         string s = "an invalid number";
         Int32.Parse(s);
     }
+
 }

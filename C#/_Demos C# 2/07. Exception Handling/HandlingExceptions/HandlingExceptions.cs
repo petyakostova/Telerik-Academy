@@ -5,6 +5,7 @@ class HandlingExceptions
     static void Main()
     {
         string s = Console.ReadLine();
+
         try
         {
             Int32.Parse(s);
@@ -18,5 +19,6 @@ class HandlingExceptions
         {
             Console.WriteLine("The number is too big to fit in Int32!");
         }
+
     }
 }
