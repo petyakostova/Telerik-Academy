@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B6786A02-CD7E-4594-A789-260C954B455A}</ProjectGuid>
+    <ProjectGuid>{779EC531-56EE-4D65-8256-05BF77E7DF09}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_02.Even_Differences</RootNamespace>
-    <AssemblyName>_02.Even_Differences</AssemblyName>
+    <RootNamespace>_03.Bit_Shift_Matrix</RootNamespace>
+    <AssemblyName>_03.Bit_Shift_Matrix</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EvenDifferences.cs" />
+    <Compile Include="BitShiftMatrix.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="2. Even Differences_Description.doc" />
+    <None Include="3. Bit Shift Matrix_Description.doc" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

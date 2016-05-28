@@ -1,0 +1,23 @@
+21 16
+21
+LU 3
+DR 8
+UL 5
+DR 8
+LU 10
+LD 7
+UL 6
+LD 2
+LD 7
+UR 2
+DL 10
+RD 3
+RD 9
+DL 4
+RD 2
+LU 3
+UR 9
+UL 5
+RD 9
+RU 5
+UL 7
