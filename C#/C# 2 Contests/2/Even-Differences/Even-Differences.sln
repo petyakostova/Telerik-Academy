@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Even-Differences", "02. Even-Differences\02. Even-Differences.csproj", "{B6786A02-CD7E-4594-A789-260C954B455A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Even-Differences-AS", "Even-Differences-AS\Even-Differences-AS.csproj", "{905B7095-A1E1-4B69-AE18-895E23C14682}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6786A02-CD7E-4594-A789-260C954B455A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6786A02-CD7E-4594-A789-260C954B455A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6786A02-CD7E-4594-A789-260C954B455A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6786A02-CD7E-4594-A789-260C954B455A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{905B7095-A1E1-4B69-AE18-895E23C14682}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{905B7095-A1E1-4B69-AE18-895E23C14682}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{905B7095-A1E1-4B69-AE18-895E23C14682}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{905B7095-A1E1-4B69-AE18-895E23C14682}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
