@@ -32,7 +32,7 @@
         {
             ulong result = 0;
 
-            // instead calculating powers
+            // instead of calculating powers
             foreach (var digit in catNumber)
             {
                 result = (ulong)(digit - 'a') + result * 21;
