@@ -22,8 +22,8 @@
 
 - **2** => **Arrays**
 
-- **3** => **Multidimensional Arrays**
+- **3** => **Multidimensional Arrays, Jagged Arrays**
 
 - **4** => **Strings**
 
-- **5** => 
+- **5** => **Data Structures and Algorithms**
