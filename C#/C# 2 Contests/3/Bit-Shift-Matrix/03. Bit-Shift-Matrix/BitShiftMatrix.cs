@@ -1,8 +1,9 @@
 ﻿namespace _03.Bit_Shift_Matrix
 {
     using System;
-    using System.Linq;
-    using System.Numerics;
+    //using System.IO; // needed for StringReader()
+    using System.Linq; // needed for Select()
+    using System.Numerics; // needed for BigInteger
 
     class BitShiftMatrix
     {
@@ -17,30 +18,41 @@
 
         static void Main()
         {
-            var rowsCount = int.Parse(Console.ReadLine());
-            var colsCount = int.Parse(Console.ReadLine());
+            //RedirectInput(); // for easier testing
 
-            var n = Console.ReadLine();
+            // 1. read input
+            int rowsCount = int.Parse(Console.ReadLine());
+            int colsCount = int.Parse(Console.ReadLine());
 
-            var collected = new bool[rowsCount, colsCount];
+            var n = Console.ReadLine(); // we don't need it
 
-            var moves = Console.ReadLine()
+            // 2. declare a field/matrix with R and C
+            bool[,] collected = new bool[rowsCount, colsCount];
+
+            int[] moves = Console.ReadLine()
                                     .Split(' ')
                                     .Select(int.Parse)
                                     .ToArray();
 
-            BigInteger sum = 0;
-            var row = rowsCount - 1;
-            var col = 0;
-            BigInteger currentCellValue = 1;
-            var coeff = Math.Max(rowsCount, colsCount);
+            // The max value is up right => in the example 512 = 2^(4+5)
+            // In the constraints the max row=100, max col=75 => MaxCell = 2 ^ (100 + 75) => BigInteger
 
+            BigInteger sum = 0;
+            int row = rowsCount - 1; // start from this row
+            int col = 0; // start from this col
+            BigInteger currentCellValue = 1;
+            int coeff = Math.Max(rowsCount, colsCount);
+
+            // 3. for every move
             foreach (var move in moves)
             {
-                var nextRow = move / coeff;
-                var nextCol = move % coeff;
+                // 3.1 calcute move coordinates
+                int nextRow = move / coeff;
+                int nextCol = move % coeff;
+                //Console.WriteLine(nextRow + " " + nextCol); // medium check
 
-                var deltaCol = col > nextCol ? -1 : 1;
+                // 3.2 go to column and collect everything on the way and mark it as collected
+                int deltaCol = nextCol < col ? -1 : 1;
 
                 while (col != nextCol)
                 {
@@ -54,15 +66,17 @@
                     {
                         currentCellValue *= 2;
                     }
-                    else
+                    else //if (deltaCol == -1)
                     {
                         currentCellValue /= 2;
                     }
 
+                    // update the col
                     col += deltaCol;
                 }
 
-                var deltaRow = row > nextRow ? -1 : 1;
+                // 3.3 go to row and collect everything on the way and mark it as collected
+                var deltaRow = nextRow < row ? -1 : 1;
 
                 while (row != nextRow)
                 {
@@ -76,23 +90,35 @@
                     {
                         currentCellValue /= 2;
                     }
-                    else
+                    else //if (deltaCol == -1)
                     {
                         currentCellValue *= 2;
                     }
 
+                    // update the row
                     row += deltaRow;
                 }
             }
 
+            // for the last cell check if it's not collected and sum it
             if (!collected[row, col])
             {
                 sum += currentCellValue;
-                collected[row, col] = true;
+                collected[row, col] = true; // doesn't matter
             }
 
+            // 4. print the resulting sum
             Console.WriteLine(sum);
         }
+
+//        static void RedirectInput()
+//        {
+//            Console.SetIn(new StringReader(@"5
+//6
+//4
+//14 27 1 5
+//"));
+//        }
 
     }
 }
