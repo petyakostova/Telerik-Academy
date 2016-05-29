@@ -4,24 +4,35 @@
     using System.Collections.Generic; // List<string>
     using System.Linq; // Contains()
 
+    // Observations:
+    // all methods will begin with static keyword
+    // all methods will have (...) on the same line
+    // all methods will have { ot the next line
+    // get method bodies by splitting by " static " or by counting brackets
+    // all method calls and names will begin with capital letter
+    // need to handle the new keyword
+
     class Konspiration
     {
         static void Main()
         {
-            var n = int.Parse(Console.ReadLine());
+            int n = int.Parse(Console.ReadLine()); // number of lines
 
-            var lines = new string[n];
-
+            // array of strings for the lines
+            string[] lines = new string[n];
             for (int i = 0; i < n; i++)
             {
                 lines[i] = Console.ReadLine();
             }
 
+            // other way for array input
+            //string[] lines2 = Enumerable.Range(0, n).Select(x => Console.ReadLine()).ToArray();
+
             for (int i = 0; i < n; i++)
             {
                 if (lines[i].Contains(" static "))
                 {
-                    var name = lines[i].Split(new[] { ' ', '(' }, StringSplitOptions.RemoveEmptyEntries)[2];
+                    string name = lines[i].Split(new[] { ' ', '(' }, StringSplitOptions.RemoveEmptyEntries)[2];
 
                     i += 2;
 
