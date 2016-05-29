@@ -1,0 +1,1 @@
+Main -> 12 -> ReadLine, ToLower, Parse, ReadLine, ReadLine, Split, ToLower, ToUpper, Join, Add, WriteLine, Join

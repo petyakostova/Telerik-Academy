@@ -1,0 +1,3 @@
+InitPatterns -> 10 -> Add, Add, Add, Add, Add, Add, Add, Add, Add, Add
+CheckCurrentPattern -> 2 -> GetLength, GetLength
+Main -> 10 -> Parse, ReadLine, ReadLine, Split, Parse, InitPatterns, GetLength, GetLength, CheckCurrentPattern, WriteLine

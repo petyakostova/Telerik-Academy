@@ -1,0 +1,3 @@
+Main -> 3 -> WriteLine, ConvertToDecimal, ReadLine
+ConvertToDecimal -> 3 -> Substring, IndexOf, GetPower
+GetPower -> None

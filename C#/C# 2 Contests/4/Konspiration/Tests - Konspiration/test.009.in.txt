@@ -1,0 +1,73 @@
+72
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RelevanceIndex
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] separators = new string[] { " ", ",", ".", "(", ")", ";", "-", "!", "?" };
+
+            string searchWord = Console   .   ReadLine  (  )  ;
+            string searchWordLower = searchWord   .   ToLower   (   )   ;
+
+            int paragraphsCount = int  . Parse(  Console   .  ReadLine   (   )  );
+
+            string[] paragraphs = new string[paragraphsCount];
+            for (int i = 0; i < paragraphsCount; i++)
+            {
+                paragraphs[i] = Console  .    ReadLine();
+            }
+
+            int[] relevances = new int[paragraphsCount];
+            string[] editedParagraphs = new string[paragraphsCount];
+
+            for (int paragraphInd = 0; paragraphInd < paragraphsCount; paragraphInd++)
+            {
+                string[] paragraphWords = paragraphs[paragraphInd]   .  Split   (   separators, StringSplitOptions.RemoveEmptyEntries);
+
+                int currentRelevance = 0;
+                for (int wordInd = 0; wordInd < paragraphWords.Length; wordInd++)
+                {
+                    if (paragraphWords[wordInd]    .    ToLower() == searchWordLower)
+                    {
+                        currentRelevance++;
+                        paragraphWords[wordInd] = paragraphWords[wordInd].ToUpper();
+                    }
+                }
+
+                relevances[paragraphInd] = currentRelevance;
+                editedParagraphs[paragraphInd] = String   .   Join(" ", paragraphWords);
+            }
+
+            List<string> paragraphsByRelevance = new List<string>();
+
+            while (paragraphsByRelevance.Count < editedParagraphs.Length)
+            {
+                int maxRelevance = 0;
+                int maxRelevanceIndex = 0;
+                for (int i = 0; i < relevances.Length; i++)
+                {
+                    int currentRelevance = relevances[i];
+                    if (maxRelevance < currentRelevance)
+                    {
+                        maxRelevanceIndex = i;
+                        maxRelevance = currentRelevance;
+                    }
+                }
+
+                paragraphsByRelevance.   Add   (    editedParagraphs[maxRelevanceIndex]   )   ;
+                relevances[maxRelevanceIndex] = 0;
+            }
+
+            Console.WriteLine(
+                   String.Join   (   Environment.NewLine, paragraphsByRelevance)    
+                );
+        }
+    }
+}

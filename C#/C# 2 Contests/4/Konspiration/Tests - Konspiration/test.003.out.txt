@@ -1,0 +1,7 @@
+Initialize -> 1 -> ReadPath
+ReadPath -> 3 -> ReadLine, Split, Parse
+StartGame -> 2 -> CheckPathForFlowers, CheckPathForFlowers
+CheckPathForFlowers -> None
+CalculateWinner -> None
+PrintResult -> 2 -> WriteLine, WriteLine
+Main -> 4 -> Initialize, StartGame, CalculateWinner, PrintResult

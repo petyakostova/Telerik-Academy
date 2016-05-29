@@ -1,0 +1,2 @@
+CheckForMethodCall -> None
+Main -> 26 -> Parse, ReadLine, ReadLine, Trim, IndexOf, WriteLine, Join, WriteLine, Clear, IndexOf, LastIndexOf, Write, Substring, Write, IsLetter, Append, IsLetter, ToString, IndexOf, Clear, CheckForMethodCall, Clear, Add, Clear, WriteLine, Join

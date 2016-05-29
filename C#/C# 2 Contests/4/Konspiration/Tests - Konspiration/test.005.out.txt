@@ -1,0 +1,9 @@
+Initialize -> 1 -> ReadInput
+ReadInput -> 4 -> ReadLine, Add, Parse, ReadLine
+CalculateSumOfNumbers -> 1 -> ToString
+CalculateProductOfNumbers -> 1 -> ToString
+Calculate -> 1 -> NextConversion
+NextConversion -> 7 -> Add, CalculateSumOfNumbers, CalculateProductOfNumbers, AddSymbol, AddSymbol, ToString, AddSymbol
+AddSymbol -> 1 -> Add
+PrintResult -> 2 -> Join, WriteLine
+Main -> 3 -> Initialize, Calculate, PrintResult
