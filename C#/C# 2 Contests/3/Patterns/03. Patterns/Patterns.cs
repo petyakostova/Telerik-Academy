@@ -69,6 +69,7 @@
                         }
 
                         maxSum = Math.Max(maxSum, sum);
+
                         // other way
                         //if (sum > maxSum)
                         //{
