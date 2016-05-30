@@ -34,10 +34,14 @@
                 {
                     string name = lines[i].Split(new[] { ' ', '(' }, StringSplitOptions.RemoveEmptyEntries)[2];
 
+                    // the next line after the line with the method name is { 
+                    // => so skip it and go to the next one
                     i += 2;
 
-                    var openBrackets = 1;
-                    var methodCalls = new List<string>();
+                    // in the beginning we have 1 open bracket
+                    int openBrackets = 1;
+
+                    List<string> methodCalls = new List<string>();
 
                     while (openBrackets > 0 && i < n)
                     {
@@ -56,6 +60,7 @@
                             }
                         }
 
+                        // counting the brackets
                         foreach (var symbol in lines[i])
                         {
                             if (symbol == '{')
@@ -73,8 +78,8 @@
 
                     if (methodCalls.Count > 0)
                     {
-                        Console.WriteLine(name + " -> " 
-                            + methodCalls.Count + " -> " 
+                        Console.WriteLine(name + " -> "
+                            + methodCalls.Count + " -> "
                             + string.Join(", ", methodCalls));
                     }
                     else
@@ -85,12 +90,20 @@
             }
         }
 
+        // extract method name from piece of code
         static string ExtractMethodName(string codePiece)
         {
             var beforeBracket = codePiece.Split(new[] { ' ', '.' }, StringSplitOptions.RemoveEmptyEntries);
 
             // trim operators that can precede a method invoke
-            var methodName = beforeBracket[beforeBracket.Length - 1].TrimStart("<>!+-*/%^~".ToCharArray());
+            var methodName = beforeBracket[beforeBracket.Length - 1]
+                .TrimStart("<>!+-*/%^~".ToCharArray());
+            /* public String TrimStart(params char[] trimChars); 
+               Removes all leading occurrences of a set of characters specified in an array from the current System.String object.    
+             Parameters: trimChars => An array of Unicode characters to remove, or null.
+             Returns: The string that remains after all occurrences of characters in the trimChars parameter 
+             are removed from the start of the current string. 
+             If trimChars is null or an empty array, white-space characters are removed instead. */
 
             if (methodName.Length == 0 || !char.IsUpper(methodName[0]) || beforeBracket.Contains("new"))
             {
