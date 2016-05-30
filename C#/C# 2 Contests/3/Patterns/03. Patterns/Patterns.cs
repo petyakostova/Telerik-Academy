@@ -20,18 +20,24 @@
 
             bool globallyFoundCorrectPattern = false;
 
-            for (int patternStartX = 0; patternStartX <= matrix.GetLength(0) - pattern.GetLength(0); patternStartX++)
+            for (int patternStartX = 0; 
+                patternStartX <= matrix.GetLength(0) - pattern.GetLength(0); 
+                patternStartX++)
             {
-                for (int patternStartY = 0; patternStartY <= matrix.GetLength(1) - pattern.GetLength(1); patternStartY++)
+                for (int patternStartY = 0; 
+                    patternStartY <= matrix.GetLength(1) - pattern.GetLength(1); 
+                    patternStartY++)
                 {
                     List<int> numbersInPattern = new List<int>();
-
+                                        
                     for (int patternX = 0; patternX < pattern.GetLength(0); patternX++)
                     {
                         for (int patternY = 0; patternY < pattern.GetLength(1); patternY++)
                         {
-                            // позициите, на която ще търсим => отместването
-                            int x = patternStartX + patternX;   // Xпозицията от която започваме на търсим + текущия X на pattern
+                            // positions, on which we will search
+
+                            // X-position, on which we start to search + the current X on pattern
+                            int x = patternStartX + patternX;  
                             int y = patternStartY + patternY;
 
                             if (pattern[patternX, patternY])    // true
@@ -63,7 +69,7 @@
                         }
 
                         maxSum = Math.Max(maxSum, sum);
-                        //// other way
+                        // other way
                         //if (sum > maxSum)
                         //{
                         //    maxSum = sum;
@@ -72,6 +78,7 @@
                 }
             }
 
+            // Output
             if (globallyFoundCorrectPattern)
             {
                 Console.WriteLine("YES {0}", maxSum);
@@ -82,18 +89,7 @@
             }
         }
 
-        private static long SumDiagonal(int[,] matrix)  // по зададена матрица намира сумата на елементите по главния диагонал
-        {
-            long sum = 0;
-            for (int i = 0; i < matrix.GetLength(0); i++)
-            {
-                sum += matrix[i, i];
-            }
-
-            return sum;
-        }
-
-        private static int[,] Input()   // връща двумерен масив от int
+        private static int[,] Input()   // returns 2-dementional array of int
         {
             int n = int.Parse(Console.ReadLine());
             int[,] matrix = new int[n, n];
@@ -112,5 +108,18 @@
             return matrix;
         }
 
+        // Sum the elements on the main diagonal
+        private static long SumDiagonal(int[,] matrix)  
+        {
+            long sum = 0;
+
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                sum += matrix[i, i];
+            }
+
+            return sum;
+        }
+        
     }
 }
