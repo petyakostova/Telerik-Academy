@@ -20,8 +20,8 @@
 * [Methods Homework](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/3.%20Methods-HW)
 * [Numeral Systems Homework](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/4.%20Numeral-Systems-HW)
 * [Using Classes and Objects Homework](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/5.%20Using-Classes-And-Objects-HW)
-* [Strings and Text Processing Homework]
-* [Exception Handling Homework]
+* [Strings and Text Processing Homework](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/6.%20Strings-And-Text-Processing-HW)
+* [Exception Handling Homework](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%202/7.%20Exception-Handling-HW)
 * [Text Files Homework]
 
 ---
