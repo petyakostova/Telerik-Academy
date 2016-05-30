@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Doge-Coin", "05. Doge-Coin\05. Doge-Coin.csproj", "{BF769821-0157-4CA9-8027-8BF661D32938}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doge-Coin-AS", "Doge-Coin-AS\Doge-Coin-AS.csproj", "{A643DF59-B966-46E8-A5DF-3C6E5D7D2432}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF769821-0157-4CA9-8027-8BF661D32938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF769821-0157-4CA9-8027-8BF661D32938}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF769821-0157-4CA9-8027-8BF661D32938}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF769821-0157-4CA9-8027-8BF661D32938}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A643DF59-B966-46E8-A5DF-3C6E5D7D2432}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A643DF59-B966-46E8-A5DF-3C6E5D7D2432}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A643DF59-B966-46E8-A5DF-3C6E5D7D2432}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A643DF59-B966-46E8-A5DF-3C6E5D7D2432}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

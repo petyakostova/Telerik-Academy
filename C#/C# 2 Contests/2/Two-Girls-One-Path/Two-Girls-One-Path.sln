@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Two-Girls-One-Path", "02. Two-Girls-One-Path\02. Two-Girls-One-Path.csproj", "{05FA1BBC-D663-4117-9CB9-585DD227C718}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Two-Girls-One-Path-AS", "Two-Girls-One-Path-AS\Two-Girls-One-Path-AS.csproj", "{4E17E37D-F22D-4F4E-8F2D-A29940D62E1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05FA1BBC-D663-4117-9CB9-585DD227C718}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05FA1BBC-D663-4117-9CB9-585DD227C718}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05FA1BBC-D663-4117-9CB9-585DD227C718}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05FA1BBC-D663-4117-9CB9-585DD227C718}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E17E37D-F22D-4F4E-8F2D-A29940D62E1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E17E37D-F22D-4F4E-8F2D-A29940D62E1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E17E37D-F22D-4F4E-8F2D-A29940D62E1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E17E37D-F22D-4F4E-8F2D-A29940D62E1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
