@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,6 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="5. Help Doge_Условие.docx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="by how many ways we can go to cell.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
