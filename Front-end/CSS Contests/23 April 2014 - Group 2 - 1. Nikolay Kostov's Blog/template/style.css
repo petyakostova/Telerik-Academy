@@ -1,0 +1,157 @@
+html, body {
+	font-family: Arial, Helvetica, sans-serif;
+	/*дадено по условие*/
+	font-size: 14px;
+	/*по условие: default font-size: 14px*/
+}
+
+#wrapper {
+	width: 960px;
+	/*дадено по условие*/
+	margin: 0 auto;
+	/*дадено по условие*/
+}
+
+.clear {
+	clear: both;
+	/*дадено по условие*/
+}
+
+header {
+	height: 97px;
+	/*измерени в paint.net*/
+	background-image: url('images/header-bg.png');
+	/*background-ът се намира в папка images*/
+	border-bottom: #39C518 5px solid;
+	/*измерваме дебелината на залената линия 5px; и взимаме цвета*/
+}
+
+
+/*следва да подредим ел-тите в header-a* => имаме <div id="title">, к. тр. да отиде вляво 
+  и <nav id="nav">, к.тр. да отиде вдясно
+  стилизираме си с float: left и float: right*/
+
+#title {
+	float: left;
+	/*отива вляво*/
+	margin-left: 20px;
+	/*от началото на heared-a до нач. на буквите му замерваме разст-е 22px*/
+}
+
+
+/*изчистваме padding и margin на ел-тите, с к. работим, 
+  за да сме сигурни, че няма да имаме проблеми с позиционирането им и ще ги поставяме от 0лата*/
+
+#title h1 {
+	margin: 0;
+	/*нулираме*/
+	padding: 0;
+	/*нулираме*/
+	color: #EEFFEE;
+	/*цвета намираме в paint.net чрез селектиране на дебела буква, в средната част*/
+	font-size: 34px;
+	/*по условие: font-size of the title: 34px*/
+	margin-top: 20px;
+	/*margin мерим от най-високата буква => 27px => да се дели на 5 => 25 ??? => 20*/
+}
+
+#title h2 {
+	margin: 0;
+	/*нулираме*/
+	padding: 0;
+	/*нулираме*/
+	color: #C0C0C0;
+	font-size: 14px;
+	/*по условие: default font-size: 14px*/
+	margin-top: 5px;
+	/*има отстъп между h1 и h2 => 5px (мери се от най-ниската буква)*/
+	font-weight: normal;
+	/*не бива да е болднат*/
+}
+
+#nav {
+	float: right;
+	/*отива вдясно*/
+	/*display: inline-block;  /*правим го блоков ел-т ??? */
+}
+
+/*Home и About me в нач.са визуализирани като list items */
+
+#nav ul {
+	/*искаме да стилизираме ul*/
+	margin: 0;
+	/*нулираме*/
+	padding: 0;
+	/*нулираме*/
+	list-style-type: none;
+	/*google: css remove bullet*/
+	margin-right: 29px;
+	/*замерваме разстоянието от края на About me до края 28px*/
+}
+
+#nav ul li {
+	/*искаме да стилизираме li*/
+	float: left;
+	/*да са наляво едно до друго*/
+	margin: 0;
+	/*нулираме*/
+	padding: 0;
+	/*нулираме*/
+	font-size: 18px;
+	/*по условие: font-size of the menu items: 18px*/
+	margin-left: 22px;
+	/*замерваме разстоянието между Home и About me 20px*/
+	margin-top: 45px;
+	/*измерваме разст-ето от най-високата буква догоре => 48px*/
+	color: #CC6600;
+	/*взимаме го от буквата H, защото е дебела*/
+	font-weight: bold;
+	/*болднати са*/
+}
+
+#content {
+	float: left;
+	width: 760px;
+	/*960px - 200px или го замерваме*/
+	/*трябва да замерим цвета на текста, защото не е черен; 
+    хубаво е да се взима от хоризонтална линия, където няма околни пиксели, к. да размиват*/
+	color: #555555;
+}
+
+#content h1 {
+	color: #59770E;
+	/*замерваме цвета на h1*/
+	/*замерваме разстоянието от края на буква k в Good luck! до зелената линия 26px
+      замерваме същото разстояние в нашата страница след Print Screen 27px ; Ники:22px */
+	margin-top: 22px;
+	/*Ники: 24px*/
+	font-size: 30px;
+	/*по условие: font-size of the content title: 30px*/
+}
+
+#aside {
+	width: 200px;
+	/*замерваме широчината му (д-ната) 200px*/
+	float: right;
+	/*padding, защото ел-тът "Search" си няма id или div и не можем да го хванем, 
+	за да го отместим с margin */
+	padding-top: 20px;
+	/*измерваме разстоянието от края на буквите до зелената линия 23px => 20px */
+	text-transform: uppercase;
+	/*google: uppercase css*/
+	color: #59770E;
+	font-weight: bold;
+	/*болднат е*/
+}
+
+/*<hr /> няма да го пипаме*/
+
+#aside input {
+	/*селектираме input ел-та*/
+	width: 155px;
+	/*измерваме ширината на input ел-та => кутийката под SEARCH и линията*/
+}
+
+/*налагаме с Pixel Perfect => забелязваме, че има размествания в SEARCH => 
+  можем да го вдигнем нагоре => aside смяняме px в padding-top
+  h1 ел-тът малко се разминава и няма да е 20, а 18px */
