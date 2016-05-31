@@ -1,0 +1,104 @@
+html, body {
+    font-family: Helvetica, Arial, ' DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+    /*по условие*/
+    font-size: 16px;
+    /*по условие*/
+}
+
+#wrapper {
+    width: 960px;
+    /*по условие Resolution-width: 960px*/
+}
+
+.menu {
+    /* ul => клас е, затова е с точка */
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    /*махаме bullet*/
+}
+
+.menu li {
+    padding: 0;
+    margin: 0;
+    float: left;
+    /*трябва да наредим li ел-тите един до друг => float вляво*/
+    height: 180px;
+    /*измерваме 220px, но заради border коригираме; 
+      друг вариант е да сменим box-sizing*/
+    width: 180px;
+    /*измерваме 220px, но заради border коригираме*/
+    border: 20px solid #808080;
+    /*li ел-тите имат border*/
+    /*border-ът влияе върху height и width*/
+    margin-right: 5px;
+    text-align: center;
+    /*центрирани са*/
+    /*background на li ел. се мени => gradient css generator => CollorZilla 
+    TODO */
+}
+
+.menu li h3 {
+    padding: 0;
+    margin: 0;
+    margin-top: 6px;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+}
+
+.image-container img {
+    /*картинките*/
+    width: 120px;
+    height: 100px;
+    border-radius: 20px;
+    /*извивката*/
+}
+
+.subtitle {
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.click-here {
+    padding: 0;
+    margin: 0;
+    margin-top: 0;
+    /*може и без този ред*/
+    /*за да скрием click for more*/
+    display: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+/*Hover*/
+/*когато li селектора е hover-нат*/
+.menu li:hover {
+    border-color: #454545;
+    /*сменя се цвета*/
+    background: #808080;
+    /* при hover-нат li ел. background-ът се променя*/
+}
+
+.menu li:hover h3 {
+    text-decoration: underline;
+    /*h3 е подчертано*/
+}
+
+/*картинката (намира се в li ел-т, к. е hover-нат) става по-голяма, р-рите се променят*/
+.menu li:hover img {
+    height: 110px;
+    width: 140px;
+}
+
+/*да скрием 1 ел и да покажем друг*/
+
+/*click-here ел. , к. е в menu... hover-нато li => тр. да се визуализира*/
+.menu li:hover .click-here {
+    display: block;
+}
+
+/*скриваме го*/
+.menu li:hover .subtitle {
+    display: none;
+}
