@@ -83,10 +83,10 @@ header {
 
 #content h1 {
 	color: #59770E;	/* pick the color of h1 */	
-	margin-top: 24px; /* measuring the distance from the end of letter k in Good luck! 
+	margin-top: 22px; /* measuring the distance from the end of letter k in Good luck! 
 						 to the green line => 26px
        					 measuring the same distance in our page after Print Screen 27px => 22px */
-	font-size: 30px; /* по условие: font-size of the content title: 30px */
+	font-size: 30px; /* in condition: font-size of the content title: 30px */
 }
 
 #aside {
