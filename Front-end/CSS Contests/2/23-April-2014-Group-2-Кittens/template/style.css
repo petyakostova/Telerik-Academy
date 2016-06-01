@@ -1,6 +1,5 @@
-html, body {
-    /* in condition */
-    font-family: Helvetica, Arial, ' DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;    
+html, body {    
+    font-family: Helvetica, Arial, ' DejaVu Sans', 'Liberation Sans', Freesans, sans-serif; /* in condition */    
     font-size: 16px; /* in condition */
 }
 
@@ -18,13 +17,12 @@ html, body {
     padding: 0;
     margin: 0;
     float: left; /* to order li element one next to another => float to the left */
-    height: 180px; /* измерваме 220px, но заради border коригираме; 
-                      друг вариант е да сменим box-sizing */
-    width: 180px;  /* измерваме 220px, но заради border коригираме */
-    border: 20px solid #808080; /* li ел-тите имат border */
-                                   /* border-ът влияе върху height и width */
+    height: 180px; /* measuring 220px, but because of borders => 180px; 
+                      other option is to change box-sizing */
+    width: 180px;  /* measuring 220px, but because of borders => 180px; */
+    border: 20px solid #808080; /* li elements have border => the border affect height and width */
     margin-right: 5px;
-    text-align: center; /* центрирани са */
+    text-align: center; 
     /*background на li ел. се мени => gradient css generator => CollorZilla 
     TODO */
 }
@@ -37,10 +35,10 @@ html, body {
     color: #FFFFFF;
 }
 
-.image-container img {         /* for the images */
+.image-container img {   /* for the images */
     width: 120px;
     height: 100px;
-    border-radius: 20px; /* извивката */
+    border-radius: 20px; /* curve */
 }
 
 .subtitle {
@@ -52,35 +50,34 @@ html, body {
 .click-here {
     padding: 0;
     margin: 0;
-    margin-top: 0; /* може и без този ред */    
-    display: none; /* за да скрием click for more */
+    margin-top: 0; /* this line can be removed */    
+    display: none; /* for hiding click for more */
     color: #FFFFFF;
     text-transform: uppercase;
 }
 
-/*Hover => когато li селектора е hover-нат */
+/* hover => when the li selector is hover */
 .menu li:hover {
-    border-color: #454545; /* сменя се цвета */
-    background: #808080; /* при hover-нат li ел. background-ът се променя */
+    border-color: #454545; /* color change */
+    background: #808080; /* by hover li => backgroung change */
 }
 
 .menu li:hover h3 {
-    text-decoration: underline; /* h3 е подчертано */
+    text-decoration: underline; 
 }
 
-/* картинката (намира се в li ел-т, к. е hover-нат) става по-голяма, р-рите се променят */
+/* the image (which is in li element, which is hover) gets bigger, the sizes change */
 .menu li:hover img {
     height: 110px;
     width: 140px;
 }
 
-/*да скрием 1 ел и да покажем друг*/
+/* to hide one element and show another */
 
 .menu li:hover .click-here {
-    display: block; /* click-here ел. , к. е в menu... hover-нато li => тр. да се визуализира */
+    display: block; /* the click-here element, which is in menu hovered li => must be displayed */
 }
 
-
 .menu li:hover .subtitle {
-    display: none; /* скриваме го */
+    display: none; /* hide it */
 }
