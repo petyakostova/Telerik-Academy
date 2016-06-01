@@ -16,6 +16,7 @@ header {
 	height: 97px; /* measured in paint.net */
 	background-image: url('images/header-bg.png'); /* the background is in folder images */
 	border-bottom: #39C518 5px solid; /* width of the green line = 5px; pick the color */
+	/* works every time, in this case we have element for it: <div id="line"></div> */
 }
 
 /* the next step is to order the elements in the header => 
@@ -45,8 +46,7 @@ header {
 	color: #C0C0C0;
 	font-size: 14px; /* in condition: default font-size: 14px */
 	margin-top: 5px; /* between h1 and h2 => 5px (from the lowest letter in h1 to the tallest in h2))*/
-	font-weight: normal;
-	/*не бива да е болднат*/
+	font-weight: normal; /* do not have to be bold */
 }
 
 #nav {
@@ -61,6 +61,7 @@ header {
 	padding: 0; /* resetting */
 	list-style-type: none; /* google: css remove bullet */
 	margin-right: 28px; /* measuring the distance from the end of About me till the end 28px */
+	margin-top: 45px; /* the distance between the highest letter to up => 48px */	
 }
  
 #nav ul li {     /* every list item */
@@ -69,52 +70,41 @@ header {
 	padding: 0; /* resetting */
 	font-size: 18px; /* in condition: font-size of the menu items: 18px */
 	margin-left: 22px; /* measuring the distance between Home and About me => 20px */
-	margin-top: 45px; /* the distance between the highest letter to up => 48px */
 	color: #CC6600; /* picked from the letter H, because is wide */
-	font-weight: bold; 
+	font-weight: bold; /* must be bold */
 }
 
 #content {
-	float: left;
-	width: 760px;
-	/*960px - 200px или го замерваме*/
-	/*трябва да замерим цвета на текста, защото не е черен; 
-    хубаво е да се взима от хоризонтална линия, където няма околни пиксели, к. да размиват*/
-	color: #555555;
+	float: left; /* to be on the left */
+	width: 760px; /* 960px - 200px or measure it */	
+	color: #555555; /* it's good to pick the color from horizontal line 
+						  where there are no ambient pixels to washout the color */
 }
 
 #content h1 {
-	color: #59770E;
-	/*замерваме цвета на h1*/
-	/*замерваме разстоянието от края на буква k в Good luck! до зелената линия 26px
-      замерваме същото разстояние в нашата страница след Print Screen 27px ; Ники:22px */
-	margin-top: 22px;
-	/*Ники: 24px*/
-	font-size: 30px;
-	/*по условие: font-size of the content title: 30px*/
+	color: #59770E;	/* pick the color of h1 */	
+	margin-top: 24px; /* measuring the distance from the end of letter k in Good luck! 
+						 to the green line => 26px
+       					 measuring the same distance in our page after Print Screen 27px => 22px */
+	font-size: 30px; /* по условие: font-size of the content title: 30px */
 }
 
 #aside {
-	width: 200px;
-	/*замерваме широчината му (д-ната) 200px*/
-	float: right;
-	/*padding, защото ел-тът "Search" си няма id или div и не можем да го хванем, 
-	за да го отместим с margin */
-	padding-top: 20px;
-	/*измерваме разстоянието от края на буквите до зелената линия 23px => 20px */
-	text-transform: uppercase;
-	/*google: uppercase css*/
+	width: 200px; /* measuring the width with the grey line => 200px */
+	float: right; /* in this case can be float: right; too  */	
+	padding-top: 20px; /* padding, because the element "Search" has no id or div 
+						  and we can't catch it to move it aside with margin 
+		measuring the distance from the end of letters in SEARCH till the green line 23px => 20px */
+	text-transform: uppercase; /* google: uppercase css */ 
 	color: #59770E;
-	font-weight: bold;
-	/*болднат е*/
+	font-weight: bold; /* must be bold */
 }
 
-/*<hr /> няма да го пипаме*/
+/* we won't style the element <hr /> */
 
-#aside input {
-	/*селектираме input ел-та*/
-	width: 155px;
-	/*измерваме ширината на input ел-та => кутийката под SEARCH и линията*/
+#aside input {       	/* seleting the input element */
+	width: 155px; /* measuring the width of the input element 
+					 => the box under SEARCH and the line */
 }
 
 /*налагаме с Pixel Perfect => забелязваме, че има размествания в SEARCH => 
