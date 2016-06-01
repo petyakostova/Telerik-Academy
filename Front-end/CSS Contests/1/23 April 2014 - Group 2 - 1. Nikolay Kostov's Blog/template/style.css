@@ -33,19 +33,18 @@ header {
 #title h1 {
 	margin: 0; /* resetting */
 	padding: 0; /* resetting */
-	color: #EEFFEE; /*цвета намираме в paint.net чрез селектиране на дебела буква, в средната част*/
-	font-size: 34px; /*по условие: font-size of the title: 34px*/
-	margin-top: 20px; /*margin мерим от най-високата буква => 27px => да се дели на 5 => 25 ??? => 20*/
+	color: #EEFFEE; /* pick the color in paint.net by selecting wide letter in the middle part */
+	font-size: 34px; /* in condition: font-size of the title: 34px */
+	margin-top: 20px; /* measuring from the tallest letter => 27px => 
+	                     in condition: All other pixel sizes will be divisible by 5 or exactly 8px */
 }
 
 #title h2 {
 	margin: 0; /* resetting */
 	padding: 0;	/* resetting */
 	color: #C0C0C0;
-	font-size: 14px;
-	/*по условие: default font-size: 14px*/
-	margin-top: 5px;
-	/*има отстъп между h1 и h2 => 5px (мери се от най-ниската буква)*/
+	font-size: 14px; /* in condition: default font-size: 14px */
+	margin-top: 5px; /* between h1 and h2 => 5px (from the lowest letter in h1 to the tallest in h2))*/
 	font-weight: normal;
 	/*не бива да е болднат*/
 }
@@ -55,38 +54,24 @@ header {
 	/*display: inline-block;	/* правим го блоков ел-т ??? */
 }
 
-/*Home и About me в нач.са визуализирани като list items */
+/* Home и About me are displayed like list items */
 
-#nav ul {
-	/*искаме да стилизираме ul*/
-	margin: 0;
-	/*нулираме*/
-	padding: 0;
-	/*нулираме*/
-	list-style-type: none;
-	/*google: css remove bullet*/
-	margin-right: 29px;
-	/*замерваме разстоянието от края на About me до края 28px*/
+#nav ul {			
+	margin: 0; /* resetting */
+	padding: 0; /* resetting */
+	list-style-type: none; /* google: css remove bullet */
+	margin-right: 28px; /* measuring the distance from the end of About me till the end 28px */
 }
-
-#nav ul li {
-	/*искаме да стилизираме li*/
-	float: left;
-	/*да са наляво едно до друго*/
-	margin: 0;
-	/*нулираме*/
-	padding: 0;
-	/*нулираме*/
-	font-size: 18px;
-	/*по условие: font-size of the menu items: 18px*/
-	margin-left: 22px;
-	/*замерваме разстоянието между Home и About me 20px*/
-	margin-top: 45px;
-	/*измерваме разст-ето от най-високата буква догоре => 48px*/
-	color: #CC6600;
-	/*взимаме го от буквата H, защото е дебела*/
-	font-weight: bold;
-	/*болднати са*/
+ 
+#nav ul li {     /* every list item */
+	float: left; /* to be on the left one next to another */
+	margin: 0; /* resetting */
+	padding: 0; /* resetting */
+	font-size: 18px; /* in condition: font-size of the menu items: 18px */
+	margin-left: 22px; /* measuring the distance between Home and About me => 20px */
+	margin-top: 45px; /* the distance between the highest letter to up => 48px */
+	color: #CC6600; /* picked from the letter H, because is wide */
+	font-weight: bold; 
 }
 
 #content {
