@@ -1,20 +1,15 @@
 html, body {
-	font-family: Arial, Helvetica, sans-serif;
-	/*дадено по условие*/
-	font-size: 14px;
-	/*по условие: default font-size: 14px*/
+	font-family: Arial, Helvetica, sans-serif; /* given  in the template */
+	font-size: 14px; /*in condition: default font-size: 14px*/
 }
 
 #wrapper {
-	width: 960px;
-	/*дадено по условие*/
-	margin: 0 auto;
-	/*дадено по условие*/
+	width: 960px; /* given  in the template */
+	margin: 0 auto; /* given  in the template */
 }
 
 .clear {
-	clear: both;
-	/*дадено по условие*/
+	clear: both; /* given  in the template */
 }
 
 header {
@@ -25,7 +20,6 @@ header {
 	border-bottom: #39C518 5px solid;
 	/*измерваме дебелината на залената линия 5px; и взимаме цвета*/
 }
-
 
 /*следва да подредим ел-тите в header-a* => имаме <div id="title">, к. тр. да отиде вляво 
   и <nav id="nav">, к.тр. да отиде вдясно
