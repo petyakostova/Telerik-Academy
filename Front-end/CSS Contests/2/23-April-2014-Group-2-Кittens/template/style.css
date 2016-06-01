@@ -36,8 +36,8 @@ html, body {
 .menu li h3 {
     padding: 0;
     margin: 0;
-    margin-top: 9px; /* from letter l in Downloads till the border */
-    margin-bottom: 10px; /* from letter l in Downloads till the image */
+    margin-top: 6px; /* from letter l in Downloads till the border */
+    margin-bottom: 5px; /* from letter l in Downloads till the image */
     color: #FFFFFF;
 }
 
@@ -57,13 +57,15 @@ html, body {
 .click-here {
     padding: 0;
     margin: 0;
-    margin-top: 0px; /* this line can be removed */    
-    display: none; /* for hiding click for more */
+    margin-top: 0; /* this line can be removed */    
+    display: none; /* CLICK FOR MORE must be hided => show it only by hover */
     color: #FFFFFF;
     text-transform: uppercase;
 }
 
-/* hover => when the li selector is hover */
+/* Hover => when the li selector is hover 
+   how to test it with PerfectPixel: 
+   inspect element =>  */
 .menu li:hover {
     border-color: #454545; /* color change */
     background: #808080; /* by hover li => backgroung change */
