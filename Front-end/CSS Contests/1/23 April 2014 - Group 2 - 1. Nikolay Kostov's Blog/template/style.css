@@ -51,7 +51,7 @@ header {
 
 #nav {
 	float: right; /* goes to the right */
-	/*display: inline-block;	/* правим го блоков ел-т ??? */
+	/*display: inline-block;	/* make it to block element */
 }
 
 /* Home и About me are displayed like list items */
@@ -107,6 +107,7 @@ header {
 					 => the box under SEARCH and the line */
 }
 
-/*налагаме с Pixel Perfect => забелязваме, че има размествания в SEARCH => 
-  можем да го вдигнем нагоре => aside смяняме px в padding-top
-  h1 ел-тът малко се разминава и няма да е 20, а 18px */
+/* put it one over/above another with Pixel Perfect => 
+   we notice that there are shifts in SEARCH => 
+   we can pick it up => aside changing px in padding-top
+   the h1 element diverges a little and won't be 20px => 18px */
