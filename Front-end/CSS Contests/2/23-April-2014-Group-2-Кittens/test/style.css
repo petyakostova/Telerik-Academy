@@ -70,27 +70,27 @@ html, body {
 /* Hover => when the li selector is hover 
    how to test it with PerfectPixel: 
    inspect element =>  check the hover checkbox in the tab Styles*/
-.menu li:hover {
+.menu li.hover {
     border-color: #454545; /* color change */
     background: #808080; /* by hover li => backgroung change */
 }
 
-.menu li:hover h3 {
+.menu li.hover h3 {
     text-decoration: underline; 
 }
 
 /* the image (which is in li element, which is hover) gets bigger, the sizes change */
-.menu li:hover img {
+.menu li.hover img {
     height: 110px;
     width: 140px;
 }
 
 /* to hide one element and show another */
 
-.menu li:hover .click-here {
+.menu li.hover .click-here {
     display: block; /* the click-here element, which is in menu hovered li => must be displayed */
 }
 
-.menu li:hover .subtitle {
+.menu li.hover .subtitle {
     display: none; /* hide it */
 }
