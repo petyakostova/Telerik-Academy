@@ -14,24 +14,30 @@ html, body {
 }
 
 .menu li {
-    padding: 0;
+    padding: 0; 
     margin: 0;
     float: left; /* to order li element one next to another => float to the left */
     height: 180px; /* measuring 220px, but because of borders => 180px; 
                       other option is to change box-sizing */
     width: 180px;  /* measuring 220px, but because of borders => 180px; */
     border: 20px solid #808080; /* li elements have border => the border affect height and width */
-    margin-right: 5px;
+    margin-right: 5px; 
     text-align: center; 
-    /*background на li ел. се мени => gradient css generator => CollorZilla 
-    TODO */
+    /* the background of the li element is gradient => gradient css generator => CollorZilla 
+       we want to be: Orientation: vertical, the color starts from 727272 to FFFFFF */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#727272+1,ffffff+100 */
+    background: #727272; /* Old browsers */
+    background: -moz-linear-gradient(top,  #727272 1%, #ffffff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #727272 1%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #727272 1%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#727272', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */    
 }
 
 .menu li h3 {
     padding: 0;
     margin: 0;
-    margin-top: 6px;
-    margin-bottom: 5px;
+    margin-top: 9px; /* from letter l in Downloads till the border */
+    margin-bottom: 10px; /* from letter l in Downloads till the image */
     color: #FFFFFF;
 }
 
@@ -41,16 +47,17 @@ html, body {
     border-radius: 20px; /* curve */
 }
 
+/* .subtitle and .click-here are paragraphs too => must reset their margin and padding*/
 .subtitle {
     padding: 0;
     margin: 0;
-    margin-top: 10px;
+    margin-top: 10px; /* measuring 17px */
 }
 
 .click-here {
     padding: 0;
     margin: 0;
-    margin-top: 0; /* this line can be removed */    
+    margin-top: 0px; /* this line can be removed */    
     display: none; /* for hiding click for more */
     color: #FFFFFF;
     text-transform: uppercase;
