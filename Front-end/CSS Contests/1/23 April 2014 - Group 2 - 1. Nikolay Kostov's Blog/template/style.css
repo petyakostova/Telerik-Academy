@@ -1,6 +1,6 @@
 html, body {
 	font-family: Arial, Helvetica, sans-serif; /* given  in the template */
-	font-size: 14px; /*in condition: default font-size: 14px*/
+	font-size: 14px; /* in condition: default font-size: 14px */
 }
 
 #wrapper {
@@ -13,47 +13,34 @@ html, body {
 }
 
 header {
-	height: 97px;
-	/*измерени в paint.net*/
-	background-image: url('images/header-bg.png');
-	/*background-ът се намира в папка images*/
-	border-bottom: #39C518 5px solid;
-	/*измерваме дебелината на залената линия 5px; и взимаме цвета*/
+	height: 97px; /* measured in paint.net */
+	background-image: url('images/header-bg.png'); /* the background is in folder images */
+	border-bottom: #39C518 5px solid; /* width of the green line = 5px; pick the color */
 }
 
-/*следва да подредим ел-тите в header-a* => имаме <div id="title">, к. тр. да отиде вляво 
-  и <nav id="nav">, к.тр. да отиде вдясно
-  стилизираме си с float: left и float: right*/
-
+/* the next step is to order the elements in the header => 
+   we have <div id="title">, which must be to the left, and <nav id="nav">, which must be to the right
+   style those elements with float: left and float: right*/
 #title {
-	float: left;
-	/*отива вляво*/
-	margin-left: 20px;
-	/*от началото на heared-a до нач. на буквите му замерваме разст-е 22px*/
+	float: left; /* goes to the left */
+	margin-left: 20px; /* from the beginning of the header to the beginning of the letters 
+	                      measuring distance 22px */
 }
 
-
-/*изчистваме padding и margin на ел-тите, с к. работим, 
-  за да сме сигурни, че няма да имаме проблеми с позиционирането им и ще ги поставяме от 0лата*/
-
+/* clear/reset the padding and margin of the elements, with which we work, 
+   to be sure, that we won't have any problems with their positioning 
+   and we can set them from the null */
 #title h1 {
-	margin: 0;
-	/*нулираме*/
-	padding: 0;
-	/*нулираме*/
-	color: #EEFFEE;
-	/*цвета намираме в paint.net чрез селектиране на дебела буква, в средната част*/
-	font-size: 34px;
-	/*по условие: font-size of the title: 34px*/
-	margin-top: 20px;
-	/*margin мерим от най-високата буква => 27px => да се дели на 5 => 25 ??? => 20*/
+	margin: 0; /* resetting */
+	padding: 0; /* resetting */
+	color: #EEFFEE; /*цвета намираме в paint.net чрез селектиране на дебела буква, в средната част*/
+	font-size: 34px; /*по условие: font-size of the title: 34px*/
+	margin-top: 20px; /*margin мерим от най-високата буква => 27px => да се дели на 5 => 25 ??? => 20*/
 }
 
 #title h2 {
-	margin: 0;
-	/*нулираме*/
-	padding: 0;
-	/*нулираме*/
+	margin: 0; /* resetting */
+	padding: 0;	/* resetting */
 	color: #C0C0C0;
 	font-size: 14px;
 	/*по условие: default font-size: 14px*/
@@ -64,9 +51,8 @@ header {
 }
 
 #nav {
-	float: right;
-	/*отива вдясно*/
-	/*display: inline-block;  /*правим го блоков ел-т ??? */
+	float: right; /* goes to the right */
+	/*display: inline-block;	/* правим го блоков ел-т ??? */
 }
 
 /*Home и About me в нач.са визуализирани като list items */
