@@ -28,6 +28,8 @@
         private Battery battery;
         private Display display;
         private List<Call> CallHistory;
+        /* 9. Add a property CallHistory in the GSM class to hold a list of the performed calls.
+           Try to use the system class List<Call>. */
 
         // constructors        
         /* default constructor with only model and manufacturer
@@ -142,7 +144,7 @@
                 this.display = value; // data validated in Display class 
             } 			
         }
-
+        
         // 6. IPhone4S property
         public static GSM IPhone4S
         {
@@ -178,6 +180,9 @@
             return stringCreator.ToString();
         }
 
+        /* Add methods in the GSM class for adding and deleting calls from the calls history.
+           Add a method to clear the call history. */
+
         //add call method (takes number as a string and duaration - dateTime is always NOW)
         public void AddCall(string currPhoneNumber, ulong currDuaration)
         {
@@ -212,9 +217,13 @@
             this.CallHistory.Clear();
         }
 
+        /* Add a method that calculates the total price of the calls in the call history.
+           Assume the price per minute is fixed and is provided as a parameter. */
+
         public decimal TotalCallPrice()
         {
             ulong allDuaration = 0;
+
             foreach (var call in this.CallHistory)
             {
                 allDuaration += call.Duaration;
