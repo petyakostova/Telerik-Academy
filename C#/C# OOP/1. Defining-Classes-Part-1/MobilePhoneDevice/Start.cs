@@ -4,10 +4,10 @@
     {
         static void Main()
         {
-            var test = new GSMTest();
+            GSMTest test = new GSMTest();
             test.GSMTesting();
 
-            var callHistory = new GSMCallHistoryTest();
+            GSMCallHistoryTest callHistory = new GSMCallHistoryTest();
             callHistory.GSMCallHistoryTesting();
         }
     }
