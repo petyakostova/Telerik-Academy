@@ -4,9 +4,10 @@
     using System.Collections.Generic;
     using System.Text;
 
-    // class that holds information about a mobile phone device: model, manufacturer, price, owner
+    // 1. class that holds information about a mobile phone device: model, manufacturer, price, owner
     public class GSM
     {
+        // 6. Add a static field and a property IPhone4S in the GSM class to hold the information about iPhone 4S.
         // static field for iPhone4S
         private static readonly GSM iPhone4S = new GSM("IPhone 4S", "Apple", 1300.00m, "Telenor",
                                                         new Battery("Apple", 8, 200, Battery.Type.LiPo),
@@ -28,8 +29,9 @@
         private Display display;
         private List<Call> CallHistory;
 
-        // constructors
-        // default constructor with only model and manufacturer
+        // constructors        
+        /* default constructor with only model and manufacturer
+           2. model and manufacturer are mandatory (the others are optional) */
         public GSM(string model, string manufacturer)
             : this(model, manufacturer, defaultPrice, defaultOwner, new Battery(), new Display()) 
         { 
@@ -141,7 +143,7 @@
             } 			
         }
 
-        // IPhone4S property
+        // 6. IPhone4S property
         public static GSM IPhone4S
         {
             get

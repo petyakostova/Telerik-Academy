@@ -2,7 +2,7 @@
 {
     using System;
 
-    // class that holds information about display characteristics: size and number of colors
+    // 1. class that holds information about display characteristics: size and number of colors
     public class Display
     {
         // constants (instead of null values)

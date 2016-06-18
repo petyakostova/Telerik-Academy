@@ -2,7 +2,7 @@
 {
     using System;
 
-    // class that holds information about battery characteristics: model, hours idle and hours talk
+    // 1. class that holds information about battery characteristics: model, hours idle and hours talk
     public class Battery
     {
         // constants (instead of null values)
@@ -17,6 +17,7 @@
         private uint hoursTalk;        
         private Type batteryType;
 
+        // 3. Add an enumeration BatteryType(Li-Ion, NiMH, NiCd, …) and use it as a new field for the batteries.
         // enumumeration for Battery Types - not in a seperate class because only this class uses it
         public enum Type
         {

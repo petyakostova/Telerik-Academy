@@ -3,6 +3,9 @@
     using System;
     using System.Text;
 
+    /* 8. Create a class Call to hold a call performed through a GSM.
+       It should contain date, time, dialled phone number and duration (in seconds). */
+
     class Call
     {
         private DateTime dateTime;
