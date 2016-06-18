@@ -25,8 +25,6 @@
         private string manufacturer;
         private decimal price;
         private string owner;
-        private Battery battery;
-        private Display display;
         private List<Call> CallHistory;
         /* 9. Add a property CallHistory in the GSM class to hold a list of the performed calls.
            Try to use the system class List<Call>. */
@@ -121,30 +119,10 @@
             }
         }
 
-        public Battery Battery
-        {
-            get
-            {
-                return this.battery;
-            }
-            set
-            {
-                this.battery = value; // data validated in Battery class
-            }
-        }
-
-        public Display Display
-        {
-            get 
-            { 
-                return this.display; 
-            }
-            set 
-            {
-                this.display = value; // data validated in Display class 
-            } 			
-        }
-        
+        public Battery Battery { get; set; } // data validated in Battery class  
+              
+        public Display Display { get; set; } // data validated in Battery class 
+                
         // 6. IPhone4S property
         public static GSM IPhone4S
         {
@@ -155,6 +133,8 @@
         }
 
         // methods
+
+        // 4. Add a method in the GSM class for displaying all information about it. Try to override ToString().
         public override string ToString()
         {
             StringBuilder stringCreator = new StringBuilder();
@@ -219,7 +199,6 @@
 
         /* Add a method that calculates the total price of the calls in the call history.
            Assume the price per minute is fixed and is provided as a parameter. */
-
         public decimal TotalCallPrice()
         {
             ulong allDuaration = 0;

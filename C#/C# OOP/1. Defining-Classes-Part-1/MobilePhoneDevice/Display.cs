@@ -6,16 +6,19 @@
     public class Display
     {
         // constants (instead of null values)
+
         private const int DefaultHeight = 180;
         private const int DefaultWidth = 120;
         private const long DefaultNumberOfColors = 16000000;
 
         // fields
+
         private int height;
         private int width;
         private long numberOfColors;
 
         // constructors
+
         public Display()
             : this(DefaultHeight, DefaultWidth, DefaultNumberOfColors) { }
 
@@ -27,6 +30,7 @@
         }
         
         // properties
+
         public int Height
         {
             get
@@ -39,6 +43,7 @@
                 {
                     throw new ArgumentException("Height must be > 0");
                 }
+
                 this.height = value;
             }
         }
@@ -55,6 +60,7 @@
                 {
                     throw new ArgumentException("Width must be > 0");
                 }
+
                 this.width = value;
             }
         }
@@ -63,7 +69,7 @@
         {
             get
             {
-                return numberOfColors;
+                return this.numberOfColors;
             }
             set
             {
@@ -71,7 +77,8 @@
                 {
                     throw new ArgumentException("Number of colors must be > 0");
                 }
-                numberOfColors = value;
+
+                this.numberOfColors = value;
             }
         }
         

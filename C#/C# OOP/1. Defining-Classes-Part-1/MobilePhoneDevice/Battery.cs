@@ -14,8 +14,7 @@
         // fields
         private string model;
         private uint hoursIdle;
-        private uint hoursTalk;        
-        private Type batteryType;
+        private uint hoursTalk;    
 
         // 3. Add an enumeration BatteryType(Li-Ion, NiMH, NiCd, …) and use it as a new field for the batteries.
         // enumumeration for Battery Types - not in a seperate class because only this class uses it
@@ -92,17 +91,8 @@
             }
         }
 
-        public Type BatteryType
-        {
-            get
-            {
-                return this.batteryType;
-            }
-            set
-            {
-                this.batteryType = value;
-            }
-        }
+        // automatic property because we don't need validation
+        public Type BatteryType { get; set; }        
     
     }
 }
