@@ -27,6 +27,13 @@
 ---
 
 ####3. Object-oriented programming (OOP)
+##### <img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/> Slides / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/_Demos%20C%23%20OOP) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15"> Homeworks](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%20OOP) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Contests](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/C%23%20OOP%20Contests)
+* [Defining Classes - Part 1 Homework]
+* [Defining Classes - Part 2 Homework]
+* [Extension-Methods-Delegates-Lambda-LINQ Homework]
+* [OOP Principles - Part 1 Homework]
+* [OOP Principles - Part 2 Homework]
+* [Common Type System Homework]
 
 ---
 
