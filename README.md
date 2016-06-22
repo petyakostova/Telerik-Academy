@@ -14,6 +14,7 @@ The course "C# Fundamentals" introduces the fundamentals of programming. The cou
 The course "C# Advanced" extends the previous course "C# Fundamentals" and provides more in-depth knowledge of basic programming using C#. The course focuses on more advanced topics such as **arrays**, **methods**, **exception handling** and introduces the basic concepts of **classes and objects**.
 
 ####3. Object-oriented programming
+
 ####4. High Quality Code
 ####5. Data Structures and Algorithms
 
@@ -25,6 +26,7 @@ The course "HTML Basics" is the first step in the development of modern web appl
 The course "CSS Styling" provides knowledge for styling web pages. The course focuses on learning how to style and position all the HTML elements in the web page and to create beautiful and modern web sites. "CSS Styling" provides knowledge of all the selectors and working with CSS preprocessors (LESS, Stylus, SASS).
 
 ####3. JavaScript - Fundamentals
+
 ####4. JavaScript - OOP
 ####5. JavaScript - UI and DOM
 ####6. JavaScript - Applications
