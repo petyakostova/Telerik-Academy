@@ -2,26 +2,21 @@ function solve(args) {
     var a = +args[0],
         b = +args[1],
         c = +args[2],
+        D = b * b - 4 * a * c, // Discriminant
         x1,
         x2;
 
-    // if (Discriminant < 0)
-    if (b * b - 4 * a * c < 0) {
+    if (D < 0) {
         console.log('no real roots');
     } else {
-        // if (Discriminant === 0) 
-        if (b * b - 4 * a * c === 0) {
+        if (D === 0) {
             x1 = x2 = -b / (2 * a);
             console.log('x1=x2=' + x1.toFixed(2));
-        } else { // if (Discriminant > 0)    
-            x1 = (-b - Math.sqrt(b * b - 4 * a * c)) / (2 * a);
-            x2 = (-b + Math.sqrt(b * b - 4 * a * c)) / (2 * a);
+        } else {
+            x1 = (-b - Math.sqrt(D)) / (2 * a);
+            x2 = (-b + Math.sqrt(D)) / (2 * a);
 
-            if (x1 < x2) {
-                console.log('x1=' + x1.toFixed(2) + '; x2=' + x2.toFixed(2));
-            } else {
-                console.log('x1=' + x2.toFixed(2) + '; x2=' + x1.toFixed(2));
-            }
+            console.log('x1=' + x1.toFixed(2) + '; x2=' + x2.toFixed(2));
         }
     }
 }
