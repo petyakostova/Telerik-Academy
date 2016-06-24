@@ -22,10 +22,10 @@
 
 ####3. JavaScript - Fundamentals
 ##### <img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/> Slides / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/_Demos%20JS%20Fundamentals) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15"> Homeworks](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20Fundamentals) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Contests](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20Fundamentals%20Contests)
-* [Data Types And Variables Homework]
+* [Data Types And Variables Homework](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20Fundamentals/data%20types%20and%20variables)
 * [Operators And Expressions Homework](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20Fundamentals/operators%20and%20expressions)
-* [Conditional Statements Homework]
-* [Loops Homework]
+* [Conditional Statements Homework](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20Fundamentals/conditional%20statements)
+* [Loops Homework](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20Fundamentals/loops)
 * [Arrays Homework]
 * [Functions Homework]
 * [Using Objects Homework]
