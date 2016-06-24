@@ -1,5 +1,3 @@
-// 96 / 100 in bgcoder
-
 function solve(args) {
     var number = +args[0],
         numAsString = args[0];
@@ -78,7 +76,7 @@ function solve(args) {
         switch (numAsString[0]) {
             case '2': process.stdout.write('Twenty'); break;
             case '3': process.stdout.write('Thirty'); break;
-            case '4': process.stdout.write('Fourty'); break;
+            case '4': process.stdout.write('Forty'); break; // Fourty
             case '5': process.stdout.write('Fifty'); break;
             case '6': process.stdout.write('Sixty'); break;
             case '7': process.stdout.write('Seventy'); break;
