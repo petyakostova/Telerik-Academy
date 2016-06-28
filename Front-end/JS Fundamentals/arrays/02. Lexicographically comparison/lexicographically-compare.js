@@ -13,5 +13,5 @@ function solve(args) {
 
 }
 
-solve(['hello', 'halo']);
-solve(['food', 'food']);
+solve(['hello\nhalo']);
+solve(['food\nfood']);
