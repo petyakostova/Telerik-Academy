@@ -26,12 +26,12 @@
 * [Operators And Expressions Homework](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20Fundamentals/operators%20and%20expressions)
 * [Conditional Statements Homework](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20Fundamentals/conditional%20statements)
 * [Loops Homework](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20Fundamentals/loops)
-* [Arrays Homework]
-* [Functions Homework]
-* [Using Objects Homework]
-* [Methods on Arrays and Objects Homework]
-* [Strings Homework]
-* [Regular Expressions Homework]
+* [Arrays Homework](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20Fundamentals/loops)
+* [Functions Homework](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20Fundamentals/functions)
+* [Using Objects Homework](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20Fundamentals/using%20objects)
+* [Methods on Arrays and Objects Homework](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20Fundamentals/methods%20on%20arrays%20and%20objects)
+* [Strings Homework](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20Fundamentals/strings)
+* [Regular Expressions Homework](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20Fundamentals/regular%20expressions)
 
 ---
 
