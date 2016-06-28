@@ -12,3 +12,7 @@ Homework: Arrays
 1. [Selection sort](./05. Selection sort)
 1. [Most frequent number](./06. Most frequent number)
 1. [Binary search](./07. Binary search)
+1. [Subset with sum S](./08. Subset with sum S)
+1. [Permutations of set](./09. Permutations of set) 
+1. [Prime numbers](./10. Prime numbers)
+1. [Find sum in array](./11. Find sum in array) 
