@@ -9,7 +9,7 @@ function solve(args) {
 
     // Classical implementation of Selection Sort Algorithm
     for (j = 0; j < n - 1; j += 1) {
-        // find the min element in the unsorted a[i..n-1]
+        // find the min element in the unsorted a[j..n-1]
 
         // assume the min is the first element           
         indexMin = j;
