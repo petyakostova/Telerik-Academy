@@ -5,10 +5,10 @@ function solve(args) {
 
         console.log(FirstLargerThanNeighbours(numbers, len));
     
-    function FirstLargerThanNeighbours(numbers, length){
+    function FirstLargerThanNeighbours(numbersArray, length){
         for (i = 1; i < length - 1; i+=1)
         {
-            if (+numbers[i] > +numbers[i - 1] && +numbers[i] > +numbers[i + 1])
+            if (+numbersArray[i] > +numbersArray[i - 1] && +numbersArray[i] > +numbersArray[i + 1])
             {
                 return i;
             }
