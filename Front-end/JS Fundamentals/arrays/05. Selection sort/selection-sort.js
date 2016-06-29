@@ -1,6 +1,6 @@
 function solve(args) {
-    var j,
-        i,
+    var i,
+        j,
         indexMin,
         swap,
         input = args[0].split('\n'),
@@ -8,25 +8,25 @@ function solve(args) {
         numbers = input.slice(1);  // copy the array from the first element => the numbers
 
     // Classical implementation of Selection Sort Algorithm
-    for (j = 0; j < n - 1; j += 1) {
+    for (i = 0; i < n - 1; i += 1) {
         // find the min element in the unsorted a[j..n-1]
 
         // assume the min is the first element           
-        indexMin = j;
+        indexMin = i;
 
         // test against elements after i to find the smallest            
-        for (i = j + 1; i < n; i += 1) {
+        for (j = i + 1; j < n; j += 1) {
             // if this element is less, then it is the new minimum
-            if (numbers[i] < numbers[indexMin]) {
+            if (numbers[j] < numbers[indexMin]) {
                 // found new minimum; remember its index
-                indexMin = i;
+                indexMin = j;
             }
         }
 
         // swaping
-        if (indexMin !== j) {
-            swap = numbers[j];
-            numbers[j] = numbers[indexMin];
+        if (indexMin !== i) {
+            swap = numbers[i];
+            numbers[i] = numbers[indexMin];
             numbers[indexMin] = swap;
         }
     }
