@@ -11,4 +11,4 @@ Homework: Functions
 1. [Appearance count](./04. Appearance count)
 1. [Larger than neighbours](./05. Larger than neighbours)
 1. [First larger than neighbours](./06. First larger than neighbours)
-1. [Sorting array](./07. Sorting array)
+1. [TODO Sorting array](./07. Sorting array)
