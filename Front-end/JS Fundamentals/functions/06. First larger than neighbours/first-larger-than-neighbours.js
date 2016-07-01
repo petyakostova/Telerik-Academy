@@ -3,9 +3,9 @@ function solve(args) {
     len = +args[0],
         numbers = args[1].split(' ');
 
-        console.log(FirstLargerThanNeighbours(numbers, len));
+        console.log(firstLargerThanNeighbours(numbers, len));
     
-    function FirstLargerThanNeighbours(numbersArray, length){
+    function firstLargerThanNeighbours(numbersArray, length){
         for (i = 1; i < length - 1; i+=1)
         {
             if (+numbersArray[i] > +numbersArray[i - 1] && +numbersArray[i] > +numbersArray[i + 1])

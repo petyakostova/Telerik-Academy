@@ -6,11 +6,11 @@ function solve(args) {
         numbers = args[1].split(' ');
 
     // The Sorted array in ascending order
-    AscendingSorter(numbers, len);
+    ascendingSorter(numbers, len);
     console.log(numbers.join(' '));
 
     // The Sorted array in descending order
-    // DescendingSorter(numbers, len);
+    // descendingSorter(numbers, len);
     // console.log(numbers.join(' '));
 
     function maxElementFromGivenIndex(numbersArray, length, startPosition) {
@@ -27,7 +27,7 @@ function solve(args) {
         return maxElement;
     }
 
-    function AscendingSorter(numbersArray, length) {
+    function ascendingSorter(numbersArray, length) {
         max = 0;
         maxPosition = 0;
 
@@ -39,7 +39,7 @@ function solve(args) {
 
     }
 
-    // function DescendingSorter(numbersArray, length) {
+    // function descendingSorter(numbersArray, length) {
     //     max = 0;
     //     maxPosition = 0;
 

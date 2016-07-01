@@ -4,9 +4,9 @@ function solve(args) {
         numbers = args[1].split(' '),
         count;
 
-    console.log(LargerThanNeighboursCount(numbers, len));
+    console.log(largerThanNeighboursCount(numbers, len));
 
-    function LargerThanNeighboursCount(numbersArray, length) {
+    function largerThanNeighboursCount(numbersArray, length) {
         count = 0;
         for (i = 1; i < length - 1; i += 1) {
             if (+numbersArray[i] > +numbersArray[i - 1] && +numbersArray[i] > +numbersArray[i + 1]) {

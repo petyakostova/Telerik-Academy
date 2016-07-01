@@ -1,7 +1,7 @@
 function solve(args) {
     var numbers = args[0].split(' ');
 
-    function GetMax(a, b) {
+    function getMax(a, b) {
         if (a > b) {
             return a;
         } else if (b > a) {
@@ -11,7 +11,7 @@ function solve(args) {
         }
     }
 
-    return GetMax(+numbers[0], GetMax(+numbers[1], +numbers[2]));
+    return getMax(+numbers[0], getMax(+numbers[1], +numbers[2]));
 }
 
 solve('8 3 6');
