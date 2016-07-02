@@ -1,9 +1,9 @@
-function solve(args) {
+function solve(params) {
     "use strict";
-    var heights = args[0].split(" ")
-        .map(Number);
-
-    var peaks = [0];
+    
+    var heights = params[0].split(" ")
+        .map(Number),
+        peaks = [0];
 
     for (let i = 1; i < heights.length - 1; i += 1) {
         if (isGreaterThanNeighbours(i, heights)) {
@@ -17,7 +17,6 @@ function solve(args) {
     for (let i = 1; i < peaks.length; i += 1) {
         bestCount = Math.max(bestCount, peaks[i] - peaks[i - 1]);
     }
-
 
     //result
     console.log(bestCount);
