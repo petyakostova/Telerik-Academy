@@ -1,30 +1,35 @@
-function solve(params) {
+function solve(args) {
     "use strict";
-    
-    var heights = params[0].split(" ")
-        .map(Number),
-        peaks = [0];
-
-    for (let i = 1; i < heights.length - 1; i += 1) {
-        if (isGreaterThanNeighbours(i, heights)) {
-            peaks.push(i);
-        }
-    }
-
-    peaks.push(heights.length - 1);
-
+    let heights = args[0].split(' ').map(Number);
     let bestCount = -1;
-    for (let i = 1; i < peaks.length; i += 1) {
-        bestCount = Math.max(bestCount, peaks[i] - peaks[i - 1]);
+    let count = 0;
+    let climbDown = true;
+    let current = heights[0];
+    // to catch if the last valley is with best rocks count => to start climb down
+    heights.push(-1);
+
+    for (let i = 1; i < heights.length; i += 1) {
+        let height = heights[i];
+        if (climbDown) {
+            // stop climb down => start to climbing
+            if (current < height) {
+                climbDown = false;
+            }
+        } else { // climbing
+            // stop climb => start climb down
+            if (current > height) {
+                bestCount = Math.max(bestCount, count); // save count
+                count = 0; // reset count
+                climbDown = true; // climbDown = !climbDown;
+            }
+        }
+        current = height; // update current        
+        count += 1;
     }
 
-    //result
     console.log(bestCount);
-
-    function isGreaterThanNeighbours(index, arr) {
-        return arr[index - 1] < arr[index] &&
-            arr[index + 1] < arr[index];
-    }
 }
 
-module.exports = solve;
+solve(['5 1 7 4 8']);
+solve(['5 1 7 6 3 6 4 2 3 8']);
+solve(['10 1 2 3 4 5 4 3 2 1 10']);
