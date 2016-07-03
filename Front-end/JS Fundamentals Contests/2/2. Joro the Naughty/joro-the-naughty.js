@@ -1,11 +1,11 @@
-﻿function solve(input) {
+﻿function solve(args) {
     // прочитаме първия ред от входа, съдържащ редовете, колоните и броя скокове
     //var rowsColsAndJumps = input[0].split(' ').map(Number);  // сплитваме по интервал и превръща стринговете в числа
-    var rowsColsAndJumps = parseNumbers(input[0]);
+    var rowsColsAndJumps = parseNumbers(args[0]);
 
     // прочитаме втория ред от входа, който задава стартовата позиция
     //var startPosition = input[1].split(' ').map(Number);  // instead of that, we white it with function
-    var startPosition = parseNumbers(input[1]);
+    var startPosition = parseNumbers(args[1]);
 
     var rows = rowsColsAndJumps[0];
     var cols = rowsColsAndJumps[1];
@@ -80,7 +80,7 @@
         // the jumps can be read directly from the input
         // args[2] to args[2+J] contains the jumps => Подскоците четем от втория ред до втория+всичките подскоци ред
         for (var i = 2; i < 2 + allJumps; i+=1) {    // 2 + allJumps = input.length
-            var parsedJump = parseNumbers(input[i]);    // read the jumps from the input and parse them
+            var parsedJump = parseNumbers(args[i]);    // read the jumps from the input and parse them
             // we will use objects
             var currentJump = {
                 row: parsedJump[0], 
