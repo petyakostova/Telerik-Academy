@@ -66,7 +66,7 @@ function solve(args) {
 	sum = 0;
 
 	while (true) {
-		
+
 		if (used[hash(row, col, cols)]) {
 			return 'Sadly the horse is doomed in ' + jumps + ' jumps';
 		}
@@ -86,6 +86,7 @@ function solve(args) {
 		row += dir.row;
 		col += dir.col;
 	}
+	
 }
 
 console.log(solve(['3 5', '54561', '43328', '52388']));
