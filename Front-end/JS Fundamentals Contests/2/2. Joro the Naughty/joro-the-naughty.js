@@ -1,10 +1,10 @@
 ﻿function solve(args) {
     // reading the first line from the input => rows, cols, number of jumps
-    var rowsColsAndJumps = args[0].split(' ').map(Number); // instead of that, we can white it with function
-    //var rowsColsAndJumps = parseNumbers(args[0]);
+    //var rowsColsAndJumps = args[0].split(' ').map(Number); // instead of that, we white it with function
+    var rowsColsAndJumps = parseNumbers(args[0]);
     // reading the second line from the input => the start position
-    var startPosition = args[1].split(' ').map(Number);  
-    //var startPosition = parseNumbers(args[1]);
+    //var startPosition = args[1].split(' ').map(Number);  
+    var startPosition = parseNumbers(args[1]);
 
     var rows = rowsColsAndJumps[0]; // N
     var cols = rowsColsAndJumps[1]; // M
@@ -18,23 +18,22 @@
         var field = initField();    // filling the matrix with function
         var jumps = readJumps();    // reading the jumps with function
 
-        var escaped = false; 
+        var escaped = false;
         var sumOfNumbers = 0;   // в единия случай за резултата ни трябва сумата на числата
         var totalJumps = 0;     // в другия случай за резултата ни трябва броят подскоци
         var jumpsIndex = 0;     /*индекс, който показва къде сме в момента с подскоците; 
                                   този индекс ще обикаля по jumps и ще връща правилния обект*/
 
-        // цикълът ще обикаля по подскоците
-        while (true) {
-            // първо трябва да проверим къде break-ва цикълът
-            if (currentRow < 0 || currentRow >= rows
-                || currentCol < 0 || currentCol >= cols) {
+        // the loop will tour in jumps
+        while (true) {            
+            // first we must check where the loop breaks
+            if (currentRow < 0 || currentRow >= rows || currentCol < 0 || currentCol >= cols) {
                 escaped = true;
                 break;
             }
 
-            // ако стъпи на нещо, посетено
-            if (field[currentRow][currentCol] == 'X') {
+            // if Joro goes to a previously visited position
+            if (field[currentRow][currentCol] === 'X') {
                 escaped = false;
                 break;
             }
@@ -63,20 +62,21 @@
     function readJumps() {
         var jumps = [];
         // the jumps can be read directly from the input
-        // args[2] to args[2+J] contains the jumps => Подскоците четем от втория ред до втория+всичките подскоци ред
+        // args[2] to args[2+J] contains the jumps => we read the jumps from the second line to the (2+allJumps) line
 
         for (var i = 2; i < 2 + allJumps; i += 1) {    // 2 + allJumps = input.length
 
-            var parsedJump = args[i].split(' ').map(Number); // read the jumps from the input and parse them
-            //var parsedJump = parseNumbers(args[i]); // other way is using the function parseNumbers
+            //var parsedJump = args[i].split(' ').map(Number); // read the jumps from the input and parse them
+            var parsedJump = parseNumbers(args[i]); // using the function parseNumbers
 
             // we will use objects
             var currentJump = {
                 row: parsedJump[0],
                 col: parsedJump[1]
             };
-            
+
             jumps.push(currentJump);
+            // if we want to get it => jumps[r].row => the variable at the row r
         }
 
         //console.log(jumps); // check
@@ -101,9 +101,9 @@
         return field;
     }
 
-    // function parseNumbers(input) {
-    //     return input.split(' ').map(Number); // spliting by interval and converting strings in numbers
-    // }
+    function parseNumbers(input) {
+        return input.split(' ').map(Number); // spliting by interval and converting strings in numbers
+    }
 
 }
 
