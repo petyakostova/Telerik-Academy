@@ -1,5 +1,5 @@
 function solve(args) {
-    "use strict";
+    'use strict';
     let heights = args[0].split(' ').map(Number),
         bestCount = -1,
         count = 0,

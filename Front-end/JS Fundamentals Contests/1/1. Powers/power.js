@@ -1,4 +1,5 @@
 ﻿function solve(params) {
+    'use strict';
     let nk = params[0].split(' ').map(Number),
         seq = params[1].split(' ').map(Number),
         result = 0,
@@ -36,18 +37,19 @@
                 changed[j] = Math.min(seq[pre], seq[next]);
             }
         }
+
         seq = changed.slice(0);
     }
 
     //console.log(changed);
 
     if (k !== 0) {
-        for (let z = 0; z < n; z++) {
-            result += changed[z];
+        for (let i = 0; i < n; i++) {
+            result += changed[i];
         }
     } else {
-        for (let z = 0; z < n; z++) {
-            result += seq[z];
+        for (let i = 0; i < n; i++) {
+            result += seq[i];
         }
     }
 

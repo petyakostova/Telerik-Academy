@@ -1,5 +1,5 @@
 function solve(args) {
-    "use strict";
+    'use strict';
     let heights = args[0].split(' ').map(Number),
         peaks = [0]; // the index
 

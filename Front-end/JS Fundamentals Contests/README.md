@@ -10,3 +10,9 @@
 |  [19 May 2014 - Morning](http://bgcoder.com/Contests/187/JavaScript-19-May-2014-Morning) |  Vehicles |       Paths      |       Shaver Parser      | Bonus Problem |
 | [1 April 2013 - Evening](http://bgcoder.com/Contests/75/JavaScript-1-April-2013-Evening) |  Max Sum  | Labyrinth Escape |           Listy          |                  |
 | [1 April 2013 - Morning](http://bgcoder.com/Contests/74/JavaScript-1-April-2013-Morning) | Sequences | Joro the Naughty |      Clojure Parsing     |                  |
+
+- **1** => **Nested Loops, Arrays**
+
+- **2** => **Multidimensional Arrays**
+
+- **3** => **Strings**
