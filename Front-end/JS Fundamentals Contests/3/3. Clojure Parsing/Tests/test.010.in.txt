@@ -1,0 +1,5 @@
+(def stamoFunc (+ 235 23 512 4))
+(def mitkoFunc (* 235 23 5 4))
+(def asyaFunc (/ 235 23 512 4))
+(def stamoFunc (+ 235 23 512 4))
+(* 8 10 2 8 8 8 8 1 3)

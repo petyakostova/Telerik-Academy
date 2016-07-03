@@ -1,0 +1,4 @@
+def definition[-100, -100, -100]
+def definitionResult sum[definition]
+def defTest sum[definitionResult, 6457457, 2345234, -234546]
+avg[defTest, 1, 2, 3]

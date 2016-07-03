@@ -1,0 +1,5 @@
+(def     go6o    (+ -5 -2) )
+(def pe6o (   /  -15 go6o))
+(def asD (/ 2 0))
+(def func2 asD  )
+(           +        4          2      func2)

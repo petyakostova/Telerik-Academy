@@ -1,0 +1,4 @@
+def func sum[1, 2, 3, -6]
+def newList [func, 10, 1]
+def newFunc sum[func, 100, newList]
+[newFunc]

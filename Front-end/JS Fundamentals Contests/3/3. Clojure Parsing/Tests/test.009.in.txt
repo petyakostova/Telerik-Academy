@@ -1,0 +1,6 @@
+(def  ASd 2)
+(def  newFunc (+ 5 1))
+(def  Asd 2)
+(def  ASD 2)
+(def asd (+ 1 5))
+(+  asd 1)

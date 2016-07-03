@@ -1,0 +1,4 @@
+(def func (+ 5 2))
+(def func2 (/  func 5 2 1 0))
+(def func3 (/ func 2))
+(+ func3 func)

@@ -1,0 +1,5 @@
+(def kir4o 100)
+(def cafeFunc (+ kir4o kir4o 3))
+(def tabFunc (* cafeFunc 7))
+(def tabfunc (- kir4o 5 4 3 2 1))
+(/ tabFunc  tabfunc)

@@ -1,0 +1,6 @@
+def newFunc     [      123,432    , 4]
+def blaBLA sum[newFunc]
+def BLAbla min[newFunc]
+def BLAblA sum[newFunc,newFunc,newFunc,newFunc,newFunc]
+def BLAbLA min[BLAblA]
+avg[BLAbla,blaBLA,BLAbLA]

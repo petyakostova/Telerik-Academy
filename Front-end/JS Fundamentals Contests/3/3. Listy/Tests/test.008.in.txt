@@ -1,0 +1,4 @@
+def hmfunc     [123, 654, 1234, 64]
+def hm2 sum[hmfunc]
+def hm22 min[hm2]
+max[                 1,              hm22          ]

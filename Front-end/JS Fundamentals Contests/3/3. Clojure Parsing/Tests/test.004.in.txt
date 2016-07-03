@@ -1,0 +1,5 @@
+(def     lube    5)
+(def     Lube    6)
+(def pe6o (+ lube Lube ))
+(def joro pe6o)
+(           *        pe6o        joro     )

@@ -1,0 +1,6 @@
+def maxy max[100, 5000, 4,2,1]
+def summary1 [0]
+def summary11 avg[summary1,maxy]
+def summary111 avg[   summary11 ,  maxy]
+def summary1111 avg[summary111 , maxy]
+sum[75468, summary1111]

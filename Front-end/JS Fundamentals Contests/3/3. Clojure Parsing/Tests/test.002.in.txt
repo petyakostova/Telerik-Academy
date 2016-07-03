@@ -1,0 +1,4 @@
+(def     go6o    (/ -7 1 1 1 1) )
+(def asd (/ 0 5))
+(def func2 asd  )
+(           +        4          2      func2)

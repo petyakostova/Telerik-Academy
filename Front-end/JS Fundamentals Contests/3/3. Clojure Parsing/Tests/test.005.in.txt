@@ -1,0 +1,5 @@
+(def     lube    5)
+(def toshko (+ lube 12))
+(def pe6o (+ lube lube lube lube lube lube lube lube lube lube lube lube lube lube lube lube lube lube lube lube toshko))
+(def joro pe6o)
+(           +    2    joro    )

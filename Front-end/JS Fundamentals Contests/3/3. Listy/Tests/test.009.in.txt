@@ -1,0 +1,5 @@
+def maxy max[100   ,600,6001,-100]
+def combo [maxy, maxy,maxy,maxy, 5,6]
+def summary sum[combo, maxy, -18000]
+def pe6o avg[summary,5,maxy]
+sum[1, pe6o]

@@ -1,0 +1,4 @@
+def negFunc     [      -123,-432 ,-6474567    , 4]
+def negsum sum[negFunc]
+def negavg avg[negFunc]
+min[                 negavg,              negsum          ]

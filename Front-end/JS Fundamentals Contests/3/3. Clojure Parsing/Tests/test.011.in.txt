@@ -1,0 +1,6 @@
+(def joros 30)
+(def newFunc (-  101 10))
+(def tryFunc 500)
+(def tryFunc2 (+ 500 tryFunc )
+(def tryFunc1 (+ 500 tryFunc2 )
+(/ newFunc  )

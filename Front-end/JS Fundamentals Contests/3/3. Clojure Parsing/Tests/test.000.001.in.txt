@@ -1,0 +1,4 @@
+(def func 10)
+(def newFunc (+  func 2))
+(def sumFunc (+ func func newFunc 0 0 0))
+(* sumFunc 2)
