@@ -1,10 +1,10 @@
 ﻿function solve(args) {
     // reading the first line from the input => rows, cols, number of jumps
-    //var rowsColsAndJumps = args[0].split(' ').map(Number); // instead of that, we white it with function
-    var rowsColsAndJumps = parseNumbers(args[0]);
+    var rowsColsAndJumps = args[0].split(' ').map(Number); // instead of that, we can white it with function
+    //var rowsColsAndJumps = parseNumbers(args[0]);
     // reading the second line from the input => the start position
-    //var startPosition = input[1].split(' ').map(Number);  
-    var startPosition = parseNumbers(args[1]);
+    var startPosition = args[1].split(' ').map(Number);  
+    //var startPosition = parseNumbers(args[1]);
 
     var rows = rowsColsAndJumps[0]; // N
     var cols = rowsColsAndJumps[1]; // M
@@ -64,13 +64,18 @@
         var jumps = [];
         // the jumps can be read directly from the input
         // args[2] to args[2+J] contains the jumps => Подскоците четем от втория ред до втория+всичките подскоци ред
+
         for (var i = 2; i < 2 + allJumps; i += 1) {    // 2 + allJumps = input.length
-            var parsedJump = parseNumbers(args[i]);    // read the jumps from the input and parse them
+
+            var parsedJump = args[i].split(' ').map(Number); // read the jumps from the input and parse them
+            //var parsedJump = parseNumbers(args[i]); // other way is using the function parseNumbers
+
             // we will use objects
             var currentJump = {
                 row: parsedJump[0],
                 col: parsedJump[1]
             };
+            
             jumps.push(currentJump);
         }
 
@@ -96,9 +101,9 @@
         return field;
     }
 
-    function parseNumbers(input) {
-        return input.split(' ').map(Number); // spliting by interval and converting strings in numbers
-    }
+    // function parseNumbers(input) {
+    //     return input.split(' ').map(Number); // spliting by interval and converting strings in numbers
+    // }
 
 }
 
