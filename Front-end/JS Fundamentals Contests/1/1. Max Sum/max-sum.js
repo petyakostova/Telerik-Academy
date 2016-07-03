@@ -15,13 +15,10 @@ function solve(args) {
 	//var maxSum = -2000000; // better than using the constant Number.MIN_VALUE
 
 	for (var i = 0; i < n; i += 1) {
-		for (var j = 0; j < n; j += 1) {
+		var currentSum = 0;
 
-			var currentSum = 0;
-
-			for (var k = i; k <= j; k++) {
-				currentSum += numbers[k];
-			}
+		for (var j = i; j < n; j += 1) {
+			currentSum += numbers[j];
 
 			if (currentSum > maxSum) {
 				maxSum = currentSum;
@@ -30,6 +27,7 @@ function solve(args) {
 	}
 
 	console.log(maxSum);
+	//return maxSum;
 }
 
 solve(['8', '1', '6', '-9', '4', '4', '-2', '10', '-1']); // 16
