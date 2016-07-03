@@ -36,14 +36,20 @@ function solve(args) {
 			row: -2,
 			col: -1
 		}, ];
+
 	var line = [];
+
 	for (var c = 0; c < cols; c += 1) {
+
 		var value = c.toString();
+
 		while (value.length < 5) {
 			value = ' ' + value;
 		}
+
 		line.push(value);
 	}
+
 	function getValue(row, col) {
 		return (1 << row) - col;
 	}
@@ -58,10 +64,13 @@ function solve(args) {
 
 	jumps = 0;
 	sum = 0;
+
 	while (true) {
+		
 		if (used[hash(row, col, cols)]) {
 			return 'Sadly the horse is doomed in ' + jumps + ' jumps';
 		}
+
 		if (!inRange(row, rows) || !inRange(col, cols)) {
 			return 'Go go Horsy! Collected ' + sum + ' weeds';
 		}
