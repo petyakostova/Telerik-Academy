@@ -1,10 +1,10 @@
-﻿function Solve(input) {
+﻿function solve(input) {
     // прочитаме първия ред от входа, съдържащ редовете, колоните и броя скокове
     //var rowsColsAndJumps = input[0].split(' ').map(Number);  // сплитваме по интервал и превръща стринговете в числа
     var rowsColsAndJumps = parseNumbers(input[0]);
 
     // прочитаме втория ред от входа, който задава стартовата позиция
-    //var startPosition = input[1].split(' ').map(Number);  // вместо така го пишем с функция
+    //var startPosition = input[1].split(' ').map(Number);  // instead of that, we white it with function
     var startPosition = parseNumbers(input[1]);
 
     var rows = rowsColsAndJumps[0];
@@ -14,11 +14,11 @@
     var currentRow = startPosition[0];
     var currentCol = startPosition[1];
 
-    return getAnswer(); // връщаме отговора
+    return getAnswer(); // return the answer
 
     function getAnswer() {
-        var field = initField();    // пълним матрицата
-        var jumps = readJumps();    // за да проверим => console.log(jumps);
+        var field = initField();    // filling the matrix
+        var jumps = readJumps();    // to check => console.log(jumps);
 
         var escaped = false;
         var sumOfNumbers = 0;   // в единия случай за резултата ни трябва сумата на числата
@@ -56,17 +56,17 @@
             currentCol += currentJump.col;
         }
 
-        return escaped                      // ако сме избягали,
-            ? 'escaped ' + sumOfNumbers     // връщаме: escaped SUM_OF_NUMBERS
-            : 'caught ' + totalJumps;       // иначе: caught NUMBER_OF_JUMPS 
+        return escaped                      // if Joro has escaped
+            ? 'escaped ' + sumOfNumbers     // return: escaped SUM_OF_NUMBERS
+            : 'caught ' + totalJumps;       // otherwise: caught NUMBER_OF_JUMPS 
     }
 
-    // функция за пълнене на матрицата
+    // function for filling the matrix
     function initField() {
         var field = [];
         var counter = 1;
         for (var i = 0; i < rows; i+=1) {
-            field[i] = [];  // нов масив
+            field[i] = [];  // new array
             for (var j = 0; j < cols; j+=1) {
                 field[i][j] = counter++;
             }
@@ -74,21 +74,22 @@
         return field;
     }
 
-    // функция за прочитане на подскоците
+    // function for reading the jumps
     function readJumps() {
         var jumps = [];
-        // подскоците можем да прочетем директно от input
+        // the jumps can be read directly from the input
         // args[2] to args[2+J] contains the jumps => Подскоците четем от втория ред до втория+всичките подскоци ред
         for (var i = 2; i < 2 + allJumps; i+=1) {    // 2 + allJumps = input.length
-            var parsedJump = parseNumbers(input[i]);    // четем скоците от входа и ги парсваме
-            // ще използваме обекти
+            var parsedJump = parseNumbers(input[i]);    // read the jumps from the input and parse them
+            // we will use objects
             var currentJump = {
                 row: parsedJump[0], 
                 col: parsedJump[1]
-            }
+            };
             jumps.push(currentJump);
         }
-        return jumps; // функцията ще връща масив
+
+        return jumps; // the function returns an array
     }
 
     function parseNumbers(input) {
@@ -97,13 +98,11 @@
 
 }
 
-//// за тестване
-//var input = [
-//    '6 7 3',
-//    '0 0',
-//    '2 2',
-//    '-2 2',
-//    '3 -1',
-//];
-
-//console.log(Solve(input));
+console.log(solve([
+   '6 7 3',
+   '0 0',
+   '2 2',
+   '-2 2',
+   '3 -1',
+])); 
+// escaped 89
