@@ -2,7 +2,7 @@
     'use strict';
     let nk = params[0].split(' ').map(Number),
         seq = params[1].split(' ').map(Number),
-        result = 0,
+        sum = 0,
         n = nk[0],
         k = nk[1],
         changed = new Array(n),
@@ -10,7 +10,7 @@
         next;
 
     //console.log(seq); 
-
+ 
     for (let i = 0; i < k; i++) {
         for (let j = 0; j < n; j++) {
             if (j === 0) {
@@ -45,15 +45,15 @@
 
     if (k !== 0) {
         for (let i = 0; i < n; i++) {
-            result += changed[i];
+            sum += changed[i];
         }
     } else {
         for (let i = 0; i < n; i++) {
-            result += seq[i];
+            sum += seq[i];
         }
     }
 
-    console.log(result);
+    console.log(sum);
 }
 
 solve(['5 1', '9 0 2 4 1']);
