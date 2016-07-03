@@ -1,23 +1,37 @@
-﻿function solve(params) {
-  var count1,
-    count2,
-    count3,
-    all,
-    s = +params[0],
-    count = 0,
-    c1 = 4,
-    c2 = 10,
-    c3 = 3;
+﻿function solve(args) {
+  var s = +args[0], // the number of all wheels
+    count = 0, // number of all possible combinations of cars, trucks and trikes with exactly S wheels
+    w1 = 4, // car wheels
+    w2 = 10, // truck wheels
+    w3 = 3; // trike wheels
 
-  for (count1 = 0; count1 <= (s / c1) + 1; count1++) {
-    for (count2 = 0; count2 <= (s / c2) + 1; count2++) {
-      for (count3 = 0; count3 <= (s / c3) + 1; count3++) {
-        all = (count1 * c1) + (count2 * c2) + (count3 * c3);
-        if (all === s) {
-          count++;
+  for (var count1 = 0; count1 <= s / w1; count1 += 1) {
+    for (var count2 = 0; count2 <= s / w2; count2 += 1) {
+      for (var count3 = 0; count3 <= s / w3; count3 += 1) {
+
+        if ((count1 * w1 + count2 * w2 + count3 * w3) === s) {
+          count += 1;
         }
+
       }
     }
   }
-  return count;
+
+  console.log(count);
 }
+
+solve(['7']); // 1
+solve(['10']); // 2
+solve(['40']); // 11
+
+// other way for testing
+
+// var tests = [
+//   ['7'],
+//   ['10'],
+//   ['40']  
+// ];
+
+// tests.forEach(function (tests) {
+//   console.log(solve(tests));
+// });
