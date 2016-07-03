@@ -9,10 +9,10 @@
 |  [20 May 2014 - Evening](http://bgcoder.com/Contests/189/JavaScript-20-May-2014-Evening) |   Cakes   |       Horsy      |      NikolAngular JS     | Bonus Problem |
 |  [19 May 2014 - Morning](http://bgcoder.com/Contests/187/JavaScript-19-May-2014-Morning) |  Vehicles |       Paths      |       Shaver Parser      | Bonus Problem |
 | [1 April 2013 - Evening](http://bgcoder.com/Contests/75/JavaScript-1-April-2013-Evening) |  Max Sum  | Labyrinth Escape |           Listy          |                  |
-| [1 April 2013 - Morning](http://bgcoder.com/Contests/74/JavaScript-1-April-2013-Morning) | Sequences | Joro the Naughty |      Clojure Parsing     |                  |
+| [1 April 2013 - Morning](http://bgcoder.com/Contests/74/JavaScript-1-April-2013-Morning) | [Sequences](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20Fundamentals%20Contests/1/1.%20Sequences) | Joro the Naughty |      Clojure Parsing     |                  |
 
 - **1** => **Nested Loops, Arrays**
 
-- **2** => **Multidimensional Arrays**
+- **2** => **Multidimensional Arrays => Array of Arrays**
 
 - **3** => **Strings**
