@@ -1,5 +1,4 @@
 ﻿function solve(params) {
-    'use strict';
     let nk = params[0].split(' ').map(Number),
         seq = params[1].split(' ').map(Number),
         sum = 0,
@@ -10,7 +9,7 @@
         next;
 
     //console.log(seq); 
- 
+
     for (let i = 0; i < k; i++) {
         for (let j = 0; j < n; j++) {
             if (j === 0) {
@@ -26,14 +25,11 @@
 
             if (seq[j] === 0) {
                 changed[j] = Math.abs(seq[pre] - seq[next]);
-            }
-            else if (seq[j] === 1) {
+            } else if (seq[j] === 1) {
                 changed[j] = seq[pre] + seq[next];
-            }
-            else if (seq[j] % 2 === 0) {    // even
+            } else if (seq[j] % 2 === 0) {    // even
                 changed[j] = Math.max(seq[pre], seq[next]);
-            }
-            else {   // odd
+            } else {   // odd
                 changed[j] = Math.min(seq[pre], seq[next]);
             }
         }
@@ -43,14 +39,8 @@
 
     //console.log(changed);
 
-    if (k !== 0) {
-        for (let i = 0; i < n; i++) {
-            sum += changed[i];
-        }
-    } else {
-        for (let i = 0; i < n; i++) {
-            sum += seq[i];
-        }
+    for (let i = 0; i < n; i++) {
+        sum += seq[i];
     }
 
     console.log(sum);

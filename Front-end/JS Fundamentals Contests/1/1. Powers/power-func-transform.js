@@ -1,5 +1,4 @@
 function solve(args) {
-    'use strict';
     //let n = +args[0].split(' ')[0]; // n === numbers.length
 
     let k = +args[0].split(' ')[1]; //let k = Number(args[0].split(' ')[1]);
@@ -21,7 +20,7 @@ function solve(args) {
     }
 
     for (let i = 0; i < k; i += 1) {
-        let currentTransformation = []; // the result from the transformation
+        let currentTransformation = []; // array for the result from the transformation
 
         for (let j = 0; j < numbers.length; j += 1) {
             let nextValue;
