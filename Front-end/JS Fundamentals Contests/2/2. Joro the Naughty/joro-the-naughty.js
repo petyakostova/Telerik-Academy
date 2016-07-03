@@ -49,8 +49,8 @@
                 jumpsIndex = 0;                 // resetting
             }
 
-            field[currentRow][currentCol] = 'X'; // mark by X wherever steps => the visit
-             
+            field[currentRow][currentCol] = 'X'; // mark by X wherever steps => the visit            
+
             currentRow += currentJump.row;
             currentCol += currentJump.col;
         }
@@ -78,6 +78,7 @@
             };
 
             jumps.push(currentJump);
+            // if we want to get it => jumps[r].row => the variable at the row r
         }
 
         //console.log(jumps); // check
