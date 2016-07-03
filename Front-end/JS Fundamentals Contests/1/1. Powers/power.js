@@ -1,6 +1,6 @@
 ﻿function solve(params) {
-    var nk = params[0].split(' ').map(Number),
-        s = params[1].split(' ').map(Number),
+    let nk = params[0].split(' ').map(Number),
+        seq = params[1].split(' ').map(Number),
         result = 0,
         n = nk[0],
         k = nk[1],
@@ -8,14 +8,14 @@
         pre,
         next;
 
-    //console.log(s); // изписва редицата
+    //console.log(seq); 
 
-    for (var i = 0; i < k; i++) {
-        for (var j = 0; j < n; j++) {
-            if (j == 0) {
+    for (let i = 0; i < k; i++) {
+        for (let j = 0; j < n; j++) {
+            if (j === 0) {
                 pre = n - 1;
                 next = 1;
-            } else if (j == n - 1) {
+            } else if (j === n - 1) {
                 pre = n - 2;
                 next = 0;
             } else {
@@ -23,38 +23,37 @@
                 next = j + 1;
             }
 
-            if (s[j] == 0) {
-                changed[j] = Math.abs(s[pre] - s[next]);
+            if (seq[j] === 0) {
+                changed[j] = Math.abs(seq[pre] - seq[next]);
             }
-            else if (s[j] == 1) {
-                changed[j] = s[pre] + s[next];
+            else if (seq[j] === 1) {
+                changed[j] = seq[pre] + seq[next];
             }
-            else if (s[j] % 2 == 0) {    // even
-                changed[j] = Math.max(s[pre], s[next]);
+            else if (seq[j] % 2 === 0) {    // even
+                changed[j] = Math.max(seq[pre], seq[next]);
             }
             else {   // odd
-                changed[j] = Math.min(s[pre], s[next]);
+                changed[j] = Math.min(seq[pre], seq[next]);
             }
         }
-        s = changed.slice(0);
+        seq = changed.slice(0);
     }
 
     //console.log(changed);
 
-    if (k != 0) {
-        for (var z = 0; z < n; z++) {
+    if (k !== 0) {
+        for (let z = 0; z < n; z++) {
             result += changed[z];
         }
     } else {
-        for (var z = 0; z < n; z++) {
-            result += s[z];
+        for (let z = 0; z < n; z++) {
+            result += seq[z];
         }
     }
 
     console.log(result);
 }
 
-// за тестване
 solve(['5 1', '9 0 2 4 1']);
 solve(['10 3', '1 9 1 9 1 9 1 9 1 9']);
 solve(['10 10', '0 1 2 3 4 5 6 7 8 9']);
