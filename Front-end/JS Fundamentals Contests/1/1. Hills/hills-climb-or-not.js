@@ -1,15 +1,17 @@
 function solve(args) {
     "use strict";
-    let heights = args[0].split(' ').map(Number);
-    let bestCount = -1;
-    let count = 0;
-    let climbDown = true;
-    let current = heights[0];
-    // to catch if the last valley is with best rocks count => to start climb down
+    let heights = args[0].split(' ').map(Number),
+        bestCount = -1,
+        count = 0,
+        climbDown = true,
+        current = heights[0];
+
+    // to catch if the last valley is with best rocks count => must start climb down
     heights.push(-1);
 
     for (let i = 1; i < heights.length; i += 1) {
         let height = heights[i];
+
         if (climbDown) {
             // stop climb down => start to climbing
             if (current < height) {
@@ -23,6 +25,7 @@ function solve(args) {
                 climbDown = true; // climbDown = !climbDown;
             }
         }
+        
         current = height; // update current        
         count += 1;
     }
