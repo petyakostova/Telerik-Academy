@@ -14,15 +14,16 @@
 
     return getAnswer(); // return the answer    
 
+
     function getAnswer() {
         var field = initField();    // filling the matrix with function
         var jumps = readJumps();    // reading the jumps with function
 
-        var escaped = false;
-        var sumOfNumbers = 0;   // в единия случай за резултата ни трябва сумата на числата
-        var totalJumps = 0;     // в другия случай за резултата ни трябва броят подскоци
-        var jumpsIndex = 0;     /*индекс, който показва къде сме в момента с подскоците; 
-                                  този индекс ще обикаля по jumps и ще връща правилния обект*/
+        var escaped = false;     
+        var sumOfNumbers = 0;   // in the first case we need the sum of the numbers for the result
+        var totalJumps = 0;     // in the other case we need the number of jumps for the result
+        var jumpsIndex = 0;     /* index that shows where are we right now with jumps; 
+                                   this index will be touring in jumps and returns the correct object */
 
         // the loop will tour in jumps
         while (true) {            
@@ -34,28 +35,29 @@
 
             // if Joro goes to a previously visited position
             if (field[currentRow][currentCol] === 'X') {
-                escaped = false;
+                //escaped = false;
                 break;
             }
 
-            // да го посетим
-            sumOfNumbers += field[currentRow][currentCol];  // добавяме текущото място, на което сме подскочили, към сумата
-            totalJumps += 1;   // увеличаваме броя на подскоците
+            // to visit
+            sumOfNumbers += field[currentRow][currentCol];  // add the current location, we jumped, to sum
+            totalJumps += 1;   // increasing the number of jumps
 
-            var currentJump = jumps[jumpsIndex++];  // обикаляме подскоците (минаваме на следващия подскок) => текущия скок
-            if (jumpsIndex >= jumps.length) {   // ако сме обиколили всички подскоци,
-                jumpsIndex = 0;                 // нулираме
+            // we must change the jump
+            var currentJump = jumps[jumpsIndex++]; // touring jumps (pass on the next jump) => current jump
+            if (jumpsIndex >= jumps.length) {   // if we toured all jumps,
+                jumpsIndex = 0;                 // resetting
             }
 
-            field[currentRow][currentCol] = 'X';    // маркираме с X навсякъде, където стъпва => посещението
-
+            field[currentRow][currentCol] = 'X'; // mark by X wherever steps => the visit
+             
             currentRow += currentJump.row;
             currentCol += currentJump.col;
         }
 
-        return escaped                      // if Joro has escaped
-            ? 'escaped ' + sumOfNumbers     // return: escaped SUM_OF_NUMBERS
-            : 'caught ' + totalJumps;       // otherwise: caught NUMBER_OF_JUMPS 
+        return escaped                    // if Joro has escaped
+            ? 'escaped ' + sumOfNumbers   // return: escaped SUM_OF_NUMBERS
+            : 'caught ' + totalJumps;     // otherwise: caught NUMBER_OF_JUMPS 
     }
 
     // function for reading the jumps
@@ -76,7 +78,6 @@
             };
 
             jumps.push(currentJump);
-            // if we want to get it => jumps[r].row => the variable at the row r
         }
 
         //console.log(jumps); // check
