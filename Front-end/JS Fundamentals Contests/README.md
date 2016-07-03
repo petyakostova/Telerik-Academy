@@ -9,7 +9,7 @@
 |  [20 May 2014 - Evening](http://bgcoder.com/Contests/189/JavaScript-20-May-2014-Evening) |   [Cakes](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20Fundamentals%20Contests/1/1.%20Cakes)   |       Horsy      |      NikolAngular JS     | Catalan Numbers |
 |  [19 May 2014 - Morning](http://bgcoder.com/Contests/187/JavaScript-19-May-2014-Morning) |  [Vehicles](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20Fundamentals%20Contests/1/1.%20Vehicles) |       Paths      |       Shaver Parser      | Coord System |
 | [1 April 2013 - Evening](http://bgcoder.com/Contests/75/JavaScript-1-April-2013-Evening) |  [Max Sum](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20Fundamentals%20Contests/1/1.%20Max%20Sum)  | Labyrinth Escape |           Listy          |                  |
-| [1 April 2013 - Morning](http://bgcoder.com/Contests/74/JavaScript-1-April-2013-Morning) | [Sequences](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20Fundamentals%20Contests/1/1.%20Sequences) | Joro the Naughty |      Clojure Parsing     |                  |
+| [1 April 2013 - Morning](http://bgcoder.com/Contests/74/JavaScript-1-April-2013-Morning) | [Sequences](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20Fundamentals%20Contests/1/1.%20Sequences) | [Joro the Naughty](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20Fundamentals%20Contests/2/2.%20Joro%20the%20Naughty) |      Clojure Parsing     |                  |
 
 - **1** => **Nested Loops, Arrays**
 
