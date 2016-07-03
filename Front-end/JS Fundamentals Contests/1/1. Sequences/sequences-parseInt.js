@@ -6,7 +6,7 @@ function solve(args) {
 	for (var i = 2; i <= n; i++) {
 		var current = parseInt(args[i]);
 
-		if (current < last) {
+		if (last > current) {
 			count++;
 		}
 		

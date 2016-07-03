@@ -15,4 +15,4 @@
 
 - **2** => **Multidimensional Arrays => Array of Arrays**
 
-- **3** => **Strings**
+- **3** => **Parsing Strings (Standard Text Processing, Regular Expressions)**

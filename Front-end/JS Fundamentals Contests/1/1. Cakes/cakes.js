@@ -7,7 +7,7 @@
     for (var count2 = 0; count2 < s / c2 + 1; count2 += 1) {
       for (var count3 = 0; count3 < s / c3 + 1; count3 += 1) {
 
-        var price = (count1 * c1) + (count2 * c2) + (count3 * c3);
+        var price = count1 * c1 + count2 * c2 + count3 * c3;
 
         if (price <= s) {
           maxMoneyAmount = Math.max(maxMoneyAmount, price);
