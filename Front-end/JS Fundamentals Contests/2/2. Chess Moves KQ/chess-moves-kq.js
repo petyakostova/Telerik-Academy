@@ -1,4 +1,4 @@
-/* globals console */
+/* globals console */ // тези 2 променливи идват отгоре, някой ги подава
 function solve(args) {
     'use strict';
     const rows = +args[0],
@@ -27,7 +27,9 @@ function solve(args) {
     // console.log(moves);
     // console.log(moves.length);
 
+    // обхождаме всеки move и разбираме дали да принтираме yes/no
     moves.forEach(move => {
+        // фигурата
         let fromPiece = board[move.fromRow][move.fromCol],
             toPiece = board[move.toRow][move.toCol];
 
@@ -56,12 +58,14 @@ function solve(args) {
     }
 
     function getColumnIndex(columnName) {
-        let value = columnName.charCodeAt(0);
-        return value - 'a'.charCodeAt(0);
+        // a.. z
+        let value = columnName.charCodeAt(0); // the char code of the symbol, which is on index 0
+        // 0.. 25
+        return value - 'a'.charCodeAt(0); // from the value да извадиш ст-та на символа а
     }
 
     function isKnight(fromPiece) {
-        return fromPiece === 'K';
+        return fromPiece === 'K'; 
     }
 
     function isQueen(fromPiece) {
