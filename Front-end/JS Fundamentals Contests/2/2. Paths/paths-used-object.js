@@ -25,7 +25,9 @@ function solve(args) {
       r: +1  // the col
     },
     upDown,
-    leftRight;
+    leftRight,
+    used = {},
+    key;
 
   while (true) {
     //if (row < 0 || row >= bounds.rows || col < 0 || col >= bounds.cols) {    
@@ -33,16 +35,20 @@ function solve(args) {
       return 'successed with ' + sum;
     }
 
-    if (matrix[row][col] === 'used') {
+    key = row + ';' + col;
+
+    if (used[key]) {
       return 'failed at (' + row + ', ' + col + ')';
     }
+
+    used[key] = true;
 
     // update sum => the value in every cell is = (2 on power row) + col
     sum += (1 << row) + col;
     // sum += Math.pow(2, row) + col; // slower the bitwise operations
 
     dir = matrix[row][col]; // take the direction
-    matrix[row][col] = 'used'; // mark as used  (it's important to be here)  
+
     upDown = dir[0];
     leftRight = dir[1];
     // update row
