@@ -46,3 +46,19 @@ function solve(args) {
   }
 
 }
+
+console.log(solve([
+  '3 5',
+  'dr dl dr ur ul',
+  'dr dr ul ur ur',
+  'dl dr ur dl ur'
+])); 
+// successed with 20
+
+console.log(solve([
+  '3 5',
+  'dr dl dl ur ul',
+  'dr dr ul ul ur',
+  'dl dr ur dl ur'
+])); 
+// failed at (1, 1)
