@@ -1,24 +1,31 @@
 /* globals console */
 function solve(args) {
-    "use strict";
-
+    'use strict';
     const rows = +args[0],
         cols = +args[1];
 
-    const board = args.slice(2, rows + 2);
+    const board = args.slice(2, rows + 2); // array of strings
 
     let moves = args.slice(rows + 2 + 1)
         .map(moveString => {
-            var parts = moveString.split(" ");
-            
-            return {
-                "fromRow": getRowIndex(parts[0][1]),
-                "fromCol": getColumnIndex(parts[0][0]),
+            var parts = moveString.split(' '); // the two cells
+            // parts is array with 2 elements => f.e. d2 b1
 
-                "toRow": getRowIndex(parts[1][1]),
-                "toCol": getColumnIndex(parts[1][0])
+            return {
+                // parts[0] - from where we go
+                'fromRow': getRowIndex(parts[0][1]), // want to take the row => parts[0][1] => the numbers
+                'fromCol': getColumnIndex(parts[0][0]),
+
+                'toRow': getRowIndex(parts[1][1]),
+                'toCol': getColumnIndex(parts[1][0])
             };
         });
+
+    // console.log(rows);
+    // console.log(cols);
+    // console.log(board);
+    // console.log(moves);
+    // console.log(moves.length);
 
     moves.forEach(move => {
         let fromPiece = board[move.fromRow][move.fromCol],
@@ -26,41 +33,43 @@ function solve(args) {
 
         if (isQueen(fromPiece)) {
             if (isEmpty(toPiece) && checkQueen(move)) {
-                console.log("yes");
+                console.log('yes');
             } else {
-                console.log("no");
+                console.log('no');
             }
         } else if (isKnight(fromPiece)) {
             if (isEmpty(toPiece) && checkKnight(move)) {
-                console.log("yes");
+                console.log('yes');
             } else {
-                console.log("no");
+                console.log('no');
             }
         } else {
             //empty
-            console.log("no");
+            console.log('no');
         }
     });
 
     function getRowIndex(rowName) {
+        // rows.. 1        
         return rows - rowName;
+        // 1.. rows
     }
 
     function getColumnIndex(columnName) {
         let value = columnName.charCodeAt(0);
-        return value - "a".charCodeAt(0);
+        return value - 'a'.charCodeAt(0);
     }
 
     function isKnight(fromPiece) {
-        return fromPiece === "K";
+        return fromPiece === 'K';
     }
 
     function isQueen(fromPiece) {
-        return fromPiece === "Q";
+        return fromPiece === 'Q';
     }
 
     function isEmpty(fromPiece) {
-        return fromPiece === "-";
+        return fromPiece === '-';
     }
 
     function checkQueen(move) {
@@ -114,4 +123,44 @@ function solve(args) {
     }
 }
 
-module.exports = solve;
+solve([
+    '3',
+    '4',
+    '--K-',
+    'K--K',
+    'Q--Q',
+    '12',
+    'd1 b3',
+    'a1 a3',
+    'c3 b2',
+    'a1 c1',
+    'a1 b2',
+    'a1 c3',
+    'a2 c1',
+    'd2 b1',
+    'b1 b2',
+    'c3 a3',
+    'a2 a3',
+    'd1 d3'
+]);
+
+solve([
+    '5',
+    '5',
+    'Q---Q',
+    '-----',
+    '-K---',
+    '--K--',
+    'Q---Q',
+    '10',
+    'a1 a1',
+    'a1 d4',
+    'e1 b4',
+    'a5 d2',
+    'e5 b2',
+    'b3 d4',
+    'b3 c1',
+    'b3 d1',
+    'c2 a3',
+    'c2 b4'
+]);
