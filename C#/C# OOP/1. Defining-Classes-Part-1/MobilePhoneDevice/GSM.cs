@@ -15,10 +15,10 @@
 
         // constants
         //private constant callPrice
-        private const decimal callPricePerSecond = 0.37m;
+        private const decimal CallPricePerSecond = 0.37m;
         //private constants instead of null values..
-        private const decimal defaultPrice = 1800;
-        private const string defaultOwner = "JCorp";
+        private const decimal DefaultPrice = 1800;
+        private const string DefaultOwner = "JCorp";
 
         // fields
         private string model;
@@ -33,7 +33,7 @@
         /* default constructor with only model and manufacturer
            2. model and manufacturer are mandatory (the others are optional) */
         public GSM(string model, string manufacturer)
-            : this(model, manufacturer, defaultPrice, defaultOwner, new Battery(), new Display()) 
+            : this(model, manufacturer, DefaultPrice, DefaultOwner, new Battery(), new Display()) 
         { 
 
         }
@@ -208,7 +208,7 @@
                 allDuaration += call.Duaration;
             }
 
-            return allDuaration * callPricePerSecond;
+            return allDuaration * CallPricePerSecond;
         }
     }
 }
