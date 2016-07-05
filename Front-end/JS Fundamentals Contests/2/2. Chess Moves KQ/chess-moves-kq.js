@@ -1,3 +1,5 @@
+// TODO
+
 /* globals console */ // тези 2 променливи идват отгоре, някой ги подава
 function solve(args) {
     'use strict';
