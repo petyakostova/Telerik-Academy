@@ -4,6 +4,7 @@
     {
         Black,
         Brown,
-        White
+        White,
+        Mixed
     }
 }

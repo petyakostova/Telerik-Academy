@@ -2,7 +2,6 @@
 {
     using MyCollections;
     using System;
-    using System.Collections.Generic;
 
     using FirstCat = CatSystem.Cat;
     using SecondCat = AnimalSystem.Cat;
@@ -30,14 +29,16 @@
             Console.WriteLine(peshoOwner.FullName); // Pesho Ivanov
 
             var cat = new Cat(CatColor.White);
-            //whiteCat.Owner = peshoOwner;
+            //whiteCat.Owner = peshoOwner; // Pesho doesn't know that he has a cat
             var anotherCat = new Cat(CatColor.Black);
             var yetAnotherCat = new Cat(CatColor.Brown);
 
             peshoOwner.AddCat(cat, "Dzhinks");
             peshoOwner.AddCat(anotherCat, "Silvestar");
 
-            // this will cause Unhandled Exception: System.NullReferenceException: Object reference not set to an instance of an object. => Line 25 in Owner.cs
+            /* this will cause Unhandled Exception: System.NullReferenceException: 
+               Object reference not set to an instance of an object. => Line 27 in Owner.cs => we need: 
+               this.cats = new List<Cat>(); */
             Console.WriteLine(peshoOwner.AllCats);  //Dzhinks, Silvestar
 
             // print static property
@@ -53,7 +54,7 @@
             ChangeCatName(anotherCat);
             Console.WriteLine(anotherCat.Name); //Johny
 
-            // example fot using structure
+            // example for using structure
             var point = new Point();
             point.X = 4.5m;
             point.Y = 18.9m;
@@ -92,8 +93,29 @@
             FirstCat kitten = new FirstCat(CatColor.Brown);
             SecondCat anotherKitten = new SecondCat();
 
-        }
+            var myStrings = new StringCouple();
+            myStrings.Add("Ivan", "Ivanov");
+            myStrings.Add("Pavel", "Pavlov");
 
+            // thanks to the indexer in StringCouple.cs we can do that
+            Console.WriteLine(myStrings["Ivan"]); // Ivanov
+
+            myStrings["Pavel"] = "Kostov";
+            Console.WriteLine(myStrings["Pavel"]); // Kostov
+
+            //Console.WriteLine(myStrings["Todor"]); // this will cause System.ArgumentException: Index was not found
+
+            anotherCat.Gender = Gender.Male;
+            yetAnotherCat.Gender = Gender.Female;
+            var result = anotherCat + yetAnotherCat;
+            Console.WriteLine(result.Color); // Mixed
+            
+            if (cat) // needed bool operators => true and false in Cat.cs
+            {
+                Console.WriteLine("{0} is white.", cat.Name); // Dzhinks is white.
+            }
+
+        }
 
         // generic method, which expects T to be a structure
         public static string GetString<T>(T element)
@@ -102,8 +124,8 @@
             return element.ToString();
         }
 
-        //// don't do that
-        //// but in this case ususally generic will invoke first
+        // don't do that
+        // but in this case ususally generic will invoke first
         //public static string GetString(object element)
         //{
         //    return element.ToString();

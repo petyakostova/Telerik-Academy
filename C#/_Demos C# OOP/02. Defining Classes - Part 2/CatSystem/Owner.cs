@@ -13,7 +13,8 @@ namespace CatSystem
         private string firstName;
         private string lastName;
 
-        // when we use referent types (collections), we must instance them in the constructor otherwise CatSystemStart.cs Line 30
+        /* when we use referent tyзpes (collections), we must instance them in the constructor 
+           otherwise CatSystemStart.cs Console.WriteLine(peshoOwner.AllCats); (Line 42) doesn't work */
         private List<Cat> cats;
 
         // constructor for owner with two names
@@ -22,7 +23,7 @@ namespace CatSystem
             this.firstName = firstName;
             this.lastName = lastName;
             this.Age = 0;
-            // instance the list in the constructor 
+            // instance the list in the constructor, before use it 
             this.cats = new List<Cat>();
         }
 
@@ -52,11 +53,12 @@ namespace CatSystem
             }
         }
 
-        public string AllCats
+        public string AllCats // all cats to the owner
         {
             get
             {
-                return string.Join(", ", this.cats.Select(c => c.Name));    // Select => using System.Linq;
+                return string.Join(", ", this.cats.Select(c => c.Name)); // Select => using System.Linq;
+                // Dzhinks, Silvestar
             }
         }
 
@@ -73,12 +75,13 @@ namespace CatSystem
         {
             if (this.cats.Contains(cat))
             {
-                throw new ArgumentException("This owner already owns this cat: " + cat.Name);    // using System
+                throw new ArgumentException("This owner already owns this cat: " + cat.Name); // using System
             }
 
-            cat.Name = name;
-            cat.Owner = this;   // this => the current owner
-            this.cats.Add(cat);
+            cat.Name = name;    // the owner gives a name to the cat
+            cat.Owner = this;   // this => the current owner; set the owner
+
+            this.cats.Add(cat); // add cat in the list => the owner has a new cat
         }
     
     }
