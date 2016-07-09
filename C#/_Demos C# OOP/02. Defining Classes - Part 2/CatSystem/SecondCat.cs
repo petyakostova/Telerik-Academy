@@ -1,6 +1,6 @@
 ﻿namespace AnimalSystem
 {
-    public class Cat
+    public class SecondCat
     {
         public string somethingElse { get; set; }
     }

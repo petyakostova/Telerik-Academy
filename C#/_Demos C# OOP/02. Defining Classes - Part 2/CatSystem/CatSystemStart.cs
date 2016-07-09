@@ -4,7 +4,7 @@
     using System;
 
     using FirstCat = CatSystem.Cat;
-    using SecondCat = AnimalSystem.Cat;
+    using SecondCat = AnimalSystem.SecondCat;
 
     public class CatSystemStart
     {
@@ -89,7 +89,7 @@
             Console.WriteLine(min); //5
 
             // two classes with same name in different namespaces
-            var secondCat = new AnimalSystem.Cat(); // secondCat.somethingElse...
+            var secondCat = new AnimalSystem.SecondCat(); // secondCat.somethingElse...
             FirstCat kitten = new FirstCat(CatColor.Brown);
             SecondCat anotherKitten = new SecondCat();
 
