@@ -246,7 +246,6 @@
             // must be:
             attackingMachine.Attack(defendingMachineName);
 
-
             var attackPoints = attackingMachine.AttackPoints;
             var defensePoints = defendingMachine.DefensePoints;
 

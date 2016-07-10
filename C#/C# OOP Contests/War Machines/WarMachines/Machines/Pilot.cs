@@ -30,6 +30,7 @@
             {
                 return this.name;
             }
+
             protected set
             {
                 Validator.CheckIfStringIsNullOrEmpty(value, "Pilot name cannot be null!");
@@ -53,7 +54,6 @@
                     .OrderBy(m => m.HealthPoints)   //using System.Linq;
                     .ThenBy(m => m.Name);
             // OrderBy and ThenBy return new collection and must be declared new variable to get the result
-
             var noMachineMaybe =
                 this.machines.Count > 0
                 ? this.machines.Count.ToString()

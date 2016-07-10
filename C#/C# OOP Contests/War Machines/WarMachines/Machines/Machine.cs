@@ -29,6 +29,7 @@
             {
                 return this.name;
             }
+
             set
             {
                 Validator.CheckIfStringIsNullOrEmpty(value, "Machine name cannot be null!");
@@ -43,6 +44,7 @@
             {
                 return this.pilot;
             }
+
             set
             {
                 Validator.CheckIfNull(value, "Pilot cannot be null!");
@@ -65,7 +67,6 @@
         public IList<string> Targets
         {
             //get { return this.targets; } => this is not ok => must be encapsulated
-
             get { return new List<string>(this.targets); }
         }
 

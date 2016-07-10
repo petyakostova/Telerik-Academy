@@ -29,9 +29,8 @@
 
             result.Append(baseString);
             result.Append(string.Format(
-                " *Stealth: {0}", 
-                this.StealthMode 
-                ? "ON" 
+                " *Stealth: {0}", this.StealthMode
+                ? "ON"
                 : "OFF"));
 
             return result.ToString();

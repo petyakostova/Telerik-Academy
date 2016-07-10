@@ -11,7 +11,6 @@
         private const int AttackPointsChange = 40;
         private const int DefensePointsChange = 30;
 
-
         // must be created constructor, because there is not upper
         public Tank(string name, double attackPoints, double defensePoints)
             : base(name, attackPoints, defensePoints, InitialHealthPoints)
@@ -46,9 +45,8 @@
 
             result.Append(baseString);
             result.Append(string.Format(
-                " *Defense: {0}", 
-                    this.DefenseMode 
-                    ? "ON" 
+                " *Defense: {0}", this.DefenseMode
+                    ? "ON"
                     : "OFF"));
 
             return result.ToString();
