@@ -1,6 +1,5 @@
 ﻿namespace WarMachines.Machines
 {
-    using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
@@ -13,7 +12,7 @@
         private string name;
         // must be the most abstract => IEnumerable, but:
         // IEnumerable gives foreach; doesn't give Add, Remove, Count etc.
-        // ICollection gives all 
+        // ICollection gives all - Add, Remove, Count etc.
         // IList is the interface of the List - gives indexator, all methods to the collections
         private IList<IMachine> machines;
 
@@ -54,6 +53,7 @@
                     .OrderBy(m => m.HealthPoints)   //using System.Linq;
                     .ThenBy(m => m.Name);
             // OrderBy and ThenBy return new collection and must be declared new variable to get the result
+
             var noMachineMaybe =
                 this.machines.Count > 0
                 ? this.machines.Count.ToString()

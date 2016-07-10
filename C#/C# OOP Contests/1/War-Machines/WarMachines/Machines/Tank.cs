@@ -16,7 +16,6 @@
             : base(name, attackPoints, defensePoints, InitialHealthPoints)
         {
             this.ToggleDefenseMode();
-            // TODO: start defence mode
         }
 
         // no validation
@@ -25,6 +24,7 @@
         public void ToggleDefenseMode()
         {
             this.DefenseMode = !this.DefenseMode;
+
             if (this.DefenseMode)
             {
                 this.AttackPoints -= AttackPointsChange;
@@ -44,6 +44,7 @@
             var result = new StringBuilder();
 
             result.Append(baseString);
+
             result.Append(string.Format(
                 " *Defense: {0}", this.DefenseMode
                     ? "ON"

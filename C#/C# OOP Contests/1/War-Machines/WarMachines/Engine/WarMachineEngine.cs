@@ -242,7 +242,6 @@
 
             // this line is wrong
             //attackingMachine.Targets.Add(defendingMachineName);
-
             // must be:
             attackingMachine.Attack(defendingMachineName);
 

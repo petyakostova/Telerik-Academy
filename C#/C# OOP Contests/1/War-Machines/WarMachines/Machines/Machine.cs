@@ -20,7 +20,7 @@
             this.AttackPoints = attackPoints;
             this.DefensePoints = defensePoints;
             this.HealthPoints = healthPoints;
-            this.targets = new List<string>();
+            this.targets = new List<string>(); // must be instanced
         }
 
         public string Name
@@ -84,8 +84,7 @@
             result.AppendLine(string.Format("- {0}", this.Name));
 
             // GetType().Name => get the type and give the name (like string)
-            result.AppendLine(string.Format(" *Type: {0}", this.GetType().Name));
-
+            result.AppendLine(string.Format(" *Type: {0}", this.GetType().Name)); // The name of the class "Tank"/"Fighter"
             result.AppendLine(string.Format(" *Health: {0}", this.HealthPoints));
             result.AppendLine(string.Format(" *Attack: {0}", this.AttackPoints));
             result.AppendLine(string.Format(" *Defense: {0}", this.DefensePoints));
