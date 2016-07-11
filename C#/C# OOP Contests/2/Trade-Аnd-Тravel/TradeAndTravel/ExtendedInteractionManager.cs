@@ -1,5 +1,6 @@
 ﻿namespace TradeAndTravel
 {
+    using System;
     using System.Linq;
 
     public class ExtendedInteractionManager : InteractionManager
@@ -40,10 +41,19 @@
                 case "gather":
                     this.HandleGatherInteraction(actor, commandWords[2]);
                     break;
+                case "craft":
+                    this.HandleCraftInteraction(actor, commandWords[2], commandWords[3]);
+                    break;
                 default:
                     base.HandlePersonCommand(commandWords, actor);
                     break;
             }
+        }
+
+        private void HandleCraftInteraction(Person actor, string itemTypeString, string itemNameString)
+        {
+            // TODO
+            throw new NotImplementedException();
         }
 
         private void HandleGatherInteraction(Person actor, string itemName)
