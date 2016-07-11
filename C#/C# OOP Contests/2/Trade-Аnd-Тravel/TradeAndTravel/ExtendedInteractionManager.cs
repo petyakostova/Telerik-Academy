@@ -47,20 +47,31 @@
         }
 
         private void HandleGatherInteraction(Person actor, string itemName)
-        {            
-            if (actor.Location.LocationType == LocationType.Forest   // check if it is on the location
-                && actor.ListInventory()                             // check if we have weapon
-                .Any(i => i.ItemType == ItemType.Weapon)) // using System.Linq; => for Any
+        {
+            if (actor.Location is IGatheringLocation)
             {
-                this.AddToPerson(actor, new Wood(itemName));
+                var gatheringLocation = actor.Location as IGatheringLocation;
+
+                if (actor.ListInventory().Any(i => i.ItemType == gatheringLocation.RequiredItem))
+                {
+                    this.AddToPerson(actor, gatheringLocation.ProduceItem(itemName));
+                }
             }
 
-            if (actor.Location.LocationType == LocationType.Mine   // check if it is on the location
-                && actor.ListInventory()                             // check if we have weapon
-                .Any(i => i.ItemType == ItemType.Armor)) // using System.Linq; => for Any
-            {
-                this.AddToPerson(actor, new Iron(itemName));
-            }
+            // this works too but gives less points
+            //if (actor.Location.LocationType == LocationType.Forest   // check if it is on the location
+            //    && actor.ListInventory()                             // check if we have weapon
+            //    .Any(i => i.ItemType == ItemType.Weapon)) // using System.Linq; => for Any
+            //{
+            //    this.AddToPerson(actor, new Wood(itemName));
+            //}
+
+            //if (actor.Location.LocationType == LocationType.Mine   // check if it is on the location
+            //    && actor.ListInventory()                             // check if we have weapon
+            //    .Any(i => i.ItemType == ItemType.Armor)) // using System.Linq; => for Any
+            //{
+            //    this.AddToPerson(actor, new Iron(itemName));
+            //}
 
         }
     }
