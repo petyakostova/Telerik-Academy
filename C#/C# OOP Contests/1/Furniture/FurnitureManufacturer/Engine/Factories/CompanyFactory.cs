@@ -8,7 +8,6 @@
     {
         public ICompany CreateCompany(string name, string registrationNumber)
         {
-            // Implement this method
             return new Company(name, registrationNumber);
             //(Ctr+. => generate constructor in FurnitureManufacturer.Models.Company => F12 go there)
         }

@@ -15,27 +15,24 @@
 
         public ITable CreateTable(string model, string materialType, decimal price, decimal height, decimal length, decimal width)
         {
-            // Implement this method
             //(Ctr+. => generate constructor in FurnitureManufacturer.Models.Table => F12 go there)
             return new Table(
-                model,
-                GetMaterialType(materialType),
-                price,
-                height,
-                length,
+                model, 
+                GetMaterialType(materialType), 
+                price, 
+                height, 
+                length, 
                 width);
-
         }
 
         public IChair CreateChair(string model, string materialType, decimal price, decimal height, int numberOfLegs)
         {
-            // Implement this method
             //(Ctr+. => generate constructor in FurnitureManufacturer.Models.Chair => F12 go there)
             return new Chair(
-                model,
-                GetMaterialType(materialType),
-                price,
-                height,
+                model, 
+                GetMaterialType(materialType), 
+                price, 
+                height, 
                 numberOfLegs);
         }
 
@@ -44,10 +41,10 @@
             // Implement this method
             //(Ctr+. => generate constructor in FurnitureManufacturer.Models.AdjustableChair => F12 go there)
             return new AdjustableChair(
-                model,
-                GetMaterialType(materialType),
-                price,
-                height,
+                model, 
+                GetMaterialType(materialType), 
+                price, 
+                height, 
                 numberOfLegs);
         }
 
@@ -56,11 +53,11 @@
             // Implement this method
             //(Ctr+. => generate constructor in FurnitureManufacturer.Models.ConvertibleChair => F12 go there)
             return new ConvertibleChair(
-                model,
-                GetMaterialType(materialType),
-                price,
-                height,
-                numberOfLegs);           
+                model, 
+                GetMaterialType(materialType), 
+                price, 
+                height, 
+                numberOfLegs);
         }
 
         private MaterialType GetMaterialType(string material)

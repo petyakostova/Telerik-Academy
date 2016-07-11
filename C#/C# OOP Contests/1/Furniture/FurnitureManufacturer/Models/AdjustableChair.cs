@@ -5,9 +5,9 @@
 
     public class AdjustableChair : Chair, IAdjustableChair
     {
-        private string materialType;
+        //private string materialType;
 
-        public AdjustableChair(string model, Models.MaterialType materialType, decimal price, decimal height, int numberOfLegs)
+        public AdjustableChair(string model, MaterialType materialType, decimal price, decimal height, int numberOfLegs)
             : base(model, materialType, price, height, numberOfLegs)
         {
         }
@@ -16,5 +16,7 @@
         {
             this.Height = height;   // through the property, because we want to use the check in Furniture.cs
         }
+
+        // AdjustableChair : Chair => the method ToString is in Chair.cs
     }
 }

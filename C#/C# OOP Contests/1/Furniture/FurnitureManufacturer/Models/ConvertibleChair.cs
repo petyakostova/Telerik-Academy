@@ -9,9 +9,9 @@
 
         // Has too states – converted and normal. 
         // Initial state is normal.
-        private bool isConverted = false;        
+        private bool isConverted = false;
 
-        public ConvertibleChair(string model, Models.MaterialType materialType, decimal price, decimal height, int numberOfLegs)
+        public ConvertibleChair(string model, MaterialType materialType, decimal price, decimal height, int numberOfLegs)
             : base(model, materialType, price, height, numberOfLegs)
         {
 
@@ -61,9 +61,8 @@
 
         public override string ToString()
         {
-            return base.ToString() + string.Format(
-                ", State: {0}", this.IsConverted ? "Converted" : "Normal");
+            return base.ToString() + string.Format(", State: {0}",
+                this.IsConverted ? "Converted" : "Normal");
         }
     }
 }
- 
