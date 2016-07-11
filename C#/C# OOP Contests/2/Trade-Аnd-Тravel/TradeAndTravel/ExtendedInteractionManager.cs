@@ -14,6 +14,8 @@ namespace TradeAndTravel
             {
                 case "weapon":
                     return new Weapon(itemNameString, itemLocation);
+                case "wood":
+                    return new Wood(itemNameString, itemLocation);
                 default:
                     return base.CreateItem(itemTypeString, itemNameString, itemLocation, item);
             }
