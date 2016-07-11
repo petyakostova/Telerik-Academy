@@ -11,7 +11,7 @@ namespace TradeAndTravel
         private const int InitialValue = 10;
 
         public Weapon(string name, Location location = null)
-            : base(name, InitialValue, ItemType.Weapon, location)
+            : base(name, Weapon.InitialValue, ItemType.Weapon, location)
         {
         }
 
