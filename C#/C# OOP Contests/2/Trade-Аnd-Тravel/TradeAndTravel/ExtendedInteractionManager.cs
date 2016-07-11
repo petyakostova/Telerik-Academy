@@ -30,6 +30,8 @@ namespace TradeAndTravel
             {
                 case "mine":
                     return new Mine(locationName);
+                case "forest":
+                    return new Forest(locationName);
                 default:
                     return base.CreateLocation(locationTypeString, locationName);
             }
