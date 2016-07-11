@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TradeAndTravel
+﻿namespace TradeAndTravel
 {
+    using System.Linq;
+
     public class ExtendedInteractionManager : InteractionManager
     {
         protected override Item CreateItem(string itemTypeString, string itemNameString, Location itemLocation, Item item)
@@ -37,5 +33,35 @@ namespace TradeAndTravel
             }
         }
 
+        protected override void HandlePersonCommand(string[] commandWords, Person actor)
+        {
+            switch (commandWords[1])
+            {
+                case "gather":
+                    this.HandleGatherInteraction(actor, commandWords[2]);
+                    break;
+                default:
+                    base.HandlePersonCommand(commandWords, actor);
+                    break;
+            }
+        }
+
+        private void HandleGatherInteraction(Person actor, string itemName)
+        {            
+            if (actor.Location.LocationType == LocationType.Forest   // check if it is on the location
+                && actor.ListInventory()                             // check if we have weapon
+                .Any(i => i.ItemType == ItemType.Weapon)) // using System.Linq; => for Any
+            {
+                this.AddToPerson(actor, new Wood(itemName));
+            }
+
+            if (actor.Location.LocationType == LocationType.Mine   // check if it is on the location
+                && actor.ListInventory()                             // check if we have weapon
+                .Any(i => i.ItemType == ItemType.Armor)) // using System.Linq; => for Any
+            {
+                this.AddToPerson(actor, new Iron(itemName));
+            }
+
+        }
     }
 }

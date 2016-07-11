@@ -44,6 +44,7 @@
     <Compile Include="Armor.cs" />
     <Compile Include="Engine.cs" />
     <Compile Include="ExtendedInteractionManager.cs" />
+    <Compile Include="Forest.cs" />
     <Compile Include="IGatheringLocation.cs" />
     <Compile Include="InteractionManager.cs" />
     <Compile Include="Iron.cs" />
