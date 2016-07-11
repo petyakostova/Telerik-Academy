@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Armor.cs" />
     <Compile Include="Engine.cs" />
+    <Compile Include="ExtendedInteractionManager.cs" />
     <Compile Include="IGatheringLocation.cs" />
     <Compile Include="InteractionManager.cs" />
     <Compile Include="IShopkeeper.cs" />
@@ -57,6 +58,7 @@
     <Compile Include="Shopkeeper.cs" />
     <Compile Include="Town.cs" />
     <Compile Include="Traveller.cs" />
+    <Compile Include="Weapon.cs" />
     <Compile Include="WorldObject.cs" />
   </ItemGroup>
   <ItemGroup>

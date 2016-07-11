@@ -10,8 +10,13 @@ namespace TradeAndTravel
     {
         static void Main(string[] args)
         {
-            var engine = new Engine(new InteractionManager());
+            var engine = new Engine(new ExtendedInteractionManager());
             engine.Start();
+            // test ExtendedInteractionManager:
+            //create location town whiterun
+            //create item weapon weaponname whiterun
+            // => no exception => weapon works
+
         }
     }
 }
