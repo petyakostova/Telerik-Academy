@@ -17,6 +17,9 @@ namespace TradeAndTravel
             //create item weapon weaponname whiterun
             // => no exception => weapon works
 
+            // test Mine
+            //create location mine BobovDol 
+
         }
     }
 }

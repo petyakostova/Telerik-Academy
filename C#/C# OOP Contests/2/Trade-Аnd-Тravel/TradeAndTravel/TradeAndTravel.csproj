@@ -46,12 +46,14 @@
     <Compile Include="ExtendedInteractionManager.cs" />
     <Compile Include="IGatheringLocation.cs" />
     <Compile Include="InteractionManager.cs" />
+    <Compile Include="Iron.cs" />
     <Compile Include="IShopkeeper.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="ItemType.cs" />
     <Compile Include="ITraveller.cs" />
     <Compile Include="Location.cs" />
     <Compile Include="LocationType.cs" />
+    <Compile Include="Mine.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -59,6 +61,7 @@
     <Compile Include="Town.cs" />
     <Compile Include="Traveller.cs" />
     <Compile Include="Weapon.cs" />
+    <Compile Include="Wood.cs" />
     <Compile Include="WorldObject.cs" />
   </ItemGroup>
   <ItemGroup>
