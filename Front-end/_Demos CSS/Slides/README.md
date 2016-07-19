@@ -10,6 +10,6 @@
 
 #### [4. LESS](https://rawgit.com/petyakostova/Telerik-Academy/master/Front-end/_Demos%20CSS/Slides/04.%20LESS/index.html)
 
-#### [4. Stylus](https://rawgit.com/petyakostova/Telerik-Academy/master/Front-end/_Demos%20CSS/Slides/04.%20SASS/index.html)
+#### [4. SASS](https://rawgit.com/petyakostova/Telerik-Academy/master/Front-end/_Demos%20CSS/Slides/04.%20SASS/index.html)
 
-#### [4. SASS](https://rawgit.com/petyakostova/Telerik-Academy/master/Front-end/_Demos%20CSS/Slides/04.%20Stylus/index.html)
+#### [4. Stylus](https://rawgit.com/petyakostova/Telerik-Academy/master/Front-end/_Demos%20CSS/Slides/04.%20Stylus/index.html)
