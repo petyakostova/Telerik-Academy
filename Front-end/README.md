@@ -35,11 +35,12 @@
 
 ---
 
-####4. JavaScript - OOP
+####4. JavaScript - UI and DOM
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides] / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos] / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15">Tasks] / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/video.png" height="15"> Videos]
 
 ---
 
-####5. JavaScript - UI and DOM
+####5. JavaScript - OOP
 
 ---
 
