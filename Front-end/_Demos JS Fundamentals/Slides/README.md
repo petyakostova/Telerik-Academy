@@ -25,5 +25,3 @@
 #### [11. Strings](https://rawgit.com/TelerikAcademy/JavaScript-Fundamentals/master/Topics/11. Strings/index.html)
 
 #### [12. Regular Expressions](https://rawgit.com/TelerikAcademy/JavaScript-Fundamentals/master/Topics/12. Regular Expressions/index.html) 
-
-#### [13. Exam preparation](https://rawgit.com/TelerikAcademy/JavaScript-Fundamentals/master/Topics/13. Exam preparation/index.html) 
