@@ -37,8 +37,16 @@
 
 ---
 
-####4. High Quality Code (HQC)
+####4. Unit Testing
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/> Slides]() / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos]() / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15"> Homeworks]() / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Contests]()
+* [Unit Testing Homework]
+* [Test-Driven Development (TDD) Homework]
+* [Mocking with Moq and JustMock Homework]
 
 ---
 
-####5. Data Structures and Algorithms (DSA)
+####5. High Quality Code (HQC)
+
+---
+
+####6. Data Structures and Algorithms (DSA)

@@ -24,9 +24,12 @@ The course focuses on the **principles of abstraction, data encapsulation , inhe
 
 The cource covers topics such as **static members**, **structures**, **enumerations**, **generic classes**, **namespaces**, **indexers**, **operators**, **attributes**, **extension methods**, **anonymous types**, **delegates**, **events**, **lambda expressions**, **LINQ**, **the Common Type System** in .NET Framework (the value and reference types and the system types and standard interfaces, defined in the CTS).
 
-###4. High Quality Code (HQC)
+###4. Unit Testing
+The course "Unit Testing" introduces the fundamental principles and practices for building high-quality code and provides knowledge of techniques like Mocking and Test-Driven development. Learn how to test automated already written code to detect and correct errors that otherwise would be easily missed.
 
-###5. Data Structures and Algorithms
+###5. High Quality Code (HQC)
+
+###6. Data Structures and Algorithms
 
 ## [Front-end] (Front-end)
 ###1. HTML
