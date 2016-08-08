@@ -19,7 +19,8 @@ namespace ArmyOfCreatures.Tests
             var mockedFactory = new Mock<ICreaturesFactory>();
             var mockedLogger = new Mock<ILogger>();
 
-            var battleManager = new BattleManager(null, mockedLogger.Object);
+            //public BattleManager(ICreaturesFactory creaturesFactory, ILogger logger)
+            var battleManager = new BattleManager(mockedFactory.Object, mockedLogger.Object);
 
             // Act & Assert
             Assert.Throws<ArgumentNullException>(() => battleManager.AddCreatures(null, 1));
@@ -35,13 +36,13 @@ namespace ArmyOfCreatures.Tests
             var battleManager = new BattleManager(mockedFactory.Object, mockedLogger.Object);
 
             var fixture = new Fixture();
-
             fixture.Customizations.Add(
                     new TypeRelay(
                         typeof(Creature),
                         typeof(Angel)));
-
             var creature = fixture.Create<Creature>();
+
+            //var creature = new Angel();
 
             mockedFactory.Setup(x => x.CreateCreature(It.IsAny<string>())).Returns(creature);
 
