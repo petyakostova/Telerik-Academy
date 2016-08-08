@@ -58,6 +58,7 @@ namespace ArmyOfCreatures.Tests
             Assert.AreEqual(1, identifier.ArmyNumber);
         }
 
+        // testing ToString()
         [Test]
         public void CreatureIdentifier_WhenValidValueIsPassed_ToStringShouldReturnExpectedString()
         {
