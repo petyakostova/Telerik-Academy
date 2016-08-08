@@ -25,6 +25,23 @@ namespace ArmyOfCreatures.Tests
             Assert.IsInstanceOf(expectedCreature.GetType(), creature.GetType());
         }
 
+        //[TestCase("Angel")]
+        //[TestCase("Archangel")]
+        //[TestCase("ArchDevil")]
+        //[TestCase("Behemoth")]
+        //[TestCase("Devil")]
+        //public void CreaturesFactory_WhenValidNameIsPassed_ShouldReturnExpectedType2(string name)
+        //{
+        //    // Arrange
+        //    var factory = new ExtendedCreaturesFactory();
+
+        //    // Act
+        //    var creature = factory.CreateCreature(name);
+
+        //    // Assert
+        //    Assert.AreEqual(name, creature.GetType().Name);
+        //}
+
         [Test]
         public void CreaturesFactory_WhenInValidNameIsPassed_ShouldThrowArgumentException()
         {
