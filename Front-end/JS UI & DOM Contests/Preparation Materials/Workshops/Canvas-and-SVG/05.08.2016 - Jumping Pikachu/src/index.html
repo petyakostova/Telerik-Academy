@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pikachu game</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <canvas id="player-canvas"></canvas>
+    <canvas id="pokeball-canvas"></canvas>
+    <canvas id="background-canvas"></canvas>
+    <img class="sprite-image" src="./imgs/pikachu-running.png" id="pikachu-sprite" />
+    <img class="sprite-image" src="./imgs/pokeball-rolling.png" id="pokeball-sprite" />
+    <img class="sprite-image" src="./imgs/dead.png" id="dead-player" />
+    <img src="./imgs/city_background_night.png" id="background" class="sprite-image">
+    <img src="./imgs/pikachu-jumping.png" alt="" id="pikachu-jumping-sprite" class="sprite-image">
+    <audio id="game-over-song" src="./audio/game-over-song.mp3" hidden />
+
+    <script src="./js/sprite.js"></script>
+    <script src="./js/physical-body.js"></script>
+    <script src="./js/background.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

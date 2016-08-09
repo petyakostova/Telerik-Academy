@@ -1,0 +1,19 @@
+canvas {
+    position: absolute;
+}
+
+#player-canvas {
+    z-index: 10
+}
+
+#pokeball-canvas {
+    z-index: 5
+}
+
+#background-canvas {
+    z-index: 1;
+}
+
+.sprite-image {
+    display: none;
+}
