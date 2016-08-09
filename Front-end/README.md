@@ -36,7 +36,16 @@
 ---
 
 ####4. JavaScript - UI and DOM
-##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/_Demos%20JS%20UI%20%26%20DOM/Slides) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/_Demos%20JS%20UI%20%26%20DOM) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15">Homeworks] / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Contests](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20UI%20%26%20DOM%20Contests)
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/_Demos%20JS%20UI%20%26%20DOM/Slides) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/_Demos%20JS%20UI%20%26%20DOM) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15">Homeworks](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20UI%20%26%20DOM) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Contests](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20UI%20%26%20DOM%20Contests)
+* [HTML5 Canvas Homework]
+* [Scalable Vector Graphics Homework]
+* [Frameworks for Graphics Homework] 
+* [Animations with HTML5 Canvas Homework] 
+* [DOM Operations Homework] 
+* [Event Model Homework] 
+* [jQuery Overview Homework] 
+* [jQuery Plugins Homework]  
+* [HTML Templates Homework]
 
 ---
 
