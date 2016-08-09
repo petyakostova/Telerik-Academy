@@ -18,7 +18,7 @@ namespace ArmyOfCreatures.Tests
             var mockedFactory = new Mock<ICreaturesFactory>();
             var mockedLogger = new Mock<ILogger>();
 
-            var battleManager = new MockedBattleManager(mockedFactory.Object, mockedLogger.Object);
+            var battleManager = new BattleManager(mockedFactory.Object, mockedLogger.Object);
 
             // The code itself should be refactored. Think about sealed class to be changed or the static method itself
             // You could use an unconstrained Mocking framework
@@ -46,7 +46,7 @@ namespace ArmyOfCreatures.Tests
         }
 
         [Test]
-        public void Attack_WhenAttackIsSucessful_ShouldCallWriteline6Times()
+        public void Attack_WhenAttackIsSuccessful_ShouldCallWriteline6Times()
         {
             // Arrange
             var mockedFactory = new Mock<CreaturesFactory>();
