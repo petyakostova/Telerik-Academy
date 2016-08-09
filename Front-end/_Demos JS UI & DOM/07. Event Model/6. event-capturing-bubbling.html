@@ -1,0 +1,39 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Event Model - Capturing and Bubbling Events</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body onload="onBodyLoad()">
+    <div>
+        <section>
+            <div>
+                <div>
+                    <a class="button" href="#">Click me!</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function onBubbleClick() {
+            console.log("Bubbling: " + this.nodeName);
+        }
+
+        function onCaptureClick() {
+            console.log("Capturing: " + this.nodeName);
+        }
+
+        function onBodyLoad() {
+            var element = document.body;
+            while (element) {
+                element.addEventListener("click", onBubbleClick, false);
+                element.addEventListener("click", onCaptureClick, true);
+
+                element = element.firstElementChild;
+            }
+        }
+    </script>
+</body>
+</html>
