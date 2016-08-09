@@ -38,7 +38,7 @@
 ---
 
 ####4. Unit Testing
-##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/> Slides] / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos] / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15"> Homeworks] / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Contests]
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/> Slides] / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos] / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15"> Homeworks] / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Contests](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23/Unit%20testing%20Contests)
 * [Unit Testing Homework]
 * [Test-Driven Development (TDD) Homework]
 * [Mocking with Moq and JustMock Homework]
