@@ -22,4 +22,4 @@
 
 #### [10. HTML Templates](https://rawgit.com/TelerikAcademy/JavaScript-UI-and-DOM/master/Topics/10.%20HTML%20Templates/index.html) 
 
-### [11. DOM Performance](https://rawgit.com/TelerikAcademy/JavaScript-UI-and-DOM/master/Topics/11. DOM Performance/index.html) 
+#### [11. DOM Performance](https://rawgit.com/TelerikAcademy/JavaScript-UI-and-DOM/master/Topics/11. DOM Performance/index.html) 
