@@ -50,7 +50,18 @@
 ---
 
 ####5. JavaScript - OOP
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides] / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos] / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15">Homeworks] / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Contests]
+* [Function Expressions Homework]
+* [Closures and Scope Homework]
+* [Classical Inheritance Homework]
+* [Prototypal Inheritance Homework]
+* [Modules and Patterns Homework]
+* [Practical Exam Preparation]
 
 ---
 
 ####6. JavaScript - Applications
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides] / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos] / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15">Homeworks] / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Contests]
+* [Promises and Asynchronous Programming Homework]
+* [HTTP & AJAX Workshop Homework]
+* [SPA Routing & Handlebars Homework]
