@@ -27,9 +27,24 @@ The cource covers topics such as **static members**, **structures**, **enumerati
 ###4. Unit Testing
 The course "Unit Testing" introduces the fundamental principles and practices for building high-quality code and provides knowledge of techniques like Mocking and Test-Driven development. Learn how to test automated already written code to detect and correct errors that otherwise would be easily missed.
 
-###5. High Quality Code (HQC)
+###5. High Quality Code  - Part 1 (HQC 1)
+* High Quality Code
+* Code Formatting
+* Naming Identifiers
+* Code Documentation and Comments
+* Variables Data Expressions and Constants
+* Control Flow Conditional Statements and Loops
+* High quality Methods
+* High quality Classes
 
-###6. Data Structures and Algorithms
+###6. High Quality Code  - Part 2 (HQC 2)
+* Defensive Programming and Exceptions
+* Code Tuning and Optimization
+* Refactoring
+* Debuggings
+* Development Tools
+* Software Engineering Fundamentals
+* Software Quality Assurance
 
 ## [Front-end] (Front-end)
 ###1. HTML
@@ -56,5 +71,7 @@ The course "JavaScript UI and DOM" is about building of low-level **user interfa
 The course covers topics like **DOM**, **jQuery**, **events**, **graphics and animations with HTML5 Canvas** and **templates**.
 
 ###5. JavaScript - OOP
+The JavaScript OOP is about building of low-level user interface. The course covers topics like DOM, jQuery, events, graphics & animations with HTML5 Canvas and templates.
 
 ###6. JavaScript - Applications
+The JavaScript Applications course introduces first steps for build web front-end application, using a back-end server (Node.js/Business clouds/etc...). The topics covered include HTTP, AJAX (both native and with frameworks), asynchronous paradigms using callbacks and promises and more...
