@@ -45,8 +45,20 @@
 
 ---
 
-####5. High Quality Code (HQC)
+####5. High Quality Code - Part 1 (HQC 1)
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/> Slides] / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos] / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15"> Homeworks] / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Contests]
+* [Code Formatting Homework]
+* [Naming Identifiers Homework]
+* [Code Documentation and Comments Homework]
+* [Variables, Data, Expressions and Constants Homework]
+* [Control Flow, Conditional Statements and Loops Homework]
+* [High-quality Methods Homework]
+* [High-quality Classes Homework]
 
 ---
 
-####6. Data Structures and Algorithms (DSA)
+####6. High Quality Code - Part 2 (HQC 2)
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/> Slides] / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos] / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15"> Homeworks] / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Contests]
+* [Defensive Programming and Exceptions Homework]
+* [Code Tuning and Optimization Homework]
+* [Refactoring  Homework]
