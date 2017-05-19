@@ -2,7 +2,7 @@
 
 ---
 
-####1. HTML
+#### 1. HTML
 ##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/> Slides](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/_Demos%20HTML/Slides) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/_Demos%20HTML) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15"> Homeworks](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/HTML) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Test Preparation](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/_Demos%20HTML/7.%20Test%20Preparation)
 * [HTML Fundamentals Homework]
 * [HTML Tables Homework]
@@ -11,7 +11,7 @@
 
 ---
 
-####2. CSS
+#### 2. CSS
 ##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/> Slides](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/_Demos%20CSS/Slides) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/_Demos%20CSS) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15"> Homeworks](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/CSS) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Contests](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/CSS Contests)
 * [CSS Overview Homework](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/CSS/1.%20CSS%20Overview%20HW)
 * [CSS Presentation Homework](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/CSS/2.%20CSS%20Presentation%20HW)
@@ -20,7 +20,7 @@
 
 ---
 
-####3. JavaScript - Fundamentals
+#### 3. JavaScript - Fundamentals
 ##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/> Slides](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/_Demos%20JS%20Fundamentals/Slides) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/_Demos%20JS%20Fundamentals) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15"> Homeworks](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20Fundamentals) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Contests](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20Fundamentals%20Contests)
 * [Data Types And Variables Homework](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20Fundamentals/data%20types%20and%20variables)
 * [Operators And Expressions Homework](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20Fundamentals/operators%20and%20expressions)
@@ -35,7 +35,7 @@
 
 ---
 
-####4. JavaScript - UI and DOM
+#### 4. JavaScript - UI and DOM
 ##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/_Demos%20JS%20UI%20%26%20DOM/Slides) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/_Demos%20JS%20UI%20%26%20DOM) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15">Homeworks](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20UI%20%26%20DOM) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Contests](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end/JS%20UI%20%26%20DOM%20Contests)
 * [HTML5 Canvas Homework]
 * [Scalable Vector Graphics Homework]
@@ -49,7 +49,7 @@
 
 ---
 
-####5. JavaScript - OOP
+#### 5. JavaScript - OOP
 ##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides] / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos] / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15">Homeworks] / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Contests]
 * [Function Expressions Homework]
 * [Closures and Scope Homework]
@@ -60,7 +60,7 @@
 
 ---
 
-####6. JavaScript - Applications
+#### 6. JavaScript - Applications
 ##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides] / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos] / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15">Homeworks] / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Contests]
 * [Promises and Asynchronous Programming Homework]
 * [HTTP & AJAX Workshop Homework]
