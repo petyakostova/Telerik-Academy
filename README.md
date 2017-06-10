@@ -5,7 +5,7 @@
 * The training is **practice-oriented** and involves solving hundreds of problems, 
 which **develop algorithmic thinking and skills**.
 
-## [CSharp Programming] (https://github.com/petyakostova/Telerik-Academy/tree/master/C%23)
+## [CSharp Programming](https://github.com/petyakostova/Telerik-Academy/tree/master/C%23)
 
 ### 1. CSharp Fundamentals (C# 1)
 The course "C# Fundamentals" introduces the fundamentals of programming. The course focuses on fundamental programming concepts using C#/.NET and Visual Studio. 
@@ -46,7 +46,7 @@ The course "Unit Testing" introduces the fundamental principles and practices fo
 * Software Engineering Fundamentals
 * Software Quality Assurance
 
-## [Front-end] (https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end)
+## [Front-end](https://github.com/petyakostova/Telerik-Academy/tree/master/Front-end)
 ### 1. HTML
 The course "HTML Basics" is the first step in the development of modern web applications. The course is introductionary and covers only the basics of web development. Yet it is a fundamental for everybody who wants to grow as a web professional, both front-end developer or web developer. 
 
