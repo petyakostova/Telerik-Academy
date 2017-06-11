@@ -9,7 +9,7 @@ dl dt {
 body img {
     width: 160px;
     height: 160px;
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
 .infoField {
