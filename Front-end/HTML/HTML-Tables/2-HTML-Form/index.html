@@ -9,23 +9,23 @@
 
 <body>
     <form name="HTML Form" method="post">
-        <table>
-            <tr>
-                <td><label for="MemberName">Member name: </label></td>
-                <td><input type="text" name="MemberName" required="required" id="MemberName" /></td>
-                <td><span class="requiredField">*req</span></td>
-            </tr>
-            <tr>
-                <td><label for="Email">Email: </label></td>
-                <td><input type="text" name="Email" required="required" id="Email" /></td>
-                <td><span class="requiredField">*req</span></td>
-            </tr>
-            <tr>
-                <td><label for="School">School: </label></td>
-                <td><input type="text" name="School" required="required" id="School" /></td>
-                <td><span class="requiredField">*req</span></td>
-            </tr>
-        </table>
+        <label for="MemberName">Member name: </label>
+        <input type="text" name="Member name" required="required" id="MemberName" />
+        <span class="requiredField">*req</span>
+
+        <br />
+
+        <label for="Email">Email: </label>
+        <input type="email" required="required" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="Email" />
+        <span class="requiredField">*req</span>
+
+        <br />
+
+        <label for="School">School: </label>
+        <input type="text" name="School" required="required" id="School" />
+        <span class="requiredField">*req</span>
+
+        <br />
 
         <input type="submit" class="submitButton" value="" />
     </form>
