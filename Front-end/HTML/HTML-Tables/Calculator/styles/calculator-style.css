@@ -1,0 +1,28 @@
+.double {
+    width: 80px;
+}
+
+body form table thead input {
+    text-align: right;
+}
+
+body form table tbody {
+    text-align: center;
+}
+
+body form table {
+    border: 1px solid skyblue;
+    background-color: aliceblue;
+}
+
+body form table td {
+    border: 1px solid skyblue;
+    background-color: aliceblue;
+}
+
+body form table button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: aliceblue;
+}

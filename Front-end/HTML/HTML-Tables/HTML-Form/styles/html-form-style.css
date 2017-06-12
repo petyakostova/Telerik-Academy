@@ -3,7 +3,7 @@
 }
 
 .submitButton {
-    background: url("images/SubmitImage.png") no-repeat;
+    background: url("../images/SubmitImage.png") no-repeat;
     background-size: 100% 100%;
     border: none;
     width: 100px;
