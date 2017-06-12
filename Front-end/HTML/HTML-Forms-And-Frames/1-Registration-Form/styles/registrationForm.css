@@ -3,12 +3,13 @@
     padding: 5px;
 }
 
+/* lets make it more interesting*/
 #registrationFormTable tr:nth-child(even) {
-    background: #F0F0F0
+    background: #FFFFFF;
 }
 
-#registrationFormTable tr:nth-child(odd) {
-    background: #FFFFFF
+#registrationFormTable tr:nth-child(odd) {    
+    background: #D1EDE1;
 }
 
 #registrationFormTable label {
@@ -28,7 +29,7 @@ textarea {
 }
 
 #foot {
-    background: #C7FFBC;
+    background:#D1EDE1;
 }
 
 #foot button, #foot input {
@@ -36,3 +37,8 @@ textarea {
     margin: 2px 12px 2px 12px;
     height: 30px;
 }
+
+/*TODO
+fix the align of the first column to right
+fix the buttons
+*/
