@@ -37,11 +37,11 @@ floor 3, apt. 12"></textarea></td>
                     <td>
                         <input type="text" id="city" placeholder="Kaspichan" />
                         <label for="state">State</label>
-                        <input type="text" id="state" class="minWidth" />
+                        <input type="text" id="state" class="smallWidth" />
                     </td>
                     <tr>
                         <td><label for="zipCode">Zip/Postal Code</label></td>
-                        <td><input type="text" id="zipCode" class="minWidth" placeholder="9325" /></td>
+                        <td><input type="text" id="zipCode" class="smallWidth" placeholder="9325" /></td>
                     </tr>
                     <tr>
                         <td><label for="country">Country</label></td>
@@ -54,17 +54,29 @@ floor 3, apt. 12"></textarea></td>
                     </tr>
                     <tr>
                         <td><label for="phone">Phone</label></td>
-                        <td>+( <input type="tel" class="minWidth" placeholder="359" /> ) <input type="tel" class="minWidth" placeholder="88"
-                            /> - <input type="tel" id="phone" placeholder="8334343" /></td>
+                        <td>+( <input type="tel" class="smallWidth" placeholder="359" /> ) <input type="tel" class="smallWidth"
+                                placeholder="88" /> - <input type="tel" id="phone" placeholder="8334343" /></td>
                     </tr>
-
-
-
                     <tr>
+                        <td>
+                            <label for="emailInput"> E-mail </label>
+                        </td>
+                        <td>
+                            <input id="emailInput" type="email" required="true" pattern="[a-zA-Z0-9_]{3,}@[a-zA-Z0-9_]{3,}.[a-zA-Z0-9_]{2,4}" placeholder="nakov@kaspichan.org"
+                            />
+                        </td>
+                    </tr>
+                    <!--https://stackoverflow.com/questions/5601647/html5-email-input-pattern-attribute-->
+                    <tr>
+                        <td><label for="birthDate">Birth Date</label></td>
+                        <td>Month <input type="tel" class="minWidth" placeholder="06" /> Day <input type="tel" class="minWidth"
+                                placeholder="14" /> Year (4 digit) <input type="tel" class="smallWidth" placeholder="1980" />
+                        </td>
+                    </tr>
+                    <!--<tr>
                         <td><label for="birthDate">Birth date</label></td>
                         <td><input type="date" id="birthDate" class="fullWidth" /></td>
-                    </tr>
-
+                    </tr>-->
                     <tr>
                         <td><label for="gender">Gender</label></td>
                         <td>
