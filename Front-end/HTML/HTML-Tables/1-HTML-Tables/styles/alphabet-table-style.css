@@ -23,7 +23,8 @@
 }
 
 #j {
-    padding-top: 25px;
+    padding-top: 25px;    
+    text-align: right; 
     /*text-align: end;*/
-    text-align: right;
+    /*The same as right if direction is left-to-right and left if direction is right-to-left.*/
 }
