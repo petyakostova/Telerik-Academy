@@ -1,25 +1,25 @@
 ﻿#firstPage {
     width: 20px;
     height: 20px;
-    background-image: url(images/startPage.png);
+    background-image: url("../images/startPage.png");
 }
 
 #prevPage {
     width: 20px;
     height: 20px;
-    background-image: url("images/prevPage.png");
+    background-image: url("../images/prevPage.png");
 }
 
 #nextPage {
     width: 20px;
     height: 20px;
-    background-image: url("images/nextPage.png");
+    background-image: url("../images/nextPage.png");
 }
 
 #lastPage {
     width: 20px;
     height: 20px;
-    background-image: url("images/endPage.png");
+    background-image: url("../images/endPage.png");
 }
 
 .pageLink {
@@ -27,7 +27,7 @@
 }
 
 #selectedPage {
-    border: 2px solid #FF953F;
+    border: 2px solid red;
     border-radius: 5px;
 }
 
@@ -41,12 +41,13 @@ input[type="checkbox"] {
 }
 
 thead, tfoot {
-    background-color: #B5B5B5;
+    background-color: #E7E9EB;
 }
 
 tfoot td, thead th {
     margin: 10px;
     padding: 10px;
+    text-align: left;
 }
 
 table, table tr, table td {

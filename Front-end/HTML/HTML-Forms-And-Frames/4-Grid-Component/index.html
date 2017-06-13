@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Products</title>
+    <title>Grid Component</title>
     <link rel="stylesheet" type="text/css" href="styles/gridComponent.css" />
 </head>
 
@@ -10,13 +10,17 @@
     <table>
         <colgroup>
             <col style="width: 50px" />
-            <col/>
+            <col />
             <col />
             <col />
             <col />
             <col style="width: 40px" />
         </colgroup>
+
         <thead>
+            <tr>
+                <th colspan="6">Drag a column header and drop it here to group by that column</th>
+            </tr>
             <tr>
                 <th>ProductID</th>
                 <th>Product Name</th>
@@ -37,9 +41,19 @@
                     <a href="#" class="pageLink">3</a>
                     <a href="#" class="pageLink">4</a>
                     <a href="#" class="pageLink">5</a>
+                    <a href="#" class="pageLink">6</a>
+                    <a href="#" class="pageLink">7</a>
+                    <a href="#" class="pageLink">8</a>
+                    <a href="#" class="pageLink">9</a>
+                    <a href="#" class="pageLink">10</a>
                     <a href="#" class="pageLink">...</a>
                     <button id="nextPage"></button>
                     <button id="lastPage"></button>
+                    <label for="PageSize"> Page size </label>
+                    <select id="PageSize">
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                    </select>
                     <span id="results">335104 items in 33511 pages</span>
                 </td>
             </tr>
@@ -56,8 +70,8 @@
             </tr>
             <tr>
                 <td>1</td>
-                <td>Tea</td>
-                <td>$18.30</td>
+                <td>Chai</td>
+                <td>$18.00</td>
                 <td>10 boxes x 20 bags</td>
                 <td>39</td>
                 <td><input type="checkbox" disabled="disabled" /></td>
@@ -65,25 +79,33 @@
             <tr>
                 <td>2</td>
                 <td>Chang</td>
-                <td>$25.00</td>
+                <td>$19.00</td>
                 <td>24 - 12 oz bottles</td>
                 <td>17</td>
-                <td><input type="checkbox" checked="checked" disabled="disabled" /></td>
+                <td><input type="checkbox" disabled="disabled" /></td>
             </tr>
             <tr>
                 <td>3</td>
-                <td>Apples</td>
-                <td>$5.00</td>
-                <td>300gr</td>
-                <td>10</td>
-                <td><input type="checkbox" checked="checked" disabled="disabled" /></td>
+                <td>Aniseed Syrup</td>
+                <td>$10.00</td>
+                <td>12 - 550 ml bottles</td>
+                <td>13</td>
+                <td><input type="checkbox" disabled="disabled" /></td>
             </tr>
             <tr>
                 <td>4</td>
-                <td>Oranges</td>
-                <td>$7.00</td>
-                <td>400gr</td>
-                <td>8</td>
+                <td>Chef Anton's Cajun Seasoning</td>
+                <td>$22.00</td>
+                <td>48 - 6 oz jars</td>
+                <td>53</td>
+                <td><input type="checkbox" disabled="disabled" /></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Chef Anton's Gumbo Mix</td>
+                <td>$21.35</td>
+                <td>36 boxes</td>
+                <td>0</td>
                 <td><input type="checkbox" checked="checked" disabled="disabled" /></td>
             </tr>
         </tbody>
