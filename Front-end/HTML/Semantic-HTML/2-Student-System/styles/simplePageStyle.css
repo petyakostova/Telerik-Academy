@@ -1,4 +1,9 @@
-﻿ul {
+﻿h1,h3{
+    display: inline;
+    vertical-align: center;
+}
+
+ul {
     list-style-type: disc;
 }
 
