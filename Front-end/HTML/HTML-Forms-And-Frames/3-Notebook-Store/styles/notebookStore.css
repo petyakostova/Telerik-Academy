@@ -9,14 +9,14 @@
 #laptopTable {
     border: 1px solid #000000;
     float: left;
-    display: inline;
+    display: block;
 }
 
 #sliderTable {
     padding: 30px;
     padding-left: 60px;
     float: left;
-    display: inline;
+    display: block;
 }
 
 #sliderTable td {
