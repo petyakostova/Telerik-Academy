@@ -1,6 +1,6 @@
 ##   C# Advanced Slides
 
-#### [0. Course Introduction](https://rawgit.com/petyakostova/Telerik-Academy/master/C%23/_Demos%20C%23%202/Slides/00.%20Course-Intro/slides/index.html)
+#### [0. Course Introduction](https://rawgit.com/petyakostova/Telerik-Academy/master/C%23/_Demos%20C%23%202/Slides/00.%20Course-Intro/index.html)
 
 #### [1. Arrays](https://rawgit.com/TelerikAcademy/CSharp-Part-2/master/Topics/01.%20Arrays/slides/index.html)
 
