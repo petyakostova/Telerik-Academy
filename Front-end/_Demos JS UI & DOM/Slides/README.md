@@ -4,13 +4,13 @@
 
 #### [01. Document Object Model](https://rawgit.com/petyakostova/Telerik-Academy/master/Front-end/_Demos%20JS%20UI%20%26%20DOM/Slides/01.%20Document%20Object%20Model/index.html) 
 
-#### [02. HTML5 Canvas](https://rawgit.com/petyakostova/Telerik-Academy/master/Front-end/_Demos%20JS%20UI%20%26%20DOM/Slides/02.%20HTML5%20Canvas/index.html) 
+#### [02. HTML5 Canvas](https://rawgit.com/TelerikAcademy/JavaScript-UI-and-DOM/master/Topics/02.%20HTML5%20Canvas/index.html) 
 
-#### [03. Scalable Vector Graphics](https://rawgit.com/petyakostova/Telerik-Academy/master/Front-end/_Demos%20JS%20UI%20%26%20DOM/Slides/03.%20Scalable%20Vector%20Graphics/index.html) 
+#### [03. Scalable Vector Graphics](https://rawgit.com/TelerikAcademy/JavaScript-UI-and-DOM/master/Topics/03.%20Scalable%20Vector%20Graphics/index.html) 
 
-#### [04. Frameworks for Graphics](https://rawgit.com/petyakostova/Telerik-Academy/master/Front-end/_Demos%20JS%20UI%20%26%20DOM/Slides/04.%20Frameworks%20for%20Graphics/index.html) 
+#### [04. Frameworks for Graphics](https://rawgit.com/TelerikAcademy/JavaScript-UI-and-DOM/master/Topics/04.%20Frameworks%20for%20Graphics/index.html) 
 
-#### [05. Animations with HTML5 Canvas](https://rawgit.com/petyakostova/Telerik-Academy/master/Front-end/_Demos%20JS%20UI%20%26%20DOM/Slides/05.%20Animations%20with%20HTML5%20Canvas/index.html) 
+#### [05. Animations with HTML5 Canvas](https://rawgit.com/TelerikAcademy/JavaScript-UI-and-DOM/master/Topics/05.%20Animations%20with%20HTML5%20Canvas/index.html) 
 
 #### [06. DOM Operations](https://rawgit.com/petyakostova/Telerik-Academy/master/Front-end/_Demos%20JS%20UI%20%26%20DOM/Slides/06.%20DOM%20Operations/index.html) 
 
