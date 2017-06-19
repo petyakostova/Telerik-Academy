@@ -1,6 +1,6 @@
 ## JavaScript Fundamentals Slides
 
-#### [00. Course Introduction](https://rawgit.com/petyakostova/Telerik-Academy/tree/master/Front-end/_Demos JS Fundamentals/Slides/00. Course-intro/index.html) 
+#### [00. Course Introduction](https://rawgit.com/petyakostova/Telerik-Academy/tree/master/Front-end/_Demos JS Fundamentals/Slides/00.%20Course-intro/index.html) 
 
 #### [01. Javascript Development Tools](https://rawgit.com/TelerikAcademy/JavaScript-Fundamentals/master/Topics/01. Javascript-Development-Tools/index.html) 
 
