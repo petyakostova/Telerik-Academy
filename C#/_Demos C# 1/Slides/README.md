@@ -1,6 +1,8 @@
 ##  C# Fundamentals Slides
 
-#### [0. Course Introduction](https://rawgit.com/TelerikAcademy/CSharp-Part-1/master/Topics/00.%20Course-Intro/slides/index.html)
+#### [0. Course Introduction](
+
+https://rawgit.com/petyakostova/Telerik-Academy/master/C%23/_Demos%20C%23%201/Slides/0.%20Course-Intro%20Slides/index.html)
 
 #### [1. Introduction to Programming](https://rawgit.com/TelerikAcademy/CSharp-Part-1/master/Topics/01.%20Introduction-to-Programming/slides/index.html)
 
