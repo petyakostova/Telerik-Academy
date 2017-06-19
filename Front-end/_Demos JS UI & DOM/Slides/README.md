@@ -1,6 +1,6 @@
 ## JavaScript UI and DOM Slides
 
-#### [00. Course Introduction](https://rawgit.com/TelerikAcademy/JavaScript-UI-and-DOM/master/Topics/00. Course-intro/index.html) 
+#### [00. Course Introduction](https://rawgit.com/petyakostova/Telerik-Academy/master/Front-end/_Demos%20JS%20UI%20%26%20DOM/Slides/00.%20Course-intro/index.html) 
 
 #### [01. Document Object Model](https://rawgit.com/TelerikAcademy/JavaScript-UI-and-DOM/master/Topics/01. Document Object Model/index.html) 
 
