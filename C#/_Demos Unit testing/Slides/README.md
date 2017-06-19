@@ -1,6 +1,6 @@
-## High-Quality Code - Unit Testing Slides
+## Unit Testing Slides
 
-#### [00. Course Introduction](https://rawgit.com/TelerikAcademy/High-Quality-Code-Unit-Testing/master/Topics/00. Course-intro/index.html) 
+#### [00. Course Introduction](https://rawgit.com/petyakostova/Telerik-Academy/master/C%23/_Demos%20Unit%20testing/Slides/00.%20Course-intro/index.html) 
 
 #### [01. Unit Testing](https://rawgit.com/TelerikAcademy/High-Quality-Code-Unit-Testing/master/Topics/01. Unit Testing/index.html) 
 
