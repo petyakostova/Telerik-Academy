@@ -4,11 +4,11 @@ class NumberOfPages
 {
     static void Main()
     {
-        long digits = long.Parse(Console.ReadLine());
+        int digits = int.Parse(Console.ReadLine());
 
-        long counter = 1;
-        long pageCurrent = 1;
-        long digitPage;
+        int counter = 1;
+        int currentPage = 1;
+        int digitPage;
 
         while (true)
         {
@@ -18,36 +18,36 @@ class NumberOfPages
             }
             else if (counter > digits)
             {
-                pageCurrent--;
+                currentPage--;
                 break;
             }
             else
             {
-                if (pageCurrent < 10)
+                if (currentPage < 10)
                 {
                     counter++;
-                    pageCurrent++;
+                    currentPage++;
                 }
                 else
                 {
-                    digitPage = pageCurrent;
+                    digitPage = currentPage;
                     while (digitPage > 0)
                     {
                         digitPage /= 10;
                         counter++;
                     }
-                    pageCurrent++;
+                    currentPage++;
                 }
             }
         }
 
-        if (pageCurrent < 10)
+        if (currentPage < 10)
         {
-            Console.WriteLine(pageCurrent);
+            Console.WriteLine(currentPage);
         }
         else
         {
-            Console.WriteLine(pageCurrent--);
+            Console.WriteLine(currentPage--);
         }
 
     }
