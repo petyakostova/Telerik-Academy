@@ -14,22 +14,22 @@ class SieveOfEratosthenes
     static void Main()
     {
         int n = int.Parse(Console.ReadLine());
-        bool[] primes = new bool[n + 1];
-
+        bool[] primes = new bool[n + 1]; // False by default
+        
         // Find all prime numbers in the range [1...n]
-        for (int i = 2; i < Math.Sqrt(primes.Length); i++)
+        for (int i = 2; i <= Math.Sqrt(n); i++) //n + 1 = primes.Length
         {
             // Skip those numbers that are not prime
             if (primes[i] == false)
             {
-                for (int j = i * i; j < primes.Length; j += i)
+                for (int j = i * i; j <= n; j += i)
                 {
                     primes[j] = true;
                 }
             }
         }
 
-        for (int i = primes.Length - 1; i >= 2; i--)
+        for (int i = n; i >= 2; i--)
         {
             if (!primes[i])
             {
@@ -38,8 +38,8 @@ class SieveOfEratosthenes
             }
         }
 
-        // Print all prime numbers in the range [1...n]
-        //for (int i = 2; i < primes.Length; i++)
+        //Print all prime numbers in the range[1...n]
+        //for (int i = 2; i <= n; i++)
         //{
         //    // the numbers remaining not marked in the list are all the primes below n
         //    if (!primes[i])
@@ -47,6 +47,5 @@ class SieveOfEratosthenes
         //        Console.Write(i + " ");
         //    }
         //}
-
     }
 }
