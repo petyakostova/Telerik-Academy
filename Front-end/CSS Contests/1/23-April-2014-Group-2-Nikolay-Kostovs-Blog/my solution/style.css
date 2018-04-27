@@ -1,0 +1,113 @@
+html, body {
+	font-family: Arial, Helvetica, sans-serif; /* given  in the template */
+	font-size: 14px; /* in condition: default font-size: 14px */
+}
+
+#wrapper {
+	width: 960px; /* given  in the template */
+	margin: 0 auto; /* given  in the template */
+}
+
+.clear {
+	clear: both; /* given  in the template */
+}
+
+header {
+	height: 97px; /* measured in paint.net */
+	background-image: url('images/header-bg.png'); /* the background is in folder images */
+	border-bottom: #39C518 5px solid; /* width of the green line = 5px; pick the color */
+	/* works every time, in this case we have element for it: <div id="line"></div> */
+}
+
+/* the next step is to order the elements in the header => 
+   we have <div id="title">, which must be to the left, and <nav id="nav">, which must be to the right
+   style those elements with float: left and float: right*/
+#title {
+	float: left; /* goes to the left */
+	margin-left: 20px; /* from the beginning of the header to the beginning of the letters 
+	                      measuring distance 22px */
+}
+
+/* clear/reset the padding and margin of the elements, with which we work, 
+   to be sure, that we won't have any problems with their positioning 
+   and we can set them from the null */
+#title h1 {
+	margin: 0; /* resetting */
+	padding: 0; /* resetting */
+	color: #EEFFEE; /* pick the color in paint.net by selecting wide letter in the middle part */
+	font-size: 34px; /* in condition: font-size of the title: 34px */
+	margin-top: 20px; /* measuring from the tallest letter => 27px => 
+	                     in condition: All other pixel sizes will be divisible by 5 or exactly 8px */
+}
+
+#title h2 {
+	margin: 0; /* resetting */
+	padding: 0;	/* resetting */
+	color: #C0C0C0;
+	font-size: 14px; /* in condition: default font-size: 14px */
+	margin-top: 5px; /* between h1 and h2 => 5px (from the lowest letter in h1 to the tallest in h2))*/
+	font-weight: normal; /* do not have to be bold */
+}
+
+#nav {
+	float: right; /* goes to the right */
+	/*display: inline-block;	/* make it to block element */
+}
+
+/* Home и About me are displayed like list items */
+
+#nav ul {			
+	margin: 0; /* resetting */
+	padding: 0; /* resetting */
+	list-style-type: none; /* google: css remove bullet */
+	margin-right: 28px; /* measuring the distance from the end of About me till the end 28px */
+	margin-top: 45px; /* the distance between the highest letter to up => 48px */	
+}
+ 
+#nav ul li {     /* every list item */
+	float: left; /* to be on the left one next to another */
+	margin: 0; /* resetting */
+	padding: 0; /* resetting */
+	font-size: 18px; /* in condition: font-size of the menu items: 18px */
+	margin-left: 22px; /* measuring the distance between Home and About me => 20px */
+	color: #CC6600; /* picked from the letter H, because is wide */
+	font-weight: bold; /* must be bold */
+}
+
+#content {
+	float: left; /* to be on the left */
+	width: 760px; /* 960px - 200px or measure it */	
+	color: #555555; /* it's good to pick the color from horizontal line 
+						  where there are no ambient pixels to washout the color */
+}
+
+#content h1 {
+	color: #59770E;	/* pick the color of h1 */	
+	margin-top: 22px; /* measuring the distance from the end of letter k in Good luck! 
+						 to the green line => 26px
+       					 measuring the same distance in our page after Print Screen 27px => 22px */
+	font-size: 30px; /* in condition: font-size of the content title: 30px */
+}
+
+#aside {
+	width: 200px; /* measuring the width with the grey line => 200px */
+	float: right; /* in this case can be float: right; too  */	
+	padding-top: 20px; /* padding, because the element "Search" has no id or div 
+						  and we can't catch it to move it aside with margin 
+		measuring the distance from the end of letters in SEARCH till the green line 23px => 20px */
+	text-transform: uppercase; /* google: uppercase css */ 
+	color: #59770E;
+	font-weight: bold; /* must be bold */
+}
+
+/* we won't style the element <hr /> */
+
+#aside input {       	/* seleting the input element */
+	width: 155px; /* measuring the width of the input element 
+					 => the box under SEARCH and the line */
+}
+
+/* put it one over/above another with Pixel Perfect => 
+   we notice that there are shifts in SEARCH => 
+   we can pick it up => aside changing px in padding-top
+   the h1 element diverges a little and won't be 20px => 18px */
