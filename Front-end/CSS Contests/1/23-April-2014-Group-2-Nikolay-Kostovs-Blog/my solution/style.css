@@ -91,9 +91,9 @@ header {
 
 #aside {
 	width: 200px; /* measuring the width with the grey line => 200px */
-	float: right; /* in this case can be float: right; too  */	
+	float: right; /* in this case can be float: left; too  */	
 	padding-top: 20px; /* padding, because the element "Search" has no id or div 
-						  and we can't catch it to move it aside with margin 
+					 	  and we can't catch it to move it aside with margin 
 		measuring the distance from the end of letters in SEARCH till the green line 23px => 20px */
 	text-transform: uppercase; /* google: uppercase css */ 
 	color: #59770E;
